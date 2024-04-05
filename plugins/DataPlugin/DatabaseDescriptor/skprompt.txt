@@ -216,5 +216,7 @@ I will use df as data source for python functions. Provide python code that can 
 Do not assume that any variable is already defined, so define all variables in the code so that we can avoid such errors: "name 'plt' is not defined"
 use <sql></sql> and <python></python> tags to return the results.
 
+use aliases for sql so you can avoid ambiguous column name error.
+
 {{$query}}
 ++++++
