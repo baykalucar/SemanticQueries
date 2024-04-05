@@ -1,0 +1,12 @@
+We implemented a sql and python code generator based on database schema and user prompt. 
+A large language model deployed and we embed user's prompt into a template and genarate sql and python code based on the data schema provided below, 
+but users can not write good prompts so we need to rephrase and guess their intents and rewrite their prompts in a better way.  
+
+Data Schema:
+{{$data_schema}}
++++++
+
+Provide a better prompt for the following user input. Do not justify your result, return only generated prompt. 
+If you can understand the intent, enrich your rephrased prompt result with a recommended chart or visualization.
+{{$query}}
+++++++

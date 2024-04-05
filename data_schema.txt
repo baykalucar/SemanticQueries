@@ -1,0 +1,123 @@
+Table: brands
+brand_id: INTEGER - Unique identifier for each brand.
+brand_name: VARCHAR - Name of the brand.
+Sample Data for brands
+brand_id	brand_name
+1	Electra
+2	Haro
+This table stores information about different brands. Each brand has a unique identifier (brand_id) and a name (brand_name).
+
+Table: categories
+category_id: INTEGER - Unique identifier for each category.
+category_name: VARCHAR - Name of the category.
+Sample Data for categories
+category_id	category_name
+1	Children Bicycles
+2	Comfort Bicycles
+This table stores information about different categories of bicycles. Each category has a unique identifier (category_id) and a name (category_name).
+
+Table: customers
+customer_id: INTEGER - Unique identifier for each customer.
+first_name: VARCHAR - First name of the customer.
+last_name: VARCHAR - Last name of the customer.
+phone: VARCHAR - Phone number of the customer.
+email: VARCHAR - Email address of the customer.
+street: VARCHAR - Street address of the customer.
+city: VARCHAR - City of the customer's address.
+state: VARCHAR - State of the customer's address.
+zip_code: VARCHAR - ZIP code of the customer's address.
+Sample Data for customers
+customer_id	first_name	last_name	phone	email	street	city	state	zip_code
+1	Debra	Burks	NULL	debra.burks@yahoo.com	9273 Thorne Ave.	Orchard Park	NY	14127
+2	Kasha	Todd	NULL	kasha.todd@yahoo.com	910 Vine Street	Campbell	CA	95008
+3	Tameka	Fisher	NULL	tameka.fisher@aol.com	769C Honey Creek St.	Redondo Beach	CA	90278
+This table stores information about customers. Each customer has a unique identifier (customer_id) along with their first name, last name, contact details (phone and email), and address details (street, city, state, zip_code).
+
+
+Table: orders
+order_id: INTEGER - Unique identifier for each order.
+customer_id: INTEGER - Identifier for the customer who placed the order.
+order_status: INTEGER - Status of the order.
+order_date: DATE - Date when the order was placed.
+required_date: DATE - Date by which the order is required.
+shipped_date: DATE - Date when the order was shipped.
+store_id: INTEGER - Identifier for the store where the order was placed.
+staff_id: INTEGER - Identifier for the staff member associated with the order.
+Sample Data for orders:
+order_id	customer_id	order_status	order_date	required_date	shipped_date	store_id	staff_id
+1	259	4	2016-01-01	2016-01-03	2016-01-03	1	2
+2	1212	4	2016-01-01	2016-01-04	2016-01-03	2	6
+3	523	4	2016-01-02	2016-01-05	2016-01-03	2	7
+This table stores information about orders placed by customers. Each order has a unique identifier (order_id) along with the associated customer (customer_id), order status (order_status), dates for order placement (order_date), required delivery (required_date), and shipping (shipped_date), as well as identifiers for the store (store_id) and staff member (staff_id) involved in processing the order.
+
+Table: order_items
+order_id: INTEGER - Identifier for the order to which the item belongs.
+item_id: INTEGER - Unique identifier for each item within an order.
+product_id: INTEGER - Identifier for the product associated with the item.
+quantity: INTEGER - Quantity of the product ordered.
+list_price: DECIMAL - Price of the product before any discounts.
+discount: DECIMAL - Discount applied to the product.
+Sample Data for order_items:
+order_id	item_id	product_id	quantity	list_price	discount
+1	1	20	1	599.99	0.2
+1	2	8	2	1799.99	0.07
+1	3	10	2	1549	0.05
+This table stores information about the items included in orders. Each record represents an item within an order and includes the order identifier (order_id), a unique identifier for the item within the order (item_id), the product identifier (product_id) associated with the item, the quantity of the product ordered (quantity), the list price of the product before any discounts (list_price), and the discount applied to the product (discount).
+
+Table: products
+product_id: INTEGER - Unique identifier for each product.
+product_name: VARCHAR - Name of the product.
+brand_id: INTEGER - Identifier for the brand of the product.
+category_id: INTEGER - Identifier for the category of the product.
+model_year: INTEGER - Year the product was released or manufactured.
+list_price: DECIMAL - Price of the product.
+Sample Data for products:
+product_id	product_name	brand_id	category_id	model_year	list_price
+1	Trek 820 - 2016	9	6	2016	379.99
+2	Ritchey Timberwolf Frameset - 2016	5	6	2016	749.99
+3	Surly Wednesday Frameset - 2016	8	6	2016	999.99
+This table stores information about products available in your inventory. Each product has a unique identifier (product_id) along with its name (product_name), the brand it belongs to (brand_id), the category it falls under (category_id), the model year (model_year), and the list price (list_price).
+
+
+Table: staffs
+staff_id: INTEGER - Unique identifier for each staff member.
+first_name: VARCHAR - First name of the staff member.
+last_name: VARCHAR - Last name of the staff member.
+email: VARCHAR - Email address of the staff member.
+phone: VARCHAR - Phone number of the staff member.
+active: INTEGER - Indicator of whether the staff member is active (1 for active, 0 for inactive).
+store_id: INTEGER - Identifier for the store where the staff member works.
+manager_id: INTEGER - Identifier for the manager of the staff member.
+Sample Data for staffs:
+staff_id	first_name	last_name	email	phone	active	store_id	manager_id
+1	Fabiola	Jackson	fabiola.jackson@bikes.shop	(831) 555-5554	1	1	NULL
+2	Mireya	Copeland	mireya.copeland@bikes.shop	(831) 555-5555	1	1	1
+This table stores information about staff members working in the bike shop. Each staff member has a unique identifier (staff_id), their first name (first_name), last name (last_name), email address (email), phone number (phone), an indicator of their activity status (active), the store they are associated with (store_id), and the identifier of their manager (manager_id).
+
+Table: stocks
+store_id: INTEGER - Identifier for the store where the product is stocked.
+product_id: INTEGER - Identifier for the product that is stocked.
+quantity: INTEGER - Quantity of the product available in the stock.
+Sample Data for stocks:
+store_id	product_id	quantity
+1	1	27
+1	2	5
+1	3	6
+This table stores information about the stock levels of products in different stores. Each record represents the quantity of a specific product (identified by product_id) available in a particular store (identified by store_id). The quantity field indicates the number of units of the product available in the stock.
+
+
+Table: stores
+store_id: INTEGER - Unique identifier for each store.
+store_name: VARCHAR - Name of the store.
+phone: VARCHAR - Phone number of the store.
+email: VARCHAR - Email address of the store.
+street: VARCHAR - Street address of the store.
+city: VARCHAR - City where the store is located.
+state: VARCHAR - State where the store is located.
+zip_code: VARCHAR - ZIP code of the store's location.
+Sample Data for stores:
+store_id	store_name	phone	email	street	city	state	zip_code
+1	Santa Cruz Bikes	(831) 476-4321	santacruz@bikes.shop	3700 Portola Drive	Santa Cruz	CA	95060
+2	Baldwin Bikes	(516) 379-8888	baldwin@bikes.shop	4200 Chestnut Lane	Baldwin	NY	11432
+3	Rowlett Bikes	(972) 530-5555	rowlett@bikes.shop	8000 Fairway Avenue	Rowlett	TX	75088
+This table stores information about different stores. Each store has a unique identifier (store_id) along with its name (store_name), contact details (phone and email), and address details (street, city, state, zip_code).

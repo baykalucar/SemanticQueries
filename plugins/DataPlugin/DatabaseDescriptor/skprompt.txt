@@ -1,0 +1,220 @@
+Below, you'll find a comprehensive breakdown of the data schema, including detailed descriptions of each table in a relational database. 
+Additionally, there are sample SQL queries provided along with explanations, as well as descriptions of various chart types and Python code snippets demonstrating how to generate them. 
+Feel free to request specific queries or Python code for your user interactions.
+
+Data Schema:
+{{$data_schema}}
++++++
+
+Queries and Visualizations:
+SQL Queries:
+Basic Data Exploration:
+SELECT * FROM [Table Name] LIMIT 10;
+
+Aggregate Statistics:
+SELECT COUNT(*), AVG([Column Name]) FROM [Table Name];
+
+Filtering Data:
+SELECT * FROM [Table Name] WHERE [Condition];
+
+Joining Tables:
+SELECT * FROM [Table 1] JOIN [Table 2] ON [Join Condition];
+
+Grouping and Aggregation:
+SELECT [Column], COUNT(*) FROM [Table Name] GROUP BY [Column];
+
+
+
+Python Visualization:
+Bar Chart: 
+Purpose: Bar charts are used to compare categorical data or show the distribution of data across different categories. They are effective in visualizing discrete data points and highlighting differences between them.
+Example: Comparing sales performance of different products or categories over a period of time. 
+
+Below sample code will generate a bar chart with the provided sample data where 'categories' represent the labels on the x-axis and 'values' represent the corresponding heights of the bars. You can modify the 'categories' and 'values' variables with your actual data. Additionally, you can customize the appearance of the bar chart by adjusting parameters such as color, width, and labels as needed
+
+<sample_code>
+import matplotlib.pyplot as plt
+
+# Sample data
+categories = ['A', 'B', 'C', 'D']
+values = [23, 45, 56, 78]
+
+# Create bar chart
+plt.figure(figsize=(8, 6))
+plt.bar(categories, values, color='skyblue')
+
+# Add labels and title
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Sample Bar Chart')
+
+# Show plot
+plt.show()
+</sample_code>
+
+
+
+Histogram:
+Purpose: Histograms are used to display the distribution of continuous data and show the frequency or count of data points within specified intervals or bins. They help identify patterns, trends, and outliers in the data.
+Example: Analyzing the distribution of exam scores or the ages of customers in a population.
+
+Below sample code data represents the sample data for which the histogram will be plotted.
+plt.hist() is used to create the histogram. The bins parameter specifies the number of bins or intervals for the histogram. You can adjust the number of bins based on your data distribution.
+Labels and title are added using plt.xlabel(), plt.ylabel(), and plt.title() functions.
+Finally, plt.show() is called to display the histogram plot.
+<sample_code>
+import matplotlib.pyplot as plt
+
+# Sample data
+data = [21, 22, 23, 25, 26, 28, 29, 30, 30, 31, 32, 33, 33, 34, 34, 35, 35, 35, 36, 37]
+
+# Create histogram
+plt.figure(figsize=(8, 6))
+plt.hist(data, bins=10, color='salmon', edgecolor='black')
+
+# Add labels and title
+plt.xlabel('Values')
+plt.ylabel('Frequency')
+plt.title('Sample Histogram')
+
+# Show plot
+plt.show()
+</sample_code>
+
+Scatter Plot: 
+Purpose: Scatter plots are used to visualize the relationship between two continuous variables. They help identify patterns, trends, correlations, and outliers in the data.
+Example: Plotting the relationship between temperature and ice cream sales to see if there's a correlation.
+
+Below sample code x and y represent the sample data for the x and y coordinates of the scatter plot.
+plt.scatter() is used to create the scatter plot. You can adjust parameters such as color and marker style according to your preference.
+Labels and title are added using plt.xlabel(), plt.ylabel(), and plt.title() functions.
+Finally, plt.show() is called to display the scatter plot.
+
+<sample_code>
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y = [10, 20, 15, 25, 30, 35, 40, 45, 50, 55]
+
+# Create scatter plot
+plt.figure(figsize=(8, 6))
+plt.scatter(x, y, color='green', marker='o')
+
+# Add labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Sample Scatter Plot')
+
+# Show plot
+plt.show()
+</sample_code>
+
+
+Pie Chart: 
+Purpose: Pie charts are used to represent parts of a whole and show the proportion or percentage distribution of different categories within a dataset. They are useful for conveying relative sizes or contributions.
+Example: Showing the market share of different companies in a specific industry.
+
+Below sample code labels represent the categories or labels for each section of the pie chart.
+sizes represent the sizes or proportions of each section.
+plt.pie() is used to create the pie chart. Parameters like autopct specify the format for displaying the percentage contribution of each section, and startangle specifies the start angle for the first section.
+You can customize the colors of the sections by passing a list of color names or hexadecimal color codes to the colors parameter.
+Finally, plt.title() is used to add a title to the pie chart, and plt.show() displays the chart.
+
+<sample_code>
+import matplotlib.pyplot as plt
+
+# Sample data
+labels = ['A', 'B', 'C', 'D']
+sizes = [15, 30, 45, 10]
+
+# Create pie chart
+plt.figure(figsize=(8, 6))
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140, colors=['skyblue', 'salmon', 'lightgreen', 'orange'])
+
+# Add title
+plt.title('Sample Pie Chart')
+
+# Show plot
+plt.show()
+
+</sample_code>
+
+Line Chart: 
+Purpose: Line charts are used to display trends and changes in data over time. They are effective in visualizing continuous data and identifying patterns, trends, and fluctuations.
+Example: Plotting stock prices over a period of several months to analyze the trend in the stock market.
+
+Below code x and y represent the sample data for the x and y coordinates of the line chart.
+plt.plot() is used to create the line chart. Parameters like marker, color, and linestyle can be adjusted to customize the appearance of the line.
+Labels and title are added using plt.xlabel(), plt.ylabel(), and plt.title() functions.
+Finally, plt.show() is called to display the line chart.
+<sample_code>
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [10, 15, 25, 30, 35]
+
+# Create line chart
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, marker='o', color='blue', linestyle='-')
+
+# Add labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Sample Line Chart')
+
+# Show plot
+plt.show()
+
+</sample_code>
+
+Time Series: 
+Purpose: Time series plots are a specific type of line chart used to visualize data collected over regular time intervals. They are particularly useful for analyzing and forecasting trends, seasonality, and patterns in time-dependent data.
+Example: Tracking monthly sales revenue of a company over several years to identify seasonal peaks and valleys.
+Below sample code pd.date_range() is used to generate a sample date range.
+A DataFrame data is created with the date range and corresponding values.
+plt.plot() is used to create the time series plot. Parameters like marker, color, and linestyle can be adjusted to customize the appearance of the plot.
+Labels and title are added using plt.xlabel(), plt.ylabel(), and plt.title() functions.
+plt.xticks(rotation=45) is used to rotate the x-axis labels for better readability.
+plt.tight_layout() ensures that all elements of the plot are visible.
+Finally, plt.show() is called to display the time series plot.
+
+<sample_code>
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Sample time series data
+date_range = pd.date_range(start='2022-01-01', periods=10, freq='D')
+values = [10, 15, 25, 30, 35, 40, 45, 50, 55, 60]
+
+# Create DataFrame
+data = pd.DataFrame({'Date': date_range, 'Values': values})
+
+# Create time series plot
+plt.figure(figsize=(10, 6))
+plt.plot(data['Date'], data['Values'], marker='o', color='orange', linestyle='-')
+
+# Add labels and title
+plt.xlabel('Date')
+plt.ylabel('Values')
+plt.title('Sample Time Series Plot')
+
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45)
+
+# Show plot
+plt.tight_layout()
+plt.show()
+
+</sample_code>
+
+
+based on above descriptions, user prompted below text. just return the SQL query for sqlite or python function in xml tags, do not write any justification. 
+if you need to provide python function for graph visualization, provide the sql query in seperate form for data source of graphs. 
+I will use df as data source for python functions. Provide python code that can be executable with exec() function and get results. 
+Do not assume that any variable is already defined, so define all variables in the code so that we can avoid such errors: "name 'plt' is not defined"
+use <sql></sql> and <python></python> tags to return the results.
+
+{{$query}}
+++++++

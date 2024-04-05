@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Generate and rephrase well written queries in natural language based on user prompts",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1000,
+      "temperature": 0.1,
+      "top_p": 0.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "data_schema",
+      "description": "Meta data of the database schema",
+      "default": ""
+    },
+    {
+      "name": "query",
+      "description": "Query to generate",
+      "default": ""
+    }
+  ]
+}
