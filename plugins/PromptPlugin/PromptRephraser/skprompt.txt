@@ -7,6 +7,7 @@ Data Schema:
 +++++
 
 Provide a better prompt for the following user input. Do not justify your result, return only generated prompt. 
-If you can understand the intent, enrich your rephrased prompt result with a recommended chart or visualization.
+Enrich your rephrased prompt result with a recommended chart or visualization.
+Think as a data analyst or data scientist, so that you can understand the user's intent and generate a better prompt.
 {{$query}}
 ++++++
