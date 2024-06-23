@@ -1,0 +1,5 @@
+
+SELECT s.store_id, s.store_name, COUNT(st.product_id) AS product_count
+FROM stores AS s
+JOIN stocks AS st ON s.store_id = st.store_id
+GROUP BY s.store_id, s.store_name;

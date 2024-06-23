@@ -1,0 +1,24 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Assuming 'df' is a DataFrame with the following columns: 'model_year', 'category_name', 'total_sales'
+# The DataFrame 'df' should be the result of the SQL query provided above.
+
+# Pivot the DataFrame to get categories as columns and model years as rows
+pivot_df = df.pivot(index='model_year', columns='category_name', values='total_sales')
+
+# Plotting
+fig, ax = plt.subplots(figsize=(10, 6))
+pivot_df.plot(kind='bar', ax=ax)
+
+# Customizing the plot
+ax.set_title('Sales Performance by Product Model Year within Each Category')
+ax.set_xlabel('Model Year')
+ax.set_ylabel('Total Sales')
+ax.legend(title='Category')
+
+# Save the plot
+plt.tight_layout()
+plt.savefig('answers/2024-06-23/19_Very Complex/plot.png')
+plt.close()

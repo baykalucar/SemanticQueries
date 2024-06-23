@@ -1,0 +1,33 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+
+# Assuming 'df' is a DataFrame containing the result of the SQL query above
+# with columns 'order_month', 'category_name', and 'total_sales'
+
+# Convert 'order_month' to datetime and sort the DataFrame
+df['order_month'] = pd.to_datetime(df['order_month'])
+df.sort_values(by=['category_name', 'order_month'], inplace=True)
+
+# Calculate the monthly growth rate for each category
+df['growth_rate'] = df.groupby('category_name')['total_sales'].pct_change()
+
+# Pivot the DataFrame to have categories as columns and months as rows
+pivot_df = df.pivot(index='order_month', columns='category_name', values='growth_rate')
+
+# Plotting the time series for each category
+plt.figure(figsize=(12, 6))
+for category in pivot_df.columns:
+    plt.plot(pivot_df.index, pivot_df[category], marker='o', label=category)
+
+plt.xlabel('Month')
+plt.ylabel('Growth Rate')
+plt.title('Monthly Growth Rate in Sales for Each Product Category')
+plt.legend()
+plt.grid(True)
+
+# Ensure the directory exists
+os.makedirs('answers/2024-06-23/16_Very Complex', exist_ok=True)
+plt.savefig('answers/2024-06-23/16_Very Complex/plot.png')
+plt.close()

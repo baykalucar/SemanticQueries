@@ -1,0 +1,9 @@
+Execution failed on sql '
+SELECT s.store_id, s.store_name, p.product_id, p.product_name, SUM(oi.quantity) AS total_quantity_sold
+FROM stores s
+JOIN order_items oi ON s.store_id = oi.store_id
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY s.store_id, p.product_id
+ORDER BY s.store_id, total_quantity_sold DESC
+LIMIT 3;
+': no such column: oi.store_id

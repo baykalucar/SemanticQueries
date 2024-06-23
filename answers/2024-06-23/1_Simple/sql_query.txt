@@ -1,0 +1,2 @@
+
+SELECT brand_name FROM brands;

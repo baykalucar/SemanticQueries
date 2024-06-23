@@ -1,0 +1,4 @@
+
+SELECT COUNT(*) AS total_orders_this_year
+FROM orders
+WHERE strftime('%Y', order_date) = strftime('%Y', 'now');

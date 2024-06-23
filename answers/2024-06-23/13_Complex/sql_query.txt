@@ -1,0 +1,5 @@
+
+SELECT AVG(order_items.discount) AS average_discount
+FROM order_items
+JOIN orders ON order_items.order_id = orders.order_id
+WHERE orders.shipped_date BETWEEN DATE('now', 'start of month', '-1 month') AND DATE('now', 'start of month', '-1 day');

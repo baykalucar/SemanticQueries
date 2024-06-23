@@ -1,0 +1,1 @@
+Identify customers who have not made any purchases in the last six months but have placed more than three orders in total.

@@ -1,0 +1,4 @@
+
+SELECT AVG(julianday(shipped_date) - julianday(order_date)) AS average_days_to_ship
+FROM orders
+WHERE julianday(required_date) - julianday(order_date) <= 3;

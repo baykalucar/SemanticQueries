@@ -1,0 +1,1 @@
+What is the average discount given on orders shipped last month?

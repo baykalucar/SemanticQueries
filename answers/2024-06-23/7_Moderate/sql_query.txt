@@ -1,0 +1,4 @@
+
+SELECT p.product_name, b.brand_name
+FROM products AS p
+JOIN brands AS b ON p.brand_id = b.brand_id;

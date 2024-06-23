@@ -1,0 +1,1 @@
+Can you provide the total sales amount for each brand across all stores?

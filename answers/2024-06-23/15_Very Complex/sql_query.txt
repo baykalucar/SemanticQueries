@@ -1,0 +1,22 @@
+
+SELECT 
+    stores.store_id,
+    stores.store_name,
+    COUNT(DISTINCT orders.order_id) AS number_of_orders,
+    products.product_name AS top_selling_product,
+    COUNT(order_items.product_id) AS product_sales
+FROM 
+    stores
+JOIN 
+    orders ON stores.store_id = orders.store_id
+JOIN 
+    order_items ON orders.order_id = order_items.order_id
+JOIN 
+    products ON order_items.product_id = products.product_id
+GROUP BY 
+    stores.store_id, 
+    products.product_id
+ORDER BY 
+    number_of_orders DESC, 
+    product_sales DESC
+LIMIT 1;

@@ -1,0 +1,14 @@
+
+SELECT c.customer_id, c.first_name, c.last_name
+FROM customers c
+WHERE c.customer_id NOT IN (
+    SELECT o.customer_id
+    FROM orders o
+    WHERE o.order_date > DATE('now', '-6 months')
+)
+AND c.customer_id IN (
+    SELECT o.customer_id
+    FROM orders o
+    GROUP BY o.customer_id
+    HAVING COUNT(o.order_id) > 3
+);

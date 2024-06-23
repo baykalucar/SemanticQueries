@@ -1,0 +1,6 @@
+
+SELECT stores.store_id, stores.store_name, SUM(order_items.quantity * (order_items.list_price - (order_items.list_price * order_items.discount))) AS total_revenue
+FROM stores
+JOIN orders ON stores.store_id = orders.store_id
+JOIN order_items ON orders.order_id = order_items.order_id
+GROUP BY stores.store_id, stores.store_name;

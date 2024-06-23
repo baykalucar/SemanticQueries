@@ -20,6 +20,11 @@
       "name": "query",
       "description": "Query to generate",
       "default": ""
+    },
+    {
+      "name":"save_plot_to_disk",
+      "description":"Save the plot to disk",
+      "default": ""
     }
   ]
 }

@@ -1,0 +1,81 @@
+Below, you'll find a comprehensive breakdown of the data schema, including detailed descriptions of each table in a relational database. Additionally, there are sample SQL queries provided along with explanations, as well as descriptions of various chart types and Python code snippets demonstrating how to generate them.
+
+Data Schema:
+{{$data_schema}}
+
+Using the provided data schema, generate possible user questions/queries in natural language. Each query should be classified based on its complexity level. The complexity levels are as follows:
+
+Complexity Levels:
+
+Simple:
+
+Queries that involve a single table.
+Basic filtering conditions.
+Straightforward aggregations (e.g., COUNT, SUM).
+Examples:
+
+"What is the total number of students enrolled?"
+"Show me the list of all courses offered in the fall semester."
+Moderate:
+
+Queries that involve joining two tables.
+More complex filtering conditions with multiple criteria.
+Grouping and aggregations with HAVING clauses.
+Examples:
+
+"How many students are enrolled in each course?"
+"What is the average grade for students in each department?"
+Complex:
+
+Queries that involve multiple joins (three or more tables).
+Nested subqueries.
+Advanced aggregations and analytics functions (e.g., RANK, WINDOW functions).
+Examples:
+
+"List the top 5 students with the highest GPA in each department."
+"Which courses have the highest dropout rates over the past three years?"
+Very Complex:
+
+Queries that involve complex subqueries, recursive queries.
+Usage of advanced SQL features such as CTEs (Common Table Expressions), PIVOT, UNPIVOT.
+Combining multiple types of aggregations, window functions, and intricate filtering.
+Examples:
+
+"Identify the trend of student enrollment by year, broken down by department, and compare it with the number of graduates."
+"Determine the impact of different course delivery methods on student performance, taking into account various demographic factors."
+
+Please generate at least five queries for each complexity level, ensuring a diverse range of questions that cover different aspects of the provided data schema.
+
+Return as below format, do not suggest any SQL query.
+
+[
+    {
+        "complexity": "Simple",
+        "queries": [
+            "What is the total number of students enrolled?",
+            "Show me the list of all courses offered in the fall semester."
+        ]
+    },
+    {
+        "complexity": "Moderate",
+        "queries": [
+            "How many students are enrolled in each course?",
+            "What is the average grade for students in each department?"
+        ]
+    },
+    {
+        "complexity": "Complex",
+        "queries": [
+            "List the top 5 students with the highest GPA in each department.",
+            "Which courses have the highest dropout rates over the past three years?"
+        ]
+    },
+    {
+        "complexity": "Very Complex",
+        "queries": [
+            "Identify the trend of student enrollment by year, broken down by department, and compare it with the number of graduates.",
+            "Determine the impact of different course delivery methods on student performance, taking into account various demographic factors."
+        ]
+    }
+]
+

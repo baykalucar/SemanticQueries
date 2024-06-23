@@ -1,0 +1,1 @@
+Calculate the monthly growth rate in sales for each product category.

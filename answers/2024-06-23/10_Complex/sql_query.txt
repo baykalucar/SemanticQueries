@@ -1,0 +1,8 @@
+
+SELECT DISTINCT c.customer_id, c.first_name, c.last_name, c.phone, c.email, c.street, c.city, c.state, c.zip_code
+FROM customers AS c
+JOIN orders AS o ON c.customer_id = o.customer_id
+JOIN order_items AS oi ON o.order_id = oi.order_id
+JOIN products AS p ON oi.product_id = p.product_id
+JOIN categories AS cat ON p.category_id = cat.category_id
+WHERE cat.category_name = 'Children Bicycles';

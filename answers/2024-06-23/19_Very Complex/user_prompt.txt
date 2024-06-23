@@ -1,0 +1,1 @@
+Compare the sales performance of products by model year within each category.

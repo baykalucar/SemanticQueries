@@ -1,0 +1,17 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Assuming 'df' is a DataFrame with the following columns: ['category_name', 'order_count']
+# where 'order_count' is already sorted in descending order.
+
+# Plotting the most popular product category
+plt.figure(figsize=(10, 6))
+plt.bar(df['category_name'], df['order_count'], color='skyblue')
+plt.xlabel('Product Category')
+plt.ylabel('Number of Orders')
+plt.title('Most Popular Product Category Based on Number of Orders')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/2024-06-23/9_Moderate/plot.png')
+plt.close()
