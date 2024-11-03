@@ -20,7 +20,7 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
     Returns:
         DataFrame or any: The result of the executed query, or 'any' if no query is executed.
     """
-    kernel = initialize_kernel(selected_service = selected_service, huggingface_model=huggingface_model, model_mode=model_mode)
+    kernel = initialize_kernel(selected_service = selected_service, huggingface_model=huggingface_model, model_mode=model_mode, debug= debug)
 
     
     if(query is None):

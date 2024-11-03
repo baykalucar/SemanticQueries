@@ -26,8 +26,6 @@ class ClaudeChatCompletion(ChatCompletionClientBase, BaseModel):
     async def complete_async(self, messages: list, max_tokens: int = 500, temperature: float = 0.0, **kwargs):
         if self.debug:
             print("Claude API Request:", messages)
-        print("API Key:", self.api_key)   
-        print("Model:", self.model)
         # Initialize the Anthropics API client
         client = anthropic.Client(api_key=self.api_key)
         
@@ -84,10 +82,10 @@ class ClaudeChatCompletion(ChatCompletionClientBase, BaseModel):
         # Mock streaming by yielding each result in a single chunk
         yield result
 
-def add_claude_service(kernel):
+def add_claude_service(kernel, debug=False):
      # Define the Claude API settings (model and token)
     claude_api_key, claude_model = claude_settings_from_dot_env()
     service_id = "claude_chat_completion"
     kernel.add_service(
-        ClaudeChatCompletion(service_id=service_id, api_key=claude_api_key, ai_model_id=claude_model, model=claude_model),
+        ClaudeChatCompletion(service_id=service_id, api_key=claude_api_key, ai_model_id=claude_model, model=claude_model, debug=debug),
     )

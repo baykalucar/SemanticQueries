@@ -76,7 +76,7 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
         for chunk in [result]:  # Mock streaming by yielding the entire result as a single chunk
             yield chunk
 
-def add_huggingface_service(kernel: sk.Kernel, huggingface_model: str, model_mode: str = "chat" ):
+def add_huggingface_service(kernel: sk.Kernel, huggingface_model: str, model_mode: str = "chat", debug: bool = False):
     model_id, api_token, api_url = hugging_face_settings_from_dot_env(huggingface_model)
     # api_token = "hf_..."  # Set your HuggingFace API token here
     # model_id = "meta-llama/Llama-3.1-8B-Instruct"  # Set the model ID you want to use from HuggingFace
@@ -85,5 +85,5 @@ def add_huggingface_service(kernel: sk.Kernel, huggingface_model: str, model_mod
     hf_service = InferenceApi(repo_id=model_id, token=api_token)
     service_id = "hf_chat_completion"
     kernel.add_service(
-        HuggingFaceChatCompletion(service_id=service_id, api_token=api_token, api_url=api_url, ai_model_id=model_id, mode=model_mode, max_tokens=2500),
+        HuggingFaceChatCompletion(service_id=service_id, api_token=api_token, api_url=api_url, ai_model_id=model_id, mode=model_mode, max_tokens=2500, debug=debug),
     )
