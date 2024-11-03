@@ -16,3 +16,4 @@ class Service(Enum):
     OpenAI = "openai"
     AzureOpenAI = "azureopenai"
     HuggingFace = "huggingface"
+    ClaudeAI = "claudeai"
