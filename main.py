@@ -9,7 +9,7 @@ from utils.sql_lit_db_utils import run_sql_query
 from utils.parse_utils import parse_text_between_tags
 from services import Service
 
-async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_service=Service.AzureOpenAI, query=None, outputFileDir="", huggingface_model="Llama318BInstruct", model_mode="chat"):
+async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_service=Service.AzureOpenAI, query=None, outputFileDir="", model_name="Llama318BInstruct", model_mode="chat"):
     """
     Prompts the user for a query, rephrases the prompt if required, and executes the query using the Semantic Kernel.
 
@@ -20,7 +20,7 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
     Returns:
         DataFrame or any: The result of the executed query, or 'any' if no query is executed.
     """
-    kernel = initialize_kernel(selected_service = selected_service, huggingface_model=huggingface_model, model_mode=model_mode, debug= debug)
+    kernel = initialize_kernel(selected_service = selected_service, model_name=model_name, model_mode=model_mode, debug= debug)
 
     
     if(query is None):
@@ -88,6 +88,8 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
     if(debug):
         print("result String:", result_string)
     matches_sql = parse_text_between_tags(result_string,"<sql>", "</sql>")
+    if(len(matches_sql) == 0):
+        matches_sql = parse_text_between_tags(result_string,"<SQL>", "</SQL>")
 
     if(prompt_rephrase):
         print("User query: " + query)
@@ -102,13 +104,15 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
         df = run_sql_query(sql)
 
     matches_python = parse_text_between_tags(result_string,"<python>", "</python>")
+    if(len(matches_python) == 0):
+        matches_python = parse_text_between_tags(result_string,"<PYTHON>", "</PYTHON>")
     if len(matches_python) > 0:
         if debug:
             print("PYTHON:", matches_python[0])
         try:
             db_conn = os.getenv("DB_CONNECTION_STRING")
             conn = sqlite3.connect(db_conn)
-            exec(matches_python[0])
+            exec(matches_python[0].replace("\\_", "_"))
             conn.close()
 
             if(outputFileDir != ""):
@@ -117,8 +121,7 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
                     file.write(matches_python[0])
 
         except Exception as e:
-            if debug:
-                print('hata:' + e)
+            print('hata:' + e.__str__() )
         except:
             print("An exception occurred")
     if len(matches_sql) > 0:

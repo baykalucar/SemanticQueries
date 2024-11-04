@@ -20,11 +20,12 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
     api_url: str
     mode: str = "chat"
     debug: bool = False
+    ai_model_name: str
 
     class Config:
         arbitrary_types_allowed = True
 
-    async def complete_async(self, messages: list, max_tokens: int = 500, stream: bool = False, **kwargs):
+    async def complete_async(self, messages: list, max_tokens: int = 2000, stream: bool = False, **kwargs):
         # Create the headers and payload for the request
         if(self.debug):
             print("HuggingFace API Request:", messages)
@@ -33,6 +34,17 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
             "Content-Type": "application/json"
         }
 
+        # Add a new item to messages with role and content
+        
+        messages.insert(0, {"role": "system", "content": "You are an expert software assistant specializing in generating SQL and Python code. When given a natural language query, respond with optimized, well-structured, and efficient code only. Provide explanations only if explicitly requested, focusing primarily on generating accurate SQL and Python snippets that solve the query effectively."})
+
+        for i in range(len(messages) - 1, -1, -1):
+            if messages[i]["role"] == "user":
+                if self.debug:
+                    print("Adding assistant message to chat history")
+                # Insert the new message after the current user message
+                messages.insert(i + 1, {"role": "assistant", "content": "Ok, please continue"})
+
         if(self.mode == "chat"):
             payload = {
                 "model": self.api_url.split('/')[-4],  # model_id
@@ -40,12 +52,18 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
                 "max_tokens": max_tokens,
                 "stream": stream
             }
-        else:
+        elif(self.mode == "text"):
             payload = {
                 "inputs": messages,  # Use 'inputs' field for text completion
                 "parameters": {"max_new_tokens": max_tokens}
             }
-
+        elif(self.mode == "chattext"):
+            payload = {
+                "inputs": messages[0]['content'],  # Use 'inputs' field for text completion
+                "parameters": {"max_new_tokens": max_tokens}
+            }
+        if(self.debug):
+            print("HuggingFace API Request:", payload)
         # Make the request to HuggingFace API
         response = requests.post(self.api_url, headers=headers, json=payload)
         response_json = response.json()
@@ -85,5 +103,5 @@ def add_huggingface_service(kernel: sk.Kernel, huggingface_model: str, model_mod
     hf_service = InferenceApi(repo_id=model_id, token=api_token)
     service_id = "hf_chat_completion"
     kernel.add_service(
-        HuggingFaceChatCompletion(service_id=service_id, api_token=api_token, api_url=api_url, ai_model_id=model_id, mode=model_mode, max_tokens=2500, debug=debug),
+        HuggingFaceChatCompletion(service_id=service_id, api_token=api_token, api_url=api_url, ai_model_id=model_id, mode=model_mode, max_tokens=5000, debug=debug, ai_model_name=huggingface_model),
     )

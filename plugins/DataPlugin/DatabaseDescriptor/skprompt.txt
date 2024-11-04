@@ -23,8 +23,6 @@ SELECT * FROM [Table 1] JOIN [Table 2] ON [Join Condition];
 Grouping and Aggregation:
 SELECT [Column], COUNT(*) FROM [Table Name] GROUP BY [Column];
 
-
-
 Python Visualization:
 Bar Chart: 
 Purpose: Bar charts are used to compare categorical data or show the distribution of data across different categories. They are effective in visualizing discrete data points and highlighting differences between them.
@@ -51,8 +49,6 @@ plt.title('Sample Bar Chart')
 # Show plot
 plt.show()
 </sample_code>
-
-
 
 Histogram:
 Purpose: Histograms are used to display the distribution of continuous data and show the frequency or count of data points within specified intervals or bins. They help identify patterns, trends, and outliers in the data.
@@ -109,7 +105,6 @@ plt.title('Sample Scatter Plot')
 # Show plot
 plt.show()
 </sample_code>
-
 
 Pie Chart: 
 Purpose: Pie charts are used to represent parts of a whole and show the proportion or percentage distribution of different categories within a dataset. They are useful for conveying relative sizes or contributions.
@@ -222,8 +217,9 @@ use aliases for sql so you can avoid ambiguous column name error.
 Import any necessary already installed libraries in the python code snippet like numpy, pandas, matplotlib. 
 Query should be compatible with sqlite database.
 In python code you DONT connect to any database, DONT RUN QUERY, just use the provided data source "df" for visualization.
-For python code, handle the error. If there is an error, print "An error occurred" to the console.
-Expected result string is as follows:
+Column names in the "df" should be same as in the sql query result in order to avoid 'Column not found: quantity' error.
+For python code, handle the error. If there is an error, print error message to the console.
+EXPECTED RESULT FORMAT SHOULD BE AS FOLLOW. It will be parsed accordingly. So IT IS CRITICAL TO FOLLOW THE FORMAT.
 <sql>SELECT ... FROM ... WHERE ...</sql><python>import ...</python>
 {{$query}}
 ++++++

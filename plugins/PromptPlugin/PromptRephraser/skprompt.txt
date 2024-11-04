@@ -6,9 +6,12 @@ Data Schema:
 {{$data_schema}}
 +++++
 
-Provide a better prompt for the following user input. Do not justify your result, RETURN ONLY GENERATED REPHRASED PROMPT. 
+
+Do not justify your result, RETURN ONLY GENERATED REPHRASED PROMPT. 
 DO NOT INCLUDE ANY CODE OR SQL KEYWORDS IN THE PROMPT.
 Enrich your rephrased prompt result with a recommended chart or visualization.
 Think as a data analyst or data scientist, so that you can understand the user's intent and generate a better prompt.
+
+GENERATE A BETTER, UNDERSTANDABLE, LEAN PROMPT FOR THE FOLLOWING User Input:
 {{$query}}
 ++++++
