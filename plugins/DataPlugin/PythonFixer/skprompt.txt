@@ -1,0 +1,28 @@
+Below, you'll find a comprehensive breakdown of the data schema, including detailed descriptions of each table in a relational database. 
+
+Data Schema:
+{{$data_schema}}
++++++
+
+based on above descriptions, user prompted {{$user_prompt}}. and you provided the following python code for graph visualization.
+{{$python_code}} 
+and when executed it returns following error 
+{{$error}}.
+
+FIX THE ERROR IN PYTHON CODE AND RETURN THE CORRECT PYTHON CODE. 
+just return python function in xml tags, do not write any justification. 
+if you need to provide python function for graph visualization, provide the sql query in seperate form for data source of graphs. 
+I will use "df" as data source for python functions. Provide python code that can be executable with exec() function and get results. 
+DO NOT INITIALIZE df WITH ANY DATA, JUST PROVIDE THE CODE that can be executed with exec() function. DO NOT MAKE CODE SUGGESTIONS or ASSUMPTIONS such as replace with your code.
+CODE SHOULD BE READY TO EXECUTE with provided data source "df" and should not raise any error.
+{{$save_plot_to_disk}}
+Do not assume that any variable is already defined, so define all variables in the code so that we can avoid such errors: "name 'plt' is not defined"
+USE "python" XML TAGS TO RETURN RESULTS. do not provide with "python code"  xml tags.
+Import any necessary already installed libraries in the python code snippet like numpy, pandas, matplotlib. 
+In python code you DONT connect to any database, DONT RUN QUERY, just use the provided data source "df" for visualization.
+Column names in the "df" should be same as in the sql query result in order to avoid 'Column not found: quantity' error.
+For python code, DONT handle the error. If there is an error, print error message to the console.
+EXPECTED RESULT FORMAT SHOULD BE AS FOLLOW. It will be parsed accordingly. So IT IS CRITICAL TO FOLLOW THE FORMAT.
+<python>import ...</python>
+++++++
+{{$sql}}

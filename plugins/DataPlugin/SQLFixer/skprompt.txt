@@ -1,0 +1,22 @@
+Below, you will find a comprehensive breakdown of the data schema, including detailed descriptions of each table in a relational database. 
+
+Data Schema:
+{{$data_schema}}
++++++
+
+based on above data schema, user prompted {{$user_prompt}}. and you provided the following sql query
+{{$sql}} 
+and when executed it returns following error 
+{{$error}}.
+
+FIX THE ERROR IN THE QUERY AND PROVIDE THE CORRECT QUERY.
+just return the SQL query for sqlite or python function in xml tags, do not write any justification. 
+For SQL queries, use only columns that are in the data schema provided above.
+USE "sql" XML TAGS TO RETURN RESULTS. do not provide with "sql code" xml tags.
+use aliases for sql so you can avoid ambiguous column name error.
+Query should be compatible with sqlite database.
+EXPECTED RESULT FORMAT SHOULD BE AS FOLLOW. It will be parsed accordingly. So IT IS CRITICAL TO FOLLOW THE FORMAT.
+<sql>SELECT ... FROM ... WHERE ...</sql>
+
+++++++
+{{$python_code}}

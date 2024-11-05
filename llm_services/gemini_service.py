@@ -22,8 +22,7 @@ class GeminiChatCompletion(ChatCompletionClientBase, BaseModel):
         arbitrary_types_allowed = True
 
     async def complete_async(self, messages: list, **kwargs):
-        if self.debug:
-            print("Gemini API Request:", messages)
+
         
         api_key = gemini_settings_from_dot_env()
         # Initialize the Gemini API client
@@ -37,8 +36,7 @@ class GeminiChatCompletion(ChatCompletionClientBase, BaseModel):
         # Extract the text response
         content = response.text if response else ""
         
-        if self.debug:
-            print("Gemini API Response:", content)
+
         
         # Yield the single completion result
         return CompletionResult(content=content, metadata={"model": self.model})

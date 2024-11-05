@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "description": "Generate queries from a given database schema",
+  "description": "Fix error in query with a given database schema",
   "execution_settings": {
     "default": {
       "max_tokens": 5000,

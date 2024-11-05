@@ -1,11 +1,9 @@
-Below, you'll find a comprehensive breakdown of the data schema, including detailed descriptions of each table in a relational database. 
-Additionally, there are sample SQL queries provided along with explanations, as well as descriptions of various chart types and Python code snippets demonstrating how to generate them. 
-Feel free to request specific queries or Python code for your user interactions.
+This schema includes descriptions of each table, including column names, data types, and relationships between tables. Use only this schema for your queries, and refrain from assuming any additional tables or columns.
 
 Data Schema:
 {{$data_schema}}
-+++++
 
+Additionally, there are sample SQL queries provided along with explanations, as well as descriptions of various chart types and Python code snippets demonstrating how to generate them. 
 Queries and Visualizations:
 SQL Queries:
 Basic Data Exploration:
@@ -204,22 +202,45 @@ plt.show()
 
 </sample_code>
 
+Response Components
+1. SQL Query Generation
+Generate a SQL query based on the user prompt and the provided schema.
 
-based on above descriptions, user prompted below text. just return the SQL query for sqlite or python function in xml tags, do not write any justification. 
-if you need to provide python function for graph visualization, provide the sql query in seperate form for data source of graphs. 
-I will use "df" as data source for python functions. Provide python code that can be executable with exec() function and get results. 
-DO NOT INITIALIZE df WITH ANY DATA, JUST PROVIDE THE CODE that can be executed with exec() function.
+Database: Assume the query is for an SQLite database.
+Schema Compliance: Only use columns explicitly listed in the schema.
+Aliasing: Use aliases for column names to avoid ambiguous column errors.
+SQL Tagging: Wrap the query within <sql>...</sql> tags.
+
+2. Python Code for Visualization
+If the users prompt requests a visualization, provide Python code for creating a graph using the df DataFrame as the data source.
+
+Data Source: Assume df is a pandas DataFrame containing the query result data.
+Do not initialize df or connect to any database.
+The df columns should match the SQL query result columns.
+Imports: Import all necessary libraries (e.g., pandas, numpy, matplotlib).
+Code Execution: Write code that can be directly executed with exec(), without placeholders or modification.
+Error Handling: Avoid adding any error-handling or placeholder comments.
+Python Tagging: Wrap the code within <python>...</python> tags.
 {{$save_plot_to_disk}}
-Do not assume that any variable is already defined, so define all variables in the code so that we can avoid such errors: "name 'plt' is not defined"
-For SQL queries, use only columns that are in the data schema provided above.
-USE "sql" and "python" XML TAGS TO RETURN RESULTS. do not provide with "python code" or "sql code" xml tags.
-use aliases for sql so you can avoid ambiguous column name error.
-Import any necessary already installed libraries in the python code snippet like numpy, pandas, matplotlib. 
-Query should be compatible with sqlite database.
-In python code you DONT connect to any database, DONT RUN QUERY, just use the provided data source "df" for visualization.
-Column names in the "df" should be same as in the sql query result in order to avoid 'Column not found: quantity' error.
-For python code, handle the error. If there is an error, print error message to the console.
-EXPECTED RESULT FORMAT SHOULD BE AS FOLLOW. It will be parsed accordingly. So IT IS CRITICAL TO FOLLOW THE FORMAT.
-<sql>SELECT ... FROM ... WHERE ...</sql><python>import ...</python>
-{{$query}}
+Additional Requirements
+Avoid Undefined Variable Errors: Define any necessary variables that arent part of df, such as plot labels.
+Direct Execution: The Python code should be executable without any modification. Do not provide any code such as exec() itself, as it would raise errors.
+
+User Prompt
+{{$user_prompt}}
+
+Expected Output
+YOUR RESPONSE MUST STRICTLY ADHERE TO THE FOLLOWING XML FORMAT.
+- Enclose SQL code in <sql> ... </sql>
+- Enclose Python code in <python> ... </python>
+- Do not include any additional text or explanations
+- Do not include CDATA tags.
+
+Example Response Format:
+<sql>SELECT column1, column2 FROM table WHERE condition;</sql>
+<python>import pandas as pd
+import matplotlib.pyplot as plt
+# Example Python visualization code here
+</python>
 ++++++
+{{$sql}}{{$error}}{{$python_code}}

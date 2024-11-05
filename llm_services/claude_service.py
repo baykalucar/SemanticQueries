@@ -24,8 +24,6 @@ class ClaudeChatCompletion(ChatCompletionClientBase, BaseModel):
 
 
     async def complete_async(self, messages: list, max_tokens: int = 500, temperature: float = 0.0, **kwargs):
-        if self.debug:
-            print("Claude API Request:", messages)
         # Initialize the Anthropics API client
         client = anthropic.Client(api_key=self.api_key)
         
@@ -54,10 +52,6 @@ class ClaudeChatCompletion(ChatCompletionClientBase, BaseModel):
             content = " ".join([block.text for block in response.content if hasattr(block, "text")])
         else:
             raise ValueError("Unexpected response format")
-
-        
-        if self.debug:
-            print("Claude API Response:", content)
         
         # Yield the single completion result
         return CompletionResult(content=content, metadata={"model": self.model})

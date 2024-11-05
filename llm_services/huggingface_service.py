@@ -27,8 +27,7 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
 
     async def complete_async(self, messages: list, max_tokens: int = 2000, stream: bool = False, **kwargs):
         # Create the headers and payload for the request
-        if(self.debug):
-            print("HuggingFace API Request:", messages)
+
         headers = {
             "Authorization": f"Bearer {self.api_token}",
             "Content-Type": "application/json"
@@ -40,8 +39,6 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
 
         for i in range(len(messages) - 1, -1, -1):
             if messages[i]["role"] == "user":
-                if self.debug:
-                    print("Adding assistant message to chat history")
                 # Insert the new message after the current user message
                 messages.insert(i + 1, {"role": "assistant", "content": "Ok, please continue"})
 
@@ -62,16 +59,14 @@ class HuggingFaceChatCompletion(ChatCompletionClientBase, BaseModel):
                 "inputs": messages[0]['content'],  # Use 'inputs' field for text completion
                 "parameters": {"max_new_tokens": max_tokens}
             }
-        if(self.debug):
-            print("HuggingFace API Request:", payload)
+
         # Make the request to HuggingFace API
         response = requests.post(self.api_url, headers=headers, json=payload)
         response_json = response.json()
 
         # Log the response for debugging
         # print("HuggingFace API Response:", response_json)
-        if(self.debug):
-            print("HuggingFace API Response:", response_json)
+ 
         # Handle the response format
         if "choices" in response_json:
             
