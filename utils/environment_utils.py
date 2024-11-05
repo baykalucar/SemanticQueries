@@ -20,3 +20,15 @@ def hugging_face_settings_from_dot_env(p_model="Llama318BInstruct") :
     api_key = config.get("HUGGINGFACE_API_KEY", None)
     api_url = config.get("HUGGINGFACE_API_URL_" + p_model, None)
     return model_name, api_key, api_url
+
+def gemini_settings_from_dot_env():
+    """
+    Reads the Gemini API settings from the .env file.
+
+    Returns:
+        str: The API key for the Gemini API.
+
+    """
+    config = dotenv_values(".env")
+    api_key = config.get("GEMINI_API_KEY", None)
+    return api_key
