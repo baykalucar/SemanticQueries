@@ -1,0 +1,28 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+
+# Sample data (replace with your actual data from the SQL query)
+data = {'category_name': ['Children Bicycles', 'Children Bicycles', 'Comfort Bicycles', 'Comfort Bicycles'],
+        'order_month': ['01', '07', '01', '07'],
+        'order_count': [10, 25, 15, 30]}
+df = pd.DataFrame(data)
+
+# Convert order_month to numeric for plotting
+df['order_month'] = pd.to_numeric(df['order_month'])
+
+# Create the plot
+fig, ax = plt.subplots(figsize=(10, 6))
+
+for category in df['category_name'].unique():
+    category_data = df[df['category_name'] == category]
+    ax.plot(category_data['order_month'], category_data['order_count'], marker='o', label=category)
+
+ax.set_xlabel('Month')
+ax.set_ylabel('Order Count')
+ax.set_title('Seasonal Sales Patterns by Category')
+ax.legend()
+ax.xaxis.set_major_locator(mdates.MonthLocator())
+plt.savefig('answers/gemini/2024-12-27/13_Complex/plot.png')
+

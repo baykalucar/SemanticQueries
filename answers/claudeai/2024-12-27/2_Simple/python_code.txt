@@ -1,0 +1,10 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['category_name'], height=1)
+plt.xticks(rotation=45, ha='right')
+plt.title('Product Categories')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/2_Simple/plot.png')
+plt.close()

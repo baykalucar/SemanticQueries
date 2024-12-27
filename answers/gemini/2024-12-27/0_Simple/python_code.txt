@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample data (replace with your actual data from SQL query)
+data = {'total_products': [100]} 
+df = pd.DataFrame(data)
+
+# Create the bar chart
+plt.figure(figsize=(6, 4))  # Adjust figure size if needed
+plt.bar(df['total_products'], df['total_products'], color='skyblue')
+plt.xlabel('Total Products')
+plt.ylabel('Count')
+plt.title('Total Number of Products in Inventory')
+plt.savefig('answers/gemini/2024-12-27/0_Simple/plot.png')
+

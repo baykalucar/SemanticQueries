@@ -1,0 +1,28 @@
+
+```sql
+SELECT
+  c.category_name AS category,
+  STRFTIME('%m', o.order_date) AS month, -- Extract month from order date
+  s.store_name AS store,
+  SUM(oi.quantity * oi.list_price * (
+    1 - oi.discount
+  )) AS total_revenue,
+  SUM(oi.quantity * oi.list_price * oi.discount) AS total_discount
+FROM order_items AS oi
+JOIN orders AS o
+  ON oi.order_id = o.order_id
+JOIN products AS p
+  ON oi.product_id = p.product_id
+JOIN categories AS c
+  ON p.category_id = c.category_id
+JOIN stores AS s
+  ON o.store_id = s.store_id
+GROUP BY
+  category,
+  month,
+  store
+ORDER BY
+  category,
+  month,
+  store;
+```

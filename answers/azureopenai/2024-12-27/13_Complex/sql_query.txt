@@ -1,0 +1,8 @@
+
+SELECT c.category_name, strftime('%m', o.order_date) AS month, COUNT(*) AS sales_count
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+JOIN categories c ON p.category_id = c.category_id
+GROUP BY c.category_name, month
+ORDER BY c.category_name, month;

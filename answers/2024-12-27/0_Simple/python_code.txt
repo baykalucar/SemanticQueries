@@ -1,0 +1,10 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.bar(['Total Products'], [df['total_products'].iloc[0]], color='blue')
+plt.title('Total Number of Products in Inventory')
+plt.ylabel('Count')
+plt.grid(axis='y')
+plt.savefig('answers/2024-12-27/0_Simple/plot.png')
+plt.close()

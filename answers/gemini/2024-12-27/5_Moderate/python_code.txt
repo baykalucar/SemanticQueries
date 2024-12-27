@@ -1,0 +1,20 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample DataFrame (replace with your actual data)
+data = {'store_name': ['Santa Cruz Bikes', 'Baldwin Bikes', 'Rowlett Bikes'],
+        'total_inventory_value': [10000, 15000, 12000]}
+df = pd.DataFrame(data)
+
+# Create the bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['total_inventory_value'], color=['skyblue', 'coral', 'lightgreen'])
+plt.xlabel('Store Name')
+plt.ylabel('Total Inventory Value')
+plt.title('Total Inventory Value for Each Store')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/5_Moderate/plot.png')
+

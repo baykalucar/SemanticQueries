@@ -1,0 +1,23 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'store_id': [1, 1, 2, 2, 3, 3],
+    'product_id': [1, 2, 1, 2, 1, 2],
+    'total_sales': [100, 150, 200, 250, 300, 350]
+})
+
+# Plotting total sales for each product in each store
+fig, ax = plt.subplots(figsize=(10, 6))
+for key, grp in df.groupby(['store_id']):
+    ax = grp.plot(ax=ax, kind='line', x='product_id', y='total_sales', label=f'Store {key}')
+
+plt.title('Total Sales for Each Product in Each Store')
+plt.xlabel('Product ID')
+plt.ylabel('Total Sales')
+plt.legend(title='Store ID')
+plt.grid(True)
+plt.savefig('answers/azureopenai/2024-12-27/19_Very Complex/plot.png')
+plt.show()

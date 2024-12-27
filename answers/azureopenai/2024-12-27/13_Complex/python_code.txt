@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+categories = df['category_name'].unique()
+
+plt.figure(figsize=(12, 8))
+
+for category in categories:
+    category_data = df[df['category_name'] == category]
+    plt.plot(category_data['month'], category_data['sales_count'], marker='o', label=category)
+
+plt.xlabel('Month')
+plt.ylabel('Sales Count')
+plt.title('Seasonal Sales Patterns by Category')
+plt.xticks(rotation=45)
+plt.legend(title='Category')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/13_Complex/plot.png')
+plt.show()

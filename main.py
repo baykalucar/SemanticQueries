@@ -214,33 +214,38 @@ async def rephrase_prompt(kernel, plugins_directory, data_schema, query):
     else:
         return str(rephrased_prompt_result)
 
-async def GenerateQuestions(selected_service=Service.AzureOpenAI,huggingface_model="Llama318BInstruct"):
+async def GenerateQuestions(selected_service=Service.AzureOpenAI,model_name="Llama318BInstruct", model_mode="chat", debug=False):
     """
     Generates possible questions using the Semantic Kernel and prints the results.
     """
-    kernel = initialize_kernel(selected_service, huggingface_model)
+    kernel = initialize_kernel(selected_service, model_name=model_name, model_mode=model_mode, debug=debug)
     
     plugins_directory = "plugins"
     file_path = "data_schema.txt"
     data_schema = read_data_schema_from_file(file_path)
+    print("Generating questions...")
     promptFunctions = kernel.import_plugin_from_prompt_directory(plugins_directory, "DataPlugin")
     queryGeneratorFunction = promptFunctions["QuestionGenerator"]
     result = await kernel.invoke(queryGeneratorFunction, sk.KernelArguments(data_schema=data_schema))
     if(hasattr(result, 'data')):
+        print("Parsing result data...")
         result_string = result.data
     elif (result.__dict__):
         # Access the value (which contains the list of CompletionResult objects)
         # print("Value: ", result.value)
+        print("Parsing result value...")
         completion_results = result.value
 
         # Check if it's a list and access the content of the first CompletionResult
         if isinstance(completion_results, list) and len(completion_results) > 0:
             first_result = completion_results[0]
             # print(first_result.content)  # This will print the content of the first result
+            print("Parsing result content...")
             result_string = first_result.content
         else:
             print("No completion results found.")
     else:
+        print("Parsing result string...")
         result_string = str(result)
     # Generate a unique filename based on the current date
     filename = "questions/" + datetime.datetime.now().strftime("%Y-%m-%d") + ".txt"
@@ -252,7 +257,7 @@ async def GenerateQuestions(selected_service=Service.AzureOpenAI,huggingface_mod
     print("Result saved to:", filename)
     print(result_string)
 
-async def ReadQuestionsAndGenerateAnswers(filename, debug=False, selectedService=Service.AzureOpenAI):
+async def ReadQuestionsAndGenerateAnswers(filename, debug=False, selected_service=Service.AzureOpenAI):
     """
     Reads questions from a file and generates answers using the Semantic Kernel.
 
@@ -270,7 +275,7 @@ async def ReadQuestionsAndGenerateAnswers(filename, debug=False, selectedService
     filename = os.path.splitext(filename)[0]
 
     # Create the directory path
-    directory_path = "answers/" + filename 
+    directory_path = "answers/" + selected_service.value + "/" + filename 
 
     print("Directory path: ", directory_path)   
 
@@ -294,7 +299,7 @@ async def ReadQuestionsAndGenerateAnswers(filename, debug=False, selectedService
                 os.makedirs(directory_path + "/"  + questionFolderName + "/")
 
             try:
-                await PromptToQueryResult(debug=debug, prompt_rephrase=False, selectedService=selectedService, query=question, outputFileDir=directory_path + "/" + questionFolderName + "/")
+                await PromptToQueryResult(debug=debug, prompt_rephrase=False, selected_service=selected_service, user_prompt=question, outputFileDir=directory_path + "/" + questionFolderName + "/")
             except Exception as e:
                 error_message = str(e)
                 with open(directory_path + "/" + questionFolderName + "/error.txt", "w") as file:

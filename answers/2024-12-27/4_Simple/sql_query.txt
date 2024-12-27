@@ -1,0 +1,4 @@
+
+SELECT COUNT(*) as active_staff_count 
+FROM staffs 
+WHERE active = 1;

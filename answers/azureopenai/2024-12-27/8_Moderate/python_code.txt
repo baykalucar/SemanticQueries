@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'category', 'brand', 'product_count'
+
+# Create a pivot table for better visualization
+pivot_table = df.pivot(index='category', columns='brand', values='product_count')
+
+# Plotting
+pivot_table.plot(kind='bar', stacked=True, figsize=(10, 7))
+plt.title('Number of Products in Each Category and Brand Combination')
+plt.xlabel('Category')
+plt.ylabel('Product Count')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot
+plt.savefig('answers/azureopenai/2024-12-27/8_Moderate/plot.png')
+plt.show()

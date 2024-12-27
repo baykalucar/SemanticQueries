@@ -1,0 +1,4 @@
+
+SELECT store_id, AVG(JULIANDAY(shipped_date) - JULIANDAY(order_date)) AS avg_processing_time
+FROM orders
+GROUP BY store_id;

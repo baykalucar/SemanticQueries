@@ -1,0 +1,23 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'brand_name', 'category_name', and 'product_count'
+df = pd.DataFrame({
+    'brand_name': ['Electra', 'Electra', 'Haro', 'Haro'],
+    'category_name': ['Children Bicycles', 'Comfort Bicycles', 'Children Bicycles', 'Comfort Bicycles'],
+    'product_count': [2, 1, 1, 1]
+})
+
+
+df_pivot = df.pivot_table(index='brand_name', columns='category_name', values='product_count', aggfunc='sum', fill_value=0)
+
+df_pivot.plot(kind='bar', stacked=True)
+plt.title('Number of Products per Brand and Category')
+plt.xlabel('Brand')
+plt.ylabel('Number of Products')
+plt.xticks(rotation=0)
+plt.legend(title='Category')
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/8_Moderate/plot.png')
+

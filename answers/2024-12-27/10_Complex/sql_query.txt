@@ -1,0 +1,22 @@
+
+WITH customer_totals AS (
+    SELECT 
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_spent,
+        GROUP_CONCAT(DISTINCT p.product_name) as purchased_products
+    FROM customers c
+    JOIN orders o ON c.customer_id = o.customer_id
+    JOIN order_items oi ON o.order_id = oi.order_id
+    JOIN products p ON oi.product_id = p.product_id
+    GROUP BY c.customer_id, c.first_name, c.last_name
+    ORDER BY total_spent DESC
+    LIMIT 5
+)
+SELECT 
+    customer_id,
+    first_name || ' ' || last_name as customer_name,
+    ROUND(total_spent, 2) as total_spent,
+    purchased_products
+FROM customer_totals;

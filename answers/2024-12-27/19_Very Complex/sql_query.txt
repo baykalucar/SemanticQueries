@@ -1,0 +1,36 @@
+
+WITH monthly_sales AS (
+    SELECT 
+        s.store_id,
+        p.product_id,
+        p.product_name,
+        strftime('%Y-%m', o.order_date) AS month,
+        SUM(oi.quantity) as total_sales,
+        AVG(oi.quantity) as avg_sales,
+        MAX(oi.quantity) as max_sales
+    FROM orders o
+    JOIN order_items oi ON o.order_id = oi.order_id
+    JOIN stores s ON o.store_id = s.store_id
+    JOIN products p ON oi.product_id = p.product_id
+    GROUP BY s.store_id, p.product_id, strftime('%Y-%m', o.order_date)
+),
+inventory_metrics AS (
+    SELECT 
+        store_id,
+        product_id,
+        product_name,
+        AVG(total_sales) as avg_monthly_sales,
+        MAX(total_sales) as peak_monthly_sales,
+        AVG(max_sales) as avg_max_order_size
+    FROM monthly_sales
+    GROUP BY store_id, product_id, product_name
+)
+SELECT 
+    i.*,
+    stk.quantity as current_stock,
+    ROUND(i.avg_monthly_sales * 1.5) as suggested_base_stock,
+    ROUND(i.peak_monthly_sales * 1.2) as suggested_max_stock
+FROM inventory_metrics i
+JOIN stocks stk ON i.store_id = stk.store_id 
+    AND i.product_id = stk.product_id
+ORDER BY i.store_id, i.avg_monthly_sales DESC

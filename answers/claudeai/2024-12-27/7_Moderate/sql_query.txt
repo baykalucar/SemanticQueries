@@ -1,0 +1,9 @@
+
+SELECT 
+    s.store_name,
+    ROUND(AVG(oi.quantity * oi.list_price * (1 - oi.discount)), 2) as avg_order_value
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN stores s ON o.store_id = s.store_id
+GROUP BY s.store_id, s.store_name
+ORDER BY avg_order_value DESC;

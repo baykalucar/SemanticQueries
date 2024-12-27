@@ -1,0 +1,13 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['product_name'], df['turnover_rate'])
+plt.xticks(rotation=45, ha='right')
+plt.title('Top 10 Products by Turnover Rate')
+plt.xlabel('Product Name')
+plt.ylabel('Turnover Rate (Sales/Current Stock)')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/11_Complex/plot.png')
+plt.close()

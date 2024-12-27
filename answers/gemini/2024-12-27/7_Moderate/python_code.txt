@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample DataFrame (replace with your actual data)
+data = {'store_name': ['Store A', 'Store B', 'Store C'], 'average_order_value': [150, 200, 180]}
+df = pd.DataFrame(data)
+
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['average_order_value'], color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.xlabel('Store Name')
+plt.ylabel('Average Order Value')
+plt.title('Average Order Value by Store')
+plt.xticks(rotation=0)
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/7_Moderate/plot.png')
+

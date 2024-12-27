@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['total_inventory_value'])
+plt.xticks(rotation=45)
+plt.xlabel('Store Name')
+plt.ylabel('Total Inventory Value ($)')
+plt.title('Total Inventory Value by Store')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/5_Moderate/plot.png')
+plt.close()

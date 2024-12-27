@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'product_name': ['Product A', 'Product B', 'Product C'],  # Example data
+    'total_quantity_sold': [150, 120, 100]  # Example data
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['total_quantity_sold'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.title('Top 10 Products with Highest Turnover Rate')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/11_Complex/plot.png')
+plt.show()

@@ -1,0 +1,1 @@
+Calculate the year-over-year growth rate for each product category, accounting for seasonal variations and stock availability.

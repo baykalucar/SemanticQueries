@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample data (replace with your actual data)
+data = {'category_name': ['Children Bicycles', 'Comfort Bicycles']}
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(8, 6))  # Adjust figure size as needed
+plt.bar(df['category_name'], df['category_name'].value_counts())
+plt.xlabel("Category Name")
+plt.ylabel("Count")
+plt.title("Different Product Categories")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/2_Simple/plot.png')
+

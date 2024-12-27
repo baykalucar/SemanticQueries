@@ -1,0 +1,2 @@
+
+SELECT stores.store_name, SUM(order_items.quantity * order_items.list_price * (1 - order_items.discount)) AS total_revenue FROM orders INNER JOIN order_items ON orders.order_id = order_items.order_id INNER JOIN stores ON orders.store_id = stores.store_id WHERE strftime('%Y', orders.order_date) = '2016' GROUP BY stores.store_name;

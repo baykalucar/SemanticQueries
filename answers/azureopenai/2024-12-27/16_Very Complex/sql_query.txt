@@ -1,0 +1,8 @@
+
+SELECT c.customer_id, c.first_name, c.last_name, c.city, c.state, p.product_name, COUNT(oi.product_id) AS purchase_count
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY c.customer_id, p.product_id
+ORDER BY purchase_count DESC;

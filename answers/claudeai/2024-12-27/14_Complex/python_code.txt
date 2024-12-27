@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['avg_processing_days'])
+plt.title('Average Order Processing Time by Store')
+plt.xlabel('Store Name')
+plt.ylabel('Average Processing Days')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/14_Complex/plot.png')
+plt.close()

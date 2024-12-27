@@ -1,0 +1,13 @@
+
+WITH order_processing AS (
+  SELECT 
+    s.store_id,
+    s.store_name,
+    ROUND(AVG(JULIANDAY(shipped_date) - JULIANDAY(order_date)), 2) as avg_processing_days
+  FROM orders o
+  JOIN stores s ON o.store_id = s.store_id
+  WHERE o.shipped_date IS NOT NULL
+  GROUP BY s.store_id, s.store_name
+)
+SELECT * FROM order_processing
+ORDER BY store_id;

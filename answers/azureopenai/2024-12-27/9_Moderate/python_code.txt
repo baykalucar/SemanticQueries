@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'store': ['Santa Cruz Bikes', 'Baldwin Bikes', 'Rowlett Bikes'],
+    'total_revenue': [100000, 150000, 120000]  # Example data
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store'], df['total_revenue'], color='skyblue')
+plt.xlabel('Store')
+plt.ylabel('Total Revenue')
+plt.title('Total Revenue by Store in 2016')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/9_Moderate/plot.png')
+plt.show()

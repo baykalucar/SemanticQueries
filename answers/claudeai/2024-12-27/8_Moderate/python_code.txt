@@ -1,0 +1,22 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(12, 8))
+pivot_df = df.pivot(index='category_name', columns='brand_name', values='product_count')
+plt.imshow(pivot_df, cmap='YlOrRd')
+plt.colorbar()
+
+for i in range(len(pivot_df.index)):
+    for j in range(len(pivot_df.columns)):
+        plt.text(j, i, int(pivot_df.iloc[i, j]) if not np.isnan(pivot_df.iloc[i, j]) else '0',
+                ha='center', va='center')
+
+plt.title('Product Count by Category and Brand')
+plt.xlabel('Brand')
+plt.ylabel('Category')
+plt.xticks(range(len(pivot_df.columns)), pivot_df.columns, rotation=45, ha='right')
+plt.yticks(range(len(pivot_df.index)), pivot_df.index)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/8_Moderate/plot.png')
+plt.close()

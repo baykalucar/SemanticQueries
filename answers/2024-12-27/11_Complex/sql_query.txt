@@ -1,0 +1,25 @@
+
+WITH product_turnover AS (
+    SELECT 
+        p.product_id,
+        p.product_name,
+        SUM(oi.quantity) as total_sold,
+        SUM(s.quantity) as current_stock,
+        CASE 
+            WHEN SUM(s.quantity) = 0 THEN NULL
+            ELSE CAST(SUM(oi.quantity) AS FLOAT) / NULLIF(SUM(s.quantity), 0)
+        END as turnover_rate
+    FROM products p
+    LEFT JOIN order_items oi ON p.product_id = oi.product_id
+    LEFT JOIN stocks s ON p.product_id = s.product_id
+    GROUP BY p.product_id, p.product_name
+    HAVING turnover_rate IS NOT NULL
+)
+SELECT 
+    product_name,
+    total_sold,
+    current_stock,
+    ROUND(turnover_rate, 2) as turnover_rate
+FROM product_turnover
+ORDER BY turnover_rate DESC
+LIMIT 10

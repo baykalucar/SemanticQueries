@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'store_id', 'total_inventory_value'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_id'], df['total_inventory_value'], color='skyblue')
+plt.xlabel('Store ID')
+plt.ylabel('Total Inventory Value')
+plt.title('Total Inventory Value for Each Store')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/5_Moderate/plot.png')
+plt.show()

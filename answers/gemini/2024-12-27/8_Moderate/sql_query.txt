@@ -1,0 +1,2 @@
+
+SELECT b.brand_name, c.category_name, COUNT(p.product_id) AS product_count FROM products p JOIN brands b ON p.brand_id = b.brand_id JOIN categories c ON p.category_id = c.category_id GROUP BY b.brand_name, c.category_name;

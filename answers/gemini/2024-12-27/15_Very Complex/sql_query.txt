@@ -1,0 +1,20 @@
+
+-- Unable to provide a query that accounts for seasonal variations without additional data on seasonality.  The following query calculates year-over-year growth for each product category based on available data.  Additional data (e.g., sales data by month) would be needed to account for seasonal variations.
+SELECT
+  c.category_name,
+  p.model_year,
+  SUM(oi.quantity) AS total_quantity_sold,
+  (
+    SUM(oi.quantity) - LAG(SUM(oi.quantity), 1, 0) OVER (PARTITION BY c.category_id ORDER BY p.model_year)
+  ) * 100.0 / LAG(SUM(oi.quantity), 1, 1) OVER (PARTITION BY c.category_id ORDER BY p.model_year) AS yoy_growth
+FROM order_items AS oi
+JOIN products AS p
+  ON oi.product_id = p.product_id
+JOIN categories AS c
+  ON p.category_id = c.category_id
+GROUP BY
+  c.category_name,
+  p.model_year
+ORDER BY
+  c.category_name,
+  p.model_year;

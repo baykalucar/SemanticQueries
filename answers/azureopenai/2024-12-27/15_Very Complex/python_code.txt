@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df['year_over_year_growth'] = df.groupby('category')['total_sales'].pct_change() * 100
+
+plt.figure(figsize=(10, 6))
+for category, group in df.groupby('category'):
+    plt.plot(group['year'], group['year_over_year_growth'], marker='o', label=category)
+
+plt.xlabel('Year')
+plt.ylabel('Year-over-Year Growth Rate (%)')
+plt.title('Year-over-Year Growth Rate by Product Category')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/15_Very Complex/plot.png')
+plt.show()

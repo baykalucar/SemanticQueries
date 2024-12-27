@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df contains the result of the first SQL query
+top_customers = df[['first_name', 'last_name', 'total_purchase_amount']]
+
+# Plotting the top 5 customers by total purchase amount
+plt.figure(figsize=(10, 6))
+plt.bar(top_customers['first_name'] + ' ' + top_customers['last_name'], top_customers['total_purchase_amount'], color='skyblue')
+plt.xlabel('Customer Name')
+plt.ylabel('Total Purchase Amount')
+plt.title('Top 5 Customers by Total Purchase Amount')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/10_Complex/plot.png')
+plt.show()

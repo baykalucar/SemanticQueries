@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is the pandas DataFrame containing the query results
+df.plot(x='staff_name', y=['total_orders', 'total_revenue', 'conversion_rate', 'avg_order_value'], kind='bar', figsize=(15, 10))
+plt.title('Sales Performance of Each Staff Member')
+plt.xlabel('Staff Member')
+plt.ylabel('Value')
+plt.xticks(rotation=45, ha='right')
+plt.legend(title='Metrics')
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/12_Complex/plot.png')
+

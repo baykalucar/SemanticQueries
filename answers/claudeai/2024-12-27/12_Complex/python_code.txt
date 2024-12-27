@@ -1,0 +1,19 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['staff_name'], df['total_sales'])
+plt.xticks(rotation=45, ha='right')
+plt.title('Sales Performance by Staff Member')
+plt.xlabel('Staff Member')
+plt.ylabel('Total Sales ($)')
+plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+
+# Format y-axis labels as currency
+current_values = plt.gca().get_yticks()
+plt.gca().set_yticklabels(['${:,.0f}'.format(x) for x in current_values])
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/12_Complex/plot.png')
+plt.close()

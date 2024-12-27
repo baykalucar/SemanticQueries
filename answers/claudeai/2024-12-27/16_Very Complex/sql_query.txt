@@ -1,0 +1,35 @@
+
+WITH customer_purchases AS (
+  SELECT 
+    oi.product_id,
+    o.customer_id,
+    COUNT(*) as purchase_count,
+    SUM(oi.quantity) as total_quantity
+  FROM order_items oi
+  JOIN orders o ON oi.order_id = o.order_id
+  GROUP BY oi.product_id, o.customer_id
+),
+product_pairs AS (
+  SELECT 
+    cp1.customer_id,
+    p1.product_name as product1,
+    p2.product_name as product2,
+    COUNT(*) as pair_frequency
+  FROM customer_purchases cp1
+  JOIN customer_purchases cp2 
+    ON cp1.customer_id = cp2.customer_id 
+    AND cp1.product_id < cp2.product_id
+  JOIN products p1 ON cp1.product_id = p1.product_id
+  JOIN products p2 ON cp2.product_id = p2.product_id
+  GROUP BY cp1.customer_id, p1.product_name, p2.product_name
+  HAVING pair_frequency > 1
+)
+SELECT 
+  product1,
+  product2,
+  COUNT(*) as frequency,
+  AVG(pair_frequency) as avg_purchase_together
+FROM product_pairs
+GROUP BY product1, product2
+ORDER BY frequency DESC
+LIMIT 10

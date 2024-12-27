@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['store_id'])
+plt.xticks(rotation=45)
+plt.xlabel('Store Name')
+plt.ylabel('Store ID')
+plt.title('California Stores')
+plt.tight_layout()
+plt.savefig('answers/2024-12-27/3_Simple/plot.png')
+plt.close()

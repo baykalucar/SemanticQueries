@@ -1,0 +1,2 @@
+
+SELECT c.first_name, c.last_name FROM customers c JOIN orders o ON c.customer_id = o.customer_id WHERE c.phone IS NULL;

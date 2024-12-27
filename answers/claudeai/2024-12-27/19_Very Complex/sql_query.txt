@@ -1,0 +1,40 @@
+
+WITH monthly_sales AS (
+  SELECT 
+    s.store_id,
+    p.product_id,
+    p.product_name,
+    DATE_FORMAT(o.order_date, '%Y-%m') as month,
+    SUM(oi.quantity) as total_sales,
+    AVG(DATEDIFF(o.shipped_date, o.order_date)) as avg_lead_time
+  FROM orders o
+  JOIN order_items oi ON o.order_id = oi.order_id
+  JOIN stores s ON o.store_id = s.store_id
+  JOIN products p ON oi.product_id = p.product_id
+  GROUP BY s.store_id, p.product_id, p.product_name, month
+),
+inventory_metrics AS (
+  SELECT
+    store_id,
+    product_id,
+    product_name,
+    AVG(total_sales) as avg_monthly_sales,
+    MAX(total_sales) as peak_monthly_sales,
+    AVG(avg_lead_time) as typical_lead_time,
+    STDDEV(total_sales) as sales_variability
+  FROM monthly_sales
+  GROUP BY store_id, product_id, product_name
+)
+SELECT 
+  i.store_id,
+  s.store_name,
+  i.product_id,
+  i.product_name,
+  ROUND(i.avg_monthly_sales, 2) as avg_monthly_sales,
+  ROUND(i.peak_monthly_sales, 2) as peak_monthly_sales,
+  ROUND(i.typical_lead_time, 2) as lead_time_days,
+  ROUND(i.avg_monthly_sales * (i.typical_lead_time/30) + 
+    (1.645 * i.sales_variability), 0) as recommended_stock
+FROM inventory_metrics i
+JOIN stores s ON i.store_id = s.store_id
+ORDER BY i.store_id, recommended_stock DESC

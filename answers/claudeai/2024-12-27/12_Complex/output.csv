@@ -1,0 +1,11 @@
+staff_id,staff_name,total_orders,unique_customers,total_sales,avg_order_value,conversion_rate
+6,Marcelene Boyer,553,538,2624120.65,4745.25,102.79
+7,Venita Daniel,540,518,2591630.62,4799.32,104.25
+3,Genna Serrano,184,164,853287.36,4637.43,112.2
+2,Mireya Copeland,164,152,752535.68,4588.63,107.89
+8,Kali Vargas,88,75,463918.3,5271.8,117.33
+9,Layla Terrell,86,79,403623.94,4693.3,108.86
+1,Fabiola Jackson,0,0,,,
+4,Virgie Wiggins,0,0,,,
+5,Jannette David,0,0,,,
+10,Bernardine Houston,0,0,,,

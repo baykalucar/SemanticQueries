@@ -1,0 +1,2 @@
+
+SELECT store_name, street, city, state, zip_code FROM stores WHERE state = 'CA';

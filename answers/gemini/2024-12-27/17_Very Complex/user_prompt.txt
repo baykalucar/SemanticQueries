@@ -1,0 +1,1 @@
+Analyze the impact of discounts on overall revenue, considering factors like product category, season, and store location.

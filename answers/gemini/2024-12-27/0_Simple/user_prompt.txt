@@ -1,0 +1,1 @@
+How many total products are available in the inventory?

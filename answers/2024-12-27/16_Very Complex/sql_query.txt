@@ -1,0 +1,35 @@
+
+WITH CustomerPurchaseHistory AS (
+    SELECT 
+        oi.product_id,
+        o.customer_id,
+        p.category_id,
+        COUNT(*) as purchase_count
+    FROM order_items oi
+    JOIN orders o ON oi.order_id = o.order_id
+    JOIN products p ON oi.product_id = p.product_id
+    GROUP BY o.customer_id, oi.product_id, p.category_id
+),
+ProductPairs AS (
+    SELECT 
+        a.product_id as product1_id,
+        b.product_id as product2_id,
+        COUNT(DISTINCT a.customer_id) as common_customers,
+        AVG(a.purchase_count) as avg_purchase_count
+    FROM CustomerPurchaseHistory a
+    JOIN CustomerPurchaseHistory b 
+        ON a.customer_id = b.customer_id 
+        AND a.product_id < b.product_id
+    GROUP BY a.product_id, b.product_id
+    HAVING common_customers >= 2
+)
+SELECT 
+    p1.product_name as product1_name,
+    p2.product_name as product2_name,
+    pp.common_customers,
+    pp.avg_purchase_count
+FROM ProductPairs pp
+JOIN products p1 ON pp.product1_id = p1.product_id
+JOIN products p2 ON pp.product2_id = p2.product_id
+ORDER BY pp.common_customers DESC, pp.avg_purchase_count DESC
+LIMIT 10;

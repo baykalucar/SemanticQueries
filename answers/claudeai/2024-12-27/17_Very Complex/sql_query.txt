@@ -1,0 +1,26 @@
+
+WITH revenue_analysis AS (
+    SELECT 
+        c.category_name,
+        st.state,
+        STRFTIME('%m', o.order_date) as month,
+        SUM(oi.quantity * oi.list_price) as gross_revenue,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as net_revenue,
+        SUM(oi.quantity * oi.list_price * oi.discount) as discount_amount
+    FROM order_items oi
+    JOIN orders o ON oi.order_id = o.order_id
+    JOIN products p ON oi.product_id = p.product_id
+    JOIN categories c ON p.category_id = c.category_id
+    JOIN stores st ON o.store_id = st.store_id
+    GROUP BY c.category_name, st.state, month
+)
+SELECT 
+    category_name,
+    state,
+    month,
+    gross_revenue,
+    net_revenue,
+    discount_amount,
+    ROUND((discount_amount / gross_revenue) * 100, 2) as discount_percentage
+FROM revenue_analysis
+ORDER BY category_name, state, month

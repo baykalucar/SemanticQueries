@@ -1,0 +1,20 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+bars = plt.bar(df['store_name'], df['total_revenue'])
+plt.title('Total Revenue by Store in 2016')
+plt.xlabel('Store Name')
+plt.ylabel('Revenue ($)')
+plt.xticks(rotation=45)
+
+# Add value labels on top of bars
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'${height:,.2f}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/9_Moderate/plot.png')
+plt.close()

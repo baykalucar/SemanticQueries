@@ -1,0 +1,249 @@
+category,store_location,total_revenue,month
+Children Bicycles,Baldwin,19877.197000000004,01
+Children Bicycles,Baldwin,21705.912800000006,02
+Children Bicycles,Baldwin,25915.9883,03
+Children Bicycles,Baldwin,27836.011799999997,04
+Children Bicycles,Baldwin,10595.6178,05
+Children Bicycles,Baldwin,12588.153200000002,06
+Children Bicycles,Baldwin,14550.487700000001,07
+Children Bicycles,Baldwin,14368.3951,08
+Children Bicycles,Baldwin,15089.481000000002,09
+Children Bicycles,Baldwin,18949.999300000003,10
+Children Bicycles,Baldwin,11232.5995,11
+Children Bicycles,Baldwin,9942.0325,12
+Children Bicycles,Rowlett,1591.9288999999999,01
+Children Bicycles,Rowlett,4074.0456,02
+Children Bicycles,Rowlett,4752.823599999999,03
+Children Bicycles,Rowlett,3823.862,04
+Children Bicycles,Rowlett,1633.6527,05
+Children Bicycles,Rowlett,2730.6029000000003,06
+Children Bicycles,Rowlett,1481.9470999999999,07
+Children Bicycles,Rowlett,3126.5013,08
+Children Bicycles,Rowlett,2325.4012,09
+Children Bicycles,Rowlett,1515.9260000000002,10
+Children Bicycles,Rowlett,279.992,11
+Children Bicycles,Rowlett,797.9715,12
+Children Bicycles,Santa Cruz,6174.7687000000005,01
+Children Bicycles,Santa Cruz,4826.228099999999,02
+Children Bicycles,Santa Cruz,5593.974,03
+Children Bicycles,Santa Cruz,13061.311600000003,04
+Children Bicycles,Santa Cruz,2959.9859,05
+Children Bicycles,Santa Cruz,1876.4325000000003,06
+Children Bicycles,Santa Cruz,3077.3939,07
+Children Bicycles,Santa Cruz,4649.6377,08
+Children Bicycles,Santa Cruz,3167.7024,09
+Children Bicycles,Santa Cruz,5061.5187000000005,10
+Children Bicycles,Santa Cruz,4844.414,11
+Children Bicycles,Santa Cruz,6109.299899999999,12
+Comfort Bicycles,Baldwin,27414.906199999998,01
+Comfort Bicycles,Baldwin,25981.648999999998,02
+Comfort Bicycles,Baldwin,23130.791899999997,03
+Comfort Bicycles,Baldwin,35855.1787,04
+Comfort Bicycles,Baldwin,19642.813,05
+Comfort Bicycles,Baldwin,17877.851700000003,06
+Comfort Bicycles,Baldwin,19290.757999999994,07
+Comfort Bicycles,Baldwin,22130.171499999997,08
+Comfort Bicycles,Baldwin,16736.145,09
+Comfort Bicycles,Baldwin,23634.219199999996,10
+Comfort Bicycles,Baldwin,16701.9861,11
+Comfort Bicycles,Baldwin,15433.3741,12
+Comfort Bicycles,Rowlett,2780.9543999999996,01
+Comfort Bicycles,Rowlett,7578.1618,02
+Comfort Bicycles,Rowlett,4498.2001,03
+Comfort Bicycles,Rowlett,7656.0903,04
+Comfort Bicycles,Rowlett,2935.9432,05
+Comfort Bicycles,Rowlett,2820.4242,06
+Comfort Bicycles,Rowlett,809.991,07
+Comfort Bicycles,Rowlett,5968.7835000000005,08
+Comfort Bicycles,Rowlett,775.6014,09
+Comfort Bicycles,Rowlett,2409.4542,10
+Comfort Bicycles,Rowlett,1734.967,11
+Comfort Bicycles,Rowlett,3830.5062,12
+Comfort Bicycles,Santa Cruz,5399.4393,01
+Comfort Bicycles,Santa Cruz,8260.0713,02
+Comfort Bicycles,Santa Cruz,9098.1983,03
+Comfort Bicycles,Santa Cruz,20395.4684,04
+Comfort Bicycles,Santa Cruz,4759.1086,05
+Comfort Bicycles,Santa Cruz,3401.535,06
+Comfort Bicycles,Santa Cruz,719.984,07
+Comfort Bicycles,Santa Cruz,3282.8377,08
+Comfort Bicycles,Santa Cruz,11569.1996,09
+Comfort Bicycles,Santa Cruz,8517.038,10
+Comfort Bicycles,Santa Cruz,4032.825599999999,11
+Comfort Bicycles,Santa Cruz,6955.4706,12
+Cruisers Bicycles,Baldwin,64444.122400000015,01
+Cruisers Bicycles,Baldwin,55618.96459999997,02
+Cruisers Bicycles,Baldwin,100180.5061,03
+Cruisers Bicycles,Baldwin,99533.7633,04
+Cruisers Bicycles,Baldwin,42992.45569999999,05
+Cruisers Bicycles,Baldwin,41575.04429999999,06
+Cruisers Bicycles,Baldwin,55647.83769999999,07
+Cruisers Bicycles,Baldwin,41874.64379999999,08
+Cruisers Bicycles,Baldwin,39672.36389999999,09
+Cruisers Bicycles,Baldwin,49845.2228,10
+Cruisers Bicycles,Baldwin,45928.92689999999,11
+Cruisers Bicycles,Baldwin,44481.9215,12
+Cruisers Bicycles,Rowlett,6619.295,01
+Cruisers Bicycles,Rowlett,9249.1546,02
+Cruisers Bicycles,Rowlett,17396.8168,03
+Cruisers Bicycles,Rowlett,9131.2456,04
+Cruisers Bicycles,Rowlett,7617.601,05
+Cruisers Bicycles,Rowlett,11674.929800000002,06
+Cruisers Bicycles,Rowlett,2690.9364,07
+Cruisers Bicycles,Rowlett,15364.176899999999,08
+Cruisers Bicycles,Rowlett,6748.047199999999,09
+Cruisers Bicycles,Rowlett,6806.1055,10
+Cruisers Bicycles,Rowlett,4983.4503,11
+Cruisers Bicycles,Rowlett,7835.2276,12
+Cruisers Bicycles,Santa Cruz,18788.0322,01
+Cruisers Bicycles,Santa Cruz,15675.1043,02
+Cruisers Bicycles,Santa Cruz,20697.051600000003,03
+Cruisers Bicycles,Santa Cruz,51921.93000000001,04
+Cruisers Bicycles,Santa Cruz,7617.2024,05
+Cruisers Bicycles,Santa Cruz,15507.999000000003,06
+Cruisers Bicycles,Santa Cruz,8611.681700000001,07
+Cruisers Bicycles,Santa Cruz,12741.944100000002,08
+Cruisers Bicycles,Santa Cruz,14598.262900000002,09
+Cruisers Bicycles,Santa Cruz,19797.943,10
+Cruisers Bicycles,Santa Cruz,7235.985599999999,11
+Cruisers Bicycles,Santa Cruz,13926.7272,12
+Cyclocross Bicycles,Baldwin,29566.3081,01
+Cyclocross Bicycles,Baldwin,40876.31,02
+Cyclocross Bicycles,Baldwin,46117.7811,03
+Cyclocross Bicycles,Baldwin,61736.3776,04
+Cyclocross Bicycles,Baldwin,38260.98989999999,05
+Cyclocross Bicycles,Baldwin,52627.021700000005,06
+Cyclocross Bicycles,Baldwin,35610.602100000004,07
+Cyclocross Bicycles,Baldwin,35094.348600000005,08
+Cyclocross Bicycles,Baldwin,26179.943,09
+Cyclocross Bicycles,Baldwin,47013.0304,10
+Cyclocross Bicycles,Baldwin,31960.0045,11
+Cyclocross Bicycles,Baldwin,42731.8446,12
+Cyclocross Bicycles,Rowlett,14643.847,01
+Cyclocross Bicycles,Rowlett,2881.14,02
+Cyclocross Bicycles,Rowlett,3193.881,03
+Cyclocross Bicycles,Rowlett,1239.2,04
+Cyclocross Bicycles,Rowlett,1471.55,05
+Cyclocross Bicycles,Rowlett,5968.882,06
+Cyclocross Bicycles,Rowlett,2881.14,07
+Cyclocross Bicycles,Rowlett,1512.891,08
+Cyclocross Bicycles,Rowlett,4298.253000000001,09
+Cyclocross Bicycles,Rowlett,6509.981399999999,10
+Cyclocross Bicycles,Rowlett,3193.881,11
+Cyclocross Bicycles,Rowlett,13141.6947,12
+Cyclocross Bicycles,Santa Cruz,18287.5155,01
+Cyclocross Bicycles,Santa Cruz,12120.4551,02
+Cyclocross Bicycles,Santa Cruz,6175.773,03
+Cyclocross Bicycles,Santa Cruz,34675.0015,04
+Cyclocross Bicycles,Santa Cruz,18334.6858,05
+Cyclocross Bicycles,Santa Cruz,10280.6828,06
+Cyclocross Bicycles,Santa Cruz,7510.3114000000005,07
+Cyclocross Bicycles,Santa Cruz,11674.331,08
+Cyclocross Bicycles,Santa Cruz,7899.9,09
+Cyclocross Bicycles,Santa Cruz,14910.6271,10
+Cyclocross Bicycles,Santa Cruz,1471.55,11
+Cyclocross Bicycles,Santa Cruz,18960.1,12
+Electric Bikes,Baldwin,91806.74689999998,01
+Electric Bikes,Baldwin,54135.8609,02
+Electric Bikes,Baldwin,75006.75769999999,03
+Electric Bikes,Baldwin,68741.78349999999,04
+Electric Bikes,Baldwin,19489.947699999997,05
+Electric Bikes,Baldwin,32899.909199999995,06
+Electric Bikes,Baldwin,30011.882199999996,07
+Electric Bikes,Baldwin,56117.822899999985,08
+Electric Bikes,Baldwin,47274.662000000004,09
+Electric Bikes,Baldwin,28439.9052,10
+Electric Bikes,Baldwin,39654.682700000005,11
+Electric Bikes,Baldwin,59249.8205,12
+Electric Bikes,Rowlett,19507.9464,01
+Electric Bikes,Rowlett,6849.983,03
+Electric Bikes,Rowlett,21829.939199999997,04
+Electric Bikes,Rowlett,14453.953699999998,06
+Electric Bikes,Rowlett,6389.9827000000005,07
+Electric Bikes,Rowlett,7150.771699999999,08
+Electric Bikes,Rowlett,7181.9715,09
+Electric Bikes,Rowlett,5399.982,10
+Electric Bikes,Rowlett,2399.9919999999997,11
+Electric Bikes,Rowlett,3679.984,12
+Electric Bikes,Santa Cruz,20259.9382,01
+Electric Bikes,Santa Cruz,19607.934,02
+Electric Bikes,Santa Cruz,10799.964,03
+Electric Bikes,Santa Cruz,79977.36399999999,04
+Electric Bikes,Santa Cruz,2699.991,05
+Electric Bikes,Santa Cruz,10949.9635,06
+Electric Bikes,Santa Cruz,10145.9585,07
+Electric Bikes,Santa Cruz,6503.974,08
+Electric Bikes,Santa Cruz,8601.562399999999,09
+Electric Bikes,Santa Cruz,24233.914899999996,10
+Electric Bikes,Santa Cruz,22379.9374,11
+Electric Bikes,Santa Cruz,2849.9905,12
+Mountain Bikes,Baldwin,194716.49359999993,01
+Mountain Bikes,Baldwin,154271.08759999997,02
+Mountain Bikes,Baldwin,210245.6240999999,03
+Mountain Bikes,Baldwin,215830.01589999985,04
+Mountain Bikes,Baldwin,150513.83359999995,05
+Mountain Bikes,Baldwin,143893.4548,06
+Mountain Bikes,Baldwin,138291.90699999992,07
+Mountain Bikes,Baldwin,129455.92229999993,08
+Mountain Bikes,Baldwin,154516.15749999994,09
+Mountain Bikes,Baldwin,157670.41409999997,10
+Mountain Bikes,Baldwin,104188.92209999998,11
+Mountain Bikes,Baldwin,82798.39379999999,12
+Mountain Bikes,Rowlett,11350.246799999999,01
+Mountain Bikes,Rowlett,38349.442599999995,02
+Mountain Bikes,Rowlett,28462.531799999997,03
+Mountain Bikes,Rowlett,37070.9072,04
+Mountain Bikes,Rowlett,22763.9274,05
+Mountain Bikes,Rowlett,35646.09859999999,06
+Mountain Bikes,Rowlett,7722.1351,07
+Mountain Bikes,Rowlett,34303.527899999994,08
+Mountain Bikes,Rowlett,54704.0274,09
+Mountain Bikes,Rowlett,6824.8204000000005,10
+Mountain Bikes,Rowlett,33085.9626,11
+Mountain Bikes,Rowlett,6156.038500000001,12
+Mountain Bikes,Santa Cruz,76834.43239999999,01
+Mountain Bikes,Santa Cruz,39918.4289,02
+Mountain Bikes,Santa Cruz,63990.01339999998,03
+Mountain Bikes,Santa Cruz,68745.0775,04
+Mountain Bikes,Santa Cruz,31056.986400000005,05
+Mountain Bikes,Santa Cruz,39878.503399999994,06
+Mountain Bikes,Santa Cruz,32094.524199999996,07
+Mountain Bikes,Santa Cruz,48251.38189999999,08
+Mountain Bikes,Santa Cruz,44051.617300000005,09
+Mountain Bikes,Santa Cruz,32694.446099999997,10
+Mountain Bikes,Santa Cruz,47802.60970000001,11
+Mountain Bikes,Santa Cruz,36929.61979999999,12
+Road Bikes,Baldwin,184983.54949999994,01
+Road Bikes,Baldwin,87371.90639999999,02
+Road Bikes,Baldwin,132280.94169999997,03
+Road Bikes,Baldwin,209863.6992999999,04
+Road Bikes,Baldwin,70591.99049999999,05
+Road Bikes,Baldwin,88240.74560000001,06
+Road Bikes,Baldwin,45220.6813,07
+Road Bikes,Baldwin,45761.6574,08
+Road Bikes,Baldwin,77820.6148,09
+Road Bikes,Baldwin,60372.9789,10
+Road Bikes,Baldwin,60451.74119999999,11
+Road Bikes,Baldwin,77516.7081,12
+Road Bikes,Rowlett,14209.325499999999,01
+Road Bikes,Rowlett,33805.38829999999,02
+Road Bikes,Rowlett,20176.310099999995,03
+Road Bikes,Rowlett,52322.85670000001,04
+Road Bikes,Rowlett,4799.992,05
+Road Bikes,Rowlett,28344.6181,06
+Road Bikes,Rowlett,22554.944499999998,08
+Road Bikes,Rowlett,20799.96,09
+Road Bikes,Rowlett,5579.990699999999,10
+Road Bikes,Rowlett,9392.972099999999,11
+Road Bikes,Rowlett,5284.6532,12
+Road Bikes,Santa Cruz,52936.013399999996,01
+Road Bikes,Santa Cruz,33386.88539999999,02
+Road Bikes,Santa Cruz,38939.3122,03
+Road Bikes,Santa Cruz,91109.74060000002,04
+Road Bikes,Santa Cruz,12764.972399999999,05
+Road Bikes,Santa Cruz,16379.963,06
+Road Bikes,Santa Cruz,18129.965,07
+Road Bikes,Santa Cruz,2699.982,08
+Road Bikes,Santa Cruz,11449.957,09
+Road Bikes,Santa Cruz,22311.9191,11
+Road Bikes,Santa Cruz,7241.552,12

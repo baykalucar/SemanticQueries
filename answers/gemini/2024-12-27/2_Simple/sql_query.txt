@@ -1,0 +1,2 @@
+
+SELECT DISTINCT category_name FROM categories;

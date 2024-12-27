@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], [1] * len(df))
+plt.xticks(rotation=45, ha='right')
+plt.ylabel('Order Count')
+plt.title('Customers with Orders but No Phone Number')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2024-12-27/6_Moderate/plot.png')
+plt.close()

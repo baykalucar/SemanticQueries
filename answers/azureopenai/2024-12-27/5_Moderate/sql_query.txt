@@ -1,0 +1,12 @@
+
+SELECT 
+    s.store_id, 
+    SUM(st.quantity * p.list_price) AS total_inventory_value
+FROM 
+    stocks st
+JOIN 
+    products p ON st.product_id = p.product_id
+JOIN 
+    stores s ON st.store_id = s.store_id
+GROUP BY 
+    s.store_id;

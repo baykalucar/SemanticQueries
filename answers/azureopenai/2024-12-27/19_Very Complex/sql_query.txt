@@ -1,0 +1,7 @@
+
+SELECT s.store_id, s.product_id, SUM(oi.quantity) AS total_sales
+FROM stocks s
+JOIN order_items oi ON s.product_id = oi.product_id
+JOIN orders o ON oi.order_id = o.order_id
+WHERE o.order_date BETWEEN DATE('now', '-1 year') AND DATE('now')
+GROUP BY s.store_id, s.product_id;

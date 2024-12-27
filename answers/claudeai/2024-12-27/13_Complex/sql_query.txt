@@ -1,0 +1,19 @@
+
+WITH monthly_sales AS (
+    SELECT 
+        c.category_name,
+        STRFTIME('%m', o.order_date) as month,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_sales
+    FROM orders o
+    JOIN order_items oi ON o.order_id = oi.order_id
+    JOIN products p ON oi.product_id = p.product_id
+    JOIN categories c ON p.category_id = c.category_id
+    GROUP BY c.category_name, STRFTIME('%m', o.order_date)
+)
+SELECT 
+    category_name,
+    month,
+    total_sales,
+    AVG(total_sales) OVER (PARTITION BY category_name) as avg_monthly_sales
+FROM monthly_sales
+ORDER BY category_name, month

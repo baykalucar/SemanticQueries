@@ -1,0 +1,28 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df = pd.DataFrame(...) # This line is just a placeholder for context
+
+# Plotting purchase frequency
+plt.figure(figsize=(10, 6))
+plt.bar(df['customer_name'], df['purchase_frequency'], color='skyblue')
+plt.xlabel('Customer Name')
+plt.ylabel('Purchase Frequency')
+plt.title('Customer Purchase Frequency')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/18_Very Complex/plot_purchase_frequency.png')
+
+# Plotting average order value
+plt.figure(figsize=(10, 6))
+plt.bar(df['customer_name'], df['average_order_value'], color='lightgreen')
+plt.xlabel('Customer Name')
+plt.ylabel('Average Order Value')
+plt.title('Customer Average Order Value')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/18_Very Complex/plot_average_order_value.png')
+
+# Note: Product preferences are not plotted as they are categorical and require a different type of visualization

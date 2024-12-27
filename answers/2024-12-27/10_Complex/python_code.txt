@@ -1,0 +1,25 @@
+
+import matplotlib.pyplot as plt
+import os
+
+# Create directory if it doesn't exist
+os.makedirs('answers/2024-12-27/10_Complex', exist_ok=True)
+
+# Create the visualization
+plt.figure(figsize=(12, 6))
+bars = plt.bar(df['customer_name'], df['total_spent'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Customer Name')
+plt.ylabel('Total Spent ($)')
+plt.title('Top 5 Customers by Total Purchase Amount')
+
+# Add value labels on top of bars
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'${height:,.2f}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/2024-12-27/10_Complex/plot.png')
+plt.close()

@@ -1,0 +1,17 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+plt.figure(figsize=(12, 6))
+plt.plot(df['month'], df['total_sales'], label=df['category_name'])
+
+plt.title('Monthly Sales Patterns by Category')
+plt.xlabel('Month')
+plt.ylabel('Total Sales ($)')
+plt.xticks(range(1, 13), rotation=45)
+plt.legend(title='Category', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.grid(True, linestyle='--', alpha=0.7)
+
+plt.savefig('answers/2024-12-27/13_Complex/plot.png', bbox_inches='tight', dpi=300)
+plt.close()

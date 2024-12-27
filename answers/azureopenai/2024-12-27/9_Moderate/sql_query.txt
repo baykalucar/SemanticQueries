@@ -1,0 +1,14 @@
+
+SELECT 
+    s.store_name AS store,
+    SUM(oi.quantity * (oi.list_price - (oi.list_price * oi.discount))) AS total_revenue
+FROM 
+    orders o
+JOIN 
+    order_items oi ON o.order_id = oi.order_id
+JOIN 
+    stores s ON o.store_id = s.store_id
+WHERE 
+    strftime('%Y', o.order_date) = '2016'
+GROUP BY 
+    s.store_name;

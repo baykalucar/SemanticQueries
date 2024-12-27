@@ -1,0 +1,1 @@
+Who are the top 5 customers by total purchase amount, and what products do they typically buy?

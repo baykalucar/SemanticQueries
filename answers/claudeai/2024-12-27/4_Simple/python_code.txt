@@ -1,0 +1,9 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.bar(['Active Staff'], [df['active_staff_count'].iloc[0]], color='blue')
+plt.title('Number of Active Staff Members')
+plt.ylabel('Count')
+plt.savefig('answers/claudeai/2024-12-27/4_Simple/plot.png')
+plt.close()

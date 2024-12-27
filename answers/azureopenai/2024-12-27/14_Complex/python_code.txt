@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'store_id', 'avg_processing_time'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_id'], df['avg_processing_time'], color='skyblue')
+plt.xlabel('Store ID')
+plt.ylabel('Average Processing Time (days)')
+plt.title('Average Processing Time for Orders by Store')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/14_Complex/plot.png')
+plt.show()

@@ -1,0 +1,22 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns: store_name, street, city, state, zip_code
+df = pd.DataFrame({
+    'store_name': ['Santa Cruz Bikes'],
+    'street': ['3700 Portola Drive'],
+    'city': ['Santa Cruz'],
+    'state': ['CA'],
+    'zip_code': ['95060']
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['zip_code'].astype(int))
+plt.xlabel('Store Name')
+plt.ylabel('Zip Code')
+plt.title('Stores in California')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/3_Simple/plot.png')
+

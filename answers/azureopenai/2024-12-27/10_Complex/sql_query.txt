@@ -1,0 +1,8 @@
+
+SELECT c.customer_id, c.first_name, c.last_name, SUM(oi.quantity * (oi.list_price - oi.discount * oi.list_price)) AS total_purchase_amount
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY c.customer_id
+ORDER BY total_purchase_amount DESC
+LIMIT 5;

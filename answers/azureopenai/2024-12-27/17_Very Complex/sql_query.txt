@@ -1,0 +1,18 @@
+
+SELECT 
+    c.category_name AS category,
+    str.city AS store_location,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS total_revenue,
+    strftime('%m', o.order_date) AS month
+FROM 
+    order_items oi
+JOIN 
+    products p ON oi.product_id = p.product_id
+JOIN 
+    categories c ON p.category_id = c.category_id
+JOIN 
+    orders o ON oi.order_id = o.order_id
+JOIN 
+    stores str ON o.store_id = str.store_id
+GROUP BY 
+    c.category_name, str.city, strftime('%m', o.order_date);

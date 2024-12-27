@@ -1,0 +1,34 @@
+
+WITH monthly_sales AS (
+  SELECT 
+    c.category_id,
+    c.category_name,
+    STRFTIME('%Y', o.order_date) as year,
+    STRFTIME('%m', o.order_date) as month,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as revenue
+  FROM order_items oi
+  JOIN orders o ON oi.order_id = o.order_id
+  JOIN products p ON oi.product_id = p.product_id
+  JOIN categories c ON p.category_id = c.category_id
+  GROUP BY c.category_id, c.category_name, year, month
+),
+yearly_sales AS (
+  SELECT
+    category_id,
+    category_name,
+    year,
+    SUM(revenue) as yearly_revenue,
+    LAG(SUM(revenue)) OVER (PARTITION BY category_id ORDER BY year) as prev_year_revenue
+  FROM monthly_sales
+  GROUP BY category_id, category_name, year
+)
+SELECT 
+  category_id,
+  category_name,
+  year,
+  yearly_revenue,
+  prev_year_revenue,
+  ROUND(((yearly_revenue - prev_year_revenue) / prev_year_revenue) * 100, 2) as growth_rate
+FROM yearly_sales
+WHERE prev_year_revenue IS NOT NULL
+ORDER BY category_id, year

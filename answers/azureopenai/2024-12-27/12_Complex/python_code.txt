@@ -1,0 +1,30 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df['conversion_rate'] = df['total_orders'] / df['total_orders'].sum()
+
+fig, ax1 = plt.subplots(figsize=(10, 6))
+
+# Bar chart for total sales
+ax1.bar(df['staff_name'], df['total_sales'], color='b', alpha=0.6, label='Total Sales')
+ax1.set_xlabel('Staff Member')
+ax1.set_ylabel('Total Sales', color='b')
+ax1.tick_params(axis='y', labelcolor='b')
+ax1.set_title('Sales Performance of Each Staff Member')
+
+# Line chart for conversion rate
+ax2 = ax1.twinx()
+ax2.plot(df['staff_name'], df['conversion_rate'], color='r', marker='o', label='Conversion Rate')
+ax2.set_ylabel('Conversion Rate', color='r')
+ax2.tick_params(axis='y', labelcolor='r')
+
+# Adding average order value as text
+for i, (sales, avg_order_value) in enumerate(zip(df['total_sales'], df['average_order_value'])):
+    ax1.text(i, sales, f'Avg: {avg_order_value:.2f}', ha='center', va='bottom', fontsize=9, color='black')
+
+fig.tight_layout()
+plt.xticks(rotation=45)
+plt.savefig('answers/azureopenai/2024-12-27/12_Complex/plot.png')
+plt.show()

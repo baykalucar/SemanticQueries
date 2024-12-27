@@ -1,0 +1,24 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns: 'customer_id', 'first_name', 'last_name', 'email', 'phone', 'purchased_products'
+
+df['purchased_products'] = df['purchased_products'].str.split(',')
+
+#Explode the purchased_products column to create a row for each product purchased per customer
+df = df.explode('purchased_products')
+
+# Count the occurrences of each product
+product_counts = df['purchased_products'].value_counts()
+
+# Create a bar chart
+plt.figure(figsize=(12, 6))
+plt.bar(product_counts.index, product_counts.values)
+plt.xlabel("Product Name")
+plt.ylabel("Number of Customers Purchased")
+plt.title("Cross-selling Opportunities Based on Purchase Patterns")
+plt.xticks(rotation=45, ha="right")  # Rotate x-axis labels for better readability
+plt.tight_layout()
+plt.savefig('answers/gemini/2024-12-27/16_Very Complex/plot.png')
+

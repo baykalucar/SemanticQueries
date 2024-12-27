@@ -1,0 +1,2 @@
+
+SELECT s.store_name, AVG(oi.quantity * oi.list_price * (1 - oi.discount)) AS average_order_value FROM orders o JOIN order_items oi ON o.order_id = oi.order_id JOIN stores s ON o.store_id = s.store_id GROUP BY s.store_name;

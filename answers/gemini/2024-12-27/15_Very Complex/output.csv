@@ -1,0 +1,21 @@
+category_name,model_year,total_quantity_sold,yoy_growth
+Children Bicycles,2016,438,43800.0
+Children Bicycles,2017,604,37.89954337899543
+Children Bicycles,2018,137,-77.31788079470199
+Comfort Bicycles,2016,418,41800.0
+Comfort Bicycles,2017,328,-21.5311004784689
+Comfort Bicycles,2018,67,-79.57317073170732
+Cruisers Bicycles,2016,1228,122800.0
+Cruisers Bicycles,2017,606,-50.6514657980456
+Cruisers Bicycles,2018,229,-62.211221122112214
+Cyclocross Bicycles,2016,298,29800.0
+Cyclocross Bicycles,2017,71,-76.1744966442953
+Cyclocross Bicycles,2018,25,-64.78873239436619
+Electric Bikes,2016,145,14500.0
+Electric Bikes,2017,75,-48.275862068965516
+Electric Bikes,2018,95,26.666666666666668
+Mountain Bikes,2016,962,96200.0
+Mountain Bikes,2017,646,-32.84823284823285
+Mountain Bikes,2018,147,-77.24458204334366
+Road Bikes,2017,389,38900.0
+Road Bikes,2018,170,-56.29820051413882

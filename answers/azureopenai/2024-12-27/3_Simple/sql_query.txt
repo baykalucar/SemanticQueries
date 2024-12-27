@@ -1,0 +1,2 @@
+
+SELECT * FROM stores WHERE state = 'CA';

@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'category', 'store_location', 'total_revenue', 'month'
+
+# Pivot the data for better visualization
+pivot_df = df.pivot_table(values='total_revenue', index='month', columns=['category', 'store_location'], aggfunc='sum')
+
+# Plotting
+plt.figure(figsize=(12, 8))
+pivot_df.plot(kind='line', marker='o')
+plt.title('Impact of Discounts on Revenue by Category and Store Location')
+plt.xlabel('Month')
+plt.ylabel('Total Revenue')
+plt.xticks(rotation=45)
+plt.legend(title='Category, Store Location', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2024-12-27/17_Very Complex/plot.png')
+plt.show()
