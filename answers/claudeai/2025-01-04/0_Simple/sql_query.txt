@@ -1,0 +1,3 @@
+
+SELECT COUNT(DISTINCT brand_id) as brand_count
+FROM brands;

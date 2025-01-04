@@ -1,0 +1,18 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'product_id', 'total_sales_before_discount', 'total_sales_after_discount'
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_id'], df['total_sales_before_discount'], label='Before Discount', alpha=0.7)
+plt.bar(df['product_id'], df['total_sales_after_discount'], label='After Discount', alpha=0.7)
+plt.xlabel('Product ID')
+plt.ylabel('Total Sales')
+plt.title('Effectiveness of Discounts on Product Sales')
+plt.legend()
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/24_Very Complex/plot.png')
+plt.show()

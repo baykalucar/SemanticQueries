@@ -1,0 +1,11 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'store_id' and 'active_staff_count'
+df.plot(x='store_id', y='active_staff_count', kind='bar')
+plt.xlabel('Store ID')
+plt.ylabel('Number of Active Staff')
+plt.title('Number of Active Staff Members per Store')
+plt.savefig('answers/gemini/2025-01-03/9_Moderate/plot.png')
+

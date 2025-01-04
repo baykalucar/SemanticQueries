@@ -1,0 +1,12 @@
+
+SELECT 
+    c.category_name,
+    COUNT(oi.order_id) as total_orders,
+    AVG(oi.discount) as avg_discount,
+    SUM(oi.quantity) as total_units_sold,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_revenue
+FROM order_items oi
+JOIN products p ON oi.product_id = p.product_id
+JOIN categories c ON p.category_id = c.category_id
+GROUP BY c.category_name
+ORDER BY total_revenue DESC

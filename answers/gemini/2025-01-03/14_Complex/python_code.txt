@@ -1,0 +1,22 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# Assuming 'df' is a pandas DataFrame with columns 'store_name' and 'distinct_product_count'
+df = pd.DataFrame({
+    'store_name': ['Santa Cruz Bikes', 'Baldwin Bikes', 'Rowlett Bikes'],
+    'distinct_product_count': [3, 3, 0]
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['distinct_product_count'], color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.xlabel('Store Name')
+plt.ylabel('Number of Distinct Products')
+plt.title('Number of Distinct Products in Stock per Store')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+
+os.makedirs(os.path.dirname("answers/gemini/2025-01-03/14_Complex/plot.png"), exist_ok=True)
+plt.savefig("answers/gemini/2025-01-03/14_Complex/plot.png")
+

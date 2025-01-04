@@ -1,0 +1,2 @@
+
+SELECT staffs.first_name, staffs.last_name, COUNT(orders.order_id) AS total_orders_processed FROM staffs INNER JOIN orders ON staffs.staff_id = orders.staff_id GROUP BY staffs.staff_id ORDER BY total_orders_processed DESC;

@@ -1,0 +1,19 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+bars = plt.bar(df['product_name'], df['total_quantity_sold'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.title('Top 3 Best-Selling Products')
+
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'{int(height)}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/14_Complex/plot.png')
+plt.close()

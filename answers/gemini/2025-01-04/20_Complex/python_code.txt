@@ -1,0 +1,24 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'category_name', 'brand_name', and 'avg_list_price'
+
+df = pd.DataFrame({
+    'category_name': ['Children Bicycles', 'Children Bicycles', 'Comfort Bicycles', 'Comfort Bicycles'],
+    'brand_name': ['Brand A', 'Brand B', 'Brand C', 'Brand D'],
+    'avg_list_price': [100, 150, 200, 250]
+})
+
+plt.figure(figsize=(10, 6))
+for category in df['category_name'].unique():
+    category_df = df[df['category_name'] == category]
+    max_price_brand = category_df.loc[category_df['avg_list_price'].idxmax()]
+    plt.bar(max_price_brand['brand_name'], max_price_brand['avg_list_price'], label=category)
+
+plt.xlabel('Brand Name')
+plt.ylabel('Average List Price')
+plt.title('Brand with Highest Average List Price per Category')
+plt.legend()
+plt.savefig('answers/gemini/2025-01-04/20_Complex/plot.png')
+

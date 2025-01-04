@@ -1,0 +1,2 @@
+
+SELECT oi.product_id, p.product_name, oi.quantity AS quantity_sold, oi.list_price, oi.discount, (oi.list_price * oi.quantity) AS total_revenue_before_discount, (oi.list_price * oi.quantity * (1 - oi.discount)) AS total_revenue_after_discount FROM order_items oi JOIN products p ON oi.product_id = p.product_id;

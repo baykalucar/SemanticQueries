@@ -1,0 +1,36 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+
+def create_bar_chart(df):
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    width = 0.35
+
+    rects1 = ax.bar(df['category_name'], df['total_quantity_sold'], width, label='Total Quantity Sold')
+
+    ax.set_ylabel('Total Quantity Sold')
+    ax.set_title('Impact of Discounts on Sales Volume of Different Product Categories')
+    ax.set_xticks(df['category_name'])
+    ax.legend()
+
+
+    def autolabel(rects):
+        for rect in rects:
+            height = rect.get_height()
+            ax.annotate('{}'.format(height),
+                        xy=(rect.get_x() + rect.get_width() / 2, height),
+                        xytext=(0, 3),  # 3 points vertical offset
+                        textcoords="offset points",
+                        ha='center', va='bottom')
+
+    autolabel(rects1)
+
+    fig.tight_layout()
+    
+    #Ensure directory exists
+    os.makedirs(os.path.dirname("answers/gemini/2025-01-03/16_Very Complex/plot.png"), exist_ok=True)
+    plt.savefig('answers/gemini/2025-01-03/16_Very Complex/plot.png')
+

@@ -1,0 +1,44 @@
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import pip
+
+# Install statsmodels if not already installed
+pip.main(['install', 'statsmodels'])
+
+import statsmodels.api as sm
+from statsmodels.tsa.holtwinters import ExponentialSmoothing
+
+# Convert month to datetime
+df['month'] = pd.to_datetime(df['month'])
+
+# Fit Holt-Winters model
+model = ExponentialSmoothing(
+    df['total_sales'],
+    seasonal_periods=12,
+    trend='add',
+    seasonal='add'
+).fit()
+
+# Generate forecast for next 6 months
+future_dates = pd.date_range(
+    start=df['month'].max(),
+    periods=7,
+    freq='M'
+)[1:]
+forecast = model.forecast(6)
+
+# Plot actual and forecasted values
+plt.figure(figsize=(12, 6))
+plt.plot(df['month'], df['total_sales'], label='Historical Sales')
+plt.plot(future_dates, forecast, 'r--', label='Forecast')
+plt.title('Sales Forecast')
+plt.xlabel('Date')
+plt.ylabel('Total Sales ($)')
+plt.legend()
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/23_Very Complex/plot.png')
+plt.close()

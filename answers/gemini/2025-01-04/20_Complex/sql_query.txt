@@ -1,0 +1,7 @@
+
+SELECT c.category_name, b.brand_name, AVG(p.list_price) AS avg_list_price
+FROM products p
+JOIN brands b ON p.brand_id = b.brand_id
+JOIN categories c ON p.category_id = c.category_id
+GROUP BY c.category_name, b.brand_name
+HAVING avg_list_price = (SELECT MAX(avg_list_price) FROM (SELECT c.category_name, b.brand_name, AVG(p.list_price) AS avg_list_price FROM products p JOIN brands b ON p.brand_id = b.brand_id JOIN categories c ON p.category_id = c.category_id GROUP BY c.category_name, b.brand_name) t WHERE t.category_name = c.category_name);

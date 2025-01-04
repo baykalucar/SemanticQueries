@@ -1,0 +1,2 @@
+
+SELECT COUNT(DISTINCT b.brand_id) AS NumberOfBrands FROM brands AS b

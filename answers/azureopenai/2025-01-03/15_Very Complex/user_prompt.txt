@@ -1,0 +1,1 @@
+Determine the trend of order placements over the years, broken down by store.

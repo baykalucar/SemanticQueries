@@ -1,0 +1,1 @@
+cannot access local variable 'df' where it is not associated with a value

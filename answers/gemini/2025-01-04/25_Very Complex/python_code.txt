@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'state', 'num_customers', and 'total_quantity_purchased'
+
+df.plot(x='state', y=['num_customers', 'total_quantity_purchased'], kind='bar', figsize=(10, 6))
+plt.title('Customer Purchase Behavior by State')
+plt.xlabel('State')
+plt.ylabel('Number of Customers / Total Quantity Purchased')
+plt.xticks(rotation=45, ha='right')
+plt.legend(['Number of Customers', 'Total Quantity Purchased'])
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/25_Very Complex/plot.png')
+

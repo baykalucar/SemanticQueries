@@ -1,0 +1,13 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({'list_price': [999.99]})
+
+plt.figure(figsize=(8, 6))
+plt.bar(x=['Product 3'], height=df['list_price'], color=['skyblue'])
+plt.xlabel('Product ID')
+plt.ylabel('List Price')
+plt.title('List Price of Product with product_id 3')
+plt.savefig('answers/gemini/2025-01-04/6_Simple/plot.png')
+

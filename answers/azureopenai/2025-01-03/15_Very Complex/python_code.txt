@@ -1,0 +1,23 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'order_year', 'store_id', 'order_count'
+
+# Pivot the data for plotting
+pivot_df = df.pivot(index='order_year', columns='store_id', values='order_count')
+
+# Plotting
+plt.figure(figsize=(10, 6))
+for column in pivot_df.columns:
+    plt.plot(pivot_df.index, pivot_df[column], marker='o', label=f'Store {column}')
+
+plt.xlabel('Year')
+plt.ylabel('Number of Orders')
+plt.title('Trend of Order Placements Over the Years by Store')
+plt.legend(title='Store ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/15_Very Complex/plot.png')
+plt.show()

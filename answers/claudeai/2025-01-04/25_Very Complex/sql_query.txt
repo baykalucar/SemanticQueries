@@ -1,0 +1,16 @@
+
+WITH customer_metrics AS (
+    SELECT 
+        c.state,
+        COUNT(DISTINCT o.customer_id) as total_customers,
+        COUNT(DISTINCT o.order_id) as total_orders,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_revenue,
+        AVG(oi.quantity * oi.list_price * (1 - oi.discount)) as avg_order_value
+    FROM customers c
+    JOIN orders o ON c.customer_id = o.customer_id
+    JOIN order_items oi ON o.order_id = oi.order_id
+    GROUP BY c.state
+    HAVING total_customers > 5
+    ORDER BY total_revenue DESC
+)
+SELECT * FROM customer_metrics;

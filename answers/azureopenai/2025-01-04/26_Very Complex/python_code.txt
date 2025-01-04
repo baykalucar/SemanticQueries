@@ -1,0 +1,31 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def plot_rfm(df):
+    df['recency'] = pd.to_datetime(df['recency'])
+
+    # Plotting RFM segments
+    fig, ax = plt.subplots(1, 3, figsize=(18, 6))
+
+    # Recency plot
+    ax[0].hist(df['recency'].apply(lambda x: (pd.to_datetime('today') - x).days), bins=20, color='skyblue')
+    ax[0].set_title('Recency Distribution')
+    ax[0].set_xlabel('Days since last purchase')
+    ax[0].set_ylabel('Number of Customers')
+
+    # Frequency plot
+    ax[1].hist(df['frequency'], bins=20, color='lightgreen')
+    ax[1].set_title('Frequency Distribution')
+    ax[1].set_xlabel('Number of Purchases')
+    ax[1].set_ylabel('Number of Customers')
+
+    # Monetary plot
+    ax[2].hist(df['monetary'], bins=20, color='salmon')
+    ax[2].set_title('Monetary Distribution')
+    ax[2].set_xlabel('Total Spend ($)')
+    ax[2].set_ylabel('Number of Customers')
+
+    plt.tight_layout()
+    plt.savefig('answers/azureopenai/2025-01-04/26_Very Complex/plot.png')
+    plt.show()

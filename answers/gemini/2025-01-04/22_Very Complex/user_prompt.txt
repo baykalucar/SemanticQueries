@@ -1,0 +1,1 @@
+Identify the most profitable product categories and brands, considering both sales volume and profit margin (list_price - cost_price, assuming cost_price data is added).

@@ -1,0 +1,1 @@
+What is the total quantity of each product sold in each store?

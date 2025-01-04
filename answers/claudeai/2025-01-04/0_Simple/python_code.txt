@@ -1,0 +1,9 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.bar(['Total Brands'], [df['brand_count'].iloc[0]], color='blue')
+plt.title('Total Number of Bicycle Brands')
+plt.ylabel('Count')
+plt.savefig('answers/claudeai/2025-01-04/0_Simple/plot.png')
+plt.close()

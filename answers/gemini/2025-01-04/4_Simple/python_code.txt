@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual data)
+data = {'active_staff_count': [5]} # Replace 5 with the actual count from your query
+df = pd.DataFrame(data)
+
+# Create the bar chart
+plt.figure(figsize=(6, 4))  # Adjust figure size if needed
+plt.bar(df['active_staff_count'].index, df['active_staff_count'], color='skyblue')
+plt.xlabel('Active Staff Count')
+plt.ylabel('Number of Staff')
+plt.title('Number of Active Staff Members')
+plt.savefig('answers/gemini/2025-01-04/4_Simple/plot.png')
+

@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample data (replace with your actual data from the SQL query)
+data = {'NumberOfBrands': [9]}  #Example data. Replace with your query result
+df = pd.DataFrame(data)
+
+# Create the bar chart
+plt.figure(figsize=(6, 4))  # Adjust figure size if needed
+plt.bar(df.index, df['NumberOfBrands'], color='skyblue')
+plt.xlabel('Brands')
+plt.ylabel('Number of Brands')
+plt.title('Number of Bicycle Brands')
+plt.savefig('answers/gemini/2025-01-04/0_Simple/plot.png')
+

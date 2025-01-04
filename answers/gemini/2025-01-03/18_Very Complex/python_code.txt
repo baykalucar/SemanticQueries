@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'store_name', 'total_sales', 'average_order_status'
+
+df.plot(x='store_name', y=['total_sales', 'average_order_status'], kind='bar', figsize=(10, 6))
+plt.title('Store Performance: Sales vs. Average Order Status')
+plt.xlabel('Store Name')
+plt.ylabel('Value')
+plt.xticks(rotation=45, ha='right')
+plt.legend(['Total Sales', 'Average Order Status'])
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-03/18_Very Complex/plot.png')
+

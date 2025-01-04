@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'product_name', 'total_quantity_sold'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['total_quantity_sold'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.title('Top 3 Best-Selling Products Across All Stores')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/14_Complex/plot.png')
+plt.show()

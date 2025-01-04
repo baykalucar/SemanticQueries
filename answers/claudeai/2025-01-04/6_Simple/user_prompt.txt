@@ -1,0 +1,1 @@
+What is the list price of the product with product_id 3?

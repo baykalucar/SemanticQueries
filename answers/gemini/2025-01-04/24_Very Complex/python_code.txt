@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is the pandas DataFrame containing the query results
+df['revenue_difference'] = df['total_revenue_before_discount'] - df['total_revenue_after_discount']
+plt.figure(figsize=(12, 6))
+plt.bar(df['product_name'], df['revenue_difference'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Revenue Difference (Before - After Discount)')
+plt.title('Effectiveness of Discounts on Product Sales')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/24_Very Complex/plot.png')
+

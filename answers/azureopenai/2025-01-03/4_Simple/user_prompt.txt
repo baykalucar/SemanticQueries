@@ -1,0 +1,1 @@
+What is the total quantity of a specific product in stock?

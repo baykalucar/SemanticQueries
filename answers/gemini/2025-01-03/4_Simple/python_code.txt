@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query results)
+data = {'total_quantity': [50]}
+df = pd.DataFrame(data)
+
+# Create the bar chart
+plt.figure(figsize=(8, 6))
+plt.bar(df.index, df['total_quantity'], color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Total Quantity in Stock')
+plt.title('Total Quantity of Product in Stock')
+plt.savefig('answers/gemini/2025-01-03/4_Simple/plot.png')
+

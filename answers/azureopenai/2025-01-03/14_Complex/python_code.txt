@@ -1,0 +1,18 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'store_id': [1, 2, 3],  # Example store IDs
+    'product_count': [50, 40, 30]  # Example product counts
+})
+
+plt.bar(df['store_id'], df['product_count'], color='skyblue')
+plt.xlabel('Store ID')
+plt.ylabel('Number of Different Products in Stock')
+plt.title('Number of Different Products in Stock by Store')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/14_Complex/plot.png')
+plt.show()

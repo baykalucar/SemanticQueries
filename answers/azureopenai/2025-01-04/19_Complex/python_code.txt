@@ -1,0 +1,18 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'store_name': ['Store A', 'Store B', 'Store C'],
+    'total_stock': [10, 5, 15]
+})
+
+plt.bar(df['store_name'], df['total_stock'], color='skyblue')
+plt.xlabel('Store Name')
+plt.ylabel('Total Stock')
+plt.title('Stores with Lowest Stock Levels for Comfort Bicycles')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/19_Complex/plot.png')
+plt.show()

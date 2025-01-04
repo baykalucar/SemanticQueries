@@ -1,0 +1,10 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['category_name'], height=1)
+plt.xticks(rotation=45, ha='right')
+plt.title('Bicycle Categories')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/1_Simple/plot.png')
+plt.close()

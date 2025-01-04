@@ -1,0 +1,7 @@
+
+SELECT c.state, COUNT(o.order_id) AS total_orders, SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS total_spent
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY c.state
+ORDER BY total_spent DESC;

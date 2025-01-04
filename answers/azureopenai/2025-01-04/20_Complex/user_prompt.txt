@@ -1,0 +1,1 @@
+For each category, show the brand with the highest average list price.

@@ -1,0 +1,23 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'store_name': ['Santa Cruz Bikes', 'Santa Cruz Bikes', 'Baldwin Bikes'],
+    'product_name': ['Trek 820 - 2016', 'Ritchey Timberwolf Frameset - 2016', 'Surly Wednesday Frameset - 2016'],
+    'total_quantity_sold': [27, 5, 6]
+})
+
+# Pivot the DataFrame for plotting
+pivot_df = df.pivot(index='product_name', columns='store_name', values='total_quantity_sold')
+
+# Plotting
+pivot_df.plot(kind='bar', figsize=(10, 6))
+plt.title('Total Quantity of Each Product Sold in Each Store')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/18_Complex/plot.png')
+plt.show()

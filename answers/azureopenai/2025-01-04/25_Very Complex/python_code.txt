@@ -1,0 +1,20 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'state': ['CA', 'NY', 'TX'],
+    'total_orders': [150, 120, 100],
+    'total_spent': [30000, 25000, 20000]
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['state'], df['total_spent'], color='skyblue')
+plt.xlabel('State')
+plt.ylabel('Total Spent')
+plt.title('Total Spending by State')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/25_Very Complex/plot.png')
+plt.show()

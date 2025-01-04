@@ -1,0 +1,13 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({'quantity': [27]})
+
+plt.figure(figsize=(6, 4))
+plt.bar(x='quantity', height='quantity', data=df, color=['skyblue'])
+plt.xlabel('Quantity')
+plt.ylabel('Product Count')
+plt.title('Quantity of Product with product_id 1 in stock at store 1')
+plt.savefig('answers/gemini/2025-01-04/5_Simple/plot.png')
+

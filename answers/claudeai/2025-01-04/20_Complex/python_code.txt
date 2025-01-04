@@ -1,0 +1,20 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+bar = plt.bar(df['category_name'], df['avg_price'])
+
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Category')
+plt.ylabel('Average Price ($)')
+plt.title('Highest Average Price Brand by Category')
+
+for idx, rect in enumerate(bar):
+    height = rect.get_height()
+    plt.text(rect.get_x() + rect.get_width()/2., height,
+             f'{df.iloc[idx]["brand_name"]}',
+             ha='center', va='bottom', rotation=0)
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/20_Complex/plot.png')
+plt.close()

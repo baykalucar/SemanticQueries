@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+categories = df['category_name']
+brands = df['brand_name']
+avg_list_prices = df['avg_list_price']
+
+plt.figure(figsize=(10, 6))
+plt.barh(categories, avg_list_prices, color='skyblue')
+plt.xlabel('Average List Price')
+plt.title('Brand with Highest Average List Price per Category')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/20_Complex/plot.png')
+plt.show()

@@ -1,0 +1,13 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df.plot(kind='bar', x='city', y='order_count', legend=False)
+plt.title('Frequency of Orders by Customer Location')
+plt.xlabel('Customer Location (City, State)')
+plt.ylabel('Number of Orders')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/17_Very Complex/plot.png')
+plt.show()

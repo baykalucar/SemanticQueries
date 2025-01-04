@@ -1,0 +1,15 @@
+
+SELECT 
+    stores.store_name AS store_name,
+    products.product_name AS product_name,
+    SUM(order_items.quantity) AS total_quantity_sold
+FROM 
+    order_items
+JOIN 
+    orders ON order_items.order_id = orders.order_id
+JOIN 
+    products ON order_items.product_id = products.product_id
+JOIN 
+    stores ON orders.store_id = stores.store_id
+GROUP BY 
+    stores.store_name, products.product_name;

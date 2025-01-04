@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def visualize_total_quantity(df):
+    try:
+        total_quantity = df['total_quantity'].iloc[0]
+
+        # Create a simple bar chart to visualize the total quantity
+        plt.bar(['Product'], [total_quantity], color='blue')
+        plt.xlabel('Product')
+        plt.ylabel('Total Quantity in Stock')
+        plt.title('Total Quantity of Specific Product in Stock')
+        plt.savefig('answers/azureopenai/2025-01-03/4_Simple/plot.png')
+        plt.show()
+    except Exception as e:
+        print(f"Error: {e}")
+
+# Example usage:
+# df = pd.DataFrame({'total_quantity': [100]})
+# visualize_total_quantity(df)

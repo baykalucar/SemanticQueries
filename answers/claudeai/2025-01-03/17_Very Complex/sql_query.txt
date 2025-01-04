@@ -1,0 +1,13 @@
+
+WITH customer_orders AS (
+    SELECT 
+        c.state,
+        c.city,
+        COUNT(o.order_id) as order_count
+    FROM customers c
+    LEFT JOIN orders o ON c.customer_id = o.customer_id
+    GROUP BY c.state, c.city
+    HAVING order_count > 0
+    ORDER BY order_count DESC
+)
+SELECT * FROM customer_orders;

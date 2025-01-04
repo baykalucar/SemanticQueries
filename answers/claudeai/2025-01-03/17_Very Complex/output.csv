@@ -1,0 +1,196 @@
+state,city,order_count
+NY,Mount Vernon,20
+NY,Scarsdale,20
+NY,Ballston Spa,17
+NY,Canandaigua,16
+TX,San Angelo,16
+CA,Palos Verdes Peninsula,15
+NY,Orchard Park,15
+TX,Longview,15
+CA,South El Monte,14
+NY,Merrick,14
+NY,Ossining,14
+TX,Houston,14
+CA,Anaheim,13
+CA,Campbell,13
+CA,Canyon Country,13
+CA,Oxnard,13
+CA,San Lorenzo,13
+NY,Astoria,13
+NY,East Elmhurst,13
+NY,Floral Park,13
+NY,Liverpool,13
+NY,Monroe,13
+NY,Monsey,13
+NY,Richmond Hill,13
+NY,Sunnyside,13
+CA,Apple Valley,12
+CA,Encino,12
+CA,Upland,12
+NY,Buffalo,12
+NY,Central Islip,12
+NY,Howard Beach,12
+NY,Port Washington,12
+NY,Ronkonkoma,12
+NY,Smithtown,12
+NY,Webster,12
+TX,Euless,12
+CA,Duarte,11
+NY,Amityville,11
+NY,Bay Shore,11
+NY,Bronx,11
+NY,East Northport,11
+NY,Franklin Square,11
+NY,Jamaica,11
+NY,Kingston,11
+NY,Long Beach,11
+NY,Maspeth,11
+NY,Troy,11
+NY,Uniondale,11
+TX,Forney,11
+TX,Sugar Land,11
+CA,Banning,10
+CA,Glendora,10
+CA,Oakland,10
+CA,Sacramento,10
+CA,San Carlos,10
+NY,Elmhurst,10
+NY,Jackson Heights,10
+NY,Lancaster,10
+NY,Lindenhurst,10
+NY,New Windsor,10
+NY,North Tonawanda,10
+NY,Shirley,10
+NY,Spring Valley,10
+NY,Woodside,10
+TX,Desoto,10
+TX,Garland,10
+TX,Rowlett,10
+CA,San Jose,9
+CA,Torrance,9
+NY,Baldwinsville,9
+NY,Brentwood,9
+NY,Brooklyn,9
+NY,Farmingdale,9
+NY,Hollis,9
+NY,Huntington Station,9
+NY,Mahopac,9
+NY,New York,9
+NY,Newburgh,9
+NY,Oswego,9
+NY,Pittsford,9
+NY,Queensbury,9
+NY,Rochester,9
+NY,Utica,9
+TX,Corpus Christi,9
+TX,Victoria,9
+CA,Atwater,8
+CA,Fullerton,8
+CA,Lawndale,8
+CA,Pleasanton,8
+CA,Redondo Beach,8
+CA,Rocklin,8
+CA,San Pablo,8
+CA,Santa Clara,8
+NY,Baldwin,8
+NY,Bayside,8
+NY,Bellmore,8
+NY,Centereach,8
+NY,Fairport,8
+NY,Garden City,8
+NY,Hempstead,8
+NY,Massapequa,8
+NY,Patchogue,8
+NY,Plainview,8
+NY,Plattsburgh,8
+NY,Port Chester,8
+NY,Rockville Centre,8
+NY,Rome,8
+NY,Rosedale,8
+NY,Saratoga Springs,8
+NY,Schenectady,8
+NY,South Ozone Park,8
+NY,Whitestone,8
+NY,Woodhaven,8
+CA,Coachella,7
+CA,Fresno,7
+CA,Ridgecrest,7
+CA,San Diego,7
+CA,Vista,7
+NY,Bethpage,7
+NY,Carmel,7
+NY,Forest Hills,7
+NY,Hamburg,7
+NY,Hicksville,7
+NY,Ithaca,7
+NY,New Rochelle,7
+NY,Niagara Falls,7
+NY,Port Jefferson Station,7
+NY,Saint Albans,7
+NY,Staten Island,7
+NY,Syosset,7
+NY,Wappingers Falls,7
+NY,West Babylon,7
+NY,West Islip,7
+TX,Harlingen,7
+TX,Richardson,7
+CA,Los Banos,6
+CA,Pomona,6
+CA,Santa Cruz,6
+CA,Santa Monica,6
+NY,Coram,6
+NY,Depew,6
+NY,Levittown,6
+NY,Massapequa Park,6
+NY,New Hyde Park,6
+NY,Selden,6
+NY,Valley Stream,6
+NY,Yonkers,6
+TX,El Paso,6
+CA,Bakersfield,5
+NY,Amsterdam,5
+NY,Clifton Park,5
+NY,Elmont,5
+NY,Endicott,5
+NY,Flushing,5
+NY,Freeport,5
+NY,Glen Cove,5
+NY,Hopewell Junction,5
+NY,Huntington,5
+NY,Jamestown,5
+NY,Lockport,5
+NY,New City,5
+NY,Poughkeepsie,5
+NY,Rego Park,5
+NY,West Hempstead,5
+NY,Yorktown Heights,5
+TX,Amarillo,5
+TX,Fort Worth,5
+TX,Helotes,5
+CA,Ontario,4
+NY,Auburn,4
+NY,Commack,4
+NY,Corona,4
+NY,Deer Park,4
+NY,East Meadow,4
+NY,Nanuet,4
+NY,Oceanside,4
+NY,Ozone Park,4
+NY,South Richmond Hill,4
+NY,Wantagh,4
+TX,Lake Jackson,4
+CA,Los Angeles,3
+NY,Albany,3
+NY,Fresh Meadows,3
+NY,Holbrook,3
+NY,Oakland Gardens,3
+TX,Copperas Cove,3
+TX,Mcallen,3
+CA,Mountain View,2
+CA,Yuba City,2
+NY,Far Rockaway,2
+NY,Springfield Gardens,2
+TX,San Antonio,2
+NY,Middle Village,1
+NY,Tonawanda,1
+NY,Westbury,1

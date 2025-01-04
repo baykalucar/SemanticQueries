@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['brand_name'], df['avg_order_value'])
+plt.title('Average Order Value by Brand')
+plt.xlabel('Brand')
+plt.ylabel('Average Order Value ($)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/15_Complex/plot.png')
+plt.close()

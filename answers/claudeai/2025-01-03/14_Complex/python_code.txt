@@ -1,0 +1,20 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+bars = plt.bar(df['store_name'], df['unique_products'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Store Name')
+plt.ylabel('Number of Unique Products')
+plt.title('Number of Different Products by Store')
+
+# Add value labels on top of each bar
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'{int(height)}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/14_Complex/plot.png')
+plt.close()

@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+staff_name = df['first_name'][0] + ' ' + df['last_name'][0]
+order_count = df['order_count'][0]
+
+plt.bar(staff_name, order_count, color='blue')
+plt.xlabel('Staff Member')
+plt.ylabel('Number of Orders Processed')
+plt.title('Staff Member with Most Orders Processed')
+plt.savefig('answers/azureopenai/2025-01-04/11_Moderate/plot.png')
+plt.show()

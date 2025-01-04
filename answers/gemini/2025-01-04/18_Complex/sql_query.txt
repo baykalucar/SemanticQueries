@@ -1,0 +1,2 @@
+
+SELECT p.product_name, s.store_name, SUM(oi.quantity) AS total_quantity_sold FROM order_items oi JOIN products p ON oi.product_id = p.product_id JOIN orders o ON oi.order_id = o.order_id JOIN stocks st ON p.product_id = st.product_id JOIN stores s ON st.store_id = s.store_id GROUP BY p.product_name, s.store_name ORDER BY p.product_name, s.store_name;

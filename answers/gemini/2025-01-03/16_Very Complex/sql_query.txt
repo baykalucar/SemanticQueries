@@ -1,0 +1,2 @@
+
+SELECT c.category_name, SUM(oi.quantity) AS total_quantity_sold, AVG(oi.discount) AS average_discount FROM order_items oi JOIN products p ON oi.product_id = p.product_id JOIN categories c ON p.category_id = c.category_id GROUP BY c.category_name;

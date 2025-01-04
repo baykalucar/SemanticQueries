@@ -1,0 +1,19 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['store_name'], df['quantity'])
+plt.xticks(rotation=45, ha='right')
+plt.title('Lowest Stock Levels for Comfort Bicycles by Store')
+plt.xlabel('Store Name')
+plt.ylabel('Quantity in Stock')
+
+# Create directory if it doesn't exist
+import os
+os.makedirs('answers/claudeai/2025-01-04/19_Complex', exist_ok=True)
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/19_Complex/plot.png')
+plt.close()

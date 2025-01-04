@@ -1,0 +1,8 @@
+
+SELECT b.brand_name, AVG(oi.quantity * (oi.list_price - oi.discount)) AS average_order_value
+FROM order_items oi
+JOIN products p ON oi.product_id = p.product_id
+JOIN brands b ON p.brand_id = b.brand_id
+GROUP BY b.brand_name
+ORDER BY average_order_value DESC
+LIMIT 1;

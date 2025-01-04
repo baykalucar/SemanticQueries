@@ -1,0 +1,2 @@
+
+SELECT s.store_id, COUNT(*) AS active_staff_count FROM staffs AS s WHERE s.active = 1 GROUP BY s.store_id;

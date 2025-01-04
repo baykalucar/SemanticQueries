@@ -1,0 +1,2 @@
+
+SELECT s.store_name, COUNT(DISTINCT p.product_id) AS distinct_product_count FROM stores AS s JOIN stocks AS st ON s.store_id = st.store_id JOIN products AS p ON st.product_id = p.product_id GROUP BY s.store_name ORDER BY distinct_product_count DESC;

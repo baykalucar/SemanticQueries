@@ -1,0 +1,42 @@
+[
+    {
+        "complexity": "Simple",
+        "queries": [
+            "What is the total number of brands available?",
+            "List all the categories of bicycles.",
+            "How many customers are there in the database?",
+            "Show the total number of orders placed.",
+            "What is the total quantity of a specific product in stock?"
+        ]
+    },
+    {
+        "complexity": "Moderate",
+        "queries": [
+            "How many products are available in each category?",
+            "What is the total sales amount for each store?",
+            "List the number of orders placed by each customer.",
+            "What is the average list price of products for each brand?",
+            "How many active staff members are there in each store?"
+        ]
+    },
+    {
+        "complexity": "Complex",
+        "queries": [
+            "Which products have been ordered the most in the past year?",
+            "List the top 5 customers with the highest total order value.",
+            "What is the total discount given for each product category?",
+            "Identify the staff members who have processed the most orders.",
+            "Which stores have the highest number of different products in stock?"
+        ]
+    },
+    {
+        "complexity": "Very Complex",
+        "queries": [
+            "Determine the trend of order placements over the years, broken down by store.",
+            "Analyze the impact of discounts on the sales volume of different product categories.",
+            "Identify the correlation between customer location and the frequency of orders placed.",
+            "Evaluate the performance of each store based on sales and customer satisfaction metrics.",
+            "Assess the impact of staff activity status on the overall sales performance of the stores."
+        ]
+    }
+]

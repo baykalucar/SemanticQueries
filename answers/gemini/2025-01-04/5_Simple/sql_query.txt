@@ -1,0 +1,2 @@
+
+SELECT T1.quantity FROM stocks AS T1 INNER JOIN products AS T2 ON T1.product_id = T2.product_id WHERE T1.store_id = 1 AND T2.product_id = 1

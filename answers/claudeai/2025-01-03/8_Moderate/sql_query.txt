@@ -1,0 +1,7 @@
+
+SELECT b.brand_name,
+       ROUND(AVG(p.list_price), 2) as avg_price
+FROM products p
+JOIN brands b ON p.brand_id = b.brand_id
+GROUP BY b.brand_name
+ORDER BY avg_price DESC;

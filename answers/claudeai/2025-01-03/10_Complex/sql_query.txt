@@ -1,0 +1,11 @@
+
+SELECT 
+    p.product_name,
+    SUM(oi.quantity) as total_ordered
+FROM order_items oi
+JOIN products p ON oi.product_id = p.product_id
+JOIN orders o ON oi.order_id = o.order_id
+WHERE o.order_date >= DATE('now', '-1 year')
+GROUP BY p.product_id, p.product_name
+ORDER BY total_ordered DESC
+LIMIT 10;

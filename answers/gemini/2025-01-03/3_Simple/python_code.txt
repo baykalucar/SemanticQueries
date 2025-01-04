@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with a column named 'total_orders'
+df = pd.DataFrame({'total_orders': [10]}) # Example data. Replace with your actual data.
+
+plt.figure(figsize=(8, 6))
+plt.bar(df.index, df['total_orders'], color='skyblue')
+plt.xlabel('Count')
+plt.ylabel('Total Orders')
+plt.title('Total Number of Orders')
+plt.savefig('answers/gemini/2025-01-03/3_Simple/plot.png')
+

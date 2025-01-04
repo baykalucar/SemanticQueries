@@ -1,0 +1,4 @@
+
+SELECT customer_id, COUNT(order_id) AS number_of_orders
+FROM orders
+GROUP BY customer_id;

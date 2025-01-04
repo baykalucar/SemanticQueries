@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'brand_name' and 'average_list_price'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['brand_name'], df['average_list_price'], color='skyblue')
+plt.xlabel('Brand Name')
+plt.ylabel('Average List Price')
+plt.title('Average List Price of Products for Each Brand')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/8_Moderate/plot.png')
+plt.show()

@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['total_sales'])
+plt.title('Total Sales by Store')
+plt.xlabel('Store Name')
+plt.ylabel('Total Sales ($)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/6_Moderate/plot.png')
+plt.close()

@@ -1,0 +1,20 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query results)
+data = {'email': ['debra.burks@yahoo.com']}
+df = pd.DataFrame(data)
+
+# Assuming 'email' column exists in the DataFrame
+emails = df['email'].tolist()
+
+# Create a bar chart (example visualization)
+plt.figure(figsize=(8, 6))
+plt.bar(range(len(emails)), emails)
+plt.xlabel("Customer ID")
+plt.ylabel("Email Address")
+plt.title("Customer Email Address")
+plt.xticks(range(len(emails)), range(1, len(emails) + 1)) #Assuming customer_id starts from 1
+plt.savefig('answers/gemini/2025-01-04/2_Simple/plot.png')
+

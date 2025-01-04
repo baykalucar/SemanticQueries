@@ -1,0 +1,29 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import os
+
+def create_sales_plot(df):
+    #Check if the directory exists, if not create it
+    directory = "answers/gemini/2025-01-04/21_Very Complex/"
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    df['sales_month'] = pd.to_datetime(df['sales_month'])
+    fig, ax = plt.subplots(figsize=(12, 6))
+
+    for category in df['category_name'].unique():
+        category_data = df[df['category_name'] == category]
+        ax.plot(category_data['sales_month'], category_data['total_sales'], label=category)
+
+    ax.xaxis.set_major_locator(mdates.MonthLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+    plt.xlabel('Month')
+    plt.ylabel('Total Sales')
+    plt.title('Monthly Sales Trend by Category (Last Year)')
+    plt.legend()
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig('answers/gemini/2025-01-04/21_Very Complex/plot.png')
+

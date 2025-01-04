@@ -1,0 +1,7 @@
+
+SELECT staffs.staff_id, staffs.first_name, staffs.last_name, COUNT(orders.order_id) AS order_count
+FROM orders
+JOIN staffs ON orders.staff_id = staffs.staff_id
+GROUP BY staffs.staff_id, staffs.first_name, staffs.last_name
+ORDER BY order_count DESC
+LIMIT 1;

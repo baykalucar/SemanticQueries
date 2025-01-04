@@ -1,0 +1,2 @@
+
+SELECT * FROM orders WHERE strftime('%Y-%m', order_date) = '2016-01';

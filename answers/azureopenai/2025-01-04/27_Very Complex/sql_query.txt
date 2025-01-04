@@ -1,0 +1,9 @@
+
+SELECT p.product_id, p.product_name, s.store_id, s.quantity AS stock_quantity, 
+       SUM(oi.quantity) AS total_sales, 
+       (s.quantity / SUM(oi.quantity)) AS lead_time
+FROM stocks s
+JOIN products p ON s.product_id = p.product_id
+JOIN order_items oi ON p.product_id = oi.product_id
+GROUP BY p.product_id, s.store_id
+ORDER BY lead_time ASC;

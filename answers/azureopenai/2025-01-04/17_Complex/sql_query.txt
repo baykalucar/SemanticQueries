@@ -1,0 +1,13 @@
+
+SELECT 
+    staffs.staff_id, 
+    staffs.first_name || ' ' || staffs.last_name AS staff_name, 
+    AVG(order_items.quantity * (order_items.list_price - order_items.discount * order_items.list_price)) AS average_order_value
+FROM 
+    orders
+JOIN 
+    order_items ON orders.order_id = order_items.order_id
+JOIN 
+    staffs ON orders.staff_id = staffs.staff_id
+GROUP BY 
+    staffs.staff_id, staff_name;

@@ -1,0 +1,11 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'category_name' and 'total_discount'
+df.plot(x='category_name', y='total_discount', kind='bar')
+plt.xlabel('Product Category')
+plt.ylabel('Total Discount')
+plt.title('Total Discount per Product Category')
+plt.savefig('answers/gemini/2025-01-03/12_Complex/plot.png')
+

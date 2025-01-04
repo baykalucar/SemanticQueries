@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['product_name'], df['total_quantity'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity in Stock')
+plt.title('Total Stock Quantity by Product')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/4_Simple/plot.png')
+plt.close()

@@ -1,0 +1,9 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.bar(['Product 1'], df['quantity'])
+plt.title('Stock Quantity for Product 1 at Store 1')
+plt.ylabel('Quantity')
+plt.savefig('answers/claudeai/2025-01-04/5_Simple/plot.png')
+plt.close()

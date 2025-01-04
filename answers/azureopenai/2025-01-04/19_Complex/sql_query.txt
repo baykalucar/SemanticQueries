@@ -1,0 +1,10 @@
+
+SELECT s.store_name, SUM(st.quantity) AS total_stock
+FROM stores s
+JOIN stocks st ON s.store_id = st.store_id
+JOIN products p ON st.product_id = p.product_id
+JOIN categories c ON p.category_id = c.category_id
+WHERE c.category_name = 'Comfort Bicycles'
+GROUP BY s.store_id
+ORDER BY total_stock ASC
+LIMIT 1;

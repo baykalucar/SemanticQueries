@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(f"{df['first_name'].iloc[0]} {df['last_name'].iloc[0]}", df['total_amount'].iloc[0])
+plt.title('Highest Order Amount by Customer')
+plt.ylabel('Order Amount ($)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/9_Moderate/plot.png')
+plt.close()

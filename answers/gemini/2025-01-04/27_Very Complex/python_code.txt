@@ -1,0 +1,38 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# Assuming 'df' is a pandas DataFrame with columns: product_name, total_quantity_sold, current_stock, stock_remaining, lead_time
+
+def create_inventory_plots(df):
+    # Convert lead_time to numeric if it's not already
+    if pd.api.types.is_datetime64_any_dtype(df['lead_time']):
+        df['lead_time'] = df['lead_time'].dt.days
+    elif pd.api.types.is_string_dtype(df['lead_time']):
+        df['lead_time'] = pd.to_numeric(df['lead_time'], errors='coerce')
+
+    df['stock_remaining'] = df['stock_remaining'].astype(int, errors='ignore')
+
+
+    plt.figure(figsize=(12, 6))
+
+    plt.subplot(1, 2, 1)
+    plt.bar(df['product_name'], df['stock_remaining'], color='skyblue')
+    plt.xlabel('Product Name')
+    plt.ylabel('Stock Remaining')
+    plt.title('Current Stock Levels')
+    plt.xticks(rotation=45, ha='right')
+
+
+    plt.subplot(1, 2, 2)
+    plt.scatter(df['total_quantity_sold'], df['lead_time'], color='coral')
+    plt.xlabel('Total Quantity Sold')
+    plt.ylabel('Lead Time (days)')
+    plt.title('Sales vs. Lead Time')
+
+
+    plt.tight_layout()
+    os.makedirs(os.path.dirname('answers/gemini/2025-01-04/27_Very Complex/plot.png'), exist_ok=True)
+    plt.savefig('answers/gemini/2025-01-04/27_Very Complex/plot.png')
+

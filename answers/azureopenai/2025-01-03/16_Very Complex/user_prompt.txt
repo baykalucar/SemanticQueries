@@ -1,0 +1,1 @@
+Analyze the impact of discounts on the sales volume of different product categories.

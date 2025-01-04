@@ -1,0 +1,9 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.bar(['Total Customers'], [df['customer_count'].iloc[0]], color='blue')
+plt.title('Total Number of Customers')
+plt.ylabel('Count')
+plt.savefig('answers/claudeai/2025-01-03/2_Simple/plot.png')
+plt.close()

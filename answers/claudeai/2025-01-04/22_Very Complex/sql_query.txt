@@ -1,0 +1,14 @@
+
+SELECT 
+    c.category_name,
+    b.brand_name,
+    COUNT(oi.order_id) as total_orders,
+    SUM(oi.quantity) as total_units_sold,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_revenue
+FROM order_items oi
+JOIN products p ON oi.product_id = p.product_id
+JOIN categories c ON p.category_id = c.category_id
+JOIN brands b ON p.brand_id = b.brand_id
+GROUP BY c.category_name, b.brand_name
+ORDER BY total_revenue DESC
+LIMIT 10;

@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with a column named 'category_name'
+categories = df['category_name'].tolist()
+plt.figure(figsize=(10, 6))
+plt.bar(categories, [1] * len(categories))  # Replace [1] * len(categories) with actual data if needed
+plt.xlabel('Bicycle Categories')
+plt.ylabel('Count')
+plt.title('List of Bicycle Categories')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/1_Simple/plot.png')
+

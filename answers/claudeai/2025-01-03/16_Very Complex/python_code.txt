@@ -1,0 +1,22 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+plt.figure(figsize=(12, 6))
+plt.scatter(df['avg_discount'], 
+           df['total_units_sold'], 
+           s=df['total_revenue']/100,
+           c=np.arange(len(df)), 
+           cmap='viridis')
+
+for i, txt in enumerate(df['category_name']):
+    plt.annotate(txt, (df['avg_discount'].iloc[i], df['total_units_sold'].iloc[i]))
+
+plt.title('Impact of Discounts on Sales Volume by Category')
+plt.xlabel('Average Discount')
+plt.ylabel('Total Units Sold')
+plt.colorbar(label='Category')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/16_Very Complex/plot.png')
+plt.close()

@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df = pd.DataFrame({'category_name': [...], 'product_count': [...]})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['category_name'], df['product_count'], color='skyblue')
+plt.xlabel('Category Name')
+plt.ylabel('Number of Products')
+plt.title('Number of Products Available in Each Category')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/5_Moderate/plot.png')
+plt.show()

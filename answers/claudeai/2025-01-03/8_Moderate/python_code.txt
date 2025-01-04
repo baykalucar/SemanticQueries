@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['brand_name'], df['avg_price'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Brand Name')
+plt.ylabel('Average Price ($)')
+plt.title('Average Product Price by Brand')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/8_Moderate/plot.png')
+plt.close()

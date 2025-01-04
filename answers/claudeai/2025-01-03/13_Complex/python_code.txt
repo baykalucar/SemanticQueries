@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['total_orders'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Staff Member')
+plt.ylabel('Number of Orders Processed')
+plt.title('Orders Processed by Staff Members')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/13_Complex/plot.png')
+plt.close()

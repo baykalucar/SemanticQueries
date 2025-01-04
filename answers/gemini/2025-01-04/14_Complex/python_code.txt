@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query results)
+data = {'product_name': ['Product A', 'Product B', 'Product C'], 'total_quantity_sold': [100, 80, 60]}
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(8, 6))
+plt.bar(df['product_name'], df['total_quantity_sold'], color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.title('Top 3 Best-Selling Products')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/14_Complex/plot.png')
+

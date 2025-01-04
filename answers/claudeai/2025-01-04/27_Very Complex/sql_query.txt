@@ -1,0 +1,39 @@
+
+WITH StockAnalysis AS (
+    SELECT 
+        p.product_id,
+        p.product_name,
+        b.brand_name,
+        c.category_name,
+        s.quantity as current_stock,
+        COUNT(oi.order_id) as total_orders,
+        SUM(oi.quantity) as total_units_sold,
+        AVG(oi.quantity) as avg_order_size,
+        p.list_price,
+        ROUND(SUM(oi.quantity * oi.list_price * (1 - oi.discount)), 2) as total_revenue
+    FROM products p
+    LEFT JOIN stocks s ON p.product_id = s.product_id
+    LEFT JOIN order_items oi ON p.product_id = oi.product_id
+    LEFT JOIN brands b ON p.brand_id = b.brand_id
+    LEFT JOIN categories c ON p.category_id = c.category_id
+    GROUP BY p.product_id, p.product_name, b.brand_name, c.category_name, s.quantity, p.list_price
+)
+SELECT 
+    product_id,
+    product_name,
+    brand_name,
+    category_name,
+    current_stock,
+    total_orders,
+    total_units_sold,
+    avg_order_size,
+    list_price,
+    total_revenue,
+    CASE 
+        WHEN current_stock = 0 THEN 'Out of Stock'
+        WHEN current_stock < avg_order_size THEN 'Low Stock'
+        WHEN current_stock < (avg_order_size * 3) THEN 'Medium Stock'
+        ELSE 'Sufficient Stock'
+    END as stock_status
+FROM StockAnalysis
+ORDER BY total_revenue DESC

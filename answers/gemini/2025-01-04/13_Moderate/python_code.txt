@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns: customer_id, first_name, last_name, phone, email, street, city, state, zip_code
+
+plt.figure(figsize=(10, 6))  # Adjust figure size if needed
+plt.bar(df['customer_id'], df['first_name'])
+plt.xlabel('Customer ID')
+plt.ylabel('Customer Name')
+plt.title('Customers from California')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/13_Moderate/plot.png')
+

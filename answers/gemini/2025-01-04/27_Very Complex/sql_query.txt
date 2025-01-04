@@ -1,0 +1,19 @@
+
+SELECT
+  p.product_name,
+  SUM(oi.quantity) AS total_quantity_sold,
+  s.quantity AS current_stock,
+  s.quantity - SUM(oi.quantity) AS stock_remaining,
+  o.required_date - o.order_date AS lead_time
+FROM products AS p
+JOIN order_items AS oi
+  ON p.product_id = oi.product_id
+JOIN orders AS o
+  ON oi.order_id = o.order_id
+JOIN stocks AS s
+  ON p.product_id = s.product_id
+GROUP BY
+  p.product_name,
+  s.quantity
+ORDER BY
+  stock_remaining;

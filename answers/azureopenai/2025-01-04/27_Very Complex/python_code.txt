@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df['lead_time'] = df['stock_quantity'] / df['total_sales']
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['lead_time'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Lead Time')
+plt.title('Lead Time for Stock Replenishment by Product')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/27_Very Complex/plot.png')
+plt.show()

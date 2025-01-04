@@ -1,0 +1,20 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+bars = plt.bar(df['category_name'], df['total_discount'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Category')
+plt.ylabel('Total Discount ($)')
+plt.title('Total Discounts by Product Category')
+
+# Add value labels on top of bars
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'${height:,.2f}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/12_Complex/plot.png')
+plt.close()

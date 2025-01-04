@@ -1,0 +1,1 @@
+What is the average list price of products for each brand?

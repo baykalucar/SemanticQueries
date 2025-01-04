@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'brand_name': ['Brand X'],
+    'average_order_value': [1234.56]
+})
+
+plt.figure(figsize=(8, 6))
+plt.bar(df['brand_name'], df['average_order_value'], color='skyblue')
+plt.xlabel('Brand Name')
+plt.ylabel('Average Order Value')
+plt.title('Brand with the Highest Average Order Value')
+plt.savefig('answers/azureopenai/2025-01-04/15_Complex/plot.png')
+plt.show()

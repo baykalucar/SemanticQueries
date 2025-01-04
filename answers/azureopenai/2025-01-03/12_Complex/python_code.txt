@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'category_name' and 'total_discount'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['category_name'], df['total_discount'], color='skyblue')
+plt.xlabel('Product Category')
+plt.ylabel('Total Discount')
+plt.title('Total Discount Given for Each Product Category')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/12_Complex/plot.png')
+plt.show()

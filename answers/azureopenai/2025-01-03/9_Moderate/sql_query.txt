@@ -1,0 +1,5 @@
+
+SELECT store_id, COUNT(*) AS active_staff_count
+FROM staffs
+WHERE active = 1
+GROUP BY store_id;

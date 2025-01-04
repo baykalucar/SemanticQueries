@@ -1,0 +1,28 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+# State-level visualization
+plt.figure(figsize=(12, 6))
+plt.scatter(df['state'], df['order_count'], 
+           s=df['order_count']*20, alpha=0.6)
+plt.xticks(rotation=45, ha='right')
+plt.title('Order Frequency by State')
+plt.xlabel('State')
+plt.ylabel('Number of Orders')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/17_Very Complex/plot.png')
+plt.close()
+
+# City-level visualization
+plt.figure(figsize=(15, 6))
+top_cities = df.nlargest(20, 'order_count')
+plt.bar(top_cities['city'], top_cities['order_count'])
+plt.xticks(rotation=45, ha='right')
+plt.title('Top 20 Cities by Order Frequency')
+plt.xlabel('City')
+plt.ylabel('Number of Orders')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/17_Very Complex/plot_cities.png')
+plt.close()

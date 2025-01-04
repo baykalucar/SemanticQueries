@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['last_name'] + ', ' + df['first_name'], df['order_count'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Customer Name')
+plt.ylabel('Number of Orders')
+plt.title('Orders per Customer')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/7_Moderate/plot.png')
+plt.close()

@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query results)
+data = {'first_name': ['John'], 'last_name': ['Doe'], 'total_spent': [1500]}
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(8, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['total_spent'])
+plt.xlabel('Customer Name')
+plt.ylabel('Total Spent')
+plt.title('Most Expensive Order')
+plt.savefig('answers/gemini/2025-01-04/9_Moderate/plot.png')
+

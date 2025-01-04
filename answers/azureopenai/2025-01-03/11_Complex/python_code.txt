@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'customer_name': ['Customer A', 'Customer B', 'Customer C', 'Customer D', 'Customer E'],
+    'total_order_value': [1000, 950, 900, 850, 800]
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['customer_name'], df['total_order_value'], color='skyblue')
+plt.xlabel('Customer Name')
+plt.ylabel('Total Order Value')
+plt.title('Top 5 Customers by Total Order Value')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/11_Complex/plot.png')
+plt.show()

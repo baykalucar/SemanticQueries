@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['category_name'], df['product_count'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Category')
+plt.ylabel('Number of Products')
+plt.title('Number of Products by Category')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/5_Moderate/plot.png')
+plt.close()

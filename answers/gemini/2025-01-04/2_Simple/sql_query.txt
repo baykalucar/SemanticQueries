@@ -1,0 +1,2 @@
+
+SELECT c.email FROM customers c WHERE c.customer_id = 1;

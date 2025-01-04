@@ -1,0 +1,11 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'store_name' and 'total_sales'
+df.plot(x='store_name', y='total_sales', kind='bar')
+plt.xlabel('Store Name')
+plt.ylabel('Total Sales')
+plt.title('Total Sales Amount for Each Store')
+plt.savefig('answers/gemini/2025-01-03/6_Moderate/plot.png')
+

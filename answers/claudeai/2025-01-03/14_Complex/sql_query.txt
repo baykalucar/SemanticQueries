@@ -1,0 +1,9 @@
+
+SELECT 
+    s.store_name,
+    COUNT(DISTINCT st.product_id) as unique_products
+FROM stores s
+JOIN stocks st ON s.store_id = st.store_id
+WHERE st.quantity > 0
+GROUP BY s.store_id, s.store_name
+ORDER BY unique_products DESC;

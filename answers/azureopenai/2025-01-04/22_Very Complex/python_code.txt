@@ -1,0 +1,25 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'category': ['Category1', 'Category2', 'Category3'],
+    'brand': ['BrandA', 'BrandB', 'BrandC'],
+    'total_sales': [10000, 15000, 12000]
+})
+
+# Plotting
+plt.figure(figsize=(10, 6))
+for category in df['category'].unique():
+    subset = df[df['category'] == category]
+    plt.bar(subset['brand'], subset['total_sales'], label=category)
+
+plt.xlabel('Brand')
+plt.ylabel('Total Sales')
+plt.title('Most Profitable Product Categories and Brands')
+plt.legend(title='Category')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/22_Very Complex/plot.png')
+plt.show()

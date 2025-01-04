@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query results)
+data = {'brand_name': ['Electra'], 'average_order_value': [1500]}
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(8, 6))
+plt.bar(df['brand_name'], df['average_order_value'], color='skyblue')
+plt.xlabel('Brand Name')
+plt.ylabel('Average Order Value')
+plt.title('Brand with Highest Average Order Value')
+plt.savefig('answers/gemini/2025-01-04/15_Complex/plot.png')
+

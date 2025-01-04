@@ -1,0 +1,2 @@
+
+SELECT c.state, COUNT(DISTINCT o.customer_id) AS num_customers, SUM(oi.quantity) AS total_quantity_purchased FROM customers AS c INNER JOIN orders AS o ON c.customer_id = o.customer_id INNER JOIN order_items AS oi ON o.order_id = oi.order_id GROUP BY c.state ORDER BY num_customers DESC;

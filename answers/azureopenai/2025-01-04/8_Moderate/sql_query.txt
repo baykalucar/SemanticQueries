@@ -1,0 +1,6 @@
+
+SELECT b.brand_name, SUM(oi.quantity * (oi.list_price - (oi.list_price * oi.discount))) AS total_revenue
+FROM order_items oi
+JOIN products p ON oi.product_id = p.product_id
+JOIN brands b ON p.brand_id = b.brand_id
+GROUP BY b.brand_name;

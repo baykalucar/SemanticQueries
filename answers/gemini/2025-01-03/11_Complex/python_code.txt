@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'first_name', 'last_name', and 'total_order_value'
+
+df = df.sort_values(by=['total_order_value'], ascending=False)
+df['customer'] = df['first_name'] + ' ' + df['last_name']
+plt.figure(figsize=(12, 6))
+plt.bar(df['customer'][:5], df['total_order_value'][:5], color='skyblue')
+plt.xlabel("Customer Name")
+plt.ylabel("Total Order Value")
+plt.title("Top 5 Customers with Highest Total Order Value")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-03/11_Complex/plot.png')
+

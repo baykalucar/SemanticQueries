@@ -1,0 +1,9 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+df.plot(x='category_name', y='num_products', kind='bar')
+plt.xlabel('Category Name')
+plt.ylabel('Number of Products')
+plt.title('Number of Products in Each Category')
+plt.savefig('answers/gemini/2025-01-03/5_Moderate/plot.png')
+

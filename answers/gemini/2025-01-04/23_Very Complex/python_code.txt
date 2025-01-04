@@ -1,0 +1,24 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+def create_revenue_plot(df, output_path):
+    try:
+        df['order_date'] = pd.to_datetime(df['order_date'])
+        df = df.set_index('order_date')
+        plt.figure(figsize=(12, 6))
+        plt.plot(df['total_revenue'], marker='o', linestyle='-')
+        plt.xlabel('Order Date')
+        plt.ylabel('Total Revenue')
+        plt.title('Total Revenue Over Time')
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        plt.savefig(output_path)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+output_path = 'answers/gemini/2025-01-04/23_Very Complex/plot.png'
+create_revenue_plot(df, output_path)
+

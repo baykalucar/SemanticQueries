@@ -1,0 +1,9 @@
+
+SELECT 
+    oi.product_id,
+    SUM(oi.quantity * oi.list_price) AS total_sales_before_discount,
+    SUM(oi.quantity * (oi.list_price - (oi.list_price * oi.discount))) AS total_sales_after_discount
+FROM 
+    order_items oi
+GROUP BY 
+    oi.product_id

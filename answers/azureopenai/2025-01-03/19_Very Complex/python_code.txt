@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'store_id', 'active', 'total_sales'
+
+# Pivot the data for plotting
+pivot_df = df.pivot(index='store_id', columns='active', values='total_sales')
+
+# Plotting
+pivot_df.plot(kind='bar', stacked=True, figsize=(10, 6))
+plt.title('Impact of Staff Activity Status on Store Sales Performance')
+plt.xlabel('Store ID')
+plt.ylabel('Total Sales')
+plt.legend(title='Active Status', labels=['Inactive', 'Active'])
+plt.tight_layout()
+
+# Save the plot
+plt.savefig('answers/azureopenai/2025-01-03/19_Very Complex/plot.png')
+plt.show()

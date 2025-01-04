@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'staff_id': [2, 1],  # Example data
+    'first_name': ['Mireya', 'Fabiola'],
+    'last_name': ['Copeland', 'Jackson'],
+    'order_count': [10, 5]
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['order_count'], color='skyblue')
+plt.xlabel('Staff Member')
+plt.ylabel('Number of Orders Processed')
+plt.title('Number of Orders Processed by Staff Members')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/13_Complex/plot.png')
+plt.show()

@@ -1,0 +1,20 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df['month'] = pd.to_datetime(df['month'])
+
+plt.figure(figsize=(10, 6))
+for category in df['category_name'].unique():
+    category_data = df[df['category_name'] == category]
+    plt.plot(category_data['month'], category_data['total_sales'], label=category)
+
+plt.xlabel('Month')
+plt.ylabel('Total Sales')
+plt.title('Monthly Sales Trends for Each Product Category')
+plt.legend()
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/21_Very Complex/plot.png')
+plt.show()

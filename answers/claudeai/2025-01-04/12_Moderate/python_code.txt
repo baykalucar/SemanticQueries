@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.bar(['Children Bicycles'], df['avg_price'], color='skyblue')
+plt.title('Average List Price of Children Bicycles')
+plt.ylabel('Price ($)')
+plt.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.savefig('answers/claudeai/2025-01-04/12_Moderate/plot.png')
+plt.close()

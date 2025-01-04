@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns from the SQL query
+
+plt.figure(figsize=(10, 6))  # Adjust figure size if needed
+plt.bar(df['order_id'], df['customer_id'], color='skyblue')
+plt.xlabel('Order ID')
+plt.ylabel('Customer ID')
+plt.title('Orders Placed in January 2016')
+plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better readability
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/10_Moderate/plot.png')
+

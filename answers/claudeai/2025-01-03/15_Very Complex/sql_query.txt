@@ -1,0 +1,9 @@
+
+SELECT 
+    STRFTIME('%Y', o.order_date) as year,
+    s.store_name,
+    COUNT(*) as order_count
+FROM orders o
+JOIN stores s ON o.store_id = s.store_id
+GROUP BY STRFTIME('%Y', o.order_date), s.store_name
+ORDER BY year, s.store_name

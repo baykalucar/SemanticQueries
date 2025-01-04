@@ -1,0 +1,15 @@
+
+WITH monthly_sales AS (
+  SELECT 
+    c.category_name,
+    strftime('%Y-%m', o.order_date) as month,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_sales
+  FROM order_items oi
+  JOIN orders o ON oi.order_id = o.order_id
+  JOIN products p ON oi.product_id = p.product_id
+  JOIN categories c ON p.category_id = c.category_id
+  WHERE o.order_date >= date('now', '-1 year')
+  GROUP BY c.category_name, month
+  ORDER BY month, c.category_name
+)
+SELECT * FROM monthly_sales

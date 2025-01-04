@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'customer_id', 'first_name', 'last_name', 'total_orders'
+df['customer_name'] = df['first_name'] + ' ' + df['last_name']
+plt.figure(figsize=(12, 6))
+plt.bar(df['customer_name'], df['total_orders'])
+plt.xlabel('Customer Name')
+plt.ylabel('Number of Orders')
+plt.title('Number of Orders Placed by Each Customer')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-03/7_Moderate/plot.png')
+

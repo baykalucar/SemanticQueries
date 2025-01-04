@@ -1,0 +1,39 @@
+
+WITH customer_metrics AS (
+  SELECT 
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    MAX(o.order_date) as last_purchase_date,
+    COUNT(DISTINCT o.order_id) as frequency,
+    SUM(oi.quantity * oi.list_price * (1-oi.discount)) as total_spend,
+    JULIANDAY('2017-01-01') - JULIANDAY(MAX(o.order_date)) as recency_days
+  FROM customers c
+  JOIN orders o ON c.customer_id = o.customer_id
+  JOIN order_items oi ON o.order_id = oi.order_id
+  GROUP BY c.customer_id, c.first_name, c.last_name
+),
+rfm_scores AS (
+  SELECT 
+    *,
+    NTILE(5) OVER (ORDER BY recency_days DESC) as R,
+    NTILE(5) OVER (ORDER BY frequency) as F,
+    NTILE(5) OVER (ORDER BY total_spend) as M
+  FROM customer_metrics
+)
+SELECT 
+  customer_id,
+  first_name,
+  last_name,
+  R as recency_score,
+  F as frequency_score, 
+  M as monetary_score,
+  (R + F + M)/3.0 as rfm_score,
+  CASE 
+    WHEN (R + F + M)/3.0 >= 4 THEN 'Platinum'
+    WHEN (R + F + M)/3.0 >= 3 THEN 'Gold'
+    WHEN (R + F + M)/3.0 >= 2 THEN 'Silver'
+    ELSE 'Bronze'
+  END as customer_segment
+FROM rfm_scores
+ORDER BY rfm_score DESC;

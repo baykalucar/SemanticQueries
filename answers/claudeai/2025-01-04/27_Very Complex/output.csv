@@ -1,0 +1,911 @@
+product_id,product_name,brand_name,category_name,current_stock,total_orders,total_units_sold,avg_order_size,list_price,total_revenue,stock_status
+7,Trek Slash 8 27.5 - 2016,Trek,Mountain Bikes,8.0,202,308.0,1.5247524752475248,3999.99,1111117.22,Sufficient Stock
+7,Trek Slash 8 27.5 - 2016,Trek,Mountain Bikes,12.0,101,154.0,1.5247524752475248,3999.99,555558.61,Sufficient Stock
+9,Trek Conduit+ - 2016,Trek,Electric Bikes,11.0,101,145.0,1.4356435643564356,2999.99,389248.7,Sufficient Stock
+9,Trek Conduit+ - 2016,Trek,Electric Bikes,17.0,101,145.0,1.4356435643564356,2999.99,389248.7,Sufficient Stock
+9,Trek Conduit+ - 2016,Trek,Electric Bikes,23.0,101,145.0,1.4356435643564356,2999.99,389248.7,Sufficient Stock
+4,Trek Fuel EX 8 29 - 2016,Trek,Mountain Bikes,2.0,97,143.0,1.4742268041237114,2899.99,368472.73,Medium Stock
+4,Trek Fuel EX 8 29 - 2016,Trek,Mountain Bikes,11.0,97,143.0,1.4742268041237114,2899.99,368472.73,Sufficient Stock
+4,Trek Fuel EX 8 29 - 2016,Trek,Mountain Bikes,23.0,97,143.0,1.4742268041237114,2899.99,368472.73,Sufficient Stock
+51,Trek Silque SLR 8 Women's - 2017,Trek,Road Bikes,2.0,38,58.0,1.5263157894736843,6499.99,349049.46,Medium Stock
+43,Trek Fuel EX 9.8 27.5 Plus - 2017,Trek,Mountain Bikes,2.0,50,66.0,1.32,5299.99,318105.4,Medium Stock
+62,Trek Boone 7 - 2017,Trek,Cyclocross Bicycles,4.0,50,84.0,1.68,3499.99,255219.27,Medium Stock
+49,Trek Domane SL 6 - 2017,Trek,Road Bikes,4.0,44,74.0,1.6818181818181819,3499.99,227289.35,Medium Stock
+11,Surly Straggler 650b - 2016,Surly,Cyclocross Bicycles,8.0,97,151.0,1.556701030927835,1680.99,226765.55,Sufficient Stock
+11,Surly Straggler 650b - 2016,Surly,Cyclocross Bicycles,21.0,97,151.0,1.556701030927835,1680.99,226765.55,Sufficient Stock
+11,Surly Straggler 650b - 2016,Surly,Cyclocross Bicycles,30.0,97,151.0,1.556701030927835,1680.99,226765.55,Sufficient Stock
+56,Trek Domane SLR 6 Disc - 2017,Trek,Road Bikes,15.0,28,43.0,1.5357142857142858,5499.99,211584.62,Sufficient Stock
+56,Trek Domane SLR 6 Disc - 2017,Trek,Road Bikes,19.0,28,43.0,1.5357142857142858,5499.99,211584.62,Sufficient Stock
+56,Trek Domane SLR 6 Disc - 2017,Trek,Road Bikes,20.0,28,43.0,1.5357142857142858,5499.99,211584.62,Sufficient Stock
+10,Surly Straggler - 2016,Surly,Cyclocross Bicycles,13.0,97,147.0,1.5154639175257731,1549.0,203507.62,Sufficient Stock
+10,Surly Straggler - 2016,Surly,Cyclocross Bicycles,15.0,97,147.0,1.5154639175257731,1549.0,203507.62,Sufficient Stock
+10,Surly Straggler - 2016,Surly,Cyclocross Bicycles,21.0,97,147.0,1.5154639175257731,1549.0,203507.62,Sufficient Stock
+8,Trek Remedy 29 Carbon Frameset - 2016,Trek,Mountain Bikes,0.0,85,125.0,1.4705882352941178,1799.99,203380.87,Out of Stock
+8,Trek Remedy 29 Carbon Frameset - 2016,Trek,Mountain Bikes,1.0,85,125.0,1.4705882352941178,1799.99,203380.87,Low Stock
+8,Trek Remedy 29 Carbon Frameset - 2016,Trek,Mountain Bikes,12.0,85,125.0,1.4705882352941178,1799.99,203380.87,Sufficient Stock
+61,Trek Powerfly 8 FS Plus - 2017,Trek,Electric Bikes,20.0,25,41.0,1.64,4999.99,188249.62,Sufficient Stock
+61,Trek Powerfly 8 FS Plus - 2017,Trek,Electric Bikes,28.0,25,41.0,1.64,4999.99,188249.62,Sufficient Stock
+61,Trek Powerfly 8 FS Plus - 2017,Trek,Electric Bikes,30.0,25,41.0,1.64,4999.99,188249.62,Sufficient Stock
+55,Trek Domane S 6 - 2017,Trek,Road Bikes,5.0,52,78.0,1.5,2699.99,187055.31,Sufficient Stock
+58,Trek Madone 9.2 - 2017,Trek,Road Bikes,1.0,26,39.0,1.5,4999.99,175899.65,Low Stock
+58,Trek Madone 9.2 - 2017,Trek,Road Bikes,15.0,26,39.0,1.5,4999.99,175899.65,Sufficient Stock
+58,Trek Madone 9.2 - 2017,Trek,Road Bikes,27.0,26,39.0,1.5,4999.99,175899.65,Sufficient Stock
+28,Surly Karate Monkey 27.5+ Frameset - 2017,Surly,Mountain Bikes,20.0,52,78.0,1.5,2499.99,174949.3,Sufficient Stock
+51,Trek Silque SLR 8 Women's - 2017,Trek,Road Bikes,8.0,19,29.0,1.5263157894736843,6499.99,174524.73,Sufficient Stock
+50,Trek Silque SLR 7 Women's - 2017,Trek,Road Bikes,7.0,20,30.0,1.5,5999.99,163079.73,Sufficient Stock
+50,Trek Silque SLR 7 Women's - 2017,Trek,Road Bikes,25.0,20,30.0,1.5,5999.99,163079.73,Sufficient Stock
+50,Trek Silque SLR 7 Women's - 2017,Trek,Road Bikes,29.0,20,30.0,1.5,5999.99,163079.73,Sufficient Stock
+43,Trek Fuel EX 9.8 27.5 Plus - 2017,Trek,Mountain Bikes,26.0,25,33.0,1.32,5299.99,159052.7,Sufficient Stock
+5,Heller Shagamaw Frame - 2016,Heller,Mountain Bikes,1.0,91,129.0,1.4175824175824177,1320.99,151160.89,Low Stock
+5,Heller Shagamaw Frame - 2016,Heller,Mountain Bikes,3.0,91,129.0,1.4175824175824177,1320.99,151160.89,Medium Stock
+5,Heller Shagamaw Frame - 2016,Heller,Mountain Bikes,22.0,91,129.0,1.4175824175824177,1320.99,151160.89,Sufficient Stock
+40,Trek Fuel EX 9.8 29 - 2017,Trek,Mountain Bikes,2.0,21,33.0,1.5714285714285714,4999.99,147449.71,Medium Stock
+40,Trek Fuel EX 9.8 29 - 2017,Trek,Mountain Bikes,15.0,21,33.0,1.5714285714285714,4999.99,147449.71,Sufficient Stock
+40,Trek Fuel EX 9.8 29 - 2017,Trek,Mountain Bikes,24.0,21,33.0,1.5714285714285714,4999.99,147449.71,Sufficient Stock
+62,Trek Boone 7 - 2017,Trek,Cyclocross Bicycles,21.0,25,42.0,1.68,3499.99,127609.64,Sufficient Stock
+49,Trek Domane SL 6 - 2017,Trek,Road Bikes,8.0,22,37.0,1.6818181818181819,3499.99,113644.68,Sufficient Stock
+3,Surly Wednesday Frameset - 2016,Surly,Mountain Bikes,0.0,86,126.0,1.4651162790697674,999.99,112288.88,Out of Stock
+3,Surly Wednesday Frameset - 2016,Surly,Mountain Bikes,6.0,86,126.0,1.4651162790697674,999.99,112288.88,Sufficient Stock
+3,Surly Wednesday Frameset - 2016,Surly,Mountain Bikes,28.0,86,126.0,1.4651162790697674,999.99,112288.88,Sufficient Stock
+47,Trek Remedy 9.8 - 2017,Trek,Mountain Bikes,0.0,14,22.0,1.5714285714285714,5299.99,105469.8,Out of Stock
+47,Trek Remedy 9.8 - 2017,Trek,Mountain Bikes,14.0,14,22.0,1.5714285714285714,5299.99,105469.8,Sufficient Stock
+47,Trek Remedy 9.8 - 2017,Trek,Mountain Bikes,21.0,14,22.0,1.5714285714285714,5299.99,105469.8,Sufficient Stock
+55,Trek Domane S 6 - 2017,Trek,Road Bikes,11.0,26,39.0,1.5,2699.99,93527.65,Sufficient Stock
+63,Trek Boone Race Shop Limited - 2017,Trek,Cyclocross Bicycles,4.0,21,29.0,1.380952380952381,3499.99,91244.74,Medium Stock
+63,Trek Boone Race Shop Limited - 2017,Trek,Cyclocross Bicycles,5.0,21,29.0,1.380952380952381,3499.99,91244.74,Sufficient Stock
+63,Trek Boone Race Shop Limited - 2017,Trek,Cyclocross Bicycles,8.0,21,29.0,1.380952380952381,3499.99,91244.74,Sufficient Stock
+28,Surly Karate Monkey 27.5+ Frameset - 2017,Surly,Mountain Bikes,25.0,26,39.0,1.5,2499.99,87474.65,Sufficient Stock
+16,Electra Townie Original 7D EQ - 2016,Electra,Cruisers Bicycles,4.0,95,156.0,1.6421052631578947,599.99,82744.62,Medium Stock
+16,Electra Townie Original 7D EQ - 2016,Electra,Cruisers Bicycles,19.0,95,156.0,1.6421052631578947,599.99,82744.62,Sufficient Stock
+16,Electra Townie Original 7D EQ - 2016,Electra,Cruisers Bicycles,20.0,95,156.0,1.6421052631578947,599.99,82744.62,Sufficient Stock
+2,Ritchey Timberwolf Frameset - 2016,Ritchey,Mountain Bikes,5.0,77,118.0,1.5324675324675325,749.99,78898.95,Sufficient Stock
+2,Ritchey Timberwolf Frameset - 2016,Ritchey,Mountain Bikes,16.0,77,118.0,1.5324675324675325,749.99,78898.95,Sufficient Stock
+2,Ritchey Timberwolf Frameset - 2016,Ritchey,Mountain Bikes,24.0,77,118.0,1.5324675324675325,749.99,78898.95,Sufficient Stock
+12,Electra Townie Original 21D - 2016,Electra,Cruisers Bicycles,2.0,104,153.0,1.4711538461538463,549.99,75772.12,Medium Stock
+12,Electra Townie Original 21D - 2016,Electra,Cruisers Bicycles,16.0,104,153.0,1.4711538461538463,549.99,75772.12,Sufficient Stock
+12,Electra Townie Original 21D - 2016,Electra,Cruisers Bicycles,30.0,104,153.0,1.4711538461538463,549.99,75772.12,Sufficient Stock
+26,Electra Townie Original 7D EQ - 2016,Electra,Comfort Bicycles,2.0,90,134.0,1.488888888888889,599.99,72424.79,Medium Stock
+26,Electra Townie Original 7D EQ - 2016,Electra,Comfort Bicycles,16.0,90,134.0,1.488888888888889,599.99,72424.79,Sufficient Stock
+26,Electra Townie Original 7D EQ - 2016,Electra,Comfort Bicycles,27.0,90,134.0,1.488888888888889,599.99,72424.79,Sufficient Stock
+6,Surly Ice Cream Truck Frameset - 2016,Surly,Mountain Bikes,0.0,110,167.0,1.518181818181818,469.99,70371.6,Out of Stock
+6,Surly Ice Cream Truck Frameset - 2016,Surly,Mountain Bikes,11.0,110,167.0,1.518181818181818,469.99,70371.6,Sufficient Stock
+6,Surly Ice Cream Truck Frameset - 2016,Surly,Mountain Bikes,27.0,110,167.0,1.518181818181818,469.99,70371.6,Sufficient Stock
+54,Trek Domane SL Disc Frameset - 2017,Trek,Road Bikes,6.0,17,24.0,1.411764705882353,3199.99,68511.79,Sufficient Stock
+54,Trek Domane SL Disc Frameset - 2017,Trek,Road Bikes,11.0,17,24.0,1.411764705882353,3199.99,68511.79,Sufficient Stock
+54,Trek Domane SL Disc Frameset - 2017,Trek,Road Bikes,13.0,17,24.0,1.411764705882353,3199.99,68511.79,Sufficient Stock
+42,Trek Fuel EX 5 27.5 Plus - 2017,Trek,Mountain Bikes,0.0,24,34.0,1.4166666666666667,2299.99,67849.71,Out of Stock
+42,Trek Fuel EX 5 27.5 Plus - 2017,Trek,Mountain Bikes,9.0,24,34.0,1.4166666666666667,2299.99,67849.71,Sufficient Stock
+42,Trek Fuel EX 5 27.5 Plus - 2017,Trek,Mountain Bikes,16.0,24,34.0,1.4166666666666667,2299.99,67849.71,Sufficient Stock
+24,Electra Townie Original 21D - 2016,Electra,Comfort Bicycles,10.0,89,136.0,1.5280898876404494,549.99,67621.27,Sufficient Stock
+24,Electra Townie Original 21D - 2016,Electra,Comfort Bicycles,16.0,89,136.0,1.5280898876404494,549.99,67621.27,Sufficient Stock
+24,Electra Townie Original 21D - 2016,Electra,Comfort Bicycles,18.0,89,136.0,1.5280898876404494,549.99,67621.27,Sufficient Stock
+25,Electra Townie Original 7D - 2015/2016,Electra,Comfort Bicycles,10.0,98,148.0,1.510204081632653,499.99,66568.67,Sufficient Stock
+25,Electra Townie Original 7D - 2015/2016,Electra,Comfort Bicycles,15.0,98,148.0,1.510204081632653,499.99,66568.67,Sufficient Stock
+25,Electra Townie Original 7D - 2015/2016,Electra,Comfort Bicycles,18.0,98,148.0,1.510204081632653,499.99,66568.67,Sufficient Stock
+20,Electra Townie Original 7D EQ - Women's - 2016,Electra,Cruisers Bicycles,19.0,84,125.0,1.4880952380952381,599.99,66508.89,Sufficient Stock
+20,Electra Townie Original 7D EQ - Women's - 2016,Electra,Cruisers Bicycles,20.0,84,125.0,1.4880952380952381,599.99,66508.89,Sufficient Stock
+20,Electra Townie Original 7D EQ - Women's - 2016,Electra,Cruisers Bicycles,26.0,84,125.0,1.4880952380952381,599.99,66508.89,Sufficient Stock
+15,Electra Moto 1 - 2016,Electra,Cruisers Bicycles,3.0,91,137.0,1.5054945054945055,529.99,65061.57,Medium Stock
+15,Electra Moto 1 - 2016,Electra,Cruisers Bicycles,6.0,91,137.0,1.5054945054945055,529.99,65061.57,Sufficient Stock
+15,Electra Moto 1 - 2016,Electra,Cruisers Bicycles,22.0,91,137.0,1.5054945054945055,529.99,65061.57,Sufficient Stock
+59,Trek Domane S 5 Disc - 2017,Trek,Road Bikes,0.0,18,26.0,1.4444444444444444,2599.99,59513.77,Out of Stock
+59,Trek Domane S 5 Disc - 2017,Trek,Road Bikes,17.0,18,26.0,1.4444444444444444,2599.99,59513.77,Sufficient Stock
+59,Trek Domane S 5 Disc - 2017,Trek,Road Bikes,22.0,18,26.0,1.4444444444444444,2599.99,59513.77,Sufficient Stock
+48,Trek Emonda S 4 - 2017,Trek,Road Bikes,2.0,28,42.0,1.5,1499.99,57359.62,Medium Stock
+48,Trek Emonda S 4 - 2017,Trek,Road Bikes,5.0,28,42.0,1.5,1499.99,57359.62,Sufficient Stock
+48,Trek Emonda S 4 - 2017,Trek,Road Bikes,20.0,28,42.0,1.5,1499.99,57359.62,Sufficient Stock
+27,Surly Big Dummy Frameset - 2017,Surly,Mountain Bikes,21.0,42,62.0,1.4761904761904763,999.99,55359.45,Sufficient Stock
+149,Trek Domane SLR 8 Disc - 2018,Trek,Road Bikes,1.0,6,8.0,1.3333333333333333,7499.99,54749.93,Low Stock
+155,Trek Domane SLR 9 Disc - 2018,Trek,Road Bikes,8.0,3,5.0,1.6666666666666667,11999.99,54359.95,Sufficient Stock
+155,Trek Domane SLR 9 Disc - 2018,Trek,Road Bikes,21.0,3,5.0,1.6666666666666667,11999.99,54359.95,Sufficient Stock
+155,Trek Domane SLR 9 Disc - 2018,Trek,Road Bikes,25.0,3,5.0,1.6666666666666667,11999.99,54359.95,Sufficient Stock
+18,Pure Cycles Western 3-Speed - Women's - 2015/2016,Pure Cycles,Cruisers Bicycles,5.0,89,134.0,1.5056179775280898,449.0,54270.63,Sufficient Stock
+18,Pure Cycles Western 3-Speed - Women's - 2015/2016,Pure Cycles,Cruisers Bicycles,13.0,89,134.0,1.5056179775280898,449.0,54270.63,Sufficient Stock
+18,Pure Cycles Western 3-Speed - Women's - 2015/2016,Pure Cycles,Cruisers Bicycles,16.0,89,134.0,1.5056179775280898,449.0,54270.63,Sufficient Stock
+31,Surly Wednesday - 2017,Surly,Mountain Bikes,10.0,26,36.0,1.3846153846153846,1632.99,52876.22,Sufficient Stock
+17,Pure Cycles Vine 8-Speed - 2016,Pure Cycles,Cruisers Bicycles,2.0,91,133.0,1.4615384615384615,429.0,51531.48,Medium Stock
+17,Pure Cycles Vine 8-Speed - 2016,Pure Cycles,Cruisers Bicycles,3.0,91,133.0,1.4615384615384615,429.0,51531.48,Medium Stock
+17,Pure Cycles Vine 8-Speed - 2016,Pure Cycles,Cruisers Bicycles,22.0,91,133.0,1.4615384615384615,429.0,51531.48,Sufficient Stock
+60,Sun Bicycles ElectroLite - 2017,Sun Bicycles,Electric Bikes,1.0,24,34.0,1.4166666666666667,1559.99,47049.3,Low Stock
+60,Sun Bicycles ElectroLite - 2017,Sun Bicycles,Electric Bikes,7.0,24,34.0,1.4166666666666667,1559.99,47049.3,Sufficient Stock
+60,Sun Bicycles ElectroLite - 2017,Sun Bicycles,Electric Bikes,19.0,24,34.0,1.4166666666666667,1559.99,47049.3,Sufficient Stock
+41,Haro Shift R3 - 2017,Haro,Mountain Bikes,6.0,24,35.0,1.4583333333333333,1469.99,46980.88,Sufficient Stock
+41,Haro Shift R3 - 2017,Haro,Mountain Bikes,10.0,24,35.0,1.4583333333333333,1469.99,46980.88,Sufficient Stock
+41,Haro Shift R3 - 2017,Haro,Mountain Bikes,25.0,24,35.0,1.4583333333333333,1469.99,46980.88,Sufficient Stock
+19,Pure Cycles William 3-Speed - 2016,Pure Cycles,Cruisers Bicycles,4.0,78,109.0,1.3974358974358974,449.0,43674.23,Medium Stock
+19,Pure Cycles William 3-Speed - 2016,Pure Cycles,Cruisers Bicycles,15.0,78,109.0,1.3974358974358974,449.0,43674.23,Sufficient Stock
+19,Pure Cycles William 3-Speed - 2016,Pure Cycles,Cruisers Bicycles,24.0,78,109.0,1.3974358974358974,449.0,43674.23,Sufficient Stock
+57,Trek Emonda S 5 - 2017,Trek,Road Bikes,1.0,15,23.0,1.5333333333333334,1999.99,41079.79,Low Stock
+57,Trek Emonda S 5 - 2017,Trek,Road Bikes,9.0,15,23.0,1.5333333333333334,1999.99,41079.79,Sufficient Stock
+57,Trek Emonda S 5 - 2017,Trek,Road Bikes,27.0,15,23.0,1.5333333333333334,1999.99,41079.79,Sufficient Stock
+23,Electra Girl's Hawaii 1 (20-inch) - 2015/2016,Electra,Children Bicycles,8.0,100,154.0,1.54,299.99,41011.63,Sufficient Stock
+23,Electra Girl's Hawaii 1 (20-inch) - 2015/2016,Electra,Children Bicycles,9.0,100,154.0,1.54,299.99,41011.63,Sufficient Stock
+23,Electra Girl's Hawaii 1 (20-inch) - 2015/2016,Electra,Children Bicycles,12.0,100,154.0,1.54,299.99,41011.63,Sufficient Stock
+81,Electra Amsterdam Fashion 7i Ladies' - 2017,Electra,Cruisers Bicycles,18.0,24,40.0,1.6666666666666667,1099.99,39863.64,Sufficient Stock
+81,Electra Amsterdam Fashion 7i Ladies' - 2017,Electra,Cruisers Bicycles,19.0,24,40.0,1.6666666666666667,1099.99,39863.64,Sufficient Stock
+81,Electra Amsterdam Fashion 7i Ladies' - 2017,Electra,Cruisers Bicycles,25.0,24,40.0,1.6666666666666667,1099.99,39863.64,Sufficient Stock
+45,Haro SR 1.2 - 2017,Haro,Mountain Bikes,1.0,32,52.0,1.625,869.99,39862.94,Low Stock
+45,Haro SR 1.2 - 2017,Haro,Mountain Bikes,13.0,32,52.0,1.625,869.99,39862.94,Sufficient Stock
+45,Haro SR 1.2 - 2017,Haro,Mountain Bikes,15.0,32,52.0,1.625,869.99,39862.94,Sufficient Stock
+13,Electra Cruiser 1 (24-Inch) - 2016,Electra,Cruisers Bicycles,1.0,103,157.0,1.5242718446601942,269.99,37992.99,Low Stock
+13,Electra Cruiser 1 (24-Inch) - 2016,Electra,Cruisers Bicycles,13.0,103,157.0,1.5242718446601942,269.99,37992.99,Sufficient Stock
+13,Electra Cruiser 1 (24-Inch) - 2016,Electra,Cruisers Bicycles,19.0,103,157.0,1.5242718446601942,269.99,37992.99,Sufficient Stock
+205,Trek Super Commuter+ 8S - 2018,Trek,Electric Bikes,3.0,4,8.0,2.0,4999.99,37299.93,Medium Stock
+205,Trek Super Commuter+ 8S - 2018,Trek,Electric Bikes,9.0,4,8.0,2.0,4999.99,37299.93,Sufficient Stock
+205,Trek Super Commuter+ 8S - 2018,Trek,Electric Bikes,13.0,4,8.0,2.0,4999.99,37299.93,Sufficient Stock
+203,Trek Powerfly 7 FS - 2018,Trek,Electric Bikes,4.0,5,8.0,1.6,4999.99,36499.93,Medium Stock
+203,Trek Powerfly 7 FS - 2018,Trek,Electric Bikes,6.0,5,8.0,1.6,4999.99,36499.93,Sufficient Stock
+203,Trek Powerfly 7 FS - 2018,Trek,Electric Bikes,7.0,5,8.0,1.6,4999.99,36499.93,Sufficient Stock
+22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,Electra,Children Bicycles,0.0,94,145.0,1.5425531914893618,269.99,34728.81,Out of Stock
+22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,Electra,Children Bicycles,20.0,94,145.0,1.5425531914893618,269.99,34728.81,Sufficient Stock
+22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,Electra,Children Bicycles,29.0,94,145.0,1.5425531914893618,269.99,34728.81,Sufficient Stock
+36,Surly Troll Frameset - 2017,Surly,Mountain Bikes,15.0,29,46.0,1.5862068965517242,832.99,34477.46,Sufficient Stock
+36,Surly Troll Frameset - 2017,Surly,Mountain Bikes,26.0,29,46.0,1.5862068965517242,832.99,34477.46,Sufficient Stock
+36,Surly Troll Frameset - 2017,Surly,Mountain Bikes,28.0,29,46.0,1.5862068965517242,832.99,34477.46,Sufficient Stock
+46,Haro SR 1.3 - 2017,Haro,Mountain Bikes,16.0,19,27.0,1.4210526315789473,1409.99,34121.76,Sufficient Stock
+46,Haro SR 1.3 - 2017,Haro,Mountain Bikes,18.0,19,27.0,1.4210526315789473,1409.99,34121.76,Sufficient Stock
+46,Haro SR 1.3 - 2017,Haro,Mountain Bikes,19.0,19,27.0,1.4210526315789473,1409.99,34121.76,Sufficient Stock
+21,Electra Cruiser 1 (24-Inch) - 2016,Electra,Children Bicycles,8.0,90,139.0,1.5444444444444445,269.99,34078.14,Sufficient Stock
+21,Electra Cruiser 1 (24-Inch) - 2016,Electra,Children Bicycles,16.0,90,139.0,1.5444444444444445,269.99,34078.14,Sufficient Stock
+21,Electra Cruiser 1 (24-Inch) - 2016,Electra,Children Bicycles,24.0,90,139.0,1.5444444444444445,269.99,34078.14,Sufficient Stock
+39,Trek Stache 5 - 2017,Trek,Mountain Bikes,2.0,16,25.0,1.5625,1499.99,33719.78,Medium Stock
+39,Trek Stache 5 - 2017,Trek,Mountain Bikes,22.0,16,25.0,1.5625,1499.99,33719.78,Sufficient Stock
+39,Trek Stache 5 - 2017,Trek,Mountain Bikes,28.0,16,25.0,1.5625,1499.99,33719.78,Sufficient Stock
+153,Trek Domane SL 7 Women's - 2018,Trek,Road Bikes,7.0,5,7.0,1.4,4999.99,31399.94,Sufficient Stock
+153,Trek Domane SL 7 Women's - 2018,Trek,Road Bikes,21.0,5,7.0,1.4,4999.99,31399.94,Sufficient Stock
+153,Trek Domane SL 7 Women's - 2018,Trek,Road Bikes,25.0,5,7.0,1.4,4999.99,31399.94,Sufficient Stock
+29,Trek X-Caliber 8 - 2017,Trek,Mountain Bikes,11.0,24,35.0,1.4583333333333333,999.99,30939.69,Sufficient Stock
+29,Trek X-Caliber 8 - 2017,Trek,Mountain Bikes,13.0,24,35.0,1.4583333333333333,999.99,30939.69,Sufficient Stock
+29,Trek X-Caliber 8 - 2017,Trek,Mountain Bikes,29.0,24,35.0,1.4583333333333333,999.99,30939.69,Sufficient Stock
+252,Electra Townie Commute Go! Ladies' - 2018,Electra,Cruisers Bicycles,20.0,7,11.0,1.5714285714285714,2999.99,29849.9,Sufficient Stock
+252,Electra Townie Commute Go! Ladies' - 2018,Electra,Cruisers Bicycles,27.0,7,11.0,1.5714285714285714,2999.99,29849.9,Sufficient Stock
+252,Electra Townie Commute Go! Ladies' - 2018,Electra,Cruisers Bicycles,28.0,7,11.0,1.5714285714285714,2999.99,29849.9,Sufficient Stock
+14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,Electra,Cruisers Bicycles,4.0,86,124.0,1.441860465116279,269.99,29785.3,Medium Stock
+14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,Electra,Cruisers Bicycles,8.0,86,124.0,1.441860465116279,269.99,29785.3,Sufficient Stock
+14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,Electra,Cruisers Bicycles,18.0,86,124.0,1.441860465116279,269.99,29785.3,Sufficient Stock
+142,Trek Fuel EX 8 29 XT - 2018,Trek,Mountain Bikes,22.0,5,10.0,2.0,3199.99,29503.91,Sufficient Stock
+142,Trek Fuel EX 8 29 XT - 2018,Trek,Mountain Bikes,24.0,5,10.0,2.0,3199.99,29503.91,Sufficient Stock
+142,Trek Fuel EX 8 29 XT - 2018,Trek,Mountain Bikes,29.0,5,10.0,2.0,3199.99,29503.91,Sufficient Stock
+148,Trek Domane SL 8 Disc - 2018,Trek,Road Bikes,6.0,6,6.0,1.0,5499.99,29479.95,Sufficient Stock
+207,Trek Boone 7 Disc - 2018,Trek,Cyclocross Bicycles,8.0,5,8.0,1.6,3999.99,28239.93,Sufficient Stock
+207,Trek Boone 7 Disc - 2018,Trek,Cyclocross Bicycles,27.0,5,8.0,1.6,3999.99,28239.93,Sufficient Stock
+207,Trek Boone 7 Disc - 2018,Trek,Cyclocross Bicycles,29.0,5,8.0,1.6,3999.99,28239.93,Sufficient Stock
+52,Surly Steamroller - 2017,Surly,Road Bikes,8.0,26,35.0,1.3461538461538463,875.99,27690.04,Sufficient Stock
+52,Surly Steamroller - 2017,Surly,Road Bikes,18.0,26,35.0,1.3461538461538463,875.99,27690.04,Sufficient Stock
+52,Surly Steamroller - 2017,Surly,Road Bikes,23.0,26,35.0,1.3461538461538463,875.99,27690.04,Sufficient Stock
+27,Surly Big Dummy Frameset - 2017,Surly,Mountain Bikes,10.0,21,31.0,1.4761904761904763,999.99,27679.72,Sufficient Stock
+77,Electra Glam Punk 3i Ladies' - 2017,Electra,Cruisers Bicycles,16.0,21,38.0,1.8095238095238095,799.99,27647.65,Sufficient Stock
+77,Electra Glam Punk 3i Ladies' - 2017,Electra,Cruisers Bicycles,23.0,21,38.0,1.8095238095238095,799.99,27647.65,Sufficient Stock
+77,Electra Glam Punk 3i Ladies' - 2017,Electra,Cruisers Bicycles,25.0,21,38.0,1.8095238095238095,799.99,27647.65,Sufficient Stock
+149,Trek Domane SLR 8 Disc - 2018,Trek,Road Bikes,22.0,3,4.0,1.3333333333333333,7499.99,27374.96,Sufficient Stock
+30,Surly Ice Cream Truck Frameset - 2017,Surly,Mountain Bikes,17.0,22,30.0,1.3636363636363635,999.99,27269.73,Sufficient Stock
+30,Surly Ice Cream Truck Frameset - 2017,Surly,Mountain Bikes,23.0,22,30.0,1.3636363636363635,999.99,27269.73,Sufficient Stock
+30,Surly Ice Cream Truck Frameset - 2017,Surly,Mountain Bikes,30.0,22,30.0,1.3636363636363635,999.99,27269.73,Sufficient Stock
+31,Surly Wednesday - 2017,Surly,Mountain Bikes,2.0,13,18.0,1.3846153846153846,1632.99,26438.11,Medium Stock
+204,Trek Super Commuter+ 7 - 2018,Trek,Electric Bikes,16.0,5,8.0,1.6,3599.99,25847.93,Sufficient Stock
+204,Trek Super Commuter+ 7 - 2018,Trek,Electric Bikes,23.0,5,8.0,1.6,3599.99,25847.93,Sufficient Stock
+204,Trek Super Commuter+ 7 - 2018,Trek,Electric Bikes,25.0,5,8.0,1.6,3599.99,25847.93,Sufficient Stock
+91,Trek Precaliber 24 (21-Speed) - Girls - 2017,Trek,Children Bicycles,8.0,56,78.0,1.3928571428571428,349.99,24359.3,Sufficient Stock
+169,Trek Emonda SLR 8 - 2018,Trek,Road Bikes,1.0,2,4.0,2.0,6499.99,24179.96,Low Stock
+169,Trek Emonda SLR 8 - 2018,Trek,Road Bikes,3.0,2,4.0,2.0,6499.99,24179.96,Medium Stock
+169,Trek Emonda SLR 8 - 2018,Trek,Road Bikes,25.0,2,4.0,2.0,6499.99,24179.96,Sufficient Stock
+101,Electra Townie 7D (20-inch) - Boys' - 2017,Electra,Children Bicycles,17.0,52,80.0,1.5384615384615385,339.99,24159.69,Sufficient Stock
+194,Trek XM700+ - 2018,Trek,Electric Bikes,15.0,5,8.0,1.6,3499.99,24149.93,Sufficient Stock
+194,Trek XM700+ - 2018,Trek,Electric Bikes,20.0,5,8.0,1.6,3499.99,24149.93,Sufficient Stock
+194,Trek XM700+ - 2018,Trek,Electric Bikes,24.0,5,8.0,1.6,3499.99,24149.93,Sufficient Stock
+140,Trek Remedy 9.8 27.5 - 2018,Trek,Mountain Bikes,3.0,4,6.0,1.5,4999.99,23999.95,Medium Stock
+171,Trek Domane SL 6 - 2018,Trek,Road Bikes,3.0,4,8.0,2.0,3199.99,23679.93,Medium Stock
+171,Trek Domane SL 6 - 2018,Trek,Road Bikes,11.0,4,8.0,2.0,3199.99,23679.93,Sufficient Stock
+171,Trek Domane SL 6 - 2018,Trek,Road Bikes,28.0,4,8.0,2.0,3199.99,23679.93,Sufficient Stock
+64,Electra Townie Original 7D - 2017,Electra,Cruisers Bicycles,30.0,40,54.0,1.35,489.99,23323.52,Sufficient Stock
+78,Sun Bicycles Biscayne Tandem CB - 2017,Sun Bicycles,Cruisers Bicycles,4.0,27,39.0,1.4444444444444444,647.99,22899.97,Medium Stock
+78,Sun Bicycles Biscayne Tandem CB - 2017,Sun Bicycles,Cruisers Bicycles,13.0,27,39.0,1.4444444444444444,647.99,22899.97,Sufficient Stock
+78,Sun Bicycles Biscayne Tandem CB - 2017,Sun Bicycles,Cruisers Bicycles,19.0,27,39.0,1.4444444444444444,647.99,22899.97,Sufficient Stock
+182,Trek Domane SL 5 Disc - 2018,Trek,Road Bikes,28.0,8,10.0,1.25,2499.99,22149.91,Sufficient Stock
+188,Trek XM700+ Lowstep - 2018,Trek,Electric Bikes,27.0,4,7.0,1.75,3499.99,20964.94,Sufficient Stock
+188,Trek XM700+ Lowstep - 2018,Trek,Electric Bikes,29.0,4,7.0,1.75,3499.99,20964.94,Sufficient Stock
+188,Trek XM700+ Lowstep - 2018,Trek,Electric Bikes,30.0,4,7.0,1.75,3499.99,20964.94,Sufficient Stock
+160,Trek Emonda SLR 6 - 2018,Trek,Road Bikes,0.0,4,5.0,1.25,4499.99,20789.95,Out of Stock
+160,Trek Emonda SLR 6 - 2018,Trek,Road Bikes,4.0,4,5.0,1.25,4499.99,20789.95,Sufficient Stock
+160,Trek Emonda SLR 6 - 2018,Trek,Road Bikes,27.0,4,5.0,1.25,4499.99,20789.95,Sufficient Stock
+172,Trek Domane ALR Disc Frameset - 2018,Trek,Road Bikes,3.0,4,7.0,1.75,3199.99,19999.94,Medium Stock
+172,Trek Domane ALR Disc Frameset - 2018,Trek,Road Bikes,16.0,4,7.0,1.75,3199.99,19999.94,Sufficient Stock
+172,Trek Domane ALR Disc Frameset - 2018,Trek,Road Bikes,22.0,4,7.0,1.75,3199.99,19999.94,Sufficient Stock
+73,Sun Bicycles Brickell Tandem 7 - 2017,Sun Bicycles,Cruisers Bicycles,3.0,20,29.0,1.45,749.99,19544.74,Medium Stock
+73,Sun Bicycles Brickell Tandem 7 - 2017,Sun Bicycles,Cruisers Bicycles,7.0,20,29.0,1.45,749.99,19544.74,Sufficient Stock
+73,Sun Bicycles Brickell Tandem 7 - 2017,Sun Bicycles,Cruisers Bicycles,20.0,20,29.0,1.45,749.99,19544.74,Sufficient Stock
+35,Sun Bicycles Spider 3i - 2017,Sun Bicycles,Mountain Bikes,3.0,17,26.0,1.5294117647058822,832.99,19491.97,Medium Stock
+35,Sun Bicycles Spider 3i - 2017,Sun Bicycles,Mountain Bikes,18.0,17,26.0,1.5294117647058822,832.99,19491.97,Sufficient Stock
+35,Sun Bicycles Spider 3i - 2017,Sun Bicycles,Mountain Bikes,25.0,17,26.0,1.5294117647058822,832.99,19491.97,Sufficient Stock
+103,Sun Bicycles Streamway 3 - 2017,Sun Bicycles,Comfort Bicycles,1.0,28,39.0,1.3928571428571428,551.99,19363.81,Low Stock
+103,Sun Bicycles Streamway 3 - 2017,Sun Bicycles,Comfort Bicycles,10.0,28,39.0,1.3928571428571428,551.99,19363.81,Sufficient Stock
+103,Sun Bicycles Streamway 3 - 2017,Sun Bicycles,Comfort Bicycles,13.0,28,39.0,1.3928571428571428,551.99,19363.81,Sufficient Stock
+70,Electra Amsterdam Original 3i - 2015/2017,Electra,Cruisers Bicycles,2.0,22,32.0,1.4545454545454546,659.99,18987.91,Medium Stock
+70,Electra Amsterdam Original 3i - 2015/2017,Electra,Cruisers Bicycles,3.0,22,32.0,1.4545454545454546,659.99,18987.91,Medium Stock
+70,Electra Amsterdam Original 3i - 2015/2017,Electra,Cruisers Bicycles,6.0,22,32.0,1.4545454545454546,659.99,18987.91,Sufficient Stock
+65,Sun Bicycles Lil Bolt Type-R - 2017,Sun Bicycles,Cruisers Bicycles,1.0,35,60.0,1.7142857142857142,346.99,18681.94,Low Stock
+65,Sun Bicycles Lil Bolt Type-R - 2017,Sun Bicycles,Cruisers Bicycles,10.0,35,60.0,1.7142857142857142,346.99,18681.94,Sufficient Stock
+65,Sun Bicycles Lil Bolt Type-R - 2017,Sun Bicycles,Cruisers Bicycles,16.0,35,60.0,1.7142857142857142,346.99,18681.94,Sufficient Stock
+72,Sun Bicycles Biscayne Tandem 7 - 2017,Sun Bicycles,Cruisers Bicycles,1.0,22,33.0,1.5,619.99,18289.71,Low Stock
+72,Sun Bicycles Biscayne Tandem 7 - 2017,Sun Bicycles,Cruisers Bicycles,6.0,22,33.0,1.5,619.99,18289.71,Sufficient Stock
+72,Sun Bicycles Biscayne Tandem 7 - 2017,Sun Bicycles,Cruisers Bicycles,9.0,22,33.0,1.5,619.99,18289.71,Sufficient Stock
+185,Trek Conduit+ - 2018,Trek,Electric Bikes,3.0,4,7.0,1.75,2799.99,17807.94,Medium Stock
+185,Trek Conduit+ - 2018,Trek,Electric Bikes,4.0,4,7.0,1.75,2799.99,17807.94,Medium Stock
+185,Trek Conduit+ - 2018,Trek,Electric Bikes,15.0,4,7.0,1.75,2799.99,17807.94,Sufficient Stock
+82,Electra Amsterdam Original 3i Ladies' - 2017,Electra,Cruisers Bicycles,1.0,23,31.0,1.3478260869565217,659.99,17793.33,Low Stock
+82,Electra Amsterdam Original 3i Ladies' - 2017,Electra,Cruisers Bicycles,4.0,23,31.0,1.3478260869565217,659.99,17793.33,Medium Stock
+82,Electra Amsterdam Original 3i Ladies' - 2017,Electra,Cruisers Bicycles,7.0,23,31.0,1.3478260869565217,659.99,17793.33,Sufficient Stock
+105,Sun Bicycles Streamway 7 - 2017,Sun Bicycles,Comfort Bicycles,1.0,25,37.0,1.48,533.99,17637.69,Low Stock
+105,Sun Bicycles Streamway 7 - 2017,Sun Bicycles,Comfort Bicycles,3.0,25,37.0,1.48,533.99,17637.69,Medium Stock
+105,Sun Bicycles Streamway 7 - 2017,Sun Bicycles,Comfort Bicycles,7.0,25,37.0,1.48,533.99,17637.69,Sufficient Stock
+156,Trek Domane SL Frameset - 2018,Trek,Road Bikes,8.0,3,3.0,1.0,6499.99,17549.97,Sufficient Stock
+156,Trek Domane SL Frameset - 2018,Trek,Road Bikes,13.0,3,3.0,1.0,6499.99,17549.97,Sufficient Stock
+156,Trek Domane SL Frameset - 2018,Trek,Road Bikes,14.0,3,3.0,1.0,6499.99,17549.97,Sufficient Stock
+102,Electra Townie Original 7D - 2017,Electra,Comfort Bicycles,9.0,25,39.0,1.56,489.99,17502.44,Sufficient Stock
+102,Electra Townie Original 7D - 2017,Electra,Comfort Bicycles,12.0,25,39.0,1.56,489.99,17502.44,Sufficient Stock
+102,Electra Townie Original 7D - 2017,Electra,Comfort Bicycles,22.0,25,39.0,1.56,489.99,17502.44,Sufficient Stock
+184,Trek Domane SL 6 Disc - 2018,Trek,Road Bikes,0.0,4,6.0,1.5,3499.99,17324.95,Out of Stock
+184,Trek Domane SL 6 Disc - 2018,Trek,Road Bikes,4.0,4,6.0,1.5,3499.99,17324.95,Medium Stock
+184,Trek Domane SL 6 Disc - 2018,Trek,Road Bikes,21.0,4,6.0,1.5,3499.99,17324.95,Sufficient Stock
+100,Electra Townie 3i EQ (20-inch) - Boys' - 2017,Electra,Children Bicycles,12.0,28,39.0,1.3928571428571428,489.99,17125.15,Sufficient Stock
+100,Electra Townie 3i EQ (20-inch) - Boys' - 2017,Electra,Children Bicycles,15.0,28,39.0,1.3928571428571428,489.99,17125.15,Sufficient Stock
+100,Electra Townie 3i EQ (20-inch) - Boys' - 2017,Electra,Children Bicycles,28.0,28,39.0,1.3928571428571428,489.99,17125.15,Sufficient Stock
+106,Sun Bicycles Cruz 3 - 2017,Sun Bicycles,Comfort Bicycles,1.0,27,42.0,1.5555555555555556,449.99,17036.62,Low Stock
+106,Sun Bicycles Cruz 3 - 2017,Sun Bicycles,Comfort Bicycles,7.0,27,42.0,1.5555555555555556,449.99,17036.62,Sufficient Stock
+106,Sun Bicycles Cruz 3 - 2017,Sun Bicycles,Comfort Bicycles,30.0,27,42.0,1.5555555555555556,449.99,17036.62,Sufficient Stock
+251,Electra Townie Commute Go! - 2018,Electra,Cruisers Bicycles,0.0,5,6.0,1.2,2999.99,16649.94,Out of Stock
+251,Electra Townie Commute Go! - 2018,Electra,Cruisers Bicycles,2.0,5,6.0,1.2,2999.99,16649.94,Medium Stock
+251,Electra Townie Commute Go! - 2018,Electra,Cruisers Bicycles,10.0,5,6.0,1.2,2999.99,16649.94,Sufficient Stock
+202,Trek Powerfly 5 Women's - 2018,Trek,Electric Bikes,1.0,3,5.0,1.6666666666666667,3499.99,16204.95,Low Stock
+202,Trek Powerfly 5 Women's - 2018,Trek,Electric Bikes,5.0,3,5.0,1.6666666666666667,3499.99,16204.95,Sufficient Stock
+202,Trek Powerfly 5 Women's - 2018,Trek,Electric Bikes,11.0,3,5.0,1.6666666666666667,3499.99,16204.95,Sufficient Stock
+198,Electra Townie Commute Go! - 2018,Electra,Electric Bikes,0.0,5,6.0,1.2,2999.99,15749.95,Out of Stock
+198,Electra Townie Commute Go! - 2018,Electra,Electric Bikes,1.0,5,6.0,1.2,2999.99,15749.95,Low Stock
+198,Electra Townie Commute Go! - 2018,Electra,Electric Bikes,27.0,5,6.0,1.2,2999.99,15749.95,Sufficient Stock
+71,Sun Bicycles Atlas X-Type - 2017,Sun Bicycles,Cruisers Bicycles,13.0,26,41.0,1.5769230769230769,416.99,15620.45,Sufficient Stock
+71,Sun Bicycles Atlas X-Type - 2017,Sun Bicycles,Cruisers Bicycles,25.0,26,41.0,1.5769230769230769,416.99,15620.45,Sufficient Stock
+71,Sun Bicycles Atlas X-Type - 2017,Sun Bicycles,Cruisers Bicycles,30.0,26,41.0,1.5769230769230769,416.99,15620.45,Sufficient Stock
+186,Trek CrossRip+ - 2018,Trek,Electric Bikes,1.0,4,4.0,1.0,4499.99,15524.97,Medium Stock
+186,Trek CrossRip+ - 2018,Trek,Electric Bikes,16.0,4,4.0,1.0,4499.99,15524.97,Sufficient Stock
+186,Trek CrossRip+ - 2018,Trek,Electric Bikes,30.0,4,4.0,1.0,4499.99,15524.97,Sufficient Stock
+190,Trek Dual Sport+ - 2018,Trek,Electric Bikes,18.0,3,6.0,2.0,2799.99,15455.94,Sufficient Stock
+190,Trek Dual Sport+ - 2018,Trek,Electric Bikes,20.0,3,6.0,2.0,2799.99,15455.94,Sufficient Stock
+190,Trek Dual Sport+ - 2018,Trek,Electric Bikes,21.0,3,6.0,2.0,2799.99,15455.94,Sufficient Stock
+159,Trek Emonda ALR 6 - 2018,Trek,Road Bikes,6.0,5,7.0,1.4,2299.99,15110.93,Sufficient Stock
+159,Trek Emonda ALR 6 - 2018,Trek,Road Bikes,18.0,5,7.0,1.4,2299.99,15110.93,Sufficient Stock
+159,Trek Emonda ALR 6 - 2018,Trek,Road Bikes,30.0,5,7.0,1.4,2299.99,15110.93,Sufficient Stock
+53,Surly Ogre Frameset - 2017,Surly,Road Bikes,6.0,17,22.0,1.2941176470588236,749.99,14909.8,Sufficient Stock
+53,Surly Ogre Frameset - 2017,Surly,Road Bikes,17.0,17,22.0,1.2941176470588236,749.99,14909.8,Sufficient Stock
+53,Surly Ogre Frameset - 2017,Surly,Road Bikes,19.0,17,22.0,1.2941176470588236,749.99,14909.8,Sufficient Stock
+79,Sun Bicycles Boardwalk (24-inch Wheels) - 2017,Sun Bicycles,Cruisers Bicycles,29.0,32,42.0,1.3125,402.99,14894.51,Sufficient Stock
+75,Electra Cruiser Lux Fat Tire 1 Ladies - 2017,Electra,Cruisers Bicycles,11.0,18,27.0,1.5,599.99,14747.75,Sufficient Stock
+75,Electra Cruiser Lux Fat Tire 1 Ladies - 2017,Electra,Cruisers Bicycles,23.0,18,27.0,1.5,599.99,14747.75,Sufficient Stock
+75,Electra Cruiser Lux Fat Tire 1 Ladies - 2017,Electra,Cruisers Bicycles,29.0,18,27.0,1.5,599.99,14747.75,Sufficient Stock
+148,Trek Domane SL 8 Disc - 2018,Trek,Road Bikes,27.0,3,3.0,1.0,5499.99,14739.97,Sufficient Stock
+93,Haro Shredder 20 Girls - 2017,Haro,Children Bicycles,22.0,50,78.0,1.56,209.99,14728.7,Sufficient Stock
+115,Trek Fuel EX 8 29 - 2018,Trek,Mountain Bikes,10.0,4,5.0,1.25,3199.99,14431.95,Sufficient Stock
+115,Trek Fuel EX 8 29 - 2018,Trek,Mountain Bikes,19.0,4,5.0,1.25,3199.99,14431.95,Sufficient Stock
+115,Trek Fuel EX 8 29 - 2018,Trek,Mountain Bikes,25.0,4,5.0,1.25,3199.99,14431.95,Sufficient Stock
+33,Surly Wednesday Frameset - 2017,Surly,Mountain Bikes,8.0,22,35.0,1.5909090909090908,469.99,14367.59,Sufficient Stock
+33,Surly Wednesday Frameset - 2017,Surly,Mountain Bikes,10.0,22,35.0,1.5909090909090908,469.99,14367.59,Sufficient Stock
+33,Surly Wednesday Frameset - 2017,Surly,Mountain Bikes,14.0,22,35.0,1.5909090909090908,469.99,14367.59,Sufficient Stock
+253,Electra Townie Go! 8i Ladies' - 2018,Electra,Cruisers Bicycles,15.0,6,6.0,1.0,2599.99,14143.95,Sufficient Stock
+253,Electra Townie Go! 8i Ladies' - 2018,Electra,Cruisers Bicycles,16.0,6,6.0,1.0,2599.99,14143.95,Sufficient Stock
+253,Electra Townie Go! 8i Ladies' - 2018,Electra,Cruisers Bicycles,29.0,6,6.0,1.0,2599.99,14143.95,Sufficient Stock
+139,Trek Remedy 7 27.5 - 2018,Trek,Mountain Bikes,17.0,4,5.0,1.25,2999.99,14069.95,Sufficient Stock
+139,Trek Remedy 7 27.5 - 2018,Trek,Mountain Bikes,21.0,4,5.0,1.25,2999.99,14069.95,Sufficient Stock
+139,Trek Remedy 7 27.5 - 2018,Trek,Mountain Bikes,24.0,4,5.0,1.25,2999.99,14069.95,Sufficient Stock
+38,Haro Flightline Two 26 Plus - 2017,Haro,Mountain Bikes,13.0,18,28.0,1.5555555555555556,549.99,14008.25,Sufficient Stock
+38,Haro Flightline Two 26 Plus - 2017,Haro,Mountain Bikes,18.0,18,28.0,1.5555555555555556,549.99,14008.25,Sufficient Stock
+38,Haro Flightline Two 26 Plus - 2017,Haro,Mountain Bikes,23.0,18,28.0,1.5555555555555556,549.99,14008.25,Sufficient Stock
+209,Trek Crockett 7 Disc - 2018,Trek,Cyclocross Bicycles,1.0,3,5.0,1.6666666666666667,2999.99,13679.95,Low Stock
+209,Trek Crockett 7 Disc - 2018,Trek,Cyclocross Bicycles,11.0,3,5.0,1.6666666666666667,2999.99,13679.95,Sufficient Stock
+209,Trek Crockett 7 Disc - 2018,Trek,Cyclocross Bicycles,22.0,3,5.0,1.6666666666666667,2999.99,13679.95,Sufficient Stock
+173,Trek Domane ALR Frameset - 2018,Trek,Road Bikes,2.0,3,5.0,1.6666666666666667,3199.99,13439.96,Medium Stock
+173,Trek Domane ALR Frameset - 2018,Trek,Road Bikes,15.0,3,5.0,1.6666666666666667,3199.99,13439.96,Sufficient Stock
+173,Trek Domane ALR Frameset - 2018,Trek,Road Bikes,17.0,3,5.0,1.6666666666666667,3199.99,13439.96,Sufficient Stock
+128,Surly ECR 27.5 - 2018,Surly,Mountain Bikes,11.0,5,8.0,1.6,1899.0,13103.1,Sufficient Stock
+128,Surly ECR 27.5 - 2018,Surly,Mountain Bikes,20.0,5,8.0,1.6,1899.0,13103.1,Sufficient Stock
+128,Surly ECR 27.5 - 2018,Surly,Mountain Bikes,28.0,5,8.0,1.6,1899.0,13103.1,Sufficient Stock
+80,Sun Bicycles Brickell Tandem CB - 2017,Sun Bicycles,Cruisers Bicycles,11.0,14,19.0,1.3571428571428572,761.99,13045.27,Sufficient Stock
+80,Sun Bicycles Brickell Tandem CB - 2017,Sun Bicycles,Cruisers Bicycles,22.0,14,19.0,1.3571428571428572,761.99,13045.27,Sufficient Stock
+80,Sun Bicycles Brickell Tandem CB - 2017,Sun Bicycles,Cruisers Bicycles,27.0,14,19.0,1.3571428571428572,761.99,13045.27,Sufficient Stock
+109,Sun Bicycles Cruz 7 - Women's - 2017,Sun Bicycles,Comfort Bicycles,24.0,20,35.0,1.75,416.99,12968.39,Sufficient Stock
+109,Sun Bicycles Cruz 7 - Women's - 2017,Sun Bicycles,Comfort Bicycles,25.0,20,35.0,1.75,416.99,12968.39,Sufficient Stock
+109,Sun Bicycles Cruz 7 - Women's - 2017,Sun Bicycles,Comfort Bicycles,30.0,20,35.0,1.75,416.99,12968.39,Sufficient Stock
+138,Trek Fuel EX 5 Plus - 2018,Trek,Mountain Bikes,6.0,3,6.0,2.0,2249.99,12824.94,Sufficient Stock
+138,Trek Fuel EX 5 Plus - 2018,Trek,Mountain Bikes,16.0,3,6.0,2.0,2249.99,12824.94,Sufficient Stock
+138,Trek Fuel EX 5 Plus - 2018,Trek,Mountain Bikes,17.0,3,6.0,2.0,2249.99,12824.94,Sufficient Stock
+104,Sun Bicycles Streamway - 2017,Sun Bicycles,Comfort Bicycles,22.0,20,30.0,1.5,481.99,12816.11,Sufficient Stock
+104,Sun Bicycles Streamway - 2017,Sun Bicycles,Comfort Bicycles,25.0,20,30.0,1.5,481.99,12816.11,Sufficient Stock
+104,Sun Bicycles Streamway - 2017,Sun Bicycles,Comfort Bicycles,26.0,20,30.0,1.5,481.99,12816.11,Sufficient Stock
+95,"Electra Girl's Hawaii 1 16"" - 2017",Electra,Children Bicycles,10.0,31,47.0,1.5161290322580645,299.99,12785.57,Sufficient Stock
+95,"Electra Girl's Hawaii 1 16"" - 2017",Electra,Children Bicycles,14.0,31,47.0,1.5161290322580645,299.99,12785.57,Sufficient Stock
+95,"Electra Girl's Hawaii 1 16"" - 2017",Electra,Children Bicycles,25.0,31,47.0,1.5161290322580645,299.99,12785.57,Sufficient Stock
+108,Sun Bicycles Cruz 3 - Women's - 2017,Sun Bicycles,Comfort Bicycles,15.0,21,32.0,1.5238095238095237,449.99,12622.22,Sufficient Stock
+108,Sun Bicycles Cruz 3 - Women's - 2017,Sun Bicycles,Comfort Bicycles,23.0,21,32.0,1.5238095238095237,449.99,12622.22,Sufficient Stock
+108,Sun Bicycles Cruz 3 - Women's - 2017,Sun Bicycles,Comfort Bicycles,29.0,21,32.0,1.5238095238095237,449.99,12622.22,Sufficient Stock
+193,Trek Lift+ - 2018,Trek,Electric Bikes,5.0,3,5.0,1.6666666666666667,2799.99,12403.96,Sufficient Stock
+193,Trek Lift+ - 2018,Trek,Electric Bikes,21.0,3,5.0,1.6666666666666667,2799.99,12403.96,Sufficient Stock
+193,Trek Lift+ - 2018,Trek,Electric Bikes,30.0,3,5.0,1.6666666666666667,2799.99,12403.96,Sufficient Stock
+91,Trek Precaliber 24 (21-Speed) - Girls - 2017,Trek,Children Bicycles,0.0,28,39.0,1.3928571428571428,349.99,12179.65,Out of Stock
+101,Electra Townie 7D (20-inch) - Boys' - 2017,Electra,Children Bicycles,4.0,26,40.0,1.5384615384615385,339.99,12079.84,Medium Stock
+150,Trek Emonda SL 7 - 2018,Trek,Road Bikes,7.0,3,3.0,1.0,4499.99,12059.97,Sufficient Stock
+150,Trek Emonda SL 7 - 2018,Trek,Road Bikes,21.0,3,3.0,1.0,4499.99,12059.97,Sufficient Stock
+150,Trek Emonda SL 7 - 2018,Trek,Road Bikes,22.0,3,3.0,1.0,4499.99,12059.97,Sufficient Stock
+140,Trek Remedy 9.8 27.5 - 2018,Trek,Mountain Bikes,13.0,2,3.0,1.5,4999.99,11999.98,Sufficient Stock
+32,Trek Farley Alloy Frameset - 2017,Trek,Mountain Bikes,0.0,22,28.0,1.2727272727272727,469.99,11937.75,Out of Stock
+32,Trek Farley Alloy Frameset - 2017,Trek,Mountain Bikes,13.0,22,28.0,1.2727272727272727,469.99,11937.75,Sufficient Stock
+32,Trek Farley Alloy Frameset - 2017,Trek,Mountain Bikes,14.0,22,28.0,1.2727272727272727,469.99,11937.75,Sufficient Stock
+124,Surly Krampus - 2018,Surly,Mountain Bikes,4.0,7,9.0,1.2857142857142858,1499.0,11767.15,Sufficient Stock
+124,Surly Krampus - 2018,Surly,Mountain Bikes,11.0,7,9.0,1.2857142857142858,1499.0,11767.15,Sufficient Stock
+124,Surly Krampus - 2018,Surly,Mountain Bikes,23.0,7,9.0,1.2857142857142858,1499.0,11767.15,Sufficient Stock
+147,Trek Domane ALR 5 Gravel - 2018,Trek,Road Bikes,3.0,4,7.0,1.75,1799.99,11681.94,Medium Stock
+147,Trek Domane ALR 5 Gravel - 2018,Trek,Road Bikes,8.0,4,7.0,1.75,1799.99,11681.94,Sufficient Stock
+147,Trek Domane ALR 5 Gravel - 2018,Trek,Road Bikes,13.0,4,7.0,1.75,1799.99,11681.94,Sufficient Stock
+64,Electra Townie Original 7D - 2017,Electra,Cruisers Bicycles,22.0,20,27.0,1.35,489.99,11661.76,Sufficient Stock
+137,Heller Shagamaw GX1 - 2018,Heller,Mountain Bikes,1.0,4,5.0,1.25,2599.0,11305.65,Low Stock
+137,Heller Shagamaw GX1 - 2018,Heller,Mountain Bikes,12.0,4,5.0,1.25,2599.0,11305.65,Sufficient Stock
+137,Heller Shagamaw GX1 - 2018,Heller,Mountain Bikes,17.0,4,5.0,1.25,2599.0,11305.65,Sufficient Stock
+145,Trek Domane ALR 5 Disc - 2018,Trek,Road Bikes,5.0,4,7.0,1.75,1799.99,11141.94,Medium Stock
+145,Trek Domane ALR 5 Disc - 2018,Trek,Road Bikes,11.0,4,7.0,1.75,1799.99,11141.94,Sufficient Stock
+145,Trek Domane ALR 5 Disc - 2018,Trek,Road Bikes,23.0,4,7.0,1.75,1799.99,11141.94,Sufficient Stock
+122,Surly Troll Frameset - 2018,Surly,Mountain Bikes,8.0,3,5.0,1.6666666666666667,2499.99,11074.96,Sufficient Stock
+122,Surly Troll Frameset - 2018,Surly,Mountain Bikes,11.0,3,5.0,1.6666666666666667,2499.99,11074.96,Sufficient Stock
+122,Surly Troll Frameset - 2018,Surly,Mountain Bikes,22.0,3,5.0,1.6666666666666667,2499.99,11074.96,Sufficient Stock
+182,Trek Domane SL 5 Disc - 2018,Trek,Road Bikes,21.0,4,5.0,1.25,2499.99,11074.96,Sufficient Stock
+69,Sun Bicycles Cruz 7 - 2017,Sun Bicycles,Cruisers Bicycles,4.0,18,29.0,1.6111111111111112,416.99,10996.03,Medium Stock
+69,Sun Bicycles Cruz 7 - 2017,Sun Bicycles,Cruisers Bicycles,22.0,18,29.0,1.6111111111111112,416.99,10996.03,Sufficient Stock
+69,Sun Bicycles Cruz 7 - 2017,Sun Bicycles,Cruisers Bicycles,29.0,18,29.0,1.6111111111111112,416.99,10996.03,Sufficient Stock
+162,Trek Emonda SL 6 Disc - 2018,Trek,Road Bikes,11.0,2,4.0,2.0,2999.99,10799.96,Sufficient Stock
+162,Trek Emonda SL 6 Disc - 2018,Trek,Road Bikes,14.0,2,4.0,2.0,2999.99,10799.96,Sufficient Stock
+162,Trek Emonda SL 6 Disc - 2018,Trek,Road Bikes,18.0,2,4.0,2.0,2999.99,10799.96,Sufficient Stock
+44,Haro SR 1.1 - 2017,Haro,Mountain Bikes,1.0,16,22.0,1.375,539.99,10740.4,Low Stock
+44,Haro SR 1.1 - 2017,Haro,Mountain Bikes,24.0,16,22.0,1.375,539.99,10740.4,Sufficient Stock
+44,Haro SR 1.1 - 2017,Haro,Mountain Bikes,26.0,16,22.0,1.375,539.99,10740.4,Sufficient Stock
+68,Sun Bicycles Cruz 3 - 2017,Sun Bicycles,Cruisers Bicycles,18.0,19,26.0,1.368421052631579,449.99,10673.76,Sufficient Stock
+68,Sun Bicycles Cruz 3 - 2017,Sun Bicycles,Cruisers Bicycles,23.0,19,26.0,1.368421052631579,449.99,10673.76,Sufficient Stock
+68,Sun Bicycles Cruz 3 - 2017,Sun Bicycles,Cruisers Bicycles,30.0,19,26.0,1.368421052631579,449.99,10673.76,Sufficient Stock
+110,Sun Bicycles Drifter 7 - 2017,Sun Bicycles,Comfort Bicycles,1.0,16,25.0,1.5625,470.99,10644.37,Low Stock
+110,Sun Bicycles Drifter 7 - 2017,Sun Bicycles,Comfort Bicycles,7.0,16,25.0,1.5625,470.99,10644.37,Sufficient Stock
+110,Sun Bicycles Drifter 7 - 2017,Sun Bicycles,Comfort Bicycles,11.0,16,25.0,1.5625,470.99,10644.37,Sufficient Stock
+177,Trek Domane SLR 6 Disc - 2018,Trek,Road Bikes,2.0,1,2.0,2.0,5499.99,10449.98,Medium Stock
+177,Trek Domane SLR 6 Disc - 2018,Trek,Road Bikes,9.0,1,2.0,2.0,5499.99,10449.98,Sufficient Stock
+177,Trek Domane SLR 6 Disc - 2018,Trek,Road Bikes,19.0,1,2.0,2.0,5499.99,10449.98,Sufficient Stock
+135,Trek X-Caliber Frameset - 2018,Trek,Mountain Bikes,15.0,6,8.0,1.3333333333333333,1499.99,10439.93,Sufficient Stock
+74,Electra Cruiser Lux 1 - 2017,Electra,Cruisers Bicycles,9.0,19,26.0,1.368421052631579,439.99,10432.16,Sufficient Stock
+74,Electra Cruiser Lux 1 - 2017,Electra,Cruisers Bicycles,17.0,19,26.0,1.368421052631579,439.99,10432.16,Sufficient Stock
+74,Electra Cruiser Lux 1 - 2017,Electra,Cruisers Bicycles,23.0,19,26.0,1.368421052631579,439.99,10432.16,Sufficient Stock
+37,Haro Flightline One ST - 2017,Haro,Mountain Bikes,5.0,20,31.0,1.55,379.99,10430.73,Sufficient Stock
+37,Haro Flightline One ST - 2017,Haro,Mountain Bikes,12.0,20,31.0,1.55,379.99,10430.73,Sufficient Stock
+37,Haro Flightline One ST - 2017,Haro,Mountain Bikes,30.0,20,31.0,1.55,379.99,10430.73,Sufficient Stock
+97,Electra Savannah 3i (20-inch) - Girl's - 2017,Electra,Children Bicycles,15.0,22,33.0,1.5,349.99,10258.21,Sufficient Stock
+97,Electra Savannah 3i (20-inch) - Girl's - 2017,Electra,Children Bicycles,20.0,22,33.0,1.5,349.99,10258.21,Sufficient Stock
+97,Electra Savannah 3i (20-inch) - Girl's - 2017,Electra,Children Bicycles,28.0,22,33.0,1.5,349.99,10258.21,Sufficient Stock
+141,Trek Stache 5 - 2018,Trek,Mountain Bikes,4.0,4,7.0,1.75,1599.99,10063.94,Medium Stock
+141,Trek Stache 5 - 2018,Trek,Mountain Bikes,21.0,4,7.0,1.75,1599.99,10063.94,Sufficient Stock
+141,Trek Stache 5 - 2018,Trek,Mountain Bikes,28.0,4,7.0,1.75,1599.99,10063.94,Sufficient Stock
+181,Trek Domane SL 5 - 2018,Trek,Road Bikes,8.0,3,5.0,1.6666666666666667,2199.99,10031.95,Sufficient Stock
+181,Trek Domane SL 5 - 2018,Trek,Road Bikes,19.0,3,5.0,1.6666666666666667,2199.99,10031.95,Sufficient Stock
+181,Trek Domane SL 5 - 2018,Trek,Road Bikes,29.0,3,5.0,1.6666666666666667,2199.99,10031.95,Sufficient Stock
+111,Sun Bicycles Drifter 7 - Women's - 2017,Sun Bicycles,Comfort Bicycles,6.0,18,24.0,1.3333333333333333,470.99,10027.38,Sufficient Stock
+111,Sun Bicycles Drifter 7 - Women's - 2017,Sun Bicycles,Comfort Bicycles,11.0,18,24.0,1.3333333333333333,470.99,10027.38,Sufficient Stock
+111,Sun Bicycles Drifter 7 - Women's - 2017,Sun Bicycles,Comfort Bicycles,29.0,18,24.0,1.3333333333333333,470.99,10027.38,Sufficient Stock
+151,Trek Domane ALR 4 Disc Women's - 2018,Trek,Road Bikes,1.0,4,7.0,1.75,1549.99,9749.44,Low Stock
+151,Trek Domane ALR 4 Disc Women's - 2018,Trek,Road Bikes,2.0,4,7.0,1.75,1549.99,9749.44,Medium Stock
+151,Trek Domane ALR 4 Disc Women's - 2018,Trek,Road Bikes,24.0,4,7.0,1.75,1549.99,9749.44,Sufficient Stock
+96,Electra Moto 3i (20-inch) - Boy's - 2017,Electra,Children Bicycles,1.0,20,31.0,1.55,349.99,9680.72,Low Stock
+96,Electra Moto 3i (20-inch) - Boy's - 2017,Electra,Children Bicycles,20.0,20,31.0,1.55,349.99,9680.72,Sufficient Stock
+96,Electra Moto 3i (20-inch) - Boy's - 2017,Electra,Children Bicycles,22.0,20,31.0,1.55,349.99,9680.72,Sufficient Stock
+196,Trek Verve+ - 2018,Trek,Electric Bikes,25.0,3,5.0,1.6666666666666667,2299.99,9544.96,Sufficient Stock
+196,Trek Verve+ - 2018,Trek,Electric Bikes,26.0,3,5.0,1.6666666666666667,2299.99,9544.96,Sufficient Stock
+196,Trek Verve+ - 2018,Trek,Electric Bikes,28.0,3,5.0,1.6666666666666667,2299.99,9544.96,Sufficient Stock
+197,Trek Verve+ Lowstep - 2018,Trek,Electric Bikes,8.0,4,5.0,1.25,2299.99,9429.96,Sufficient Stock
+197,Trek Verve+ Lowstep - 2018,Trek,Electric Bikes,10.0,4,5.0,1.25,2299.99,9429.96,Sufficient Stock
+197,Trek Verve+ Lowstep - 2018,Trek,Electric Bikes,22.0,4,5.0,1.25,2299.99,9429.96,Sufficient Stock
+107,Sun Bicycles Cruz 7 - 2017,Sun Bicycles,Comfort Bicycles,11.0,16,25.0,1.5625,416.99,9361.43,Sufficient Stock
+107,Sun Bicycles Cruz 7 - 2017,Sun Bicycles,Comfort Bicycles,20.0,16,25.0,1.5625,416.99,9361.43,Sufficient Stock
+107,Sun Bicycles Cruz 7 - 2017,Sun Bicycles,Comfort Bicycles,29.0,16,25.0,1.5625,416.99,9361.43,Sufficient Stock
+163,Surly Pack Rat - 2018,Surly,Road Bikes,0.0,4,8.0,2.0,1349.0,9335.08,Out of Stock
+163,Surly Pack Rat - 2018,Surly,Road Bikes,11.0,4,8.0,2.0,1349.0,9335.08,Sufficient Stock
+163,Surly Pack Rat - 2018,Surly,Road Bikes,30.0,4,8.0,2.0,1349.0,9335.08,Sufficient Stock
+208,Trek Crockett 5 Disc - 2018,Trek,Cyclocross Bicycles,12.0,4,6.0,1.5,1799.99,9107.95,Sufficient Stock
+99,Electra Sugar Skulls 1 (20-inch) - Girl's - 2017,Electra,Children Bicycles,19.0,24,34.0,1.4166666666666667,299.99,9095.7,Sufficient Stock
+99,Electra Sugar Skulls 1 (20-inch) - Girl's - 2017,Electra,Children Bicycles,24.0,24,34.0,1.4166666666666667,299.99,9095.7,Sufficient Stock
+99,Electra Sugar Skulls 1 (20-inch) - Girl's - 2017,Electra,Children Bicycles,28.0,24,34.0,1.4166666666666667,299.99,9095.7,Sufficient Stock
+131,Heller Bloodhound Trail - 2018,Heller,Mountain Bikes,9.0,2,4.0,2.0,2599.0,8992.54,Sufficient Stock
+131,Heller Bloodhound Trail - 2018,Heller,Mountain Bikes,20.0,2,4.0,2.0,2599.0,8992.54,Sufficient Stock
+131,Heller Bloodhound Trail - 2018,Heller,Mountain Bikes,23.0,2,4.0,2.0,2599.0,8992.54,Sufficient Stock
+175,Trek Domane SLR Frameset - 2018,Trek,Road Bikes,0.0,2,3.0,1.5,3199.99,8927.97,Out of Stock
+175,Trek Domane SLR Frameset - 2018,Trek,Road Bikes,2.0,2,3.0,1.5,3199.99,8927.97,Medium Stock
+175,Trek Domane SLR Frameset - 2018,Trek,Road Bikes,3.0,2,3.0,1.5,3199.99,8927.97,Medium Stock
+235,Electra Koa 3i Ladies' - 2018,Electra,Cruisers Bicycles,1.0,6,11.0,1.8333333333333333,899.99,8819.9,Low Stock
+235,Electra Koa 3i Ladies' - 2018,Electra,Cruisers Bicycles,4.0,6,11.0,1.8333333333333333,899.99,8819.9,Medium Stock
+235,Electra Koa 3i Ladies' - 2018,Electra,Cruisers Bicycles,7.0,6,11.0,1.8333333333333333,899.99,8819.9,Sufficient Stock
+165,Trek 1120 - 2018,Trek,Road Bikes,6.0,2,4.0,2.0,2499.99,8749.97,Sufficient Stock
+165,Trek 1120 - 2018,Trek,Road Bikes,16.0,2,4.0,2.0,2499.99,8749.97,Sufficient Stock
+165,Trek 1120 - 2018,Trek,Road Bikes,19.0,2,4.0,2.0,2499.99,8749.97,Sufficient Stock
+260,Electra Townie Balloon 3i EQ Ladies' - 2018,Electra,Cruisers Bicycles,20.0,8,12.0,1.5,799.99,8719.89,Sufficient Stock
+98,Electra Straight 8 3i (20-inch) - Boy's - 2017,Electra,Children Bicycles,5.0,12,20.0,1.6666666666666667,489.99,8638.52,Sufficient Stock
+98,Electra Straight 8 3i (20-inch) - Boy's - 2017,Electra,Children Bicycles,14.0,12,20.0,1.6666666666666667,489.99,8638.52,Sufficient Stock
+98,Electra Straight 8 3i (20-inch) - Boy's - 2017,Electra,Children Bicycles,28.0,12,20.0,1.6666666666666667,489.99,8638.52,Sufficient Stock
+146,Trek Domane SLR 6 - 2018,Trek,Road Bikes,3.0,2,2.0,1.0,4999.99,8499.98,Sufficient Stock
+146,Trek Domane SLR 6 - 2018,Trek,Road Bikes,6.0,2,2.0,1.0,4999.99,8499.98,Sufficient Stock
+146,Trek Domane SLR 6 - 2018,Trek,Road Bikes,9.0,2,2.0,1.0,4999.99,8499.98,Sufficient Stock
+85,Haro Downtown 16 - 2017,Haro,Children Bicycles,6.0,21,30.0,1.4285714285714286,329.99,8464.24,Sufficient Stock
+85,Haro Downtown 16 - 2017,Haro,Children Bicycles,15.0,21,30.0,1.4285714285714286,329.99,8464.24,Sufficient Stock
+85,Haro Downtown 16 - 2017,Haro,Children Bicycles,23.0,21,30.0,1.4285714285714286,329.99,8464.24,Sufficient Stock
+66,Sun Bicycles Revolutions 24 - 2017,Sun Bicycles,Cruisers Bicycles,3.0,24,36.0,1.5,250.99,8011.6,Medium Stock
+66,Sun Bicycles Revolutions 24 - 2017,Sun Bicycles,Cruisers Bicycles,12.0,24,36.0,1.5,250.99,8011.6,Sufficient Stock
+66,Sun Bicycles Revolutions 24 - 2017,Sun Bicycles,Cruisers Bicycles,22.0,24,36.0,1.5,250.99,8011.6,Sufficient Stock
+120,Trek Fuel EX 7 29 - 2018,Trek,Mountain Bikes,16.0,2,4.0,2.0,2499.99,7999.97,Sufficient Stock
+120,Trek Fuel EX 7 29 - 2018,Trek,Mountain Bikes,23.0,2,4.0,2.0,2499.99,7999.97,Sufficient Stock
+120,Trek Fuel EX 7 29 - 2018,Trek,Mountain Bikes,25.0,2,4.0,2.0,2499.99,7999.97,Sufficient Stock
+129,Trek X-Caliber 7 - 2018,Trek,Mountain Bikes,21.0,6,10.0,1.6666666666666667,919.99,7967.11,Sufficient Stock
+187,Trek Neko+ - 2018,Trek,Electric Bikes,2.0,2,3.0,1.5,2799.99,7727.97,Medium Stock
+187,Trek Neko+ - 2018,Trek,Electric Bikes,10.0,2,3.0,1.5,2799.99,7727.97,Sufficient Stock
+187,Trek Neko+ - 2018,Trek,Electric Bikes,16.0,2,3.0,1.5,2799.99,7727.97,Sufficient Stock
+191,Electra Loft Go! 8i - 2018,Electra,Electric Bikes,15.0,3,3.0,1.0,2799.99,7643.97,Sufficient Stock
+191,Electra Loft Go! 8i - 2018,Electra,Electric Bikes,21.0,3,3.0,1.0,2799.99,7643.97,Sufficient Stock
+191,Electra Loft Go! 8i - 2018,Electra,Electric Bikes,23.0,3,3.0,1.0,2799.99,7643.97,Sufficient Stock
+79,Sun Bicycles Boardwalk (24-inch Wheels) - 2017,Sun Bicycles,Cruisers Bicycles,13.0,16,21.0,1.3125,402.99,7447.26,Sufficient Stock
+93,Haro Shredder 20 Girls - 2017,Haro,Children Bicycles,18.0,25,39.0,1.56,209.99,7364.35,Sufficient Stock
+76,"Electra Girl's Hawaii 1 16"" - 2017",Electra,Cruisers Bicycles,15.0,18,27.0,1.5,299.99,7301.76,Sufficient Stock
+76,"Electra Girl's Hawaii 1 16"" - 2017",Electra,Cruisers Bicycles,20.0,18,27.0,1.5,299.99,7301.76,Sufficient Stock
+76,"Electra Girl's Hawaii 1 16"" - 2017",Electra,Cruisers Bicycles,23.0,18,27.0,1.5,299.99,7301.76,Sufficient Stock
+123,Trek Farley Carbon Frameset - 2018,Trek,Mountain Bikes,8.0,6,8.0,1.3333333333333333,999.99,7239.93,Sufficient Stock
+123,Trek Farley Carbon Frameset - 2018,Trek,Mountain Bikes,15.0,6,8.0,1.3333333333333333,999.99,7239.93,Sufficient Stock
+123,Trek Farley Carbon Frameset - 2018,Trek,Mountain Bikes,18.0,6,8.0,1.3333333333333333,999.99,7239.93,Sufficient Stock
+92,Haro Shredder 20 - 2017,Haro,Children Bicycles,0.0,26,39.0,1.5,209.99,7183.76,Out of Stock
+92,Haro Shredder 20 - 2017,Haro,Children Bicycles,22.0,26,39.0,1.5,209.99,7183.76,Sufficient Stock
+92,Haro Shredder 20 - 2017,Haro,Children Bicycles,28.0,26,39.0,1.5,209.99,7183.76,Sufficient Stock
+34,Trek Session DH 27.5 Carbon Frameset - 2017,Trek,Mountain Bikes,2.0,11,16.0,1.4545454545454546,469.99,6781.96,Medium Stock
+34,Trek Session DH 27.5 Carbon Frameset - 2017,Trek,Mountain Bikes,6.0,11,16.0,1.4545454545454546,469.99,6781.96,Sufficient Stock
+34,Trek Session DH 27.5 Carbon Frameset - 2017,Trek,Mountain Bikes,24.0,11,16.0,1.4545454545454546,469.99,6781.96,Sufficient Stock
+166,Trek Domane AL 2 Women's - 2018,Trek,Road Bikes,27.0,8,10.0,1.25,749.99,6764.91,Sufficient Stock
+216,Electra Super Moto 8i - 2018,Electra,Cruisers Bicycles,5.0,4,8.0,2.0,899.99,6443.93,Medium Stock
+216,Electra Super Moto 8i - 2018,Electra,Cruisers Bicycles,11.0,4,8.0,2.0,899.99,6443.93,Sufficient Stock
+216,Electra Super Moto 8i - 2018,Electra,Cruisers Bicycles,19.0,4,8.0,2.0,899.99,6443.93,Sufficient Stock
+210,Surly Straggler - 2018,Surly,Cyclocross Bicycles,10.0,3,5.0,1.6666666666666667,1549.0,6428.35,Sufficient Stock
+210,Surly Straggler - 2018,Surly,Cyclocross Bicycles,22.0,3,5.0,1.6666666666666667,1549.0,6428.35,Sufficient Stock
+210,Surly Straggler - 2018,Surly,Cyclocross Bicycles,25.0,3,5.0,1.6666666666666667,1549.0,6428.35,Sufficient Stock
+152,Trek Domane SL 5 Disc Women's - 2018,Trek,Road Bikes,1.0,2,3.0,1.5,2499.99,6249.98,Low Stock
+152,Trek Domane SL 5 Disc Women's - 2018,Trek,Road Bikes,12.0,2,3.0,1.5,2499.99,6249.98,Sufficient Stock
+152,Trek Domane SL 5 Disc Women's - 2018,Trek,Road Bikes,21.0,2,3.0,1.5,2499.99,6249.98,Sufficient Stock
+94,Haro Shredder Pro 20 - 2017,Haro,Children Bicycles,2.0,19,28.0,1.4736842105263157,249.99,6227.25,Medium Stock
+94,Haro Shredder Pro 20 - 2017,Haro,Children Bicycles,6.0,19,28.0,1.4736842105263157,249.99,6227.25,Sufficient Stock
+94,Haro Shredder Pro 20 - 2017,Haro,Children Bicycles,15.0,19,28.0,1.4736842105263157,249.99,6227.25,Sufficient Stock
+180,Trek Domane AL 3 Women's - 2018,Trek,Road Bikes,3.0,5,8.0,1.6,919.99,6219.13,Medium Stock
+180,Trek Domane AL 3 Women's - 2018,Trek,Road Bikes,5.0,5,8.0,1.6,919.99,6219.13,Sufficient Stock
+180,Trek Domane AL 3 Women's - 2018,Trek,Road Bikes,6.0,5,8.0,1.6,919.99,6219.13,Sufficient Stock
+157,Trek Domane SL Frameset Women's - 2018,Trek,Road Bikes,12.0,1,1.0,1.0,6499.99,6174.99,Sufficient Stock
+157,Trek Domane SL Frameset Women's - 2018,Trek,Road Bikes,25.0,1,1.0,1.0,6499.99,6174.99,Sufficient Stock
+157,Trek Domane SL Frameset Women's - 2018,Trek,Road Bikes,28.0,1,1.0,1.0,6499.99,6174.99,Sufficient Stock
+206,Trek Boone 5 Disc - 2018,Trek,Cyclocross Bicycles,9.0,2,2.0,1.0,3299.99,6038.98,Sufficient Stock
+206,Trek Boone 5 Disc - 2018,Trek,Cyclocross Bicycles,10.0,2,2.0,1.0,3299.99,6038.98,Sufficient Stock
+206,Trek Boone 5 Disc - 2018,Trek,Cyclocross Bicycles,29.0,2,2.0,1.0,3299.99,6038.98,Sufficient Stock
+310,Electra Townie Commute 27D Ladies - 2018,Electra,Comfort Bicycles,5.0,4,7.0,1.75,899.99,5912.93,Medium Stock
+310,Electra Townie Commute 27D Ladies - 2018,Electra,Comfort Bicycles,8.0,4,7.0,1.75,899.99,5912.93,Sufficient Stock
+310,Electra Townie Commute 27D Ladies - 2018,Electra,Comfort Bicycles,18.0,4,7.0,1.75,899.99,5912.93,Sufficient Stock
+117,Trek Ticket S Frame - 2018,Trek,Mountain Bikes,15.0,4,4.0,1.0,1469.99,5527.16,Sufficient Stock
+117,Trek Ticket S Frame - 2018,Trek,Mountain Bikes,18.0,4,4.0,1.0,1469.99,5527.16,Sufficient Stock
+117,Trek Ticket S Frame - 2018,Trek,Mountain Bikes,23.0,4,4.0,1.0,1469.99,5527.16,Sufficient Stock
+300,Electra Townie Balloon 3i EQ Ladies' - 2018,Electra,Comfort Bicycles,3.0,6,8.0,1.3333333333333333,799.99,5447.93,Medium Stock
+300,Electra Townie Balloon 3i EQ Ladies' - 2018,Electra,Comfort Bicycles,7.0,6,8.0,1.3333333333333333,799.99,5447.93,Sufficient Stock
+300,Electra Townie Balloon 3i EQ Ladies' - 2018,Electra,Comfort Bicycles,13.0,6,8.0,1.3333333333333333,799.99,5447.93,Sufficient Stock
+304,Electra Townie Original 21D EQ - 2017/2018,Electra,Comfort Bicycles,6.0,5,9.0,1.8,679.99,5439.92,Sufficient Stock
+304,Electra Townie Original 21D EQ - 2017/2018,Electra,Comfort Bicycles,15.0,5,9.0,1.8,679.99,5439.92,Sufficient Stock
+304,Electra Townie Original 21D EQ - 2017/2018,Electra,Comfort Bicycles,23.0,5,9.0,1.8,679.99,5439.92,Sufficient Stock
+67,Sun Bicycles Revolutions 24 - Girl's - 2017,Sun Bicycles,Cruisers Bicycles,6.0,16,25.0,1.5625,250.99,5436.44,Sufficient Stock
+67,Sun Bicycles Revolutions 24 - Girl's - 2017,Sun Bicycles,Cruisers Bicycles,8.0,16,25.0,1.5625,250.99,5436.44,Sufficient Stock
+67,Sun Bicycles Revolutions 24 - Girl's - 2017,Sun Bicycles,Cruisers Bicycles,19.0,16,25.0,1.5625,250.99,5436.44,Sufficient Stock
+199,Electra Townie Commute Go! Ladies' - 2018,Electra,Electric Bikes,2.0,1,2.0,2.0,2999.99,5399.98,Medium Stock
+199,Electra Townie Commute Go! Ladies' - 2018,Electra,Electric Bikes,5.0,1,2.0,2.0,2999.99,5399.98,Medium Stock
+199,Electra Townie Commute Go! Ladies' - 2018,Electra,Electric Bikes,13.0,1,2.0,2.0,2999.99,5399.98,Sufficient Stock
+242,Electra Townie Commute 8D Ladies' - 2018,Electra,Cruisers Bicycles,2.0,5,9.0,1.8,699.99,5389.92,Medium Stock
+242,Electra Townie Commute 8D Ladies' - 2018,Electra,Cruisers Bicycles,5.0,5,9.0,1.8,699.99,5389.92,Medium Stock
+242,Electra Townie Commute 8D Ladies' - 2018,Electra,Cruisers Bicycles,10.0,5,9.0,1.8,699.99,5389.92,Sufficient Stock
+164,Surly Straggler 650b - 2018,Surly,Road Bikes,9.0,2,4.0,2.0,1549.0,5359.54,Sufficient Stock
+164,Surly Straggler 650b - 2018,Surly,Road Bikes,15.0,2,4.0,2.0,1549.0,5359.54,Sufficient Stock
+164,Surly Straggler 650b - 2018,Surly,Road Bikes,18.0,2,4.0,2.0,1549.0,5359.54,Sufficient Stock
+168,Surly Straggler - 2018,Surly,Road Bikes,0.0,3,4.0,1.3333333333333333,1549.0,5344.05,Out of Stock
+168,Surly Straggler - 2018,Surly,Road Bikes,23.0,3,4.0,1.3333333333333333,1549.0,5344.05,Sufficient Stock
+168,Surly Straggler - 2018,Surly,Road Bikes,29.0,3,4.0,1.3333333333333333,1549.0,5344.05,Sufficient Stock
+135,Trek X-Caliber Frameset - 2018,Trek,Mountain Bikes,30.0,3,4.0,1.3333333333333333,1499.99,5219.97,Sufficient Stock
+88,Trek Precaliber 12 Girls - 2017,Trek,Children Bicycles,7.0,23,31.0,1.3478260869565217,189.99,5198.13,Sufficient Stock
+88,Trek Precaliber 12 Girls - 2017,Trek,Children Bicycles,8.0,23,31.0,1.3478260869565217,189.99,5198.13,Sufficient Stock
+88,Trek Precaliber 12 Girls - 2017,Trek,Children Bicycles,28.0,23,31.0,1.3478260869565217,189.99,5198.13,Sufficient Stock
+179,Trek Domane AL 3 - 2018,Trek,Road Bikes,16.0,4,6.0,1.5,919.99,5170.34,Sufficient Stock
+161,Surly ECR - 2018,Surly,Road Bikes,9.0,2,3.0,1.5,1899.0,5127.3,Sufficient Stock
+161,Surly ECR - 2018,Surly,Road Bikes,11.0,2,3.0,1.5,1899.0,5127.3,Sufficient Stock
+161,Surly ECR - 2018,Surly,Road Bikes,17.0,2,3.0,1.5,1899.0,5127.3,Sufficient Stock
+89,Trek Precaliber 16 Boys - 2017,Trek,Children Bicycles,8.0,18,27.0,1.5,209.99,5113.26,Sufficient Stock
+89,Trek Precaliber 16 Boys - 2017,Trek,Children Bicycles,9.0,18,27.0,1.5,209.99,5113.26,Sufficient Stock
+89,Trek Precaliber 16 Boys - 2017,Trek,Children Bicycles,22.0,18,27.0,1.5,209.99,5113.26,Sufficient Stock
+306,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,Electra,Comfort Bicycles,7.0,4,6.0,1.5,899.99,5039.94,Sufficient Stock
+306,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,Electra,Comfort Bicycles,17.0,4,6.0,1.5,899.99,5039.94,Sufficient Stock
+306,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,Electra,Comfort Bicycles,21.0,4,6.0,1.5,899.99,5039.94,Sufficient Stock
+87,Trek Precaliber 12 Boys - 2017,Trek,Children Bicycles,14.0,19,30.0,1.5789473684210527,189.99,4972.04,Sufficient Stock
+87,Trek Precaliber 12 Boys - 2017,Trek,Children Bicycles,16.0,19,30.0,1.5789473684210527,189.99,4972.04,Sufficient Stock
+87,Trek Precaliber 12 Boys - 2017,Trek,Children Bicycles,27.0,19,30.0,1.5789473684210527,189.99,4972.04,Sufficient Stock
+225,Electra Delivery 3i - 2016/2017/2018,Electra,Cruisers Bicycles,11.0,4,6.0,1.5,959.99,4953.55,Sufficient Stock
+225,Electra Delivery 3i - 2016/2017/2018,Electra,Cruisers Bicycles,12.0,4,6.0,1.5,959.99,4953.55,Sufficient Stock
+225,Electra Delivery 3i - 2016/2017/2018,Electra,Cruisers Bicycles,24.0,4,6.0,1.5,959.99,4953.55,Sufficient Stock
+234,Electra Daydreamer 3i Ladies' - 2018,Electra,Cruisers Bicycles,12.0,4,6.0,1.5,899.99,4949.95,Sufficient Stock
+234,Electra Daydreamer 3i Ladies' - 2018,Electra,Cruisers Bicycles,13.0,4,6.0,1.5,899.99,4949.95,Sufficient Stock
+234,Electra Daydreamer 3i Ladies' - 2018,Electra,Cruisers Bicycles,24.0,4,6.0,1.5,899.99,4949.95,Sufficient Stock
+237,Electra Relic 3i - 2018,Electra,Cruisers Bicycles,16.0,3,6.0,2.0,849.99,4844.94,Sufficient Stock
+237,Electra Relic 3i - 2018,Electra,Cruisers Bicycles,26.0,3,6.0,2.0,849.99,4844.94,Sufficient Stock
+237,Electra Relic 3i - 2018,Electra,Cruisers Bicycles,30.0,3,6.0,2.0,849.99,4844.94,Sufficient Stock
+303,Electra Townie Go! 8i - 2017/2018,Electra,Comfort Bicycles,12.0,1,2.0,2.0,2599.99,4835.98,Sufficient Stock
+303,Electra Townie Go! 8i - 2017/2018,Electra,Comfort Bicycles,13.0,1,2.0,2.0,2599.99,4835.98,Sufficient Stock
+303,Electra Townie Go! 8i - 2017/2018,Electra,Comfort Bicycles,23.0,1,2.0,2.0,2599.99,4835.98,Sufficient Stock
+90,Trek Precaliber 16 Girls - 2017,Trek,Children Bicycles,4.0,18,25.0,1.3888888888888888,209.99,4577.78,Medium Stock
+90,Trek Precaliber 16 Girls - 2017,Trek,Children Bicycles,9.0,18,25.0,1.3888888888888888,209.99,4577.78,Sufficient Stock
+90,Trek Precaliber 16 Girls - 2017,Trek,Children Bicycles,26.0,18,25.0,1.3888888888888888,209.99,4577.78,Sufficient Stock
+136,Trek Procaliber 6 - 2018,Trek,Mountain Bikes,4.0,3,3.0,1.0,1799.99,4553.97,Sufficient Stock
+136,Trek Procaliber 6 - 2018,Trek,Mountain Bikes,8.0,3,3.0,1.0,1799.99,4553.97,Sufficient Stock
+136,Trek Procaliber 6 - 2018,Trek,Mountain Bikes,12.0,3,3.0,1.0,1799.99,4553.97,Sufficient Stock
+208,Trek Crockett 5 Disc - 2018,Trek,Cyclocross Bicycles,13.0,2,3.0,1.5,1799.99,4553.97,Sufficient Stock
+189,Trek Lift+ Lowstep - 2018,Trek,Electric Bikes,6.0,1,2.0,2.0,2799.99,4479.98,Sufficient Stock
+189,Trek Lift+ Lowstep - 2018,Trek,Electric Bikes,13.0,1,2.0,2.0,2799.99,4479.98,Sufficient Stock
+189,Trek Lift+ Lowstep - 2018,Trek,Electric Bikes,20.0,1,2.0,2.0,2799.99,4479.98,Sufficient Stock
+260,Electra Townie Balloon 3i EQ Ladies' - 2018,Electra,Cruisers Bicycles,5.0,4,6.0,1.5,799.99,4359.95,Sufficient Stock
+127,Surly Pack Rat Frameset - 2018,Surly,Mountain Bikes,12.0,6,10.0,1.6666666666666667,469.99,4286.31,Sufficient Stock
+201,Trek Powerfly 5 FS - 2018,Trek,Electric Bikes,16.0,1,1.0,1.0,4499.99,4274.99,Sufficient Stock
+201,Trek Powerfly 5 FS - 2018,Trek,Electric Bikes,24.0,1,1.0,1.0,4499.99,4274.99,Sufficient Stock
+201,Trek Powerfly 5 FS - 2018,Trek,Electric Bikes,30.0,1,1.0,1.0,4499.99,4274.99,Sufficient Stock
+226,Electra Townie Original 21D EQ - 2017/2018,Electra,Cruisers Bicycles,5.0,4,7.0,1.75,679.99,4256.74,Medium Stock
+226,Electra Townie Original 21D EQ - 2017/2018,Electra,Cruisers Bicycles,14.0,4,7.0,1.75,679.99,4256.74,Sufficient Stock
+226,Electra Townie Original 21D EQ - 2017/2018,Electra,Cruisers Bicycles,18.0,4,7.0,1.75,679.99,4256.74,Sufficient Stock
+134,Trek Remedy 27.5 C Frameset - 2018,Trek,Mountain Bikes,13.0,2,3.0,1.5,1499.99,4199.97,Sufficient Stock
+134,Trek Remedy 27.5 C Frameset - 2018,Trek,Mountain Bikes,17.0,2,3.0,1.5,1499.99,4199.97,Sufficient Stock
+134,Trek Remedy 27.5 C Frameset - 2018,Trek,Mountain Bikes,26.0,2,3.0,1.5,1499.99,4199.97,Sufficient Stock
+307,Electra Townie Balloon 8D EQ - 2016/2017/2018,Electra,Comfort Bicycles,17.0,4,6.0,1.5,749.99,4184.94,Sufficient Stock
+215,Electra Queen of Hearts 3i - 2018,Electra,Cruisers Bicycles,1.0,4,6.0,1.5,749.99,4162.44,Low Stock
+215,Electra Queen of Hearts 3i - 2018,Electra,Cruisers Bicycles,11.0,4,6.0,1.5,749.99,4162.44,Sufficient Stock
+215,Electra Queen of Hearts 3i - 2018,Electra,Cruisers Bicycles,12.0,4,6.0,1.5,749.99,4162.44,Sufficient Stock
+130,Trek Stache Carbon Frameset - 2018,Trek,Mountain Bikes,17.0,4,5.0,1.25,919.99,4149.15,Sufficient Stock
+130,Trek Stache Carbon Frameset - 2018,Trek,Mountain Bikes,20.0,4,5.0,1.25,919.99,4149.15,Sufficient Stock
+130,Trek Stache Carbon Frameset - 2018,Trek,Mountain Bikes,22.0,4,5.0,1.25,919.99,4149.15,Sufficient Stock
+133,Trek Procaliber Frameset - 2018,Trek,Mountain Bikes,9.0,2,3.0,1.5,1499.99,4139.97,Sufficient Stock
+133,Trek Procaliber Frameset - 2018,Trek,Mountain Bikes,16.0,2,3.0,1.5,1499.99,4139.97,Sufficient Stock
+133,Trek Procaliber Frameset - 2018,Trek,Mountain Bikes,28.0,2,3.0,1.5,1499.99,4139.97,Sufficient Stock
+302,Electra Townie Original 1 - 2018,Electra,Comfort Bicycles,6.0,8,10.0,1.25,449.99,4139.91,Sufficient Stock
+214,Electra Tiger Shark 3i - 2018,Electra,Cruisers Bicycles,4.0,4,5.0,1.25,899.99,4103.95,Sufficient Stock
+214,Electra Tiger Shark 3i - 2018,Electra,Cruisers Bicycles,7.0,4,5.0,1.25,899.99,4103.95,Sufficient Stock
+214,Electra Tiger Shark 3i - 2018,Electra,Cruisers Bicycles,30.0,4,5.0,1.25,899.99,4103.95,Sufficient Stock
+158,Trek CrossRip 1 - 2018,Trek,Road Bikes,0.0,3,5.0,1.6666666666666667,959.99,4089.56,Out of Stock
+158,Trek CrossRip 1 - 2018,Trek,Road Bikes,11.0,3,5.0,1.6666666666666667,959.99,4089.56,Sufficient Stock
+158,Trek CrossRip 1 - 2018,Trek,Road Bikes,17.0,3,5.0,1.6666666666666667,959.99,4089.56,Sufficient Stock
+132,Trek Procal AL Frameset - 2018,Trek,Mountain Bikes,1.0,2,3.0,1.5,1499.99,4049.97,Low Stock
+132,Trek Procal AL Frameset - 2018,Trek,Mountain Bikes,6.0,2,3.0,1.5,1499.99,4049.97,Sufficient Stock
+132,Trek Procal AL Frameset - 2018,Trek,Mountain Bikes,16.0,2,3.0,1.5,1499.99,4049.97,Sufficient Stock
+301,Electra Townie Balloon 7i EQ - 2018,Electra,Comfort Bicycles,10.0,4,5.0,1.25,899.99,4013.96,Sufficient Stock
+301,Electra Townie Balloon 7i EQ - 2018,Electra,Comfort Bicycles,26.0,4,5.0,1.25,899.99,4013.96,Sufficient Stock
+301,Electra Townie Balloon 7i EQ - 2018,Electra,Comfort Bicycles,29.0,4,5.0,1.25,899.99,4013.96,Sufficient Stock
+257,Electra Amsterdam Fashion 3i Ladies' - 2017/2018,Electra,Cruisers Bicycles,5.0,3,5.0,1.6666666666666667,899.99,4004.96,Sufficient Stock
+257,Electra Amsterdam Fashion 3i Ladies' - 2017/2018,Electra,Cruisers Bicycles,17.0,3,5.0,1.6666666666666667,899.99,4004.96,Sufficient Stock
+257,Electra Amsterdam Fashion 3i Ladies' - 2017/2018,Electra,Cruisers Bicycles,25.0,3,5.0,1.6666666666666667,899.99,4004.96,Sufficient Stock
+129,Trek X-Caliber 7 - 2018,Trek,Mountain Bikes,10.0,3,5.0,1.6666666666666667,919.99,3983.56,Sufficient Stock
+297,"Electra Under-The-Sea 1 16"" - 2018",Electra,Children Bicycles,22.0,10,16.0,1.6,279.99,3975.86,Sufficient Stock
+144,Trek Domane ALR 4 Disc - 2018,Trek,Road Bikes,4.0,2,3.0,1.5,1549.99,3921.47,Medium Stock
+144,Trek Domane ALR 4 Disc - 2018,Trek,Road Bikes,7.0,2,3.0,1.5,1549.99,3921.47,Sufficient Stock
+144,Trek Domane ALR 4 Disc - 2018,Trek,Road Bikes,9.0,2,3.0,1.5,1549.99,3921.47,Sufficient Stock
+243,Electra Townie Original 21D EQ Ladies' - 2018,Electra,Cruisers Bicycles,7.0,4,6.0,1.5,679.99,3875.94,Sufficient Stock
+243,Electra Townie Original 21D EQ Ladies' - 2018,Electra,Cruisers Bicycles,11.0,4,6.0,1.5,679.99,3875.94,Sufficient Stock
+243,Electra Townie Original 21D EQ Ladies' - 2018,Electra,Cruisers Bicycles,18.0,4,6.0,1.5,679.99,3875.94,Sufficient Stock
+230,Electra Cruiser Lux 1 Ladies' - 2018,Electra,Cruisers Bicycles,7.0,6,10.0,1.6666666666666667,429.99,3874.21,Sufficient Stock
+230,Electra Cruiser Lux 1 Ladies' - 2018,Electra,Cruisers Bicycles,25.0,6,10.0,1.6666666666666667,429.99,3874.21,Sufficient Stock
+230,Electra Cruiser Lux 1 Ladies' - 2018,Electra,Cruisers Bicycles,29.0,6,10.0,1.6666666666666667,429.99,3874.21,Sufficient Stock
+308,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,Electra,Comfort Bicycles,9.0,3,6.0,2.0,749.99,3749.95,Sufficient Stock
+308,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,Electra,Comfort Bicycles,15.0,3,6.0,2.0,749.99,3749.95,Sufficient Stock
+308,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,Electra,Comfort Bicycles,23.0,3,6.0,2.0,749.99,3749.95,Sufficient Stock
+248,Electra Townie Original 7D EQ Ladies' - 2017/2018,Electra,Cruisers Bicycles,11.0,5,7.0,1.4,599.99,3683.94,Sufficient Stock
+248,Electra Townie Original 7D EQ Ladies' - 2017/2018,Electra,Cruisers Bicycles,14.0,5,7.0,1.4,599.99,3683.94,Sufficient Stock
+248,Electra Townie Original 7D EQ Ladies' - 2017/2018,Electra,Cruisers Bicycles,26.0,5,7.0,1.4,599.99,3683.94,Sufficient Stock
+183,Trek Domane SL 5 Women's - 2018,Trek,Road Bikes,26.0,2,2.0,1.0,2199.99,3519.98,Sufficient Stock
+113,Trek Marlin 5 - 2018,Trek,Mountain Bikes,7.0,6,8.0,1.3333333333333333,489.99,3498.53,Sufficient Stock
+113,Trek Marlin 5 - 2018,Trek,Mountain Bikes,23.0,6,8.0,1.3333333333333333,489.99,3498.53,Sufficient Stock
+113,Trek Marlin 5 - 2018,Trek,Mountain Bikes,24.0,6,8.0,1.3333333333333333,489.99,3498.53,Sufficient Stock
+223,Electra Cruiser Lux 3i - 2018,Electra,Cruisers Bicycles,3.0,4,7.0,1.75,529.99,3455.53,Medium Stock
+223,Electra Cruiser Lux 3i - 2018,Electra,Cruisers Bicycles,7.0,4,7.0,1.75,529.99,3455.53,Sufficient Stock
+223,Electra Cruiser Lux 3i - 2018,Electra,Cruisers Bicycles,29.0,4,7.0,1.75,529.99,3455.53,Sufficient Stock
+249,Electra White Water 3i - 2018,Electra,Cruisers Bicycles,6.0,4,5.0,1.25,749.99,3412.45,Sufficient Stock
+249,Electra White Water 3i - 2018,Electra,Cruisers Bicycles,10.0,4,5.0,1.25,749.99,3412.45,Sufficient Stock
+249,Electra White Water 3i - 2018,Electra,Cruisers Bicycles,27.0,4,5.0,1.25,749.99,3412.45,Sufficient Stock
+166,Trek Domane AL 2 Women's - 2018,Trek,Road Bikes,23.0,4,5.0,1.25,749.99,3382.45,Sufficient Stock
+213,Electra Cruiser 1 - 2016/2017/2018,Electra,Cruisers Bicycles,10.0,8,14.0,1.75,269.99,3364.08,Sufficient Stock
+240,Electra Townie Commute 27D Ladies - 2018,Electra,Cruisers Bicycles,17.0,2,4.0,2.0,899.99,3329.96,Sufficient Stock
+240,Electra Townie Commute 27D Ladies - 2018,Electra,Cruisers Bicycles,19.0,2,4.0,2.0,899.99,3329.96,Sufficient Stock
+240,Electra Townie Commute 27D Ladies - 2018,Electra,Cruisers Bicycles,26.0,2,4.0,2.0,899.99,3329.96,Sufficient Stock
+200,Trek Powerfly 5 - 2018,Trek,Electric Bikes,11.0,1,1.0,1.0,3499.99,3254.99,Sufficient Stock
+200,Trek Powerfly 5 - 2018,Trek,Electric Bikes,27.0,1,1.0,1.0,3499.99,3254.99,Sufficient Stock
+200,Trek Powerfly 5 - 2018,Trek,Electric Bikes,29.0,1,1.0,1.0,3499.99,3254.99,Sufficient Stock
+83,Trek Boy's Kickster - 2015/2017,Trek,Children Bicycles,13.0,15,24.0,1.6,149.99,3236.78,Sufficient Stock
+83,Trek Boy's Kickster - 2015/2017,Trek,Children Bicycles,21.0,15,24.0,1.6,149.99,3236.78,Sufficient Stock
+83,Trek Boy's Kickster - 2015/2017,Trek,Children Bicycles,23.0,15,24.0,1.6,149.99,3236.78,Sufficient Stock
+86,Trek Girl's Kickster - 2017,Trek,Children Bicycles,19.0,15,24.0,1.6,149.99,3193.29,Sufficient Stock
+86,Trek Girl's Kickster - 2017,Trek,Children Bicycles,24.0,15,24.0,1.6,149.99,3193.29,Sufficient Stock
+86,Trek Girl's Kickster - 2017,Trek,Children Bicycles,27.0,15,24.0,1.6,149.99,3193.29,Sufficient Stock
+254,Electra Townie Balloon 3i EQ - 2017/2018,Electra,Cruisers Bicycles,4.0,4,5.0,1.25,749.99,3172.46,Sufficient Stock
+254,Electra Townie Balloon 3i EQ - 2017/2018,Electra,Cruisers Bicycles,7.0,4,5.0,1.25,749.99,3172.46,Sufficient Stock
+254,Electra Townie Balloon 3i EQ - 2017/2018,Electra,Cruisers Bicycles,24.0,4,5.0,1.25,749.99,3172.46,Sufficient Stock
+217,Electra Straight 8 3i - 2018,Electra,Cruisers Bicycles,4.0,3,4.0,1.3333333333333333,909.99,3121.27,Sufficient Stock
+217,Electra Straight 8 3i - 2018,Electra,Cruisers Bicycles,11.0,3,4.0,1.3333333333333333,909.99,3121.27,Sufficient Stock
+217,Electra Straight 8 3i - 2018,Electra,Cruisers Bicycles,22.0,3,4.0,1.3333333333333333,909.99,3121.27,Sufficient Stock
+259,Electra Amsterdam Royal 8i Ladies - 2018,Electra,Cruisers Bicycles,0.0,2,3.0,1.5,1199.99,3035.97,Out of Stock
+259,Electra Amsterdam Royal 8i Ladies - 2018,Electra,Cruisers Bicycles,10.0,2,3.0,1.5,1199.99,3035.97,Sufficient Stock
+259,Electra Amsterdam Royal 8i Ladies - 2018,Electra,Cruisers Bicycles,16.0,2,3.0,1.5,1199.99,3035.97,Sufficient Stock
+176,Trek Madone 9 Frameset - 2018,Trek,Road Bikes,6.0,1,1.0,1.0,3199.99,2975.99,Sufficient Stock
+176,Trek Madone 9 Frameset - 2018,Trek,Road Bikes,11.0,1,1.0,1.0,3199.99,2975.99,Sufficient Stock
+176,Trek Madone 9 Frameset - 2018,Trek,Road Bikes,26.0,1,1.0,1.0,3199.99,2975.99,Sufficient Stock
+211,Surly Straggler 650b - 2018,Surly,Cyclocross Bicycles,3.0,1,2.0,2.0,1549.0,2943.1,Medium Stock
+211,Surly Straggler 650b - 2018,Surly,Cyclocross Bicycles,4.0,1,2.0,2.0,1549.0,2943.1,Medium Stock
+211,Surly Straggler 650b - 2018,Surly,Cyclocross Bicycles,13.0,1,2.0,2.0,1549.0,2943.1,Sufficient Stock
+114,Trek Marlin 6 - 2018,Trek,Mountain Bikes,12.0,4,6.0,1.5,579.99,2934.75,Sufficient Stock
+126,Surly Big Fat Dummy Frameset - 2018,Surly,Mountain Bikes,5.0,5,7.0,1.4,469.99,2928.04,Sufficient Stock
+126,Surly Big Fat Dummy Frameset - 2018,Surly,Mountain Bikes,13.0,5,7.0,1.4,469.99,2928.04,Sufficient Stock
+126,Surly Big Fat Dummy Frameset - 2018,Surly,Mountain Bikes,28.0,5,7.0,1.4,469.99,2928.04,Sufficient Stock
+295,"Electra Treasure 1 20"" - 2018",Electra,Children Bicycles,9.0,6,10.0,1.6666666666666667,319.99,2835.11,Sufficient Stock
+295,"Electra Treasure 1 20"" - 2018",Electra,Children Bicycles,15.0,6,10.0,1.6666666666666667,319.99,2835.11,Sufficient Stock
+295,"Electra Treasure 1 20"" - 2018",Electra,Children Bicycles,24.0,6,10.0,1.6666666666666667,319.99,2835.11,Sufficient Stock
+219,Electra Moto 3i - 2018,Electra,Cruisers Bicycles,16.0,3,5.0,1.6666666666666667,639.99,2771.16,Sufficient Stock
+219,Electra Moto 3i - 2018,Electra,Cruisers Bicycles,29.0,3,5.0,1.6666666666666667,639.99,2771.16,Sufficient Stock
+219,Electra Moto 3i - 2018,Electra,Cruisers Bicycles,30.0,3,5.0,1.6666666666666667,639.99,2771.16,Sufficient Stock
+178,Trek Domane AL 2 - 2018,Trek,Road Bikes,1.0,2,4.0,2.0,749.99,2624.97,Low Stock
+178,Trek Domane AL 2 - 2018,Trek,Road Bikes,12.0,2,4.0,2.0,749.99,2624.97,Sufficient Stock
+178,Trek Domane AL 2 - 2018,Trek,Road Bikes,23.0,2,4.0,2.0,749.99,2624.97,Sufficient Stock
+179,Trek Domane AL 3 - 2018,Trek,Road Bikes,20.0,2,3.0,1.5,919.99,2585.17,Sufficient Stock
+174,Trek Domane SLR Disc Frameset - 2018,Trek,Road Bikes,1.0,1,1.0,1.0,3199.99,2559.99,Medium Stock
+174,Trek Domane SLR Disc Frameset - 2018,Trek,Road Bikes,8.0,1,1.0,1.0,3199.99,2559.99,Sufficient Stock
+174,Trek Domane SLR Disc Frameset - 2018,Trek,Road Bikes,26.0,1,1.0,1.0,3199.99,2559.99,Sufficient Stock
+118,Trek X-Caliber 8 - 2018,Trek,Mountain Bikes,9.0,2,3.0,1.5,999.99,2499.98,Sufficient Stock
+118,Trek X-Caliber 8 - 2018,Trek,Mountain Bikes,12.0,2,3.0,1.5,999.99,2499.98,Sufficient Stock
+118,Trek X-Caliber 8 - 2018,Trek,Mountain Bikes,25.0,2,3.0,1.5,999.99,2499.98,Sufficient Stock
+261,Electra Townie Balloon 7i EQ - 2018,Electra,Cruisers Bicycles,3.0,2,3.0,1.5,899.99,2483.97,Medium Stock
+261,Electra Townie Balloon 7i EQ - 2018,Electra,Cruisers Bicycles,4.0,2,3.0,1.5,899.99,2483.97,Medium Stock
+261,Electra Townie Balloon 7i EQ - 2018,Electra,Cruisers Bicycles,24.0,2,3.0,1.5,899.99,2483.97,Sufficient Stock
+238,Electra Townie Balloon 8D EQ - 2016/2017/2018,Electra,Cruisers Bicycles,6.0,3,4.0,1.3333333333333333,749.99,2474.97,Sufficient Stock
+238,Electra Townie Balloon 8D EQ - 2016/2017/2018,Electra,Cruisers Bicycles,12.0,3,4.0,1.3333333333333333,749.99,2474.97,Sufficient Stock
+238,Electra Townie Balloon 8D EQ - 2016/2017/2018,Electra,Cruisers Bicycles,20.0,3,4.0,1.3333333333333333,749.99,2474.97,Sufficient Stock
+192,Electra Townie Go! 8i - 2017/2018,Electra,Electric Bikes,0.0,1,1.0,1.0,2599.99,2469.99,Out of Stock
+192,Electra Townie Go! 8i - 2017/2018,Electra,Electric Bikes,10.0,1,1.0,1.0,2599.99,2469.99,Sufficient Stock
+192,Electra Townie Go! 8i - 2017/2018,Electra,Electric Bikes,20.0,1,1.0,1.0,2599.99,2469.99,Sufficient Stock
+255,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,Electra,Cruisers Bicycles,12.0,2,3.0,1.5,899.99,2456.97,Sufficient Stock
+255,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,Electra,Cruisers Bicycles,13.0,2,3.0,1.5,899.99,2456.97,Sufficient Stock
+255,Electra Townie Balloon 7i EQ Ladies' - 2017/2018,Electra,Cruisers Bicycles,17.0,2,3.0,1.5,899.99,2456.97,Sufficient Stock
+250,Electra Townie Go! 8i - 2017/2018,Electra,Cruisers Bicycles,3.0,1,1.0,1.0,2599.99,2417.99,Sufficient Stock
+250,Electra Townie Go! 8i - 2017/2018,Electra,Cruisers Bicycles,16.0,1,1.0,1.0,2599.99,2417.99,Sufficient Stock
+250,Electra Townie Go! 8i - 2017/2018,Electra,Cruisers Bicycles,23.0,1,1.0,1.0,2599.99,2417.99,Sufficient Stock
+84,Sun Bicycles Lil Kitt'n - 2017,Sun Bicycles,Children Bicycles,11.0,16,24.0,1.5,109.99,2328.49,Sufficient Stock
+84,Sun Bicycles Lil Kitt'n - 2017,Sun Bicycles,Children Bicycles,15.0,16,24.0,1.5,109.99,2328.49,Sufficient Stock
+84,Sun Bicycles Lil Kitt'n - 2017,Sun Bicycles,Children Bicycles,22.0,16,24.0,1.5,109.99,2328.49,Sufficient Stock
+265,Strider Strider 20 Sport - 2018,Strider,Children Bicycles,4.0,6,9.0,1.5,289.99,2305.42,Medium Stock
+265,Strider Strider 20 Sport - 2018,Strider,Children Bicycles,22.0,6,9.0,1.5,289.99,2305.42,Sufficient Stock
+265,Strider Strider 20 Sport - 2018,Strider,Children Bicycles,28.0,6,9.0,1.5,289.99,2305.42,Sufficient Stock
+258,Electra Amsterdam Royal 8i - 2017/2018,Electra,Cruisers Bicycles,10.0,2,2.0,1.0,1259.9,2267.82,Sufficient Stock
+119,Trek Kids' Neko - 2018,Trek,Mountain Bikes,17.0,3,5.0,1.6666666666666667,469.99,2213.65,Sufficient Stock
+119,Trek Kids' Neko - 2018,Trek,Mountain Bikes,23.0,3,5.0,1.6666666666666667,469.99,2213.65,Sufficient Stock
+119,Trek Kids' Neko - 2018,Trek,Mountain Bikes,29.0,3,5.0,1.6666666666666667,469.99,2213.65,Sufficient Stock
+229,Electra Cruiser Lux 1 - 2016/2018,Electra,Cruisers Bicycles,7.0,3,6.0,2.0,429.99,2175.75,Sufficient Stock
+229,Electra Cruiser Lux 1 - 2016/2018,Electra,Cruisers Bicycles,27.0,3,6.0,2.0,429.99,2175.75,Sufficient Stock
+229,Electra Cruiser Lux 1 - 2016/2018,Electra,Cruisers Bicycles,29.0,3,6.0,2.0,429.99,2175.75,Sufficient Stock
+127,Surly Pack Rat Frameset - 2018,Surly,Mountain Bikes,4.0,3,5.0,1.6666666666666667,469.99,2143.15,Medium Stock
+307,Electra Townie Balloon 8D EQ - 2016/2017/2018,Electra,Comfort Bicycles,18.0,2,3.0,1.5,749.99,2092.47,Sufficient Stock
+116,Trek Marlin 7 - 2017/2018,Trek,Mountain Bikes,17.0,2,3.0,1.5,749.99,2069.97,Sufficient Stock
+116,Trek Marlin 7 - 2017/2018,Trek,Mountain Bikes,24.0,2,3.0,1.5,749.99,2069.97,Sufficient Stock
+116,Trek Marlin 7 - 2017/2018,Trek,Mountain Bikes,30.0,2,3.0,1.5,749.99,2069.97,Sufficient Stock
+302,Electra Townie Original 1 - 2018,Electra,Comfort Bicycles,0.0,4,5.0,1.25,449.99,2069.95,Out of Stock
+236,Electra Morningstar 3i Ladies' - 2018,Electra,Cruisers Bicycles,3.0,3,3.0,1.0,749.99,2009.97,Sufficient Stock
+236,Electra Morningstar 3i Ladies' - 2018,Electra,Cruisers Bicycles,7.0,3,3.0,1.0,749.99,2009.97,Sufficient Stock
+236,Electra Morningstar 3i Ladies' - 2018,Electra,Cruisers Bicycles,18.0,3,3.0,1.0,749.99,2009.97,Sufficient Stock
+282,Electra Cyclosaurus 1 (16-inch) - Boy's - 2018,Electra,Children Bicycles,6.0,5,8.0,1.6,279.99,2001.93,Sufficient Stock
+282,Electra Cyclosaurus 1 (16-inch) - Boy's - 2018,Electra,Children Bicycles,8.0,5,8.0,1.6,279.99,2001.93,Sufficient Stock
+282,Electra Cyclosaurus 1 (16-inch) - Boy's - 2018,Electra,Children Bicycles,18.0,5,8.0,1.6,279.99,2001.93,Sufficient Stock
+297,"Electra Under-The-Sea 1 16"" - 2018",Electra,Children Bicycles,7.0,5,8.0,1.6,279.99,1987.93,Sufficient Stock
+283,Electra Heartchya 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,1.0,4,7.0,1.75,319.99,1929.54,Low Stock
+283,Electra Heartchya 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,10.0,4,7.0,1.75,319.99,1929.54,Sufficient Stock
+283,Electra Heartchya 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,28.0,4,7.0,1.75,319.99,1929.54,Sufficient Stock
+241,Electra Townie Commute 8D - 2018,Electra,Cruisers Bicycles,8.0,2,3.0,1.5,749.99,1897.47,Sufficient Stock
+241,Electra Townie Commute 8D - 2018,Electra,Cruisers Bicycles,17.0,2,3.0,1.5,749.99,1897.47,Sufficient Stock
+241,Electra Townie Commute 8D - 2018,Electra,Cruisers Bicycles,24.0,2,3.0,1.5,749.99,1897.47,Sufficient Stock
+311,Electra Townie Commute 8D - 2018,Electra,Comfort Bicycles,20.0,2,3.0,1.5,749.99,1874.98,Sufficient Stock
+311,Electra Townie Commute 8D - 2018,Electra,Comfort Bicycles,23.0,2,3.0,1.5,749.99,1874.98,Sufficient Stock
+311,Electra Townie Commute 8D - 2018,Electra,Comfort Bicycles,27.0,2,3.0,1.5,749.99,1874.98,Sufficient Stock
+231,Electra Cruiser Lux 3i Ladies' - 2018,Electra,Cruisers Bicycles,6.0,2,4.0,2.0,529.99,1854.97,Sufficient Stock
+231,Electra Cruiser Lux 3i Ladies' - 2018,Electra,Cruisers Bicycles,8.0,2,4.0,2.0,529.99,1854.97,Sufficient Stock
+231,Electra Cruiser Lux 3i Ladies' - 2018,Electra,Cruisers Bicycles,25.0,2,4.0,2.0,529.99,1854.97,Sufficient Stock
+245,Electra Townie Original 3i EQ - 2017/2018,Electra,Cruisers Bicycles,3.0,3,3.0,1.0,659.99,1834.77,Sufficient Stock
+245,Electra Townie Original 3i EQ - 2017/2018,Electra,Cruisers Bicycles,10.0,3,3.0,1.0,659.99,1834.77,Sufficient Stock
+245,Electra Townie Original 3i EQ - 2017/2018,Electra,Cruisers Bicycles,18.0,3,3.0,1.0,659.99,1834.77,Sufficient Stock
+224,Electra Cruiser Lux 7D - 2018,Electra,Cruisers Bicycles,4.0,3,4.0,1.3333333333333333,479.99,1823.96,Sufficient Stock
+224,Electra Cruiser Lux 7D - 2018,Electra,Cruisers Bicycles,16.0,3,4.0,1.3333333333333333,479.99,1823.96,Sufficient Stock
+224,Electra Cruiser Lux 7D - 2018,Electra,Cruisers Bicycles,23.0,3,4.0,1.3333333333333333,479.99,1823.96,Sufficient Stock
+233,Electra Cruiser Lux Fat Tire 7D - 2018,Electra,Cruisers Bicycles,5.0,2,3.0,1.5,639.99,1811.17,Sufficient Stock
+233,Electra Cruiser Lux Fat Tire 7D - 2018,Electra,Cruisers Bicycles,9.0,2,3.0,1.5,639.99,1811.17,Sufficient Stock
+233,Electra Cruiser Lux Fat Tire 7D - 2018,Electra,Cruisers Bicycles,25.0,2,3.0,1.5,639.99,1811.17,Sufficient Stock
+246,Electra Townie Original 3i EQ Ladies' - 2018,Electra,Cruisers Bicycles,0.0,2,3.0,1.5,639.99,1811.17,Out of Stock
+246,Electra Townie Original 3i EQ Ladies' - 2018,Electra,Cruisers Bicycles,7.0,2,3.0,1.5,639.99,1811.17,Sufficient Stock
+246,Electra Townie Original 3i EQ Ladies' - 2018,Electra,Cruisers Bicycles,10.0,2,3.0,1.5,639.99,1811.17,Sufficient Stock
+293,Electra Tiger Shark 1 (20-inch) - Boys' - 2018,Electra,Children Bicycles,12.0,4,6.0,1.5,319.99,1804.74,Sufficient Stock
+293,Electra Tiger Shark 1 (20-inch) - Boys' - 2018,Electra,Children Bicycles,14.0,4,6.0,1.5,319.99,1804.74,Sufficient Stock
+293,Electra Tiger Shark 1 (20-inch) - Boys' - 2018,Electra,Children Bicycles,18.0,4,6.0,1.5,319.99,1804.74,Sufficient Stock
+183,Trek Domane SL 5 Women's - 2018,Trek,Road Bikes,11.0,1,1.0,1.0,2199.99,1759.99,Sufficient Stock
+263,Strider Classic 12 Balance Bike - 2018,Strider,Children Bicycles,21.0,14,22.0,1.5714285714285714,89.99,1715.21,Sufficient Stock
+292,Electra Sweet Ride 3i (20-inch) - Girls' - 2018,Electra,Children Bicycles,16.0,3,5.0,1.6666666666666667,369.99,1701.95,Sufficient Stock
+292,Electra Sweet Ride 3i (20-inch) - Girls' - 2018,Electra,Children Bicycles,22.0,3,5.0,1.6666666666666667,369.99,1701.95,Sufficient Stock
+292,Electra Sweet Ride 3i (20-inch) - Girls' - 2018,Electra,Children Bicycles,30.0,3,5.0,1.6666666666666667,369.99,1701.95,Sufficient Stock
+213,Electra Cruiser 1 - 2016/2017/2018,Electra,Cruisers Bicycles,14.0,4,7.0,1.75,269.99,1682.04,Sufficient Stock
+313,Electra Townie Original 1 Ladies' - 2018,Electra,Comfort Bicycles,0.0,3,4.0,1.3333333333333333,449.99,1574.97,Out of Stock
+313,Electra Townie Original 1 Ladies' - 2018,Electra,Comfort Bicycles,14.0,3,4.0,1.3333333333333333,449.99,1574.97,Sufficient Stock
+313,Electra Townie Original 1 Ladies' - 2018,Electra,Comfort Bicycles,24.0,3,4.0,1.3333333333333333,449.99,1574.97,Sufficient Stock
+244,Electra Townie Original 21D Ladies' - 2018,Electra,Cruisers Bicycles,1.0,2,3.0,1.5,559.99,1573.57,Low Stock
+244,Electra Townie Original 21D Ladies' - 2018,Electra,Cruisers Bicycles,5.0,2,3.0,1.5,559.99,1573.57,Sufficient Stock
+244,Electra Townie Original 21D Ladies' - 2018,Electra,Cruisers Bicycles,10.0,2,3.0,1.5,559.99,1573.57,Sufficient Stock
+271,Trek Precaliber 16 Girl's - 2018,Trek,Children Bicycles,6.0,5,8.0,1.6,209.99,1511.93,Sufficient Stock
+271,Trek Precaliber 16 Girl's - 2018,Trek,Children Bicycles,23.0,5,8.0,1.6,209.99,1511.93,Sufficient Stock
+271,Trek Precaliber 16 Girl's - 2018,Trek,Children Bicycles,26.0,5,8.0,1.6,209.99,1511.93,Sufficient Stock
+220,Electra Cruiser 1 Ladies' - 2018,Electra,Cruisers Bicycles,0.0,4,6.0,1.5,269.99,1482.25,Out of Stock
+220,Electra Cruiser 1 Ladies' - 2018,Electra,Cruisers Bicycles,4.0,4,6.0,1.5,269.99,1482.25,Medium Stock
+220,Electra Cruiser 1 Ladies' - 2018,Electra,Cruisers Bicycles,6.0,4,6.0,1.5,269.99,1482.25,Sufficient Stock
+114,Trek Marlin 6 - 2018,Trek,Mountain Bikes,3.0,2,3.0,1.5,579.99,1467.37,Medium Stock
+112,Trek 820 - 2018,Trek,Mountain Bikes,1.0,3,4.0,1.3333333333333333,379.99,1379.36,Low Stock
+112,Trek 820 - 2018,Trek,Mountain Bikes,17.0,3,4.0,1.3333333333333333,379.99,1379.36,Sufficient Stock
+112,Trek 820 - 2018,Trek,Mountain Bikes,24.0,3,4.0,1.3333333333333333,379.99,1379.36,Sufficient Stock
+298,Electra Water Lily 1 (16-inch) - Girl's - 2018,Electra,Children Bicycles,14.0,3,5.0,1.6666666666666667,279.99,1315.95,Sufficient Stock
+298,Electra Water Lily 1 (16-inch) - Girl's - 2018,Electra,Children Bicycles,26.0,3,5.0,1.6666666666666667,279.99,1315.95,Sufficient Stock
+298,Electra Water Lily 1 (16-inch) - Girl's - 2018,Electra,Children Bicycles,27.0,3,5.0,1.6666666666666667,279.99,1315.95,Sufficient Stock
+312,Electra Townie Commute 8D Ladies' - 2018,Electra,Comfort Bicycles,2.0,1,2.0,2.0,699.99,1259.98,Medium Stock
+312,Electra Townie Commute 8D Ladies' - 2018,Electra,Comfort Bicycles,18.0,1,2.0,2.0,699.99,1259.98,Sufficient Stock
+312,Electra Townie Commute 8D Ladies' - 2018,Electra,Comfort Bicycles,23.0,1,2.0,2.0,699.99,1259.98,Sufficient Stock
+289,"Electra Superbolt 1 20"" - 2018",Electra,Children Bicycles,2.0,2,4.0,2.0,319.99,1215.96,Medium Stock
+286,"Electra Starship 1 16"" - 2018",Electra,Children Bicycles,3.0,3,5.0,1.6666666666666667,279.99,1212.36,Medium Stock
+286,"Electra Starship 1 16"" - 2018",Electra,Children Bicycles,7.0,3,5.0,1.6666666666666667,279.99,1212.36,Sufficient Stock
+286,"Electra Starship 1 16"" - 2018",Electra,Children Bicycles,28.0,3,5.0,1.6666666666666667,279.99,1212.36,Sufficient Stock
+227,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,Electra,Cruisers Bicycles,12.0,3,4.0,1.3333333333333333,319.99,1209.56,Sufficient Stock
+227,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,Electra,Cruisers Bicycles,19.0,3,4.0,1.3333333333333333,319.99,1209.56,Sufficient Stock
+227,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,Electra,Cruisers Bicycles,22.0,3,4.0,1.3333333333333333,319.99,1209.56,Sufficient Stock
+170,Trek CrossRip 2 - 2018,Trek,Road Bikes,2.0,1,1.0,1.0,1299.99,1208.99,Medium Stock
+170,Trek CrossRip 2 - 2018,Trek,Road Bikes,13.0,1,1.0,1.0,1299.99,1208.99,Sufficient Stock
+170,Trek CrossRip 2 - 2018,Trek,Road Bikes,14.0,1,1.0,1.0,1299.99,1208.99,Sufficient Stock
+264,Strider Sport 16 - 2018,Strider,Children Bicycles,7.0,3,5.0,1.6666666666666667,249.99,1157.45,Sufficient Stock
+264,Strider Sport 16 - 2018,Strider,Children Bicycles,13.0,3,5.0,1.6666666666666667,249.99,1157.45,Sufficient Stock
+264,Strider Sport 16 - 2018,Strider,Children Bicycles,16.0,3,5.0,1.6666666666666667,249.99,1157.45,Sufficient Stock
+268,Trek Kickster - 2018,Trek,Children Bicycles,3.0,5,8.0,1.6,159.99,1151.93,Medium Stock
+268,Trek Kickster - 2018,Trek,Children Bicycles,17.0,5,8.0,1.6,159.99,1151.93,Sufficient Stock
+268,Trek Kickster - 2018,Trek,Children Bicycles,23.0,5,8.0,1.6,159.99,1151.93,Sufficient Stock
+258,Electra Amsterdam Royal 8i - 2017/2018,Electra,Cruisers Bicycles,25.0,1,1.0,1.0,1259.9,1133.91,Sufficient Stock
+276,Trek Precaliber 24 (7-Speed) - Boys - 2018,Trek,Children Bicycles,7.0,3,4.0,1.3333333333333333,319.99,1129.56,Sufficient Stock
+276,Trek Precaliber 24 (7-Speed) - Boys - 2018,Trek,Children Bicycles,9.0,3,4.0,1.3333333333333333,319.99,1129.56,Sufficient Stock
+276,Trek Precaliber 24 (7-Speed) - Boys - 2018,Trek,Children Bicycles,14.0,3,4.0,1.3333333333333333,319.99,1129.56,Sufficient Stock
+314,Electra Townie Original 21D EQ Ladies' - 2018,Electra,Comfort Bicycles,,1,2.0,2.0,679.99,1087.98,Sufficient Stock
+315,Electra Townie Original 21D Ladies' - 2018,Electra,Comfort Bicycles,,1,2.0,2.0,559.99,1063.98,Sufficient Stock
+269,Trek Precaliber 12 Boy's - 2018,Trek,Children Bicycles,4.0,4,6.0,1.5,199.99,1061.95,Medium Stock
+269,Trek Precaliber 12 Boy's - 2018,Trek,Children Bicycles,22.0,4,6.0,1.5,199.99,1061.95,Sufficient Stock
+269,Trek Precaliber 12 Boy's - 2018,Trek,Children Bicycles,26.0,4,6.0,1.5,199.99,1061.95,Sufficient Stock
+143,Trek Domane ALR 3 - 2018,Trek,Road Bikes,9.0,1,1.0,1.0,1099.99,1022.99,Sufficient Stock
+143,Trek Domane ALR 3 - 2018,Trek,Road Bikes,12.0,1,1.0,1.0,1099.99,1022.99,Sufficient Stock
+143,Trek Domane ALR 3 - 2018,Trek,Road Bikes,19.0,1,1.0,1.0,1099.99,1022.99,Sufficient Stock
+247,Electra Townie Original 7D EQ - 2018,Electra,Cruisers Bicycles,3.0,2,2.0,1.0,599.99,1019.98,Sufficient Stock
+247,Electra Townie Original 7D EQ - 2018,Electra,Cruisers Bicycles,15.0,2,2.0,1.0,599.99,1019.98,Sufficient Stock
+247,Electra Townie Original 7D EQ - 2018,Electra,Cruisers Bicycles,16.0,2,2.0,1.0,599.99,1019.98,Sufficient Stock
+275,Trek Precaliber 20 Girl's - 2018,Trek,Children Bicycles,3.0,3,5.0,1.6666666666666667,229.99,1011.96,Medium Stock
+275,Trek Precaliber 20 Girl's - 2018,Trek,Children Bicycles,23.0,3,5.0,1.6666666666666667,229.99,1011.96,Sufficient Stock
+275,Trek Precaliber 20 Girl's - 2018,Trek,Children Bicycles,28.0,3,5.0,1.6666666666666667,229.99,1011.96,Sufficient Stock
+281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,Electra,Children Bicycles,2.0,3,3.0,1.0,319.99,892.77,Medium Stock
+281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,Electra,Children Bicycles,3.0,3,3.0,1.0,319.99,892.77,Sufficient Stock
+281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,Electra,Children Bicycles,11.0,3,3.0,1.0,319.99,892.77,Sufficient Stock
+228,Electra Cruiser 7D Tall - 2016/2018,Electra,Cruisers Bicycles,7.0,2,3.0,1.5,319.99,873.57,Sufficient Stock
+228,Electra Cruiser 7D Tall - 2016/2018,Electra,Cruisers Bicycles,22.0,2,3.0,1.5,319.99,873.57,Sufficient Stock
+228,Electra Cruiser 7D Tall - 2016/2018,Electra,Cruisers Bicycles,29.0,2,3.0,1.5,319.99,873.57,Sufficient Stock
+263,Strider Classic 12 Balance Bike - 2018,Strider,Children Bicycles,4.0,7,11.0,1.5714285714285714,89.99,857.6,Medium Stock
+309,Electra Townie Commute 27D - 2018,Electra,Comfort Bicycles,7.0,1,1.0,1.0,899.99,836.99,Sufficient Stock
+309,Electra Townie Commute 27D - 2018,Electra,Comfort Bicycles,9.0,1,1.0,1.0,899.99,836.99,Sufficient Stock
+309,Electra Townie Commute 27D - 2018,Electra,Comfort Bicycles,30.0,1,1.0,1.0,899.99,836.99,Sufficient Stock
+256,Electra Townie Commute 27D - 2018,Electra,Cruisers Bicycles,1.0,1,1.0,1.0,899.99,809.99,Medium Stock
+256,Electra Townie Commute 27D - 2018,Electra,Cruisers Bicycles,8.0,1,1.0,1.0,899.99,809.99,Sufficient Stock
+256,Electra Townie Commute 27D - 2018,Electra,Cruisers Bicycles,20.0,1,1.0,1.0,899.99,809.99,Sufficient Stock
+274,Trek Precaliber 20 Boy's - 2018,Trek,Children Bicycles,7.0,2,4.0,2.0,229.99,781.97,Sufficient Stock
+274,Trek Precaliber 20 Boy's - 2018,Trek,Children Bicycles,15.0,2,4.0,2.0,229.99,781.97,Sufficient Stock
+274,Trek Precaliber 20 Boy's - 2018,Trek,Children Bicycles,19.0,2,4.0,2.0,229.99,781.97,Sufficient Stock
+232,Electra Cruiser Lux 7D Ladies' - 2018,Electra,Cruisers Bicycles,5.0,2,2.0,1.0,479.99,767.98,Sufficient Stock
+232,Electra Cruiser Lux 7D Ladies' - 2018,Electra,Cruisers Bicycles,11.0,2,2.0,1.0,479.99,767.98,Sufficient Stock
+232,Electra Cruiser Lux 7D Ladies' - 2018,Electra,Cruisers Bicycles,16.0,2,2.0,1.0,479.99,767.98,Sufficient Stock
+266,Trek Superfly 20 - 2018,Trek,Children Bicycles,18.0,2,2.0,1.0,399.99,719.98,Sufficient Stock
+167,Surly ECR Frameset - 2018,Surly,Road Bikes,1.0,1,1.0,1.0,749.99,712.49,Medium Stock
+167,Surly ECR Frameset - 2018,Surly,Road Bikes,8.0,1,1.0,1.0,749.99,712.49,Sufficient Stock
+167,Surly ECR Frameset - 2018,Surly,Road Bikes,28.0,1,1.0,1.0,749.99,712.49,Sufficient Stock
+239,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,Electra,Cruisers Bicycles,17.0,1,1.0,1.0,749.99,674.99,Sufficient Stock
+239,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,Electra,Cruisers Bicycles,28.0,1,1.0,1.0,749.99,674.99,Sufficient Stock
+239,Electra Townie Balloon 8D EQ Ladies' - 2016/2017/2018,Electra,Cruisers Bicycles,29.0,1,1.0,1.0,749.99,674.99,Sufficient Stock
+305,Electra Townie Balloon 3i EQ - 2017/2018,Electra,Comfort Bicycles,11.0,1,1.0,1.0,749.99,674.99,Sufficient Stock
+305,Electra Townie Balloon 3i EQ - 2017/2018,Electra,Comfort Bicycles,21.0,1,1.0,1.0,749.99,674.99,Sufficient Stock
+305,Electra Townie Balloon 3i EQ - 2017/2018,Electra,Comfort Bicycles,23.0,1,1.0,1.0,749.99,674.99,Sufficient Stock
+278,Trek Precaliber 24 21-speed Girl's - 2018,Trek,Children Bicycles,8.0,1,2.0,2.0,369.99,665.98,Sufficient Stock
+278,Trek Precaliber 24 21-speed Girl's - 2018,Trek,Children Bicycles,15.0,1,2.0,2.0,369.99,665.98,Sufficient Stock
+278,Trek Precaliber 24 21-speed Girl's - 2018,Trek,Children Bicycles,17.0,1,2.0,2.0,369.99,665.98,Sufficient Stock
+277,Trek Precaliber 24 21-speed Boy's - 2018,Trek,Children Bicycles,4.0,2,2.0,1.0,369.99,640.08,Sufficient Stock
+277,Trek Precaliber 24 21-speed Boy's - 2018,Trek,Children Bicycles,13.0,2,2.0,1.0,369.99,640.08,Sufficient Stock
+277,Trek Precaliber 24 21-speed Boy's - 2018,Trek,Children Bicycles,26.0,2,2.0,1.0,369.99,640.08,Sufficient Stock
+289,"Electra Superbolt 1 20"" - 2018",Electra,Children Bicycles,5.0,1,2.0,2.0,319.99,607.98,Medium Stock
+221,Electra Cruiser 7D Ladies' - 2016/2018,Electra,Cruisers Bicycles,7.0,2,2.0,1.0,319.99,591.98,Sufficient Stock
+221,Electra Cruiser 7D Ladies' - 2016/2018,Electra,Cruisers Bicycles,12.0,2,2.0,1.0,319.99,591.98,Sufficient Stock
+221,Electra Cruiser 7D Ladies' - 2016/2018,Electra,Cruisers Bicycles,25.0,2,2.0,1.0,319.99,591.98,Sufficient Stock
+212,Electra Townie Original 21D - 2018,Electra,Cruisers Bicycles,17.0,1,1.0,1.0,559.99,520.79,Sufficient Stock
+212,Electra Townie Original 21D - 2018,Electra,Cruisers Bicycles,22.0,1,1.0,1.0,559.99,520.79,Sufficient Stock
+212,Electra Townie Original 21D - 2018,Electra,Cruisers Bicycles,23.0,1,1.0,1.0,559.99,520.79,Sufficient Stock
+272,Trek Precaliber 20 6-speed Boy's - 2018,Trek,Children Bicycles,1.0,2,2.0,1.0,289.99,492.98,Medium Stock
+272,Trek Precaliber 20 6-speed Boy's - 2018,Trek,Children Bicycles,12.0,2,2.0,1.0,289.99,492.98,Sufficient Stock
+272,Trek Precaliber 20 6-speed Boy's - 2018,Trek,Children Bicycles,14.0,2,2.0,1.0,289.99,492.98,Sufficient Stock
+222,Electra Cruiser 1 Tall - 2016/2018,Electra,Cruisers Bicycles,12.0,2,2.0,1.0,269.99,485.98,Sufficient Stock
+280,Trek Superfly 24 - 2017/2018,Trek,Children Bicycles,1.0,1,1.0,1.0,489.99,465.49,Medium Stock
+280,Trek Superfly 24 - 2017/2018,Trek,Children Bicycles,11.0,1,1.0,1.0,489.99,465.49,Sufficient Stock
+280,Trek Superfly 24 - 2017/2018,Trek,Children Bicycles,23.0,1,1.0,1.0,489.99,465.49,Sufficient Stock
+299,Electra Townie Original 21D - 2018,Electra,Comfort Bicycles,0.0,1,1.0,1.0,559.99,447.99,Out of Stock
+299,Electra Townie Original 21D - 2018,Electra,Comfort Bicycles,18.0,1,1.0,1.0,559.99,447.99,Sufficient Stock
+299,Electra Townie Original 21D - 2018,Electra,Comfort Bicycles,29.0,1,1.0,1.0,559.99,447.99,Sufficient Stock
+288,Electra Straight 8 1 (20-inch) - Boy's - 2018,Electra,Children Bicycles,2.0,1,1.0,1.0,389.99,362.69,Medium Stock
+288,Electra Straight 8 1 (20-inch) - Boy's - 2018,Electra,Children Bicycles,9.0,1,1.0,1.0,389.99,362.69,Sufficient Stock
+288,Electra Straight 8 1 (20-inch) - Boy's - 2018,Electra,Children Bicycles,13.0,1,1.0,1.0,389.99,362.69,Sufficient Stock
+266,Trek Superfly 20 - 2018,Trek,Children Bicycles,1.0,1,1.0,1.0,399.99,359.99,Medium Stock
+290,"Electra Superbolt 3i 20"" - 2018",Electra,Children Bicycles,6.0,1,1.0,1.0,369.99,351.49,Sufficient Stock
+290,"Electra Superbolt 3i 20"" - 2018",Electra,Children Bicycles,8.0,1,1.0,1.0,369.99,351.49,Sufficient Stock
+290,"Electra Superbolt 3i 20"" - 2018",Electra,Children Bicycles,29.0,1,1.0,1.0,369.99,351.49,Sufficient Stock
+294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,Electra,Children Bicycles,3.0,1,1.0,1.0,369.99,332.99,Sufficient Stock
+294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,Electra,Children Bicycles,7.0,1,1.0,1.0,369.99,332.99,Sufficient Stock
+294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,Electra,Children Bicycles,13.0,1,1.0,1.0,369.99,332.99,Sufficient Stock
+218,Electra Cruiser 7D - 2016/2017/2018,Electra,Cruisers Bicycles,21.0,1,1.0,1.0,319.99,303.99,Sufficient Stock
+218,Electra Cruiser 7D - 2016/2017/2018,Electra,Cruisers Bicycles,26.0,1,1.0,1.0,319.99,303.99,Sufficient Stock
+218,Electra Cruiser 7D - 2016/2017/2018,Electra,Cruisers Bicycles,27.0,1,1.0,1.0,319.99,303.99,Sufficient Stock
+296,"Electra Treasure 3i 20"" - 2018",Electra,Children Bicycles,8.0,1,1.0,1.0,369.99,295.99,Sufficient Stock
+296,"Electra Treasure 3i 20"" - 2018",Electra,Children Bicycles,9.0,1,1.0,1.0,369.99,295.99,Sufficient Stock
+296,"Electra Treasure 3i 20"" - 2018",Electra,Children Bicycles,12.0,1,1.0,1.0,369.99,295.99,Sufficient Stock
+273,Trek Precaliber 20 6-speed Girl's - 2018,Trek,Children Bicycles,19.0,1,1.0,1.0,289.99,269.69,Sufficient Stock
+273,Trek Precaliber 20 6-speed Girl's - 2018,Trek,Children Bicycles,20.0,1,1.0,1.0,289.99,269.69,Sufficient Stock
+273,Trek Precaliber 20 6-speed Girl's - 2018,Trek,Children Bicycles,28.0,1,1.0,1.0,289.99,269.69,Sufficient Stock
+287,Electra Straight 8 1 (16-inch) - Boy's - 2018,Electra,Children Bicycles,2.0,1,1.0,1.0,279.99,265.99,Medium Stock
+287,Electra Straight 8 1 (16-inch) - Boy's - 2018,Electra,Children Bicycles,15.0,1,1.0,1.0,279.99,265.99,Sufficient Stock
+287,Electra Straight 8 1 (16-inch) - Boy's - 2018,Electra,Children Bicycles,26.0,1,1.0,1.0,279.99,265.99,Sufficient Stock
+279,Trek Precaliber 24 7-speed Girl's - 2018,Trek,Children Bicycles,15.0,1,1.0,1.0,319.99,255.99,Sufficient Stock
+279,Trek Precaliber 24 7-speed Girl's - 2018,Trek,Children Bicycles,17.0,1,1.0,1.0,319.99,255.99,Sufficient Stock
+279,Trek Precaliber 24 7-speed Girl's - 2018,Trek,Children Bicycles,18.0,1,1.0,1.0,319.99,255.99,Sufficient Stock
+222,Electra Cruiser 1 Tall - 2016/2018,Electra,Cruisers Bicycles,30.0,1,1.0,1.0,269.99,242.99,Sufficient Stock
+262,Trek MT 201 - 2018,Trek,Children Bicycles,6.0,1,1.0,1.0,249.99,224.99,Sufficient Stock
+262,Trek MT 201 - 2018,Trek,Children Bicycles,8.0,1,1.0,1.0,249.99,224.99,Sufficient Stock
+262,Trek MT 201 - 2018,Trek,Children Bicycles,29.0,1,1.0,1.0,249.99,224.99,Sufficient Stock
+285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,Electra,Children Bicycles,2.0,1,1.0,1.0,279.99,223.99,Medium Stock
+285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,Electra,Children Bicycles,20.0,1,1.0,1.0,279.99,223.99,Sufficient Stock
+285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,Electra,Children Bicycles,22.0,1,1.0,1.0,279.99,223.99,Sufficient Stock
+270,Trek Precaliber 16 Boy's - 2018,Trek,Children Bicycles,6.0,1,1.0,1.0,209.99,199.49,Sufficient Stock
+270,Trek Precaliber 16 Boy's - 2018,Trek,Children Bicycles,15.0,1,1.0,1.0,209.99,199.49,Sufficient Stock
+270,Trek Precaliber 16 Boy's - 2018,Trek,Children Bicycles,16.0,1,1.0,1.0,209.99,199.49,Sufficient Stock
+1,Trek 820 - 2016,Trek,Mountain Bikes,14.0,0,,,379.99,,Sufficient Stock
+1,Trek 820 - 2016,Trek,Mountain Bikes,27.0,0,,,379.99,,Sufficient Stock
+121,Surly Krampus Frameset - 2018,Surly,Mountain Bikes,3.0,0,,,2499.99,,Sufficient Stock
+121,Surly Krampus Frameset - 2018,Surly,Mountain Bikes,4.0,0,,,2499.99,,Sufficient Stock
+121,Surly Krampus Frameset - 2018,Surly,Mountain Bikes,19.0,0,,,2499.99,,Sufficient Stock
+125,Trek Kids' Dual Sport - 2018,Trek,Mountain Bikes,2.0,0,,,469.99,,Sufficient Stock
+125,Trek Kids' Dual Sport - 2018,Trek,Mountain Bikes,10.0,0,,,469.99,,Sufficient Stock
+125,Trek Kids' Dual Sport - 2018,Trek,Mountain Bikes,22.0,0,,,469.99,,Sufficient Stock
+154,Trek Domane SLR 6 Disc Women's - 2018,Trek,Road Bikes,9.0,0,,,5499.99,,Sufficient Stock
+154,Trek Domane SLR 6 Disc Women's - 2018,Trek,Road Bikes,13.0,0,,,5499.99,,Sufficient Stock
+154,Trek Domane SLR 6 Disc Women's - 2018,Trek,Road Bikes,22.0,0,,,5499.99,,Sufficient Stock
+195,Electra Townie Go! 8i Ladies' - 2018,Electra,Electric Bikes,1.0,0,,,2599.99,,Sufficient Stock
+195,Electra Townie Go! 8i Ladies' - 2018,Electra,Electric Bikes,19.0,0,,,2599.99,,Sufficient Stock
+195,Electra Townie Go! 8i Ladies' - 2018,Electra,Electric Bikes,20.0,0,,,2599.99,,Sufficient Stock
+267,Trek Precaliber 12 Girl's - 2018,Trek,Children Bicycles,12.0,0,,,199.99,,Sufficient Stock
+267,Trek Precaliber 12 Girl's - 2018,Trek,Children Bicycles,21.0,0,,,199.99,,Sufficient Stock
+267,Trek Precaliber 12 Girl's - 2018,Trek,Children Bicycles,27.0,0,,,199.99,,Sufficient Stock
+284,Electra Savannah 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,6.0,0,,,319.99,,Sufficient Stock
+284,Electra Savannah 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,26.0,0,,,319.99,,Sufficient Stock
+284,Electra Savannah 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,27.0,0,,,319.99,,Sufficient Stock
+291,Electra Sweet Ride 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,9.0,0,,,319.99,,Sufficient Stock
+291,Electra Sweet Ride 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,10.0,0,,,319.99,,Sufficient Stock
+291,Electra Sweet Ride 1 (20-inch) - Girl's - 2018,Electra,Children Bicycles,22.0,0,,,319.99,,Sufficient Stock
+316,Trek Checkpoint ALR 4 Women's - 2019,Trek,Road Bikes,,0,,,1699.99,,Sufficient Stock
+317,Trek Checkpoint ALR 5 - 2019,Trek,Road Bikes,,0,,,1999.99,,Sufficient Stock
+318,Trek Checkpoint ALR 5 Women's - 2019,Trek,Road Bikes,,0,,,1999.99,,Sufficient Stock
+319,Trek Checkpoint SL 5 Women's - 2019,Trek,Road Bikes,,0,,,2799.99,,Sufficient Stock
+320,Trek Checkpoint SL 6 - 2019,Trek,Road Bikes,,0,,,3799.99,,Sufficient Stock
+321,Trek Checkpoint ALR Frameset - 2019,Trek,Road Bikes,,0,,,3199.99,,Sufficient Stock

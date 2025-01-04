@@ -1,0 +1,1 @@
+How many customers are there in the database?

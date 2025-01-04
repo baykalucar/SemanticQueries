@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+plt.figure(figsize=(12, 6))
+plt.plot(df['order_date'], df['order_id'], marker='o')
+plt.title('Orders in January 2016')
+plt.xlabel('Order Date')
+plt.ylabel('Order ID')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/10_Moderate/plot.png')
+plt.close()

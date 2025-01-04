@@ -1,0 +1,15 @@
+
+SELECT 
+    c.customer_id,
+    c.first_name || ' ' || c.last_name AS customer_name,
+    COUNT(o.order_id) AS frequency,
+    MAX(o.order_date) AS recency,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS monetary
+FROM 
+    customers c
+JOIN 
+    orders o ON c.customer_id = o.customer_id
+JOIN 
+    order_items oi ON o.order_id = oi.order_id
+GROUP BY 
+    c.customer_id, c.first_name, c.last_name

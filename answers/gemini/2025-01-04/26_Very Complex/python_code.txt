@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is the pandas DataFrame containing the query results
+df['RFM_Score'] = df['recency'] + df['frequency'] + df['total_spent']
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['RFM_Score'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Customer Name')
+plt.ylabel('RFM Score')
+plt.title('Customer Loyalty Program RFM Scoring')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-01-04/26_Very Complex/plot.png')
+

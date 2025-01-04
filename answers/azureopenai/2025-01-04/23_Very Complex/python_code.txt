@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df['order_date'] = pd.to_datetime(df['order_date'])
+df.set_index('order_date', inplace=True)
+
+plt.figure(figsize=(10, 6))
+plt.plot(df.index, df['total_sales'], marker='o', color='b', linestyle='-')
+plt.xlabel('Order Date')
+plt.ylabel('Total Sales')
+plt.title('Total Sales Over Time')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-04/23_Very Complex/plot.png')
+plt.show()

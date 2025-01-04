@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query results)
+data = {'average_list_price': [500]}
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(8, 6))  # Adjust figure size if needed
+plt.bar(df.index, df['average_list_price'], color='skyblue')
+plt.xlabel('Category')
+plt.ylabel('Average List Price')
+plt.title('Average List Price of Products in Children Bicycles Category')
+plt.savefig('answers/gemini/2025-01-04/12_Moderate/plot.png')
+

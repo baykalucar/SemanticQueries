@@ -1,0 +1,14 @@
+
+SELECT
+  s.store_name,
+  SUM(oi.quantity * oi.list_price * (
+    1 - oi.discount
+  )) AS total_sales,
+  AVG(o.order_status) AS average_order_status
+FROM stores AS s
+JOIN orders AS o
+  ON s.store_id = o.store_id
+JOIN order_items AS oi
+  ON o.order_id = oi.order_id
+GROUP BY
+  s.store_name;

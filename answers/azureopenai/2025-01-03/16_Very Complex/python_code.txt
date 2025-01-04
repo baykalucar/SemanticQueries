@@ -1,0 +1,24 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+categories = df['category_name']
+sales_volume = df['total_sales_volume']
+average_discount = df['average_discount']
+
+fig, ax1 = plt.subplots()
+
+ax2 = ax1.twinx()
+ax1.bar(categories, sales_volume, color='g')
+ax2.plot(categories, average_discount, color='b')
+
+ax1.set_xlabel('Product Categories')
+ax1.set_ylabel('Total Sales Volume', color='g')
+ax2.set_ylabel('Average Discount', color='b')
+plt.title('Impact of Discounts on Sales Volume by Product Category')
+
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-01-03/16_Very Complex/plot.png')
+plt.show()

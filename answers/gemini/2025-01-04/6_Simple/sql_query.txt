@@ -1,0 +1,2 @@
+
+SELECT p.list_price FROM products p WHERE p.product_id = 3;

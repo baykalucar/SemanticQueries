@@ -1,0 +1,1 @@
+Evaluate the performance of each store based on sales and customer satisfaction metrics.

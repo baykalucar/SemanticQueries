@@ -1,0 +1,2 @@
+
+SELECT b.brand_name, AVG(p.list_price) AS average_list_price FROM products p JOIN brands b ON p.brand_id = b.brand_id GROUP BY b.brand_name;

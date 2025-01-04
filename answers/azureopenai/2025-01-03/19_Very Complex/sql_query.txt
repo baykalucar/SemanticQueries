@@ -1,0 +1,6 @@
+
+SELECT s.store_id, s.active, SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS total_sales
+FROM staffs s
+JOIN orders o ON s.staff_id = o.staff_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY s.store_id, s.active;

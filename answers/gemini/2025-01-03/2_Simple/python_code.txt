@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with a column named 'total_customers'
+df = pd.DataFrame({'total_customers': [10]}) #replace with actual data
+
+plt.figure(figsize=(8, 6))
+plt.bar(x='total_customers', height='total_customers', data=df, color=['skyblue'])
+plt.xlabel('Customer Count')
+plt.ylabel('Number of Customers')
+plt.title('Total Number of Customers')
+plt.savefig('answers/gemini/2025-01-03/2_Simple/plot.png')
+

@@ -1,0 +1,196 @@
+city,state,order_count
+Mount Vernon,NY,20
+Scarsdale,NY,20
+Ballston Spa,NY,17
+Canandaigua,NY,16
+San Angelo,TX,16
+Longview,TX,15
+Orchard Park,NY,15
+Palos Verdes Peninsula,CA,15
+Houston,TX,14
+Merrick,NY,14
+Ossining,NY,14
+South El Monte,CA,14
+Anaheim,CA,13
+Astoria,NY,13
+Campbell,CA,13
+Canyon Country,CA,13
+East Elmhurst,NY,13
+Floral Park,NY,13
+Liverpool,NY,13
+Monroe,NY,13
+Monsey,NY,13
+Oxnard,CA,13
+Richmond Hill,NY,13
+San Lorenzo,CA,13
+Sunnyside,NY,13
+Apple Valley,CA,12
+Buffalo,NY,12
+Central Islip,NY,12
+Encino,CA,12
+Euless,TX,12
+Howard Beach,NY,12
+Port Washington,NY,12
+Ronkonkoma,NY,12
+Smithtown,NY,12
+Upland,CA,12
+Webster,NY,12
+Amityville,NY,11
+Bay Shore,NY,11
+Bronx,NY,11
+Duarte,CA,11
+East Northport,NY,11
+Forney,TX,11
+Franklin Square,NY,11
+Jamaica,NY,11
+Kingston,NY,11
+Long Beach,NY,11
+Maspeth,NY,11
+Sugar Land,TX,11
+Troy,NY,11
+Uniondale,NY,11
+Banning,CA,10
+Desoto,TX,10
+Elmhurst,NY,10
+Garland,TX,10
+Glendora,CA,10
+Jackson Heights,NY,10
+Lancaster,NY,10
+Lindenhurst,NY,10
+New Windsor,NY,10
+North Tonawanda,NY,10
+Oakland,CA,10
+Rowlett,TX,10
+Sacramento,CA,10
+San Carlos,CA,10
+Shirley,NY,10
+Spring Valley,NY,10
+Woodside,NY,10
+Baldwinsville,NY,9
+Brentwood,NY,9
+Brooklyn,NY,9
+Corpus Christi,TX,9
+Farmingdale,NY,9
+Hollis,NY,9
+Huntington Station,NY,9
+Mahopac,NY,9
+New York,NY,9
+Newburgh,NY,9
+Oswego,NY,9
+Pittsford,NY,9
+Queensbury,NY,9
+Rochester,NY,9
+San Jose,CA,9
+Torrance,CA,9
+Utica,NY,9
+Victoria,TX,9
+Atwater,CA,8
+Baldwin,NY,8
+Bayside,NY,8
+Bellmore,NY,8
+Centereach,NY,8
+Fairport,NY,8
+Fullerton,CA,8
+Garden City,NY,8
+Hempstead,NY,8
+Lawndale,CA,8
+Massapequa,NY,8
+Patchogue,NY,8
+Plainview,NY,8
+Plattsburgh,NY,8
+Pleasanton,CA,8
+Port Chester,NY,8
+Redondo Beach,CA,8
+Rocklin,CA,8
+Rockville Centre,NY,8
+Rome,NY,8
+Rosedale,NY,8
+San Pablo,CA,8
+Santa Clara,CA,8
+Saratoga Springs,NY,8
+Schenectady,NY,8
+South Ozone Park,NY,8
+Whitestone,NY,8
+Woodhaven,NY,8
+Bethpage,NY,7
+Carmel,NY,7
+Coachella,CA,7
+Forest Hills,NY,7
+Fresno,CA,7
+Hamburg,NY,7
+Harlingen,TX,7
+Hicksville,NY,7
+Ithaca,NY,7
+New Rochelle,NY,7
+Niagara Falls,NY,7
+Port Jefferson Station,NY,7
+Richardson,TX,7
+Ridgecrest,CA,7
+Saint Albans,NY,7
+San Diego,CA,7
+Staten Island,NY,7
+Syosset,NY,7
+Vista,CA,7
+Wappingers Falls,NY,7
+West Babylon,NY,7
+West Islip,NY,7
+Coram,NY,6
+Depew,NY,6
+El Paso,TX,6
+Levittown,NY,6
+Los Banos,CA,6
+Massapequa Park,NY,6
+New Hyde Park,NY,6
+Pomona,CA,6
+Santa Cruz,CA,6
+Santa Monica,CA,6
+Selden,NY,6
+Valley Stream,NY,6
+Yonkers,NY,6
+Amarillo,TX,5
+Amsterdam,NY,5
+Bakersfield,CA,5
+Clifton Park,NY,5
+Elmont,NY,5
+Endicott,NY,5
+Flushing,NY,5
+Fort Worth,TX,5
+Freeport,NY,5
+Glen Cove,NY,5
+Helotes,TX,5
+Hopewell Junction,NY,5
+Huntington,NY,5
+Jamestown,NY,5
+Lockport,NY,5
+New City,NY,5
+Poughkeepsie,NY,5
+Rego Park,NY,5
+West Hempstead,NY,5
+Yorktown Heights,NY,5
+Auburn,NY,4
+Commack,NY,4
+Corona,NY,4
+Deer Park,NY,4
+East Meadow,NY,4
+Lake Jackson,TX,4
+Nanuet,NY,4
+Oceanside,NY,4
+Ontario,CA,4
+Ozone Park,NY,4
+South Richmond Hill,NY,4
+Wantagh,NY,4
+Albany,NY,3
+Copperas Cove,TX,3
+Fresh Meadows,NY,3
+Holbrook,NY,3
+Los Angeles,CA,3
+Mcallen,TX,3
+Oakland Gardens,NY,3
+Far Rockaway,NY,2
+Mountain View,CA,2
+San Antonio,TX,2
+Springfield Gardens,NY,2
+Yuba City,CA,2
+Middle Village,NY,1
+Tonawanda,NY,1
+Westbury,NY,1

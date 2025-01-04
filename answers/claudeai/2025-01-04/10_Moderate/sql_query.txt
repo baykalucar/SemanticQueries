@@ -1,0 +1,14 @@
+
+SELECT 
+    o.order_id,
+    o.customer_id,
+    o.order_status,
+    o.order_date,
+    o.required_date,
+    o.shipped_date,
+    o.store_id,
+    o.staff_id
+FROM orders o
+WHERE order_date >= '2016-01-01' 
+AND order_date < '2016-02-01'
+ORDER BY order_date;

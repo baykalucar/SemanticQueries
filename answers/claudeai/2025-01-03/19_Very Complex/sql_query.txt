@@ -1,0 +1,23 @@
+
+WITH staff_sales AS (
+    SELECT 
+        s.staff_id,
+        s.active,
+        s.store_id,
+        COUNT(DISTINCT o.order_id) as total_orders,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) as total_sales
+    FROM staffs s
+    LEFT JOIN orders o ON s.staff_id = o.staff_id
+    LEFT JOIN order_items oi ON o.order_id = oi.order_id
+    GROUP BY s.staff_id, s.active, s.store_id
+)
+SELECT 
+    st.store_name,
+    ss.active,
+    COUNT(DISTINCT ss.staff_id) as staff_count,
+    SUM(ss.total_orders) as total_orders,
+    ROUND(SUM(ss.total_sales), 2) as total_sales
+FROM staff_sales ss
+JOIN stores st ON ss.store_id = st.store_id
+GROUP BY st.store_name, ss.active
+ORDER BY st.store_name, ss.active DESC

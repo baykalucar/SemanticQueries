@@ -1,0 +1,4 @@
+
+SELECT SUM(s.quantity) AS total_quantity
+FROM stocks s
+WHERE s.product_id = ?;

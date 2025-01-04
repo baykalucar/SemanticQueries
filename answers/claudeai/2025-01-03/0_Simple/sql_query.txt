@@ -1,0 +1,3 @@
+
+SELECT COUNT(*) as brand_count 
+FROM brands;

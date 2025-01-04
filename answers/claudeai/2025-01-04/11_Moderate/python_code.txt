@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+staff_name = f"{df['first_name'].iloc[0]} {df['last_name'].iloc[0]}"
+plt.bar(staff_name, df['total_orders'].iloc[0])
+plt.title('Top Performing Staff Member by Orders Processed')
+plt.ylabel('Number of Orders')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/11_Moderate/plot.png')
+plt.close()

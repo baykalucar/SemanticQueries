@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample DataFrame (replace with your actual query result)
+data = {'store_name': ['Baldwin Bikes']}
+df = pd.DataFrame(data)
+
+# Assuming df contains a column named 'store_name'
+plt.figure(figsize=(8, 6))  # Adjust figure size if needed
+plt.bar(df['store_name'], [1] * len(df)) #Simple bar chart to represent the store name.  The height of the bar is arbitrary as it's just representing the presence of the store name.
+
+plt.xlabel('Store Name')
+plt.ylabel('Count')
+plt.title('Store Name')
+plt.savefig('answers/gemini/2025-01-04/3_Simple/plot.png')
+

@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['last_name'], df['total_value'])
+plt.xticks(rotation=45, ha='right')
+plt.title('Customers with Orders Over $1000')
+plt.xlabel('Customer Last Name')
+plt.ylabel('Total Order Value ($)')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-04/16_Complex/plot.png')
+plt.close()

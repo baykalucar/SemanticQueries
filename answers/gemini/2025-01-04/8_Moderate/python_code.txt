@@ -1,0 +1,13 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+# Assuming 'df' is a pandas DataFrame with columns 'brand_name' and 'total_revenue'
+df.plot(x='brand_name', y='total_revenue', kind='bar')
+plt.title('Total Revenue by Brand')
+plt.xlabel('Brand Name')
+plt.ylabel('Total Revenue')
+plt.xticks(rotation=45, ha='right')
+os.makedirs(os.path.dirname("answers/gemini/2025-01-04/8_Moderate/plot.png"), exist_ok=True)
+plt.savefig("answers/gemini/2025-01-04/8_Moderate/plot.png")
+

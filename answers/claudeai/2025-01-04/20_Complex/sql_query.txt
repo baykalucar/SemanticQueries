@@ -1,0 +1,19 @@
+
+WITH RankedBrands AS (
+  SELECT 
+    c.category_name,
+    b.brand_name,
+    AVG(p.list_price) as avg_price,
+    RANK() OVER (PARTITION BY c.category_id ORDER BY AVG(p.list_price) DESC) as price_rank
+  FROM products p
+  JOIN brands b ON p.brand_id = b.brand_id
+  JOIN categories c ON p.category_id = c.category_id
+  GROUP BY c.category_name, b.brand_name
+)
+SELECT 
+  category_name,
+  brand_name,
+  ROUND(avg_price, 2) as avg_price
+FROM RankedBrands
+WHERE price_rank = 1
+ORDER BY avg_price DESC;

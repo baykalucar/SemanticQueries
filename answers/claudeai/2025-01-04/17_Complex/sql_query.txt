@@ -1,0 +1,11 @@
+
+SELECT 
+    s.staff_id,
+    s.first_name,
+    s.last_name,
+    ROUND(AVG(oi.quantity * oi.list_price * (1 - oi.discount)), 2) as avg_order_value
+FROM staffs s
+JOIN orders o ON s.staff_id = o.staff_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY s.staff_id, s.first_name, s.last_name
+ORDER BY avg_order_value DESC;

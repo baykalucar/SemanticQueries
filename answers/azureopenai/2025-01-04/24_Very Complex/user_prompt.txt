@@ -1,0 +1,1 @@
+Determine the effectiveness of discounts offered on products by analyzing sales figures before and after discount application.

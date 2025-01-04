@@ -1,0 +1,32 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from io import StringIO
+
+data = """order_year,store_name,order_count
+2016,Santa Cruz Bikes,10
+2016,Baldwin Bikes,15
+2016,Rowlett Bikes,20
+2017,Santa Cruz Bikes,12
+2017,Baldwin Bikes,18
+2017,Rowlett Bikes,25
+2018,Santa Cruz Bikes,15
+2018,Baldwin Bikes,22
+2018,Rowlett Bikes,30"""
+
+df = pd.read_csv(StringIO(data))
+
+plt.figure(figsize=(10, 6))
+
+for store in df['store_name'].unique():
+    store_data = df[df['store_name'] == store]
+    plt.plot(store_data['order_year'], store_data['order_count'], label=store, marker='o')
+
+plt.xlabel('Order Year')
+plt.ylabel('Order Count')
+plt.title('Trend of Order Placements Over the Years by Store')
+plt.legend()
+plt.grid(True)
+plt.savefig('answers/gemini/2025-01-03/15_Very Complex/plot.png')
+

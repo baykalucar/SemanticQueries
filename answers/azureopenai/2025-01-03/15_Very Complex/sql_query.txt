@@ -1,0 +1,5 @@
+
+SELECT strftime('%Y', order_date) AS order_year, store_id, COUNT(order_id) AS order_count
+FROM orders
+GROUP BY order_year, store_id
+ORDER BY order_year, store_id;

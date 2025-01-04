@@ -1,0 +1,20 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+bars = plt.bar(df['product_name'], df['total_ordered'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Ordered')
+plt.title('Most Ordered Products in the Past Year')
+
+# Add value labels on top of bars
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'{int(height)}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/10_Complex/plot.png')
+plt.close()

@@ -1,0 +1,2 @@
+
+SELECT c.customer_id, c.first_name, c.last_name, c.phone, c.email, c.street, c.city, c.state, c.zip_code FROM customers c WHERE c.state = 'CA'

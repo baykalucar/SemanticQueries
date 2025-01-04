@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['active_staff_count'])
+plt.title('Active Staff Members by Store')
+plt.xlabel('Store Name')
+plt.ylabel('Number of Active Staff')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-01-03/9_Moderate/plot.png')
+plt.close()

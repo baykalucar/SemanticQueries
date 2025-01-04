@@ -1,0 +1,12 @@
+
+SELECT 
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    ROUND(SUM(oi.quantity * oi.list_price * (1 - oi.discount)), 2) as total_value
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+ORDER BY total_value DESC
+LIMIT 5
