@@ -36,6 +36,8 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
             print("Rephrasing prompt...")
         rephrased_prompt = await rephrase_prompt(kernel, plugins_directory, data_schema, user_prompt)
     if debug:
+        print("User prompt: ", user_prompt)
+        print("Rephrased prompt: ", rephrased_prompt)
         print("Generating SQL and Python code with LLM...")
     result_string = await execute_llm_prompt(kernel, plugins_directory, data_schema, rephrased_prompt, outputFileDir,plugin_name, function_name)
     

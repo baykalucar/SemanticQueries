@@ -32,3 +32,18 @@ def gemini_settings_from_dot_env():
     config = dotenv_values(".env")
     api_key = config.get("GEMINI_API_KEY", None)
     return api_key
+
+def deepseek_settings_from_dot_env():
+    """
+    Reads the DeepSeek API settings from the .env file.
+
+    Returns:
+        str: The API key for the DeepSeek API.
+
+    """
+    config = dotenv_values(".env")
+    api_key = config.get("DEEPSEEK_API_KEY", None)
+    api_url = config.get("DEEPSEEK_API_URL", None) 
+    model_name = config.get("DEEPSEEK_MODEL_NAME", None)
+
+    return api_key, api_url, model_name
