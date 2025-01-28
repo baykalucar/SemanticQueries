@@ -40,8 +40,6 @@ class DeepSeekChatCompletion(ChatCompletionClientBase, BaseModel):
             "stream": False
         }
         
-        print("payload: ", payload) 
-
         headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}"
