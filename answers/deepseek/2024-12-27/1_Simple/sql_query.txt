@@ -1,0 +1,4 @@
+
+SELECT brand_name 
+FROM brands 
+ORDER BY brand_name ASC;

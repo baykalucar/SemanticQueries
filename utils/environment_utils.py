@@ -47,3 +47,17 @@ def deepseek_settings_from_dot_env():
     model_name = config.get("DEEPSEEK_MODEL_NAME", None)
 
     return api_key, api_url, model_name
+
+def llama_settings_from_dot_env():
+    """
+    Reads the Llama API settings from the .env file.
+
+    Returns:
+        str: The API key for the Llama API.
+
+    """
+    config = dotenv_values(".env")
+    api_key = config.get("LLAMA_API_KEY", None)
+    api_url = config.get("LLAMA_API_URL", None)
+    model_name = config.get("LLAMA_MODEL_NAME", None)
+    return api_key, api_url, model_name

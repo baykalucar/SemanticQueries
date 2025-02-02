@@ -19,3 +19,4 @@ class Service(Enum):
     ClaudeAI = "claudeai"
     Gemini = "gemini"
     DeepSeek = "deepseek"
+    Llama = "llama"

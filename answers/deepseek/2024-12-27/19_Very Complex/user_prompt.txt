@@ -1,0 +1,1 @@
+Determine the optimal inventory levels for each store based on historical sales data, lead times, and seasonal demand patterns.

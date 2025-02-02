@@ -6,6 +6,7 @@ from .openai_service import add_openai_service
 from .azure_openai_service import add_azure_openai_service
 from .gemini_service import add_gemini_service
 from .deepseek_service import add_deepseek_service
+from .llama_service import add_llama_service
 from services import Service
 
 
@@ -23,5 +24,7 @@ def initialize_kernel(selected_service, model_name:str, model_mode:str, debug=Fa
         add_gemini_service(kernel, debug=debug)
     elif selected_service == Service.DeepSeek:
         add_deepseek_service(kernel, debug=debug)
+    elif selected_service == Service.Llama:
+        add_llama_service(kernel, debug=debug)
     return kernel
     

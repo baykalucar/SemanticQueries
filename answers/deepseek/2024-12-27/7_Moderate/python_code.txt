@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Assuming df is the DataFrame containing the query result
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], df['avg_order_value'], color='skyblue')
+plt.xlabel('Store Name')
+plt.ylabel('Average Order Value')
+plt.title('Average Order Value by Store')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/deepseek/2024-12-27/7_Moderate/plot.png')
+plt.show()

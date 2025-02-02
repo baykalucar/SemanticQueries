@@ -1,0 +1,18 @@
+
+SELECT 
+    c.customer_id, 
+    c.first_name, 
+    c.last_name, 
+    c.email, 
+    c.street, 
+    c.city, 
+    c.state, 
+    c.zip_code
+FROM 
+    customers c
+JOIN 
+    orders o 
+ON 
+    c.customer_id = o.customer_id
+WHERE 
+    c.phone IS NULL;
