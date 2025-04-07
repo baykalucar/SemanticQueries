@@ -1,0 +1,36 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df['month'] = pd.to_datetime(df['month'])
+
+# Plotting
+fig, ax1 = plt.subplots(figsize=(10, 6))
+
+# Plot total revenue
+for store in df['store_name'].unique():
+    store_data = df[df['store_name'] == store]
+    ax1.plot(store_data['month'], store_data['total_revenue'], label=f'{store} Revenue')
+
+ax1.set_xlabel('Month')
+ax1.set_ylabel('Total Revenue', color='b')
+ax1.tick_params(axis='y', labelcolor='b')
+
+# Create a second y-axis for number of orders
+ax2 = ax1.twinx()
+for store in df['store_name'].unique():
+    store_data = df[df['store_name'] == store]
+    ax2.plot(store_data['month'], store_data['number_of_orders'], linestyle='--', label=f'{store} Orders')
+
+ax2.set_ylabel('Number of Orders', color='g')
+ax2.tick_params(axis='y', labelcolor='g')
+
+# Title and legend
+plt.title('Monthly Sales Trend for Each Store')
+fig.tight_layout()
+fig.legend(loc='upper left', bbox_to_anchor=(0.1, 0.9))
+
+# Save the plot
+plt.savefig('answers/azureopenai/2025-04-07/15_Very Complex/plot.png')
+plt.show()

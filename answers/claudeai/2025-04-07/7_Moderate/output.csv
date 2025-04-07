@@ -1,0 +1,167 @@
+store_id,store_name,product_id,product_name,quantity
+1,Santa Cruz Bikes,6,Surly Ice Cream Truck Frameset - 2016,0
+1,Santa Cruz Bikes,8,Trek Remedy 29 Carbon Frameset - 2016,0
+1,Santa Cruz Bikes,32,Trek Farley Alloy Frameset - 2017,0
+1,Santa Cruz Bikes,42,Trek Fuel EX 5 27.5 Plus - 2017,0
+1,Santa Cruz Bikes,92,Haro Shredder 20 - 2017,0
+1,Santa Cruz Bikes,160,Trek Emonda SLR 6 - 2018,0
+1,Santa Cruz Bikes,163,Surly Pack Rat - 2018,0
+1,Santa Cruz Bikes,168,Surly Straggler - 2018,0
+1,Santa Cruz Bikes,246,Electra Townie Original 3i EQ Ladies' - 2018,0
+1,Santa Cruz Bikes,302,Electra Townie Original 1 - 2018,0
+1,Santa Cruz Bikes,44,Haro SR 1.1 - 2017,1
+1,Santa Cruz Bikes,57,Trek Emonda S 5 - 2017,1
+1,Santa Cruz Bikes,58,Trek Madone 9.2 - 2017,1
+1,Santa Cruz Bikes,82,Electra Amsterdam Original 3i Ladies' - 2017,1
+1,Santa Cruz Bikes,110,Sun Bicycles Drifter 7 - 2017,1
+1,Santa Cruz Bikes,132,Trek Procal AL Frameset - 2018,1
+1,Santa Cruz Bikes,149,Trek Domane SLR 8 Disc - 2018,1
+1,Santa Cruz Bikes,186,Trek CrossRip+ - 2018,1
+1,Santa Cruz Bikes,195,Electra Townie Go! 8i Ladies' - 2018,1
+1,Santa Cruz Bikes,198,Electra Townie Commute Go! - 2018,1
+1,Santa Cruz Bikes,215,Electra Queen of Hearts 3i - 2018,1
+1,Santa Cruz Bikes,266,Trek Superfly 20 - 2018,1
+1,Santa Cruz Bikes,17,Pure Cycles Vine 8-Speed - 2016,2
+1,Santa Cruz Bikes,31,Surly Wednesday - 2017,2
+1,Santa Cruz Bikes,34,Trek Session DH 27.5 Carbon Frameset - 2017,2
+1,Santa Cruz Bikes,39,Trek Stache 5 - 2017,2
+1,Santa Cruz Bikes,43,Trek Fuel EX 9.8 27.5 Plus - 2017,2
+1,Santa Cruz Bikes,51,Trek Silque SLR 8 Women's - 2017,2
+1,Santa Cruz Bikes,173,Trek Domane ALR Frameset - 2018,2
+1,Santa Cruz Bikes,175,Trek Domane SLR Frameset - 2018,2
+1,Santa Cruz Bikes,199,Electra Townie Commute Go! Ladies' - 2018,2
+1,Santa Cruz Bikes,251,Electra Townie Commute Go! - 2018,2
+1,Santa Cruz Bikes,287,Electra Straight 8 1 (16-inch) - Boy's - 2018,2
+1,Santa Cruz Bikes,289,"Electra Superbolt 1 20"" - 2018",2
+1,Santa Cruz Bikes,15,Electra Moto 1 - 2016,3
+1,Santa Cruz Bikes,70,Electra Amsterdam Original 3i - 2015/2017,3
+1,Santa Cruz Bikes,114,Trek Marlin 6 - 2018,3
+1,Santa Cruz Bikes,140,Trek Remedy 9.8 27.5 - 2018,3
+1,Santa Cruz Bikes,171,Trek Domane SL 6 - 2018,3
+1,Santa Cruz Bikes,172,Trek Domane ALR Disc Frameset - 2018,3
+1,Santa Cruz Bikes,185,Trek Conduit+ - 2018,3
+1,Santa Cruz Bikes,223,Electra Cruiser Lux 3i - 2018,3
+1,Santa Cruz Bikes,245,Electra Townie Original 3i EQ - 2017/2018,3
+1,Santa Cruz Bikes,250,Electra Townie Go! 8i - 2017/2018,3
+1,Santa Cruz Bikes,261,Electra Townie Balloon 7i EQ - 2018,3
+1,Santa Cruz Bikes,294,Electra Tiger Shark 3i (20-inch) - Boys' - 2018,3
+1,Santa Cruz Bikes,16,Electra Townie Original 7D EQ - 2016,4
+1,Santa Cruz Bikes,19,Pure Cycles William 3-Speed - 2016,4
+1,Santa Cruz Bikes,63,Trek Boone Race Shop Limited - 2017,4
+1,Santa Cruz Bikes,69,Sun Bicycles Cruz 7 - 2017,4
+1,Santa Cruz Bikes,90,Trek Precaliber 16 Girls - 2017,4
+1,Santa Cruz Bikes,184,Trek Domane SL 6 Disc - 2018,4
+1,Santa Cruz Bikes,203,Trek Powerfly 7 FS - 2018,4
+1,Santa Cruz Bikes,214,Electra Tiger Shark 3i - 2018,4
+1,Santa Cruz Bikes,220,Electra Cruiser 1 Ladies' - 2018,4
+2,Baldwin Bikes,22,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,0
+2,Baldwin Bikes,47,Trek Remedy 9.8 - 2017,0
+2,Baldwin Bikes,91,Trek Precaliber 24 (21-Speed) - Girls - 2017,0
+2,Baldwin Bikes,158,Trek CrossRip 1 - 2018,0
+2,Baldwin Bikes,175,Trek Domane SLR Frameset - 2018,0
+2,Baldwin Bikes,184,Trek Domane SL 6 Disc - 2018,0
+2,Baldwin Bikes,192,Electra Townie Go! 8i - 2017/2018,0
+2,Baldwin Bikes,198,Electra Townie Commute Go! - 2018,0
+2,Baldwin Bikes,251,Electra Townie Commute Go! - 2018,0
+2,Baldwin Bikes,299,Electra Townie Original 21D - 2018,0
+2,Baldwin Bikes,5,Heller Shagamaw Frame - 2016,1
+2,Baldwin Bikes,8,Trek Remedy 29 Carbon Frameset - 2016,1
+2,Baldwin Bikes,13,Electra Cruiser 1 (24-Inch) - 2016,1
+2,Baldwin Bikes,60,Sun Bicycles ElectroLite - 2017,1
+2,Baldwin Bikes,72,Sun Bicycles Biscayne Tandem 7 - 2017,1
+2,Baldwin Bikes,103,Sun Bicycles Streamway 3 - 2017,1
+2,Baldwin Bikes,112,Trek 820 - 2018,1
+2,Baldwin Bikes,137,Heller Shagamaw GX1 - 2018,1
+2,Baldwin Bikes,167,Surly ECR Frameset - 2018,1
+2,Baldwin Bikes,169,Trek Emonda SLR 8 - 2018,1
+2,Baldwin Bikes,178,Trek Domane AL 2 - 2018,1
+2,Baldwin Bikes,202,Trek Powerfly 5 Women's - 2018,1
+2,Baldwin Bikes,244,Electra Townie Original 21D Ladies' - 2018,1
+2,Baldwin Bikes,272,Trek Precaliber 20 6-speed Boy's - 2018,1
+2,Baldwin Bikes,4,Trek Fuel EX 8 29 - 2016,2
+2,Baldwin Bikes,12,Electra Townie Original 21D - 2016,2
+2,Baldwin Bikes,26,Electra Townie Original 7D EQ - 2016,2
+2,Baldwin Bikes,43,Trek Fuel EX 9.8 27.5 Plus - 2017,2
+2,Baldwin Bikes,94,Haro Shredder Pro 20 - 2017,2
+2,Baldwin Bikes,151,Trek Domane ALR 4 Disc Women's - 2018,2
+2,Baldwin Bikes,170,Trek CrossRip 2 - 2018,2
+2,Baldwin Bikes,242,Electra Townie Commute 8D Ladies' - 2018,2
+2,Baldwin Bikes,312,Electra Townie Commute 8D Ladies' - 2018,2
+2,Baldwin Bikes,17,Pure Cycles Vine 8-Speed - 2016,3
+2,Baldwin Bikes,105,Sun Bicycles Streamway 7 - 2017,3
+2,Baldwin Bikes,121,Surly Krampus Frameset - 2018,3
+2,Baldwin Bikes,146,Trek Domane SLR 6 - 2018,3
+2,Baldwin Bikes,180,Trek Domane AL 3 Women's - 2018,3
+2,Baldwin Bikes,268,Trek Kickster - 2018,3
+2,Baldwin Bikes,275,Trek Precaliber 20 Girl's - 2018,3
+2,Baldwin Bikes,281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,3
+2,Baldwin Bikes,286,"Electra Starship 1 16"" - 2018",3
+2,Baldwin Bikes,49,Trek Domane SL 6 - 2017,4
+2,Baldwin Bikes,62,Trek Boone 7 - 2017,4
+2,Baldwin Bikes,78,Sun Bicycles Biscayne Tandem CB - 2017,4
+2,Baldwin Bikes,82,Electra Amsterdam Original 3i Ladies' - 2017,4
+2,Baldwin Bikes,101,Electra Townie 7D (20-inch) - Boys' - 2017,4
+2,Baldwin Bikes,124,Surly Krampus - 2018,4
+2,Baldwin Bikes,144,Trek Domane ALR 4 Disc - 2018,4
+2,Baldwin Bikes,160,Trek Emonda SLR 6 - 2018,4
+2,Baldwin Bikes,185,Trek Conduit+ - 2018,4
+2,Baldwin Bikes,211,Surly Straggler 650b - 2018,4
+2,Baldwin Bikes,224,Electra Cruiser Lux 7D - 2018,4
+2,Baldwin Bikes,235,Electra Koa 3i Ladies' - 2018,4
+2,Baldwin Bikes,261,Electra Townie Balloon 7i EQ - 2018,4
+2,Baldwin Bikes,263,Strider Classic 12 Balance Bike - 2018,4
+2,Baldwin Bikes,265,Strider Strider 20 Sport - 2018,4
+2,Baldwin Bikes,269,Trek Precaliber 12 Boy's - 2018,4
+2,Baldwin Bikes,277,Trek Precaliber 24 21-speed Boy's - 2018,4
+3,Rowlett Bikes,3,Surly Wednesday Frameset - 2016,0
+3,Rowlett Bikes,59,Trek Domane S 5 Disc - 2017,0
+3,Rowlett Bikes,220,Electra Cruiser 1 Ladies' - 2018,0
+3,Rowlett Bikes,259,Electra Amsterdam Royal 8i Ladies - 2018,0
+3,Rowlett Bikes,313,Electra Townie Original 1 Ladies' - 2018,0
+3,Rowlett Bikes,45,Haro SR 1.2 - 2017,1
+3,Rowlett Bikes,65,Sun Bicycles Lil Bolt Type-R - 2017,1
+3,Rowlett Bikes,96,Electra Moto 3i (20-inch) - Boy's - 2017,1
+3,Rowlett Bikes,105,Sun Bicycles Streamway 7 - 2017,1
+3,Rowlett Bikes,106,Sun Bicycles Cruz 3 - 2017,1
+3,Rowlett Bikes,149,Trek Domane SLR 8 Disc - 2018,1
+3,Rowlett Bikes,151,Trek Domane ALR 4 Disc Women's - 2018,1
+3,Rowlett Bikes,152,Trek Domane SL 5 Disc Women's - 2018,1
+3,Rowlett Bikes,174,Trek Domane SLR Disc Frameset - 2018,1
+3,Rowlett Bikes,209,Trek Crockett 7 Disc - 2018,1
+3,Rowlett Bikes,235,Electra Koa 3i Ladies' - 2018,1
+3,Rowlett Bikes,256,Electra Townie Commute 27D - 2018,1
+3,Rowlett Bikes,280,Trek Superfly 24 - 2017/2018,1
+3,Rowlett Bikes,283,Electra Heartchya 1 (20-inch) - Girl's - 2018,1
+3,Rowlett Bikes,40,Trek Fuel EX 9.8 29 - 2017,2
+3,Rowlett Bikes,48,Trek Emonda S 4 - 2017,2
+3,Rowlett Bikes,51,Trek Silque SLR 8 Women's - 2017,2
+3,Rowlett Bikes,70,Electra Amsterdam Original 3i - 2015/2017,2
+3,Rowlett Bikes,125,Trek Kids' Dual Sport - 2018,2
+3,Rowlett Bikes,177,Trek Domane SLR 6 Disc - 2018,2
+3,Rowlett Bikes,187,Trek Neko+ - 2018,2
+3,Rowlett Bikes,281,Electra Cruiser 7D (24-Inch) Ladies' - 2016/2018,2
+3,Rowlett Bikes,285,Electra Soft Serve 1 (16-inch) - Girl's - 2018,2
+3,Rowlett Bikes,288,Electra Straight 8 1 (20-inch) - Boy's - 2018,2
+3,Rowlett Bikes,289,"Electra Superbolt 1 20"" - 2018",2
+3,Rowlett Bikes,5,Heller Shagamaw Frame - 2016,3
+3,Rowlett Bikes,35,Sun Bicycles Spider 3i - 2017,3
+3,Rowlett Bikes,66,Sun Bicycles Revolutions 24 - 2017,3
+3,Rowlett Bikes,73,Sun Bicycles Brickell Tandem 7 - 2017,3
+3,Rowlett Bikes,140,Trek Remedy 9.8 27.5 - 2018,3
+3,Rowlett Bikes,147,Trek Domane ALR 5 Gravel - 2018,3
+3,Rowlett Bikes,169,Trek Emonda SLR 8 - 2018,3
+3,Rowlett Bikes,175,Trek Domane SLR Frameset - 2018,3
+3,Rowlett Bikes,205,Trek Super Commuter+ 8S - 2018,3
+3,Rowlett Bikes,211,Surly Straggler 650b - 2018,3
+3,Rowlett Bikes,236,Electra Morningstar 3i Ladies' - 2018,3
+3,Rowlett Bikes,247,Electra Townie Original 7D EQ - 2018,3
+3,Rowlett Bikes,300,Electra Townie Balloon 3i EQ Ladies' - 2018,3
+3,Rowlett Bikes,14,Electra Girl's Hawaii 1 (16-inch) - 2015/2016,4
+3,Rowlett Bikes,49,Trek Domane SL 6 - 2017,4
+3,Rowlett Bikes,62,Trek Boone 7 - 2017,4
+3,Rowlett Bikes,121,Surly Krampus Frameset - 2018,4
+3,Rowlett Bikes,127,Surly Pack Rat Frameset - 2018,4
+3,Rowlett Bikes,136,Trek Procaliber 6 - 2018,4
+3,Rowlett Bikes,141,Trek Stache 5 - 2018,4
+3,Rowlett Bikes,217,Electra Straight 8 3i - 2018,4
+3,Rowlett Bikes,254,Electra Townie Balloon 3i EQ - 2017/2018,4

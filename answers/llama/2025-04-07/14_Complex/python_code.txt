@@ -1,0 +1,28 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# SQL Query for data source
+sql_query = """
+SELECT T1.customer_id, T3.category_id
+FROM orders AS T1
+INNER JOIN order_items AS T2 ON T1.order_id = T2.order_id
+INNER JOIN products AS T3 ON T2.product_id = T3.product_id
+"""
+
+# Assuming df is the data source
+try:
+    # Group by customer ID and count the number of categories
+    df_grouped = df.groupby('customer_id')['category_id'].nunique().reset_index()
+    
+    # Create a bar chart
+    plt.figure(figsize=(10, 6))
+    plt.bar(df_grouped['customer_id'], df_grouped['category_id'], color='skyblue')
+    plt.xlabel('Customer ID')
+    plt.ylabel('Number of Categories')
+    plt.title('Customers with Orders from Multiple Categories')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('answers/llama/2025-04-07/14_Complex/plot.png')
+except Exception as e:
+    print(f"An error occurred: {e}")

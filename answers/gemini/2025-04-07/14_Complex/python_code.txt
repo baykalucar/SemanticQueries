@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'first_name', 'last_name', and 'categories'
+df['categories'] = df['categories'].str.split(',')
+plt.figure(figsize=(10, 6))
+for index, row in df.iterrows():
+    plt.bar(row['first_name'] + ' ' + row['last_name'], len(row['categories']), label=f"Categories: {', '.join(row['categories'])}")
+plt.xlabel('Customer Name')
+plt.ylabel('Number of Categories')
+plt.title('Customers with Orders from Multiple Categories')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/14_Complex/plot.png')
+

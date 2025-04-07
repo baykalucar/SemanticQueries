@@ -1,0 +1,1 @@
+Identify the top-performing staff based on the total sales amount they handled, using window functions to rank them.

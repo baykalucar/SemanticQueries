@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.scatter(df['customer_id'], df['email'])
+plt.xlabel('Customer ID')
+plt.ylabel('Email Address')
+plt.title('Customer Email Distribution')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/0_Simple/plot.png')
+plt.close()

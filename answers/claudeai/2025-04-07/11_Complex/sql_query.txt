@@ -1,0 +1,10 @@
+
+SELECT 
+    s.store_id,
+    s.store_name,
+    ROUND(SUM(oi.quantity * oi.list_price * (1 - oi.discount)), 2) as total_revenue
+FROM stores s
+JOIN orders o ON s.store_id = o.store_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY s.store_id, s.store_name
+ORDER BY total_revenue DESC

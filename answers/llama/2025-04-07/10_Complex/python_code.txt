@@ -1,0 +1,24 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Assuming df is the result of the SQL query
+df = pd.DataFrame({
+    'customer_name': ['John Doe', 'Jane Doe', 'John Smith'],
+    'product_name': ['Product A', 'Product B', 'Product C'],
+    'quantity': [10, 20, 30],
+    'store_name': ['Store A', 'Store B', 'Store C']
+})
+
+# Group by store name and calculate total quantity
+store_quantity = df.groupby('store_name')['quantity'].sum().reset_index()
+
+# Create a bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(store_quantity['store_name'], store_quantity['quantity'])
+plt.xlabel('Store Name')
+plt.ylabel('Total Quantity')
+plt.title('Total Quantity by Store')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/10_Complex/plot.png')

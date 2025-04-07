@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 5))
+plt.bar(df['store_name'], df['phone'])
+plt.xlabel('Store Name')
+plt.ylabel('Phone Number')
+plt.title('Stores with their Phone Numbers')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/3_Simple/plot.png')

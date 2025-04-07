@@ -1,0 +1,19 @@
+
+WITH revenue_calc AS (
+  SELECT 
+    p.product_id,
+    p.product_name,
+    SUM((oi.quantity * oi.list_price) * (1 - oi.discount)) as revenue,
+    SUM(SUM((oi.quantity * oi.list_price) * (1 - oi.discount))) OVER () as total_revenue
+  FROM products p
+  JOIN order_items oi ON p.product_id = oi.product_id
+  GROUP BY p.product_id, p.product_name
+)
+SELECT 
+  product_id,
+  product_name,
+  revenue,
+  ROUND((revenue / total_revenue * 100), 2) as revenue_percentage
+FROM revenue_calc
+ORDER BY revenue_percentage DESC
+LIMIT 10

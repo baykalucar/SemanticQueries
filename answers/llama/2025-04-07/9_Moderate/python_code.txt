@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10,6))
+plt.bar(df['category_name'], df['average_price'], color='skyblue')
+plt.xlabel('Category')
+plt.ylabel('Average Price')
+plt.title('Average Price of Products in Each Category')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/9_Moderate/plot.png')

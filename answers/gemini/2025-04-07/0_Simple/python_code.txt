@@ -1,0 +1,15 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'customer_id', 'first_name', 'last_name', 'email'
+#This section is not needed because the prompt doesn't require visualization.  Leaving it in as per instructions.
+#plt.figure(figsize=(10, 6))
+#plt.bar(df['customer_id'], df['email'])
+#plt.xlabel('Customer ID')
+#plt.ylabel('Email Address')
+#plt.title('Customers and their Email Addresses')
+#plt.xticks(rotation=45, ha='right')
+#plt.tight_layout()
+#plt.savefig('answers/gemini/2025-04-07/0_Simple/plot.png')
+

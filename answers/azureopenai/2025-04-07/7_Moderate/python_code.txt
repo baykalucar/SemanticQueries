@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'store_id', 'product_id', 'product_name', 'quantity'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['quantity'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Quantity')
+plt.title('Products with Low Stock in Stores')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/7_Moderate/plot.png')
+plt.show()

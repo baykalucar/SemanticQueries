@@ -1,0 +1,47 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from io import StringIO
+
+data = """sales_month,store_name,total_revenue,num_orders
+2023-11,Santa Cruz Bikes,15000,10
+2023-11,Baldwin Bikes,12000,8
+2023-11,Rowlett Bikes,18000,12
+2023-12,Santa Cruz Bikes,16000,11
+2023-12,Baldwin Bikes,13000,9
+2023-12,Rowlett Bikes,19000,13
+2024-01,Santa Cruz Bikes,17000,12
+2024-01,Baldwin Bikes,14000,10
+2024-01,Rowlett Bikes,20000,14
+2024-02,Santa Cruz Bikes,18000,13
+2024-02,Baldwin Bikes,15000,11
+2024-02,Rowlett Bikes,21000,15
+2024-03,Santa Cruz Bikes,19000,14
+2024-03,Baldwin Bikes,16000,12
+2024-03,Rowlett Bikes,22000,16
+2024-04,Santa Cruz Bikes,20000,15
+2024-04,Baldwin Bikes,17000,13
+2024-04,Rowlett Bikes,23000,17
+"""
+df = pd.read_csv(StringIO(data))
+
+df['sales_month'] = pd.to_datetime(df['sales_month'])
+
+fig, axes = plt.subplots(nrows=2, ncols=1, sharex=True, figsize=(10, 8))
+
+for store, group in df.groupby('store_name'):
+    axes[0].plot(group['sales_month'], group['total_revenue'], label=store)
+    axes[1].plot(group['sales_month'], group['num_orders'], label=store)
+
+axes[0].set_ylabel('Total Revenue')
+axes[1].set_ylabel('Number of Orders')
+axes[1].set_xlabel('Sales Month')
+axes[0].legend()
+axes[1].legend()
+
+axes[0].xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+axes[0].xaxis.set_major_locator(mdates.MonthLocator())
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/15_Very Complex/plot.png')

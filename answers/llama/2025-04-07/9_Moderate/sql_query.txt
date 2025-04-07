@@ -1,0 +1,10 @@
+
+SELECT 
+  T1.category_name, 
+  AVG(T2.list_price) AS average_price
+FROM 
+  categories AS T1
+JOIN 
+  products AS T2 ON T1.category_id = T2.category_id
+GROUP BY 
+  T1.category_name

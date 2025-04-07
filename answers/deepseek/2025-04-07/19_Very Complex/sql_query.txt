@@ -1,0 +1,14 @@
+
+SELECT 
+    p.product_id,
+    p.product_name,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS revenue,
+    (SUM(oi.quantity * oi.list_price * (1 - oi.discount)) / SUM(SUM(oi.quantity * oi.list_price * (1 - oi.discount))) OVER ()) * 100 AS revenue_percentage
+FROM 
+    products p
+JOIN 
+    order_items oi ON p.product_id = oi.product_id
+GROUP BY 
+    p.product_id, p.product_name
+ORDER BY 
+    revenue DESC;

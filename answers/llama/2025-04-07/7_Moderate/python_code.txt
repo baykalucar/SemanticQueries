@@ -1,0 +1,13 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Create a bar chart
+plt.figure(figsize=(10,6))
+plt.bar(df['product_name'], df['quantity'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Quantity')
+plt.title('Low Stock Products')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/7_Moderate/plot.png')

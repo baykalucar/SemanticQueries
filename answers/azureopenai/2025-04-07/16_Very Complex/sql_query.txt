@@ -1,0 +1,16 @@
+
+SELECT 
+    s.staff_id, 
+    s.first_name || ' ' || s.last_name AS staff_name,
+    SUM(oi.quantity * (oi.list_price - oi.discount)) AS total_sales,
+    RANK() OVER (ORDER BY SUM(oi.quantity * (oi.list_price - oi.discount)) DESC) AS sales_rank
+FROM 
+    staffs s
+JOIN 
+    orders o ON s.staff_id = o.staff_id
+JOIN 
+    order_items oi ON o.order_id = oi.order_id
+GROUP BY 
+    s.staff_id, s.first_name, s.last_name
+ORDER BY 
+    sales_rank;

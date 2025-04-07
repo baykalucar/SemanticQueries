@@ -1,0 +1,4 @@
+
+SELECT orders.order_id, customers.first_name, customers.last_name
+FROM orders
+JOIN customers ON orders.customer_id = customers.customer_id;

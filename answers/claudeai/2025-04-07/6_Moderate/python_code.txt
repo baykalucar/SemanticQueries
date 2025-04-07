@@ -1,0 +1,13 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(12, 6))
+plt.scatter(df['list_price'], df['brand_name'])
+plt.title('Product Distribution by Brand and Price')
+plt.xlabel('List Price ($)')
+plt.ylabel('Brand Name')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/6_Moderate/plot.png')
+plt.close()

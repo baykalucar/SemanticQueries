@@ -1,0 +1,17 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Define plot labels
+x_label = 'Product Name'
+y_label = 'Revenue Percentage'
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['revenue_percentage'])
+plt.xlabel(x_label)
+plt.ylabel(y_label)
+plt.title('Product Performance by Revenue Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/19_Very Complex/plot.png')

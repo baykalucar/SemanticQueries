@@ -1,0 +1,2 @@
+
+SELECT stores.store_name, SUM((oi.quantity * oi.list_price)*(1 - oi.discount)) AS total_revenue FROM order_items oi JOIN orders o ON oi.order_id = o.order_id JOIN stores ON o.store_id = stores.store_id GROUP BY stores.store_name

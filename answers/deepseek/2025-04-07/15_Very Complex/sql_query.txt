@@ -1,0 +1,20 @@
+
+SELECT 
+    strftime('%Y-%m', o.order_date) AS month,
+    s.store_name,
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS total_revenue,
+    COUNT(DISTINCT o.order_id) AS number_of_orders
+FROM 
+    orders o
+JOIN 
+    order_items oi ON o.order_id = oi.order_id
+JOIN 
+    stores s ON o.store_id = s.store_id
+WHERE 
+    o.order_date >= date('now', '-1 year')
+GROUP BY 
+    strftime('%Y-%m', o.order_date),
+    s.store_name
+ORDER BY 
+    month,
+    s.store_name;

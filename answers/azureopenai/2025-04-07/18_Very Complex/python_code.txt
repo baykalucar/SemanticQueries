@@ -1,0 +1,13 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df.plot(kind='bar', x='store_id', stacked=True)
+plt.title('Best-Selling Category of Products per Store')
+plt.xlabel('Store ID')
+plt.ylabel('Total Sales')
+plt.legend(title='Category')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/18_Very Complex/plot.png')
+plt.show()

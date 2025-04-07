@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'customer_id': [1, 2, 3],
+    'first_name': ['Debra', 'Kasha', 'Tameka'],
+    'last_name': ['Burks', 'Todd', 'Fisher']
+})
+
+# Plotting the number of categories per customer
+plt.figure(figsize=(10, 6))
+plt.bar(df['customer_id'], df['first_name'] + ' ' + df['last_name'])
+plt.xlabel('Customer ID')
+plt.ylabel('Customer Name')
+plt.title('Customers with Orders from Multiple Categories')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/14_Complex/plot.png')
+plt.show()

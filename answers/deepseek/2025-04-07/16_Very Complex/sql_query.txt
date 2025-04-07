@@ -1,0 +1,26 @@
+
+WITH staff_sales AS (
+    SELECT 
+        s.staff_id,
+        s.first_name,
+        s.last_name,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS total_sales
+    FROM 
+        staffs s
+    JOIN 
+        orders o ON s.staff_id = o.staff_id
+    JOIN 
+        order_items oi ON o.order_id = oi.order_id
+    GROUP BY 
+        s.staff_id, s.first_name, s.last_name
+)
+SELECT 
+    staff_id,
+    first_name,
+    last_name,
+    total_sales,
+    RANK() OVER (ORDER BY total_sales DESC) AS sales_rank
+FROM 
+    staff_sales
+ORDER BY 
+    sales_rank;

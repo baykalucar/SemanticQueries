@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 5))
+plt.bar(df['first_name'], df['email'], label='Email Addresses')
+plt.xlabel('Customer Names')
+plt.ylabel('Email Addresses')
+plt.title('Customer Email Addresses')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/0_Simple/plot.png')

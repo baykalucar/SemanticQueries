@@ -1,0 +1,13 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['number_of_categories'], df['customer_id'], color='purple')
+plt.title('Customers with Orders from Multiple Categories')
+plt.xlabel('Number of Different Categories Ordered')
+plt.ylabel('Customer ID')
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/14_Complex/plot.png')
+plt.close()

@@ -1,0 +1,20 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+
+# Create directory if it doesn't exist
+os.makedirs('answers/claudeai/2025-04-07/16_Very Complex', exist_ok=True)
+
+# Create the visualization
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'], df['total_sales'])
+plt.title('Staff Sales Performance Ranking')
+plt.xlabel('Staff Member')
+plt.ylabel('Total Sales ($)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot
+plt.savefig('answers/claudeai/2025-04-07/16_Very Complex/plot.png')
+plt.close()

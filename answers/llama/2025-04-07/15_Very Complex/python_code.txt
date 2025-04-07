@@ -1,0 +1,41 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+def plot_monthly_sales_trend(df):
+    try:
+        # Define plot labels
+        plot_labels = ['Total Revenue', 'Number of Orders']
+
+        # Create a figure and axis object
+        fig, ax = plt.subplots(2, figsize=(10, 6))
+
+        # Iterate over each store
+        for store_id, store_name in df[['store_id', 'store_name']].drop_duplicates().values:
+            store_df = df[df['store_id'] == store_id]
+            
+            # Plot total revenue
+            ax[0].plot(store_df['order_month'], store_df['total_revenue'], label=store_name)
+            
+            # Plot number of orders
+            ax[1].plot(store_df['order_month'], store_df['num_orders'], label=store_name)
+
+        # Set plot labels and titles
+        ax[0].set_title('Monthly Sales Trend - Total Revenue')
+        ax[0].set_xlabel('Month')
+        ax[0].set_ylabel('Total Revenue')
+        ax[0].legend()
+
+        ax[1].set_title('Monthly Sales Trend - Number of Orders')
+        ax[1].set_xlabel('Month')
+        ax[1].set_ylabel('Number of Orders')
+        ax[1].legend()
+
+        # Save the plot
+        plt.tight_layout()
+        plt.savefig('answers/llama/2025-04-07/15_Very Complex/plot.png')
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+plot_monthly_sales_trend(df)

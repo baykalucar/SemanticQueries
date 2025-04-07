@@ -1,0 +1,4 @@
+
+SELECT store_id, store_name, phone
+FROM stores
+ORDER BY store_id;

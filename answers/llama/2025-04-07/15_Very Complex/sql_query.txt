@@ -1,0 +1,20 @@
+
+SELECT 
+    T1.store_id,
+    T1.store_name,
+    EXTRACT(MONTH FROM T2.order_date) AS order_month,
+    EXTRACT(YEAR FROM T2.order_date) AS order_year,
+    SUM(T3.list_price * T3.quantity) AS total_revenue,
+    COUNT(T2.order_id) AS num_orders
+FROM 
+    stores T1
+JOIN 
+    orders T2 ON T1.store_id = T2.store_id
+JOIN 
+    order_items T3 ON T2.order_id = T3.order_id
+WHERE 
+    T2.order_date >= DATE('now', '-1 year')
+GROUP BY 
+    T1.store_id, T1.store_name, EXTRACT(MONTH FROM T2.order_date), EXTRACT(YEAR FROM T2.order_date)
+ORDER BY 
+    T1.store_id, order_year, order_month

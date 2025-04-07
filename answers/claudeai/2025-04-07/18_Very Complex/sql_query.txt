@@ -1,0 +1,23 @@
+
+WITH CategorySales AS (
+    SELECT 
+        s.store_name,
+        c.category_name,
+        SUM(oi.quantity) as total_quantity
+    FROM orders o
+    JOIN order_items oi ON o.order_id = oi.order_id
+    JOIN stores s ON o.store_id = s.store_id
+    JOIN products p ON oi.product_id = p.product_id
+    JOIN categories c ON p.category_id = c.category_id
+    GROUP BY s.store_name, c.category_name
+),
+PivotData AS (
+    SELECT 
+        store_name,
+        MAX(CASE WHEN category_name = 'Children Bicycles' THEN total_quantity ELSE 0 END) as 'Children_Bicycles',
+        MAX(CASE WHEN category_name = 'Comfort Bicycles' THEN total_quantity ELSE 0 END) as 'Comfort_Bicycles'
+    FROM CategorySales
+    GROUP BY store_name
+)
+SELECT * FROM PivotData
+ORDER BY store_name;

@@ -1,0 +1,16 @@
+
+SELECT 
+    s.staff_id,
+    s.first_name AS staff_first_name,
+    s.last_name AS staff_last_name,
+    m.first_name AS manager_first_name,
+    m.last_name AS manager_last_name,
+    st.store_name
+FROM 
+    staffs s
+LEFT JOIN 
+    staffs m ON s.manager_id = m.staff_id
+JOIN 
+    stores st ON s.store_id = st.store_id
+ORDER BY 
+    s.staff_id;

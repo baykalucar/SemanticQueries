@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns:
+# staff_id, staff_first_name, staff_last_name, manager_first_name, manager_last_name, store_name
+
+plt.figure(figsize=(10, 6))  # Adjust figure size as needed
+
+# Assuming you want to visualize the number of staff members per store
+store_counts = df['store_name'].value_counts()
+plt.bar(store_counts.index, store_counts.values)
+plt.xlabel('Store Name')
+plt.ylabel('Number of Staff Members')
+plt.title('Staff Members per Store')
+plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better readability
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/13_Complex/plot.png')
+

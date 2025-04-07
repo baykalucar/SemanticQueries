@@ -1,0 +1,1 @@
+List all staff members along with the names of their managers and the stores they work at.

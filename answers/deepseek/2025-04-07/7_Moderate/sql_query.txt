@@ -1,0 +1,7 @@
+
+SELECT p.product_id, p.product_name, s.store_id, st.store_name, stk.quantity
+FROM products p
+JOIN stocks stk ON p.product_id = stk.product_id
+JOIN stores st ON stk.store_id = st.store_id
+WHERE stk.quantity < 5
+ORDER BY stk.quantity ASC;

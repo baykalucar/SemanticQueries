@@ -1,0 +1,2 @@
+
+SELECT store_name, phone FROM stores;

@@ -1,0 +1,19 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+bars = plt.bar(df['category_name'], df['avg_price'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Category')
+plt.ylabel('Average Price ($)')
+plt.title('Average Product Price by Category')
+
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2., height,
+             f'${height:,.2f}',
+             ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/9_Moderate/plot.png')
+plt.close()

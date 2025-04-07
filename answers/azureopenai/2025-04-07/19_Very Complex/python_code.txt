@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'product_name': ['Product A', 'Product B', 'Product C'],  # Example product names
+    'percentage_of_total_revenue': [40, 35, 25]  # Example percentages
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['percentage_of_total_revenue'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Percentage of Total Revenue')
+plt.title('Percentage of Total Revenue by Product')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/19_Very Complex/plot.png')
+plt.show()

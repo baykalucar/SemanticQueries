@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Pivot the data to have categories as columns
+pivot_df = df.pivot(index='store_name', columns='category_name', values='total_quantity')
+
+# Plot the pivot table as a bar chart
+pivot_df.plot(kind='bar', stacked=True, figsize=(10, 6))
+plt.title('Best-Selling Categories per Store')
+plt.xlabel('Store Name')
+plt.ylabel('Total Quantity Sold')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/deepseek/2025-04-07/18_Very Complex/plot.png')
+plt.show()

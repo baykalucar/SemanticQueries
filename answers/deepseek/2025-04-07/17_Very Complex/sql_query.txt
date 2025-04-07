@@ -1,0 +1,57 @@
+
+WITH customer_monthly_orders AS (
+    SELECT 
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        strftime('%Y-%m', o.order_date) AS order_month
+    FROM 
+        customers c
+    JOIN 
+        orders o ON c.customer_id = o.customer_id
+    GROUP BY 
+        c.customer_id, c.first_name, c.last_name, strftime('%Y-%m', o.order_date)
+),
+
+customer_order_counts AS (
+    SELECT 
+        customer_id,
+        first_name,
+        last_name,
+        COUNT(DISTINCT order_month) AS distinct_months
+    FROM 
+        customer_monthly_orders
+    GROUP BY 
+        customer_id, first_name, last_name
+    HAVING 
+        COUNT(DISTINCT order_month) > 3
+),
+
+customer_spending AS (
+    SELECT 
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS total_spending
+    FROM 
+        customers c
+    JOIN 
+        orders o ON c.customer_id = o.customer_id
+    JOIN 
+        order_items oi ON o.order_id = oi.order_id
+    GROUP BY 
+        c.customer_id, c.first_name, c.last_name
+)
+
+SELECT 
+    coc.customer_id,
+    coc.first_name,
+    coc.last_name,
+    coc.distinct_months,
+    cs.total_spending
+FROM 
+    customer_order_counts coc
+JOIN 
+    customer_spending cs ON coc.customer_id = cs.customer_id
+ORDER BY 
+    cs.total_spending DESC;

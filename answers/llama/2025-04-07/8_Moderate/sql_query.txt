@@ -1,0 +1,6 @@
+
+SELECT T1.customer_id, T1.first_name, T1.last_name, COUNT(T2.order_id) AS order_count
+FROM customers AS T1
+JOIN orders AS T2
+ON T1.customer_id = T2.customer_id
+GROUP BY T1.customer_id, T1.first_name, T1.last_name

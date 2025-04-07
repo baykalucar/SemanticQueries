@@ -1,0 +1,10 @@
+
+SELECT 
+    p.product_id,
+    p.product_name,
+    b.brand_name,
+    p.model_year,
+    p.list_price
+FROM products p
+JOIN brands b ON p.brand_id = b.brand_id
+ORDER BY p.product_id;

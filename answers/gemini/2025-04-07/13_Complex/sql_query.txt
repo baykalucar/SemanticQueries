@@ -1,0 +1,2 @@
+
+SELECT staffs.staff_id, staffs.first_name AS staff_first_name, staffs.last_name AS staff_last_name, managers.first_name AS manager_first_name, managers.last_name AS manager_last_name, stores.store_name FROM staffs INNER JOIN staffs AS managers ON staffs.manager_id = managers.staff_id INNER JOIN stores ON staffs.store_id = stores.store_id;

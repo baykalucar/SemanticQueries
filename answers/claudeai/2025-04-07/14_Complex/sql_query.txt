@@ -1,0 +1,20 @@
+
+WITH CustomerCategories AS (
+  SELECT 
+    o.customer_id,
+    COUNT(DISTINCT p.category_id) as category_count
+  FROM orders o
+  JOIN order_items oi ON o.order_id = oi.order_id
+  JOIN products p ON oi.product_id = p.product_id
+  GROUP BY o.customer_id
+  HAVING category_count > 1
+)
+SELECT 
+  c.customer_id,
+  c.first_name,
+  c.last_name,
+  c.email,
+  cc.category_count as number_of_categories
+FROM customers c
+JOIN CustomerCategories cc ON c.customer_id = cc.customer_id
+ORDER BY cc.category_count DESC, c.customer_id;

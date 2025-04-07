@@ -1,0 +1,13 @@
+
+SELECT store_id,
+       MAX(CASE WHEN category_name = 'Children Bicycles' THEN total_sales ELSE 0 END) AS Children_Bicycles,
+       MAX(CASE WHEN category_name = 'Comfort Bicycles' THEN total_sales ELSE 0 END) AS Comfort_Bicycles
+FROM (
+    SELECT s.store_id, c.category_name, SUM(oi.quantity * (oi.list_price - oi.discount)) AS total_sales
+    FROM order_items oi
+    JOIN products p ON oi.product_id = p.product_id
+    JOIN categories c ON p.category_id = c.category_id
+    JOIN stocks s ON p.product_id = s.product_id
+    GROUP BY s.store_id, c.category_name
+) AS sales_per_category
+GROUP BY store_id;

@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'order_id', 'first_name', 'last_name'
+# Sample DataFrame for demonstration:
+#data = {'order_id': [1, 2, 3], 'first_name': ['Debra', 'Kasha', 'Tameka'], 'last_name': ['Burks', 'Todd', 'Fisher']}
+#df = pd.DataFrame(data)
+
+
+plt.figure(figsize=(10, 6))  # Adjust figure size as needed
+plt.bar(df['order_id'], df['first_name'].str.len() + df['last_name'].str.len(), color='skyblue') #plotting lengths of names as an example, modify as needed to reflect your desired visualization
+plt.xlabel('Order ID')
+plt.ylabel('Name Length')
+plt.title('Order IDs and Customer Names')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/5_Moderate/plot.png')
+

@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+plt.bar(df['product_name'], df['revenue_percentage'])
+plt.xticks(rotation=45, ha='right')
+plt.xlabel('Product Name')
+plt.ylabel('Revenue Percentage (%)')
+plt.title('Top 10 Products by Revenue Contribution')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/19_Very Complex/plot.png')
+plt.close()

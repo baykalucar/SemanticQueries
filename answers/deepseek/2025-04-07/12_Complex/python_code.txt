@@ -1,0 +1,13 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['total_quantity_sold'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.title('Top 5 Best-Selling Products')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/deepseek/2025-04-07/12_Complex/plot.png')
+plt.show()

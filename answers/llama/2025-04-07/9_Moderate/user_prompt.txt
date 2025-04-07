@@ -1,0 +1,1 @@
+Find the average price of products in each category.

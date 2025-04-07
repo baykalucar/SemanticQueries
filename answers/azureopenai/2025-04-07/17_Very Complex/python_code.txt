@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+# df should have columns: 'customer_id', 'customer_name', 'total_spending'
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['customer_name'], df['total_spending'], color='skyblue')
+plt.xlabel('Customer Name')
+plt.ylabel('Total Spending')
+plt.title('Customers with Orders in More Than Three Different Months')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/17_Very Complex/plot.png')
+plt.show()

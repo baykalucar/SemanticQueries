@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(12, 6))
+plt.scatter(df['order_id'], df['order_status'], c=np.random.rand(len(df)), cmap='viridis')
+plt.title('Orders by Customer')
+plt.xlabel('Order ID')
+plt.ylabel('Order Status')
+plt.xticks(rotation=45)
+plt.colorbar(label='Customer')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/5_Moderate/plot.png')
+plt.close()

@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'store_name' and 'phone'
+plt.figure(figsize=(10, 6))  # Adjust figure size if needed
+plt.bar(df['store_name'], df['phone'])
+plt.xlabel('Store Name')
+plt.ylabel('Phone Number')
+plt.title('Store Phone Numbers')
+plt.xticks(rotation=45, ha='right') # Rotate x-axis labels for readability
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/3_Simple/plot.png')
+

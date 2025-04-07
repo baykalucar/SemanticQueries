@@ -1,0 +1,18 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+plt.bar(range(len(df)), [1] * len(df), tick_label=df['staff_first_name'] + ' ' + df['staff_last_name'])
+plt.xticks(rotation=45, ha='right')
+plt.ylabel('Staff Members')
+plt.title('Staff Members and Their Managers by Store')
+
+for i, row in df.iterrows():
+    manager_name = f"{row['manager_first_name']} {row['manager_last_name']}" if pd.notna(row['manager_first_name']) else 'No Manager'
+    plt.text(i, 0.5, f"Manager: {manager_name}\nStore: {row['store_name']}", 
+             ha='center', va='center', rotation=90)
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/13_Complex/plot.png')
+plt.close()

@@ -1,0 +1,21 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'first_name': ['Debra', 'Kasha', 'Tameka'],
+    'last_name': ['Burks', 'Todd', 'Fisher'],
+    'email': ['debra.burks@yahoo.com', 'kasha.todd@yahoo.com', 'tameka.fisher@aol.com']
+})
+
+# Plotting the data
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], range(len(df)), color='skyblue')
+plt.xlabel('Customer Name')
+plt.ylabel('Index')
+plt.title('Customer List')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/0_Simple/plot.png')
+plt.show()

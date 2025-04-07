@@ -1,0 +1,5 @@
+
+SELECT T1.order_id, T1.order_date, T2.first_name, T2.last_name 
+FROM orders AS T1 
+JOIN customers AS T2 
+ON T1.customer_id = T2.customer_id;

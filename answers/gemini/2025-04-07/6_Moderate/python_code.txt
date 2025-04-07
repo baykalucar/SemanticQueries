@@ -1,0 +1,16 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'product_name' and 'brand_name'
+df = pd.DataFrame({'product_name': ['Product A', 'Product B', 'Product C'], 'brand_name': ['Brand X', 'Brand Y', 'Brand Z']})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['brand_name'])
+plt.xlabel('Product Name')
+plt.ylabel('Brand Name')
+plt.title('Products and Their Brands')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/6_Moderate/plot.png')
+

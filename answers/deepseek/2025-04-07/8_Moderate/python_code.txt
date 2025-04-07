@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Assuming df is the DataFrame containing the SQL query results
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['order_count'])
+plt.xlabel('Customer Name')
+plt.ylabel('Number of Orders')
+plt.title('Number of Orders Placed by Each Customer')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/deepseek/2025-04-07/8_Moderate/plot.png')
+plt.show()

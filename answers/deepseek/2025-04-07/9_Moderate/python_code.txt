@@ -1,0 +1,17 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({
+    'category_name': ['Children Bicycles', 'Comfort Bicycles'],
+    'average_price': [379.99, 874.99]
+})
+
+plt.bar(df['category_name'], df['average_price'])
+plt.xlabel('Category')
+plt.ylabel('Average Price')
+plt.title('Average Product Price by Category')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/deepseek/2025-04-07/9_Moderate/plot.png')
+plt.show()

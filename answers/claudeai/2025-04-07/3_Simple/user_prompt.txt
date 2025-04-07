@@ -1,0 +1,1 @@
+List all stores with their phone numbers.

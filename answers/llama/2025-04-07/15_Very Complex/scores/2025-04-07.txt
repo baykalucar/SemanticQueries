@@ -1,0 +1,6 @@
+```json
+{
+  "sql_score": 75,
+  "python_score": 100
+}
+```

@@ -1,0 +1,1 @@
+Determine the best-selling category of products per store using PIVOT to rearrange the categories as columns.

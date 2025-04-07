@@ -1,0 +1,25 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+def plot_total_spending(df):
+    try:
+        # Define plot labels
+        x_label = 'Customer ID'
+        y_label = 'Total Spending'
+        title = 'Total Spending by Customer'
+
+        # Create bar chart
+        plt.figure(figsize=(10, 6))
+        plt.bar(df['customer_id'], df['total_spending'])
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.title(title)
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.savefig('answers/llama/2025-04-07/17_Very Complex/plot.png')
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Call the function with the provided data source "df"
+plot_total_spending(df)

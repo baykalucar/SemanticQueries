@@ -1,0 +1,1 @@
+Analyze product performance by calculating the percentage of total revenue each product contributed, using advanced aggregation.

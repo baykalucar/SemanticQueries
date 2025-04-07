@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming df is the DataFrame containing the query result
+df = pd.DataFrame({
+    'staff_name': ['Staff A', 'Staff B', 'Staff C'],  # Example data
+    'total_sales': [10000, 15000, 12000]  # Example data
+})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['staff_name'], df['total_sales'], color='skyblue')
+plt.xlabel('Staff Name')
+plt.ylabel('Total Sales')
+plt.title('Top Performing Staff by Total Sales')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/azureopenai/2025-04-07/16_Very Complex/plot.png')
+plt.show()

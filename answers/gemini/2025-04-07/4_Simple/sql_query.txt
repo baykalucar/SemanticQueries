@@ -1,0 +1,2 @@
+
+SELECT s.staff_id, s.first_name, s.last_name, s.email, s.phone, s.active, s.store_id, s.manager_id FROM staffs AS s WHERE s.active = 1

@@ -1,0 +1,19 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# Assuming 'df' is a pandas DataFrame with columns 'product_name' and 'total_quantity_sold'
+df = pd.DataFrame({'product_name': ['Product A', 'Product B', 'Product C', 'Product D', 'Product E'], 'total_quantity_sold': [100, 80, 60, 40, 20]})
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['total_quantity_sold'], color='skyblue')
+plt.xlabel('Product Name')
+plt.ylabel('Total Quantity Sold')
+plt.title('Top 5 Best-Selling Products')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+
+os.makedirs(os.path.dirname("answers/gemini/2025-04-07/12_Complex/plot.png"), exist_ok=True)
+plt.savefig("answers/gemini/2025-04-07/12_Complex/plot.png")
+

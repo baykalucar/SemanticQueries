@@ -1,0 +1,10 @@
+
+SELECT 
+  T1.store_id,
+  SUM(T2.list_price * T2.quantity * (1 - T2.discount)) AS total_revenue
+FROM 
+  stores AS T1
+  JOIN stocks AS T2 ON T1.store_id = T2.store_id
+  JOIN order_items AS T3 ON T2.product_id = T3.product_id
+GROUP BY 
+  T1.store_id

@@ -1,0 +1,18 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Define plot labels
+x_label = 'Product Name'
+y_label = 'Total Quantity Sold'
+title = 'Top 5 Best-Selling Products'
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(df['product_name'], df['total_quantity'], color='skyblue')
+plt.xlabel(x_label)
+plt.ylabel(y_label)
+plt.title(title)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/12_Complex/plot.png')

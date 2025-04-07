@@ -1,0 +1,36 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+
+# Assuming df is the result of the SQL query
+df['month'] = pd.to_datetime(df['month'])
+df = df.sort_values(['month', 'store_name'])
+
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
+
+# Plot total revenue
+for store in df['store_name'].unique():
+    store_data = df[df['store_name'] == store]
+    ax1.plot(store_data['month'], store_data['total_revenue'], label=store, marker='o')
+
+ax1.set_ylabel('Total Revenue')
+ax1.set_title('Monthly Sales Trend - Total Revenue')
+ax1.legend()
+ax1.grid(True)
+ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+
+# Plot number of orders
+for store in df['store_name'].unique():
+    store_data = df[df['store_name'] == store]
+    ax2.plot(store_data['month'], store_data['number_of_orders'], label=store, marker='o')
+
+ax2.set_ylabel('Number of Orders')
+ax2.set_title('Monthly Sales Trend - Number of Orders')
+ax2.legend()
+ax2.grid(True)
+ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+
+plt.tight_layout()
+plt.savefig('answers/deepseek/2025-04-07/15_Very Complex/plot.png')
+plt.close()

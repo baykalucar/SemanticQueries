@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with a column named 'brand_name'
+df = pd.DataFrame({'brand_name': ['Electra', 'Haro']})
+
+plt.figure(figsize=(8, 6))  # Adjust figure size if needed
+plt.bar(df['brand_name'], df['brand_name'].value_counts(), color=['skyblue', 'lightcoral'])
+plt.xlabel('Brand Name')
+plt.ylabel('Count')
+plt.title('Available Brands')
+plt.savefig('answers/gemini/2025-04-07/1_Simple/plot.png')
+

@@ -1,0 +1,1 @@
+List all orders including customer name, product name, quantity ordered, and store name.

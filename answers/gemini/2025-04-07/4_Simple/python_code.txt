@@ -1,0 +1,12 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns: staff_id, first_name, last_name, email, phone, active, store_id, manager_id
+plt.figure(figsize=(10, 6))
+plt.bar(df['staff_id'], df['active'])
+plt.xlabel('Staff ID')
+plt.ylabel('Active Status')
+plt.title('Active Staff Members')
+plt.savefig('answers/gemini/2025-04-07/4_Simple/plot.png')
+

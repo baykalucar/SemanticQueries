@@ -1,0 +1,6 @@
+
+SELECT T1.product_name, T2.store_name, T3.quantity 
+FROM products AS T1 
+JOIN stores AS T2 ON T2.store_id = T3.store_id 
+JOIN stocks AS T3 ON T3.product_id = T1.product_id 
+WHERE T3.quantity < 5

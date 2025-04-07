@@ -1,0 +1,46 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+def plot_best_selling_category(df):
+    try:
+        # Define plot labels
+        x_label = 'Store ID'
+        y_label = 'Quantity'
+        title = 'Best-Selling Category of Products per Store'
+
+        # Create a bar chart for each store
+        for store_id in df['store_id'].unique():
+            store_df = df[df['store_id'] == store_id]
+            plt.bar(store_df.columns[1:], store_df.iloc[0, 1:], label=store_id)
+
+        # Set plot labels and title
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.title(title)
+        plt.legend(title='Store ID')
+
+        # Save the plot
+        plt.savefig('answers/llama/2025-04-07/18_Very Complex/plot.png')
+        plt.show()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# SQL Query to generate the data source "df"
+# SELECT 
+#     s.store_id,
+#     p.category_id,
+#     SUM(oi.quantity) AS quantity
+# FROM 
+#     stores s
+# JOIN 
+#     stocks st ON s.store_id = st.store_id
+# JOIN 
+#     products p ON st.product_id = p.product_id
+# JOIN 
+#     order_items oi ON p.product_id = oi.product_id
+# GROUP BY 
+#     s.store_id, p.category_id
+# PIVOT 
+#     SUM(oi.quantity) FOR p.category_id IN ([1], [2], [3], [4], [5], [6])

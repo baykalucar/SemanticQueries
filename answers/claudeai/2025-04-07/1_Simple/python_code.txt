@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['brand_name'], height=[1]*len(df['brand_name']))
+plt.xticks(rotation=45, ha='right')
+plt.title('Available Brands')
+plt.ylabel('Count')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/1_Simple/plot.png')
+plt.close()

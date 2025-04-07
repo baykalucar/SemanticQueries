@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+plt.figure(figsize=(10,6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['order_count'])
+plt.xlabel('Customer Name')
+plt.ylabel('Number of Orders')
+plt.title('Number of Orders per Customer')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/8_Moderate/plot.png')

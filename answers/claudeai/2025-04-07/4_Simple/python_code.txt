@@ -1,0 +1,12 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['first_name'] + ' ' + df['last_name'], df['staff_id'])
+plt.xticks(rotation=45)
+plt.xlabel('Staff Name')
+plt.ylabel('Staff ID')
+plt.title('Active Staff Members')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/4_Simple/plot.png')
+plt.close()

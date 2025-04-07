@@ -1,0 +1,11 @@
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['store_name'], [1] * len(df), width=0.4)
+plt.xticks(rotation=45, ha='right')
+plt.title('Store Locations')
+plt.xlabel('Store Name')
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/3_Simple/plot.png')
+plt.close()

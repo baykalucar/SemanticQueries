@@ -1,0 +1,13 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 8))
+plt.bar(df['product_name'], df['revenue_percentage'])
+plt.xlabel('Product Name')
+plt.ylabel('Revenue Percentage')
+plt.title('Product Revenue Contribution')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('answers/deepseek/2025-04-07/19_Very Complex/plot.png')
+plt.show()

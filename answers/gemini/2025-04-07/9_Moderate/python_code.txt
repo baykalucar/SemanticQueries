@@ -1,0 +1,11 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns 'category_name' and 'average_price'
+df.plot(x='category_name', y='average_price', kind='bar')
+plt.xlabel('Category Name')
+plt.ylabel('Average Price')
+plt.title('Average Price of Products in Each Category')
+plt.savefig('answers/gemini/2025-04-07/9_Moderate/plot.png')
+

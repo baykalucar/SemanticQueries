@@ -8,6 +8,8 @@ from utils.file_utils import  read_data_schema_from_file, write_to_file
 from utils.sql_lit_db_utils import run_sql_query
 from utils.parse_utils import parse_text_between_tags
 from services import Service
+import pandas as pd
+import re
 
 async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_service=Service.AzureOpenAI, 
                               user_prompt=None, outputFileDir="", model_name="Llama318BInstruct", model_mode="chat",
@@ -257,6 +259,54 @@ async def GenerateQuestions(selected_service=Service.AzureOpenAI,model_name="Lla
     print("Result saved to:", filename)
     print(result_string)
 
+async def GenerateScores(folder, question, sql_query, python_code, selected_service=Service.AzureOpenAI, model_name="Llama318BInstruct", model_mode="chat", debug=False):
+    """
+    Generates scores and evaluate the following outputs based on the provided database schema and user question.
+
+    """
+    kernel = initialize_kernel(selected_service, model_name=model_name, model_mode=model_mode, debug=debug)
+    
+    plugins_directory = "plugins"
+    file_path = "data_schema.txt"
+    data_schema = read_data_schema_from_file(file_path)
+    print("Generating questions...")
+    promptFunctions = kernel.import_plugin_from_prompt_directory(plugins_directory, "DataPlugin")
+    queryGeneratorFunction = promptFunctions["ScoreGenerator"]
+    result = await kernel.invoke(queryGeneratorFunction, sk.KernelArguments(data_schema=data_schema, question = question, sql_query = sql_query, python_code = python_code ))
+    if(hasattr(result, 'data')):
+        print("Parsing result data...")
+        result_string = result.data
+    elif (result.__dict__):
+        # Access the value (which contains the list of CompletionResult objects)
+        # print("Value: ", result.value)
+        print("Parsing result value...")
+        completion_results = result.value
+
+        # Check if it's a list and access the content of the first CompletionResult
+        if isinstance(completion_results, list) and len(completion_results) > 0:
+            first_result = completion_results[0]
+            # print(first_result.content)  # This will print the content of the first result
+            print("Parsing result content...")
+            result_string = first_result.content
+        else:
+            print("No completion results found.")
+    else:
+        print("Parsing result string...")
+        result_string = str(result)
+
+    if not os.path.exists(folder + "/scores/"):
+        os.makedirs(folder + "/scores/")
+    # Generate a unique filename based on the current date
+    filename = folder + "/scores/" + datetime.datetime.now().strftime("%Y-%m-%d") + ".txt"
+
+    # Write result_string to the file
+    write_to_file(result_string, filename)
+
+    # Print the filename
+    print("Result saved to:", filename)
+    print(result_string)
+    return result_string
+
 async def ReadQuestionsAndGenerateAnswers(filename, debug=False, selected_service=Service.AzureOpenAI):
     """
     Reads questions from a file and generates answers using the Semantic Kernel.
@@ -305,3 +355,97 @@ async def ReadQuestionsAndGenerateAnswers(filename, debug=False, selected_servic
                 with open(directory_path + "/" + questionFolderName + "/error.txt", "w") as file:
                     file.write(error_message)
             i = i + 1
+
+def read_file_safe(path):
+    """Reads a file if exists, else returns empty string."""
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            return f.read().strip()
+    else:
+        return ""
+    
+async def process_scores(question_date, output_excel_path, selected_service = Service.AzureOpenAI, model_name="Llama318BInstruct", model_mode="chat", debug=False):
+    base_folder = "answers"
+    results = []
+
+    # Iterate over all model names
+    for model in Service:
+        model_folder = os.path.join(base_folder, model.value, question_date)
+        if not os.path.exists(model_folder):
+            print(f"Skipping {model_folder}, folder does not exist.")
+            continue
+
+        # Iterate over subfolders (e.g., 1_simple, 2_complex, etc.)
+        for subfolder_name in os.listdir(model_folder):
+            subfolder_path = os.path.join(model_folder, subfolder_name)
+            if not os.path.isdir(subfolder_path):
+                continue
+
+            try:
+                index, category = subfolder_name.split('_', 1)
+            except ValueError:
+                print(f"Skipping {subfolder_name}, unexpected folder name format.")
+                continue
+
+            # Read files
+            sql_query = read_file_safe(os.path.join(subfolder_path, "sql_query.txt"))
+            python_code = read_file_safe(os.path.join(subfolder_path, "python_code.txt"))
+            question = read_file_safe(os.path.join(subfolder_path, "user_prompt.txt"))
+
+            # Call GenerateScores
+            result_string = await GenerateScores(
+                folder=subfolder_path,
+                question=question,
+                sql_query=sql_query,
+                python_code=python_code,
+                selected_service=selected_service,  # ya da nasıl bir servis seçiyorsan
+                model_name=model_name,         # gerekirse değiştirilebilir
+                model_mode=model_mode,
+                debug=debug
+            )
+
+            try:
+                scores = extract_json_from_string(result_string)
+                sql_score = scores.get("sql_score", 0)
+                python_score = scores.get("python_score", 0)
+            except Exception as e:
+                print(f"Error parsing JSON from {subfolder_name}: {e}")
+                sql_score = 0
+                python_score = 0
+
+            avg_score = (sql_score + python_score) / 2
+
+            # Collect result
+            results.append({
+                "Answer Model": model.value,
+                "Question Category": category,
+                "Question #": index,
+                "SQL (Data Result)": sql_score,
+                "Python (Visualization)": python_score,
+                "Avg Score": avg_score,
+                "FileName": question_date
+            })
+
+    # Create DataFrame
+    df = pd.DataFrame(results)
+
+    # Save to Excel
+    df.to_excel(output_excel_path, index=False)
+    print(f"Results saved to {output_excel_path}")
+
+
+
+def extract_json_from_string(s):
+    """
+    Extracts the first valid JSON object from a string.
+    """
+    try:
+        json_match = re.search(r'\{.*?\}', s, re.DOTALL)
+        if json_match:
+            json_part = json_match.group(0)
+            return json.loads(json_part)
+        else:
+            raise ValueError("No JSON object found in the string.")
+    except Exception as e:
+        print(f"Failed to extract JSON: {e}")
+        return {"sql_score": 0, "python_score": 0}

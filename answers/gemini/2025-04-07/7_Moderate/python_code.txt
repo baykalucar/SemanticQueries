@@ -1,0 +1,14 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'df' is a pandas DataFrame with columns: product_name, brand_name, category_name, quantity
+
+df.plot(x='product_name', y='quantity', kind='bar', figsize=(10, 6))
+plt.title('Product Stock Levels')
+plt.xlabel('Product Name')
+plt.ylabel('Quantity')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig('answers/gemini/2025-04-07/7_Moderate/plot.png')
+

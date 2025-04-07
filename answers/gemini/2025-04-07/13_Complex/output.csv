@@ -1,0 +1,10 @@
+staff_id,staff_first_name,staff_last_name,manager_first_name,manager_last_name,store_name
+2,Mireya,Copeland,Fabiola,Jackson,Santa Cruz Bikes
+3,Genna,Serrano,Mireya,Copeland,Santa Cruz Bikes
+4,Virgie,Wiggins,Mireya,Copeland,Santa Cruz Bikes
+5,Jannette,David,Fabiola,Jackson,Baldwin Bikes
+6,Marcelene,Boyer,Jannette,David,Baldwin Bikes
+7,Venita,Daniel,Jannette,David,Baldwin Bikes
+8,Kali,Vargas,Fabiola,Jackson,Rowlett Bikes
+9,Layla,Terrell,Venita,Daniel,Rowlett Bikes
+10,Bernardine,Houston,Venita,Daniel,Rowlett Bikes

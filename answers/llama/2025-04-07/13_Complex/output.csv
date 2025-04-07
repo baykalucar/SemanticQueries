@@ -1,0 +1,11 @@
+first_name,last_name,manager_first_name,manager_last_name,store_name
+Fabiola,Jackson,,,Santa Cruz Bikes
+Mireya,Copeland,Fabiola,Jackson,Santa Cruz Bikes
+Genna,Serrano,Mireya,Copeland,Santa Cruz Bikes
+Virgie,Wiggins,Mireya,Copeland,Santa Cruz Bikes
+Jannette,David,Fabiola,Jackson,Baldwin Bikes
+Marcelene,Boyer,Jannette,David,Baldwin Bikes
+Venita,Daniel,Jannette,David,Baldwin Bikes
+Kali,Vargas,Fabiola,Jackson,Rowlett Bikes
+Layla,Terrell,Venita,Daniel,Rowlett Bikes
+Bernardine,Houston,Venita,Daniel,Rowlett Bikes

@@ -1,0 +1,8 @@
+
+SELECT DISTINCT T1.customer_id, T1.first_name, T1.last_name
+FROM customers AS T1
+JOIN orders AS T2 ON T1.customer_id = T2.customer_id
+JOIN order_items AS T3 ON T2.order_id = T3.order_id
+JOIN products AS T4 ON T3.product_id = T4.product_id
+GROUP BY T1.customer_id, T1.first_name, T1.last_name, T4.category_id
+HAVING COUNT(DISTINCT T4.category_id) > 1

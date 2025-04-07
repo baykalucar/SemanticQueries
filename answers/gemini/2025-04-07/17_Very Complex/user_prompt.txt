@@ -1,0 +1,1 @@
+List customers who have placed orders in more than three different months and show their total spending using CTEs.

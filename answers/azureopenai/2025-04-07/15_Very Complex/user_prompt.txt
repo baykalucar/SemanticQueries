@@ -1,0 +1,1 @@
+Find the monthly sales trend for each store, showing total revenue and number of orders per month for the last year.

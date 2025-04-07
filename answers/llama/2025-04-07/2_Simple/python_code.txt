@@ -1,0 +1,13 @@
+
+import matplotlib.pyplot as plt
+
+categories = df['category_name'].tolist()
+values = [1] * len(categories)
+
+plt.bar(categories, values)
+plt.xlabel('Category')
+plt.ylabel('Count')
+plt.title('Bicycle Categories')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('answers/llama/2025-04-07/2_Simple/plot.png')

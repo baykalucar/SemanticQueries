@@ -1,0 +1,32 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+def plot_total_revenue(df):
+    try:
+        # Group by store_id and calculate total revenue
+        df['total_revenue'] = df['quantity'] * df['list_price'] * (1 - df['discount'])
+        df_grouped = df.groupby('store_id')['total_revenue'].sum().reset_index()
+
+        # Define plot labels
+        x_label = 'Store ID'
+        y_label = 'Total Revenue'
+        title = 'Total Revenue by Store'
+
+        # Create bar chart
+        plt.figure(figsize=(10, 6))
+        plt.bar(df_grouped['store_id'], df_grouped['total_revenue'], color='skyblue')
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.title(title)
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.savefig('answers/llama/2025-04-07/11_Complex/plot.png')
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
+# SQL Query to generate the data source "df"
+# SELECT o.store_id, p.list_price, p.product_id, oi.quantity, oi.discount 
+# FROM orders o 
+# JOIN order_items oi ON o.order_id = oi.order_id 
+# JOIN products p ON oi.product_id = p.product_id

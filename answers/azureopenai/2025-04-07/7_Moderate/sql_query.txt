@@ -1,0 +1,5 @@
+
+SELECT s.store_id, s.product_id, p.product_name, s.quantity
+FROM stocks s
+JOIN products p ON s.product_id = p.product_id
+WHERE s.quantity < 5;

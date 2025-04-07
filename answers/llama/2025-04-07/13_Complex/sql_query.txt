@@ -1,0 +1,5 @@
+
+SELECT T1.first_name, T1.last_name, T2.first_name AS manager_first_name, T2.last_name AS manager_last_name, T3.store_name 
+FROM staffs T1 
+LEFT JOIN staffs T2 ON T1.manager_id = T2.staff_id 
+JOIN stores T3 ON T1.store_id = T3.store_id

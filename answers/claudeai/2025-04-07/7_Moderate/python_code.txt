@@ -1,0 +1,19 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+plt.figure(figsize=(12, 6))
+plt.bar(df.index, df['quantity'])
+plt.xticks(df.index, df['product_name'], rotation=45, ha='right')
+plt.title('Low Stock Products by Store')
+plt.xlabel('Product Name')
+plt.ylabel('Quantity')
+
+# Add store names as text annotations
+for i, (store, qty) in enumerate(zip(df['store_name'], df['quantity'])):
+    plt.text(i, qty, store, ha='center', va='bottom')
+
+plt.tight_layout()
+plt.savefig('answers/claudeai/2025-04-07/7_Moderate/plot.png')
+plt.close()
