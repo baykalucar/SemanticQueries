@@ -10,6 +10,7 @@ from utils.parse_utils import parse_text_between_tags
 from services import Service
 import pandas as pd
 import re
+import tiktoken
 
 async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_service=Service.AzureOpenAI, 
                               user_prompt=None, outputFileDir="", model_name="Llama318BInstruct", model_mode="chat",
@@ -33,13 +34,26 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
     plugins_directory = "plugins"
     file_path = "data_schema.txt"
     data_schema = read_data_schema_from_file(file_path)
+
+    rephrase_tokens = 0;
     if(prompt_rephrase):
         if debug:
             print("Rephrasing prompt...")
         rephrased_prompt = await rephrase_prompt(kernel, plugins_directory, data_schema, user_prompt)
+        # --- TOKEN & COST: Prepare full prompt string ---
+        with open(f"{plugins_directory}/PromptPlugin/PromptRephraser/skprompt.txt", "r", encoding="utf-8") as f:
+            prompt_template = f.read()
+        filled_rephrased_prompt = prompt_template.replace("{{$data_schema}}", data_schema).replace("{{$query}}", user_prompt)
+
     if debug:
         print("Generating SQL and Python code with LLM...")
     result_string = await execute_llm_prompt(kernel, plugins_directory, data_schema, rephrased_prompt, outputFileDir,plugin_name, function_name)
+
+    # --- TOKEN & COST: Prepare full prompt string ---
+    with open(f"{plugins_directory}/DataPlugin/DatabaseDescriptor/skprompt.txt", "r", encoding="utf-8") as f:
+        prompt_template = f.read()
+    filled_prompt = prompt_template.replace("{{$data_schema}}", data_schema).replace("{{$user_prompt}}", rephrased_prompt)
+
     
     sql = parse_sql(result_string)
     python_code = parse_python_code(result_string)
@@ -64,6 +78,20 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
                 print("Trying to fix base error executing python code: ", e)
             await execute_fixed_python_code(kernel, plugins_directory, data_schema, debug, rephrased_prompt, outputFileDir, plugin_name, python_code, e.__str__(), 1, df)  
     
+     # --- TOKEN & COST: Count tokens ---
+    rephrase_prompt_tokens = count_tokens_by_service(selected_service, filled_rephrased_prompt)
+    prompt_tokens = count_tokens_by_service(selected_service, filled_prompt)
+    response_tokens = count_tokens_by_service(selected_service, result_string) if result_string else 0
+    rephrase_response_tokens = count_tokens_by_service(selected_service, rephrased_prompt)
+    total_cost = calculate_cost(prompt_tokens + rephrase_prompt_tokens, response_tokens + rephrase_response_tokens, selected_service)
+    print("🧮 Token usage and estimated cost:")
+    print(f"Rephrase tokens    : {rephrase_prompt_tokens}")
+    print(f"Rep. resp. tokens  : {rephrase_response_tokens}")
+    print(f"Prompt tokens      : {prompt_tokens}")
+    print(f"Response tokens    : {response_tokens}")
+    print(f"Total tokens       : {prompt_tokens + response_tokens}")
+    print(f"Estimated cost (USD): ${total_cost:.6f}")
+
     if sql is not None:
         if df is not None:
             if not df.empty:
@@ -80,6 +108,8 @@ async def PromptToQueryResult(debug=False, prompt_rephrase=False, selected_servi
     else:
         print("No SQL code found.")
         return None
+    
+    
 
 async def execute_fixed_query(kernel, plugins_directory, data_schema, debug, prompt_rephrase, user_prompt, rephrased_prompt, outputFileDir, plugin_name, sql, error, iteration=1):
     if(iteration > 3):
@@ -449,3 +479,75 @@ def extract_json_from_string(s):
     except Exception as e:
         print(f"Failed to extract JSON: {e}")
         return {"sql_score": 0, "python_score": 0}
+    
+
+def count_tokens_by_service(selected_service, text):
+    # selected_service'e göre varsayılan model adlarını belirle
+    default_models = {
+        "AzureOpenAI": "gpt-4o",
+        "DeepSeek": "deepseek-chat",
+        "ClaudeAI": "claude-3.5-sonnet",
+        "Gemini": "gemini-1.5-flash",
+        "Llama": "llama3-70b",
+        "HuggingFace": "llama3-8b",
+    }
+
+    service_key = selected_service.name if hasattr(selected_service, "name") else str(selected_service)
+    model = default_models.get(service_key, "gpt-3.5-turbo")  # fallback modeli
+
+    try:
+        encoding = tiktoken.encoding_for_model(model)
+    except Exception:
+        encoding = tiktoken.get_encoding("cl100k_base")  # en yaygın tokenizer fallback’i
+
+    return len(encoding.encode(text))
+
+def calculate_cost(prompt_tokens, completion_tokens, selected_service):
+    # Her servise karşılık varsayılan model fiyatlandırması
+    pricing = {
+        "AzureOpenAI": {
+            "prompt": 0.005,
+            "completion": 0.015,
+            "model": "gpt-4o"
+        },
+        "DeepSeek": {
+            "prompt": 0.0003,
+            "completion": 0.0006,
+            "model": "deepseek-chat"
+        },
+        "ClaudeAI": {
+            "prompt": 0.003,
+            "completion": 0.015,
+            "model": "claude-3.5-sonnet"
+        },
+        "Gemini": {
+            "prompt": 0.000125,
+            "completion": 0.000375,
+            "model": "gemini-1.5-flash"
+        },
+        "Llama": {
+            "prompt": 0.0002,
+            "completion": 0.0004,
+            "model": "llama3-70b"
+        },
+        "HuggingFace": {
+            "prompt": 0.0002,
+            "completion": 0.0004,
+            "model": "llama3-8b"  # veya kendi kullandığın başka HF modeli
+        }
+    }
+
+    service_key = selected_service.name if hasattr(selected_service, "name") else str(selected_service)
+    service_pricing = pricing.get(service_key, {"prompt": 0, "completion": 0, "model": "unknown"})
+
+    total_cost = (prompt_tokens * service_pricing["prompt"] + completion_tokens * service_pricing["completion"]) / 1000
+
+    print("🧮 Token usage and estimated cost:")
+    print(f"Selected Service   : {service_key}")
+    print(f"Default Model Used : {service_pricing['model']}")
+    print(f"Prompt tokens      : {prompt_tokens}")
+    print(f"Completion tokens  : {completion_tokens}")
+    print(f"Total tokens       : {prompt_tokens + completion_tokens}")
+    print(f"Estimated Cost (USD): ${total_cost:.6f}")
+
+    return total_cost
